@@ -8,7 +8,7 @@ class EditorData
 	toggles=9;
 	class ItemIDProvider
 	{
-		nextID=3167;
+		nextID=3168;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=173;
+		nextID=187;
 	};
 	class Camera
 	{
-		pos[]={3645.2256,167.84477,14552.123};
-		dir[]={-0.29262379,-0.69004041,0.66198075};
-		up[]={-0.27898568,0.72376949,0.63112903};
-		aside[]={0.91462559,1.5570549e-007,0.40430358};
+		pos[]={3649.541,337.40701,14542.127};
+		dir[]={-0.1385033,-0.93396759,0.32944658};
+		up[]={-0.36196354,0.35735956,0.86097419};
+		aside[]={0.92185169,7.7794539e-008,0.3875576};
 	};
 };
 binarizationWanted=0;
@@ -85,13 +85,14 @@ addons[]=
 	"ML700_Leman_Russ",
 	"A3_Structures_F_Mil_Bunker",
 	"TIOW_Comissar",
-	"A3_Modules_F_Multiplayer"
+	"A3_Modules_F_Multiplayer",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=48;
+		items=49;
 		class Item0
 		{
 			className="TIOW_Valhallans";
@@ -365,6 +366,13 @@ class AddonsMetaData
 		{
 			className="TIOW_Comissar";
 			name="TIOW_Comissar";
+		};
+		class Item48
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -722,7 +730,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=505;
+		items=506;
 		class Item0
 		{
 			dataType="Group";
@@ -24541,6 +24549,98 @@ class Mission
 					};
 				};
 				nAttributes=5;
+			};
+		};
+		class Item505
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3523.019,17.925257,14657.517};
+			};
+			name="MP_zuus";
+			id=3167;
+			type="ModuleCurator_F";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Zuus";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
 			};
 		};
 	};
