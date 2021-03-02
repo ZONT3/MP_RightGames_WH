@@ -14,9 +14,8 @@ _ret = [];
 
 _vehicleList = switch(_filter) do
 {
-	case "All":       { VVS_AFRF_Land };
-	case "AFRF_Land": { VVS_AFRF_Land };
-	case "AFRF_Wheel": { VVS_AFRF_Wheel };
+	case "All":       { VVS_West_Land };
+	case "West":      { VVS_West_Land };
 
 	default {[]};
 };

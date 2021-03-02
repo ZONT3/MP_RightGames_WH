@@ -27,29 +27,14 @@ VVS_Support = [];
 
 VVS_Civ_Land = [ ];
 
-VVS_AFRF_Land = [
-  "rhs_bmd4m_vdv",
-  "rhs_btr80a_vdv",
-  "rhs_t90am_tv",
-  "rhs_t72be_tv",
-  "CUP_O_2S6M_RU",
-  "LOP_US_2S1",
-  "min_rf_sa_22",
-  "min_rf_2b26"
-];
-
-VVS_AFRF_Wheel = [
-  "rhs_kamaz5350_open_vdv",
-  "rhs_kamaz5350_vdv",
-  "B_LSV_01_unarmed_F",
-  "av_rus_Truck_03_covered_F",
-  "av_Quadbike_F",
-  "rhs_tigr_m_3camo_vdv",
-  "rhs_tigr_3camo_vdv",
-  "rhs_tigr_sts_3camo_vdv",
-  "JMSRUS_rf_truck_covered_MP",
-  "av_UAZ_patp2",
-  "av_r007_mg"
+VVS_West_Land = [
+  "TIOW_Cad_LR_Vanquisher_836th_Blu",
+  "TIOW_CadianChimAuto_836",
+  "TIOW_CadianHydra_836",
+  "TIOW_CadianTrojan_836",
+  "ML700_Taurox_Stubber",
+  "ML700_Taurox_Unarmed",
+  "ML700_Leman_BattleCannon"
 ];
 
 /*
