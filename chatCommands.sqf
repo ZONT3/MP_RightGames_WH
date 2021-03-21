@@ -90,6 +90,7 @@ private _fn_getRange = {
         [
           [],{
             params ["_tv", "_path"];
+            if (_tv tvData _path == "rs") exitWith { hint "Эта роль доступна не всем!" };
             private _pid = _tv tvValue _path;
 
             ZPR_roles pushBack _pid;

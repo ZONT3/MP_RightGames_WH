@@ -43,6 +43,8 @@ private _height   = _pHeight * safezoneH;
 private _startY   = safeZoneY + ((safeZoneH - _height) / 2);
 private _startX   = safeZoneX + ((safeZoneW -  _width) / 2);
 
+_height = _height max (_headerH + 0.1 * safeZoneH);
+
 disableSerialization;
 
 private _display = findDisplay 46 createDisplay "RscDisplayEmpty";

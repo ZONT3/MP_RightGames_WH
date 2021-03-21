@@ -4,7 +4,7 @@ if (isNil 'ZPR_allowedIDs' or { typeName ZPR_allowedIDs != typeName [] }) then {
   private _id =   [_x, "id", 0] call BIS_fnc_returnConfigEntry;
   private _hide = [_x, "hide", "false"] call BIS_fnc_returnConfigEntry == "true";
   private _restricted =
-    ( [_x, "free", "false"] call BIS_fnc_returnConfigEntry != "true" ) or
+    ( [_x, "free", "false"] call BIS_fnc_returnConfigEntry != "true" ) and
     not ( _id in ZPR_allowedIDs );
 
   if (_id != 0 and not _hide) then {
