@@ -17,7 +17,7 @@ waitUntil {sleep 0.1; !dialog};
   ZPR_ID = nil;
 
   try {
-    ZPR_allowedIDs = _roles select 0;
+    ZPR_allowedIDs = _roles select 0 select 0;
   } catch {
     diag_log "ZPR ERROR: CANNOT FETCH ROLES";
     ZPR_allowedIDs = [];
