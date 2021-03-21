@@ -52,3 +52,18 @@ VVS_R_Ship = [];
 VVS_R_Armored = [];
 VVS_R_Autonomous = [];
 VVS_R_Support = [];
+
+/*
+this disableAI "move"; this disableAI "radioprotocol"; this disableAI "autocombat"; this disableAI "weaponaim";
+this addAction [
+"Запрос Техники",
+VVS_fnc_openVVS,
+[VVS_west_Land,"West"],
+6,
+true,
+true,
+"",
+"true",
+5
+]
+*/

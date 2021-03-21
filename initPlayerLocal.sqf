@@ -32,7 +32,8 @@ waitUntil {vehicle player == player};
 private _fn_moveToSpawn = {
   params ["_player", "_cg"];
   private _side = side _player;
-  private _spawn = MP_spawn_east;
+  private _spawn = objnull;
+  if (_side == east)       then { _spawn = MP_spawn_east };
   if (_side == west)       then { _spawn = MP_spawn_west };
   if (_side == resistance) then { _spawn = MP_spawn_guer };
   if (!isNil '_spawn') then {

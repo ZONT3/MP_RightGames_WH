@@ -8,9 +8,20 @@ waitUntil {sleep 0.1; !dialog};
 
 [{
   params ["_uid"];
-  [MPS_BDL_pres, "getChars", [_uid]] call ZONT_fnc_bd_customRequest;
+  [
+    [MPS_BDL_pres, "getChars", [_uid]] call ZONT_fnc_bd_customRequest,
+    [MPS_BDL_pres, "getRoles", [_uid]] call ZONT_fnc_bd_customRequest
+  ]
 },{
+  params ["_chars", "_roles"];
   ZPR_ID = nil;
+
+  try {
+    ZPR_allowedIDs = _roles select 0;
+  } catch {
+    diag_log "ZPR ERROR: CANNOT FETCH ROLES";
+    ZPR_allowedIDs = [];
+  };
 
   {
     _x params ["_id", "_name", "_side", "_roles", "_equip", "_pos"];
@@ -19,10 +30,10 @@ waitUntil {sleep 0.1; !dialog};
       ZPR_roles = _roles;
       [_equip, _pos] spawn ZONT_fnc_loadDone;
     };
-  } foreach _this;
+  } foreach _chars;
 
   if (not isNil "ZPR_ID") exitWith { };
 
-  [_this] call ZONT_fnc_profilesGUI;
+  [_chars] call ZONT_fnc_profilesGUI;
 
 }, _uid] call ZONT_fnc_remoteExecCallback;

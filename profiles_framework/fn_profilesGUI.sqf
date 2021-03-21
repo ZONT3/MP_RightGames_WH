@@ -4,7 +4,7 @@ params [
   ["_handlerEscape", nil],
   ["_headerOverride", nil],
   ["_str_role", "НОВЫЙ ПРОФИЛЬ [ %1 ]", [""]],
-  ["_roles", ([[0, "ДРУГОЙ"]] + call ZONT_fnc_getRoles), [[]]]
+  ["_roles", call ZONT_fnc_getRoles, [[]]]
 ];
 
 private _newUser = count _profiles == 0;
@@ -18,7 +18,7 @@ if (isNil "_headerOverride") then {
     "<a size='2.9' href='https://discord.gg/HHdQZFE'><img image='pic\dis.paa'/></a><br/>" +
     "<a size='1.8' href='https://docs.google.com/document/d/13KvnvSIP2fGQsu39qdsHtUesWyb4LCEdPNQrOIkXULo'>" +
     "<img image='pic\doc.paa'/><t colorLink='#0788ff' color='#0788ff'> Устав</t></a><br/>" +
-    "<t size='0.8'>Позже будут введены роли. А пока выбери ""Другой"".</t>",
+    "<t size='0.8'>Ниже выбери подразделение. Если нужная тебе недоступна - свяжись со своим КМД.</t>",
     0.49, 0.04 ]
   } else {
     [
@@ -77,12 +77,17 @@ uiNamespace setVariable ["zpr_list", _profiles];
   _tv tvSetValue [[_c], _forEachIndex];
 } forEach _profiles;
 
+
+if not _newUser then { _roles = [[0, "ДРУГОЙ"]] + _roles };
+
 {
-  _x params ["_id", "_name"];
+  _x params ["_id", "_name", "_configName", "_tags", "_allowed"];
+  private _alpha = if _allowed then {1} else {0.4};
+  private _allow = if _allowed then {"new"} else {"rs"};
   private _c = _tv tvAdd [[], format [_str_role, _name]];
-  _tv tvSetData [[_c], "new"];
+  _tv tvSetData [[_c], _allow];
   _tv tvSetValue [[_c], _id];
-  _tv tvSetColor [[_c], [255/255,242/255,0/255, 1]];
+  _tv tvSetColor [[_c], [255/255,242/255,0/255, _alpha]];
   _tv tvSetPicture [[_c], "pic\add.paa"];
   _tv tvSetPictureColorSelected [[_c], [1,1,1,1]];
 } forEach _roles;
@@ -91,10 +96,10 @@ uiNamespace setVariable ["zpr_list", _profiles];
 if (isNil "_handlerSelect") then {
   _tv ctrlAddEventHandler ["TreeDblClick", {
     params ["_tv", "_path"];
-    private _display = ctrlParent _tv;
-    _display closeDisplay 1;
 
+    private _close = true;
     switch (_tv tvData _path) do {
+      case ("rs"):  { _close = false; hint "Эта роль доступна не всем!" };
       case ("new"): { (_tv tvValue _path) spawn ZONT_fnc_newProfile };
       case ("set"): {
         (uiNamespace getVariable ["zpr_list", []]) select (_tv tvValue _path)
@@ -102,10 +107,15 @@ if (isNil "_handlerSelect") then {
       };
       default { "profileErr" call ZONT_fnc_forceExit };
     };
+
+    if _close then {
+      (ctrlParent _tv) closeDisplay 1;
+    }
   }];
 } else {
   _tv ctrlAddEventHandler ["TreeDblClick", _handlerSelect];
 };
+
 
 if (isNil "_handlerEscape") then {
   _display displayAddEventHandler ["unload", {
