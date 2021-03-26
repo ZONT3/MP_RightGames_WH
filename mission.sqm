@@ -16,18 +16,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=361;
+		nextID=366;
 	};
 	class Camera
 	{
-		pos[]={3452.8528,33.497097,14560.655};
-		dir[]={-0.61173087,-0.5691117,-0.54955673};
-		up[]={-0.42344952,0.82217675,-0.38041145};
-		aside[]={-0.66832829,2.8277282e-007,0.74393523};
+		pos[]={3407.53,41.317863,14524.463};
+		dir[]={-0.89532048,-0.44540313,-0.0073366552};
+		up[]={-0.44539705,0.89532745,-0.0036502918};
+		aside[]={-0.0081945267,1.4257512e-007,0.99998319};
 	};
 };
 binarizationWanted=0;
-sourceName="War40";
+sourceName="MP_RightGames_WH";
 addons[]=
 {
 	"RamirisMelee_Imperium_Patch",
@@ -193,14 +193,14 @@ class AddonsMetaData
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item16
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item17
@@ -324,7 +324,7 @@ class AddonsMetaData
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item39
@@ -382,7 +382,7 @@ class AddonsMetaData
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item49
@@ -12060,7 +12060,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2858.5615,18.535944,13862.633};
-				angles[]={-0,5.7590861,0};
+				angles[]={0,5.7590861,0};
 			};
 			side="Empty";
 			flags=4;
@@ -12076,7 +12076,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={2876.9958,18.535944,13830.568};
-				angles[]={-0,5.7544785,0};
+				angles[]={0,5.7544785,0};
 			};
 			side="Empty";
 			flags=4;
@@ -14427,7 +14427,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="call{[ this, " \n """Переместиться КУДА БЛЯТЬ"", " \n "ASLToATL (this modelToWorldWorld [0,-5,0]),  " \n """#fcfcfc"", " \n """true"", " \n "15 " \n "] call ZONT_fnc_addTeleportTerminal}";
+						init="call{[ this, " \n """Переместиться на базу Adeptus Mechanicus"", " \n "ASLToATL (this modelToWorldWorld [0,-5,0]),  " \n """#fc2020"", " \n """true"", " \n "15 " \n "] call ZONT_fnc_addTeleportTerminal}";
 					};
 					id=2863;
 					type="Land_Bunker_F";
@@ -21574,7 +21574,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={3545.7881,20.817074,14544.673};
-				angles[]={-0,1.1854799,-0};
+				angles[]={0,1.1854799,0};
 			};
 			side="Empty";
 			class Attributes
@@ -34920,7 +34920,7 @@ class Mission
 					};
 					id=5151;
 					type="TIOW_OCC_PDF_Veteran_1";
-					atlOffset=1.9073486e-006;
+					atlOffset=2.8610229e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35301,7 +35301,6 @@ class Mission
 					showWP="NEVER";
 					id=5328;
 					type="Move";
-					atlOffset=9.5367432e-007;
 				};
 				class Item16
 				{
