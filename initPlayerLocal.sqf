@@ -31,16 +31,30 @@ waitUntil {vehicle player == player};
   hintSilent parseText _str;
 }, 1] call CBA_fnc_addPerFrameHandler; */
 
+private _fn_moveToCustomSpawn = {
+  params ['_player','_fn_moveToSpawn'];
+  waituntil { sleep 0.1; !isNil 'ZPR_roles' };
+  private _mechanicus = [["Mechanicus"]] call ZONT_fnc_checkRole;
+  if _mechanicus exitWith { [_player, true, 'MP_spawn_mech'] call _fn_moveToSpawn };
+};
+
 private _fn_moveToSpawn = {
-  params ["_player", "_cg"];
+  params ["_player", "_cg", '_spawnName'];
   private _side = side _player;
   private _spawn = objnull;
-  if (_side == east)       then { _spawn = MP_spawn_east };
-  if (_side == west)       then { _spawn = MP_spawn_west };
-  if (_side == resistance) then { _spawn = MP_spawn_guer };
+
+  if (isNil '_spawnName') then {
+    if (_side == east)       then { _spawn = MP_spawn_east };
+    if (_side == west)       then { _spawn = MP_spawn_west };
+    if (_side == resistance) then { _spawn = MP_spawn_guer };
+  } else {
+    _spawn = missionNamespace getVariable _spawnName;
+  };
+
   if (!isNil '_spawn') then {
     _player setPosATL getPosATL _spawn;
   };
+
   if (_cg) then {
     private _g = createGroup _side;
     [_player] joinSilent _g;
@@ -49,7 +63,7 @@ private _fn_moveToSpawn = {
 };
 
 [player, false] call _fn_moveToSpawn;
-
+[player, _fn_moveToSpawn] spawn _fn_moveToCustomSpawn;
 
 [] spawn {
   waitUntil {

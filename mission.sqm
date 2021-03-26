@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=5363;
+		nextID=5364;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=381;
+		nextID=386;
 	};
 	class Camera
 	{
-		pos[]={3500.7021,103.93709,14499.925};
-		dir[]={-0.098598927,-0.89672011,0.43155491};
-		up[]={-0.19972982,0.44260132,0.87419111};
-		aside[]={0.97490519,3.8213329e-007,0.22273877};
+		pos[]={3928.8281,11.816604,14169.449};
+		dir[]={0.74025255,-0.67055541,-0.048801504};
+		up[]={0.66910297,0.7418595,-0.044110935};
+		aside[]={-0.065782681,0,-0.99783403};
 	};
 };
 binarizationWanted=0;
@@ -195,14 +195,14 @@ class AddonsMetaData
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
 		class Item16
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
 		class Item17
@@ -326,7 +326,7 @@ class AddonsMetaData
 		{
 			className="ace_parachute";
 			name="ACE3 - Parachute";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
 		class Item39
@@ -384,7 +384,7 @@ class AddonsMetaData
 		{
 			className="ace_goggles";
 			name="ACE3 - Goggles";
-			author="ACE-Team";
+			author="Команда ACE";
 			url="http://ace3mod.com/";
 		};
 		class Item49
@@ -814,7 +814,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=669;
+		items=670;
 		class Item0
 		{
 			dataType="Comment";
@@ -37589,6 +37589,18 @@ class Mission
 				};
 				nAttributes=7;
 			};
+		};
+		class Item669
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3935.3479,6.7062998,14167.695};
+				angles[]={0,0,0.00059341197};
+			};
+			name="MP_spawn_mech";
+			id=5363;
+			type="Logic";
 		};
 	};
 };
