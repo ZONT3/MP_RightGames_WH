@@ -1,4 +1,5 @@
 private _res = [];
+private _resRs = [];
 if (isNil 'ZPR_allowedIDs' or { typeName ZPR_allowedIDs != typeName [] }) then { ZPR_allowedIDs = [] };
 {
   private _id =   [_x, "id", 0] call BIS_fnc_returnConfigEntry;
@@ -8,13 +9,17 @@ if (isNil 'ZPR_allowedIDs' or { typeName ZPR_allowedIDs != typeName [] }) then {
     not ( _id in ZPR_allowedIDs );
 
   if (_id != 0 and not _hide) then {
-    _res pushBack [
+    private _elem = [
       _id,
       [_x, "name", configName _x] call BIS_fnc_returnConfigEntry,
       configName _x,
       [_x, "tags", []] call BIS_fnc_returnConfigEntry,
       ! _restricted
     ];
+    if not _restricted
+    then { _res   pushBack _elem }
+    else { _resRs pushBack _elem };
   };
 } foreach ("true" configClasses (missionConfigFile >> "CfgRoles"));
-_res
+
+_res + _resRs
