@@ -1,3 +1,23 @@
+/** by ZONT_
+ ** part of Profiles Framework
+ **
+ ** Summary
+ **   Проверяет, есть (нет) ли роль(и) у игрока
+ **   ЗАМЕЧАНИЕ: в параметрах указываются не ID ролей, а строка - имя класса из CfgRoles (roles.ext)
+ **   Условия нормальной работы: инициализирована система профилей, профиль загружен с сервера
+ **
+ ** Params
+ **   0: white-list <ARRAY of STRINGS>:
+ **     условие выполняется при наличии хотя бы одной из этих ролей
+ **   1: black-list <ARRAY of STRINGS>:
+ **     условие НЕ выполняется при наличии хотя бы одной из этих ролей
+ **   2: required-list <ARRAY of STRINGS>:
+ **     условие выполняется при наличии ВСЕХ из этих ролей
+ **
+ ** Returns
+ **   <BOOLEAN> true если выполнены условия 0,1,2.
+ **/
+
 params [["_wl", [], [[]]], ["_bl", [], [[]]], ["_rl", [], [[]]]];
 
 if not assert (!isNil "ZPR_roles") exitWith { };
@@ -7,7 +27,7 @@ private _fn_toID = {
   private _id = 0;
   {
       _x params ["_xid", "_name", "_classname"];
-      if (_classname == _this) exitWith {
+      if (toLowerANSI _classname == toLowerANSI _this) exitWith {
         _id = _xid
       };
   } foreach _roles;

@@ -14,9 +14,10 @@
 
   [this, "Переместиться на базу Наемников", [], "#33c208"] call ZONT_fnc_addTeleportTerminal
 */
-params [["_thisTerm", objNull], ["_tooltip", ""], ["_posATL", []], ["_color", "#ffffff"], ["_cond", "true"], ["_priority", 6]];
+params [["_thisTerm", objNull], ["_tooltip", ""], ["_posATL", []], ["_color", "#ffffff"], ["_cond", "true"], ["_priority", 6], ["_createCond", {true}]];
 
 if (isNil '_thisTerm') exitWith { };
+if (typeName _createCond == typeName "") then { _createCond = compile _createCond };
 if (count _posATL == 0) then { _posATL = ASLToATL (_thisTerm modelToWorldWorld [0,-2,0]) };
 
-_thisTerm setVariable ["ZTT_params", [_tooltip, _color, _posATL, _cond, _priority]];
+_thisTerm setVariable ["ZTT_params", [_tooltip, _color, _posATL, _cond, _priority, _createCond]];

@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={3407.53,41.317863,14524.463};
-		dir[]={-0.89532048,-0.44540313,-0.0073366552};
-		up[]={-0.44539705,0.89532745,-0.0036502918};
-		aside[]={-0.0081945267,1.4257512e-007,0.99998319};
+		pos[]={3429.1577,53.492386,14532.757};
+		dir[]={-0.19056042,-0.75549555,0.6268279};
+		up[]={-0.2197462,0.65515381,0.72283143};
+		aside[]={0.95676458,0,0.29086366};
 	};
 };
 binarizationWanted=0;
@@ -656,6 +656,25 @@ class CustomAttributes
 		};
 		class Attribute1
 		{
+			property="ENH_saveLoadout";
+			expression="    if (!is3DEN && hasInterface && _value && isMultiplayer) then    {      [] spawn      {        scriptName 'ENH_Attribute_SaveLoadout';        waitUntil {sleep 1; !isNull player};        player setVariable ['ENH_savedLoadout', getUnitloadout player];        player addEventHandler ['Respawn',{player setUnitLoadout (player getVariable 'ENH_savedLoadout')}];      };    };  ";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute2
+		{
 			property="RespawnTemplates";
 			expression="true";
 			class Value
@@ -690,7 +709,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=2;
+		nAttributes=3;
 	};
 	class Category1
 	{
@@ -14427,7 +14446,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						init="call{[ this, " \n """Переместиться на базу Adeptus Mechanicus"", " \n "ASLToATL (this modelToWorldWorld [0,-5,0]),  " \n """#fc2020"", " \n """true"", " \n "15 " \n "] call ZONT_fnc_addTeleportTerminal}";
+						init="call{this setVariable [""ztt_bunker"", true];" \n "[ this, " \n """Переместиться на базу Adeptus Mechanicus"", " \n "ASLToATL (this modelToWorldWorld [0,-5,0]),  " \n """#fc2020"", " \n """true"", " \n "15 " \n "] call ZONT_fnc_addTeleportTerminal}";
 					};
 					id=2863;
 					type="Land_Bunker_F";
@@ -14456,18 +14475,18 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={10793.449,38.042267,18319.877};
+						position[]={10793.449,38.042091,18319.877};
 						angles[]={0,3.8127763,0};
 					};
 					side="Empty";
 					flags=4;
 					class Attributes
 					{
-						init="call{[ this, " \n """Переместиться НАХУЙ, ОКДА?"", " \n "[],  " \n """#fcfcfc"", " \n """true"", " \n "14 " \n "] call ZONT_fnc_addTeleportTerminal}";
+						init="call{[ this, " \n """Войти в бункер"", " \n "[],  " \n """#ac2020"", " \n """true"", " \n "14," \n "{ _thisTermX getVariable [""ztt_bunker"", false] }" \n "] call ZONT_fnc_addTeleportTerminal}";
 					};
 					id=5227;
 					type="Land_InfoStand_V2_F";
-					atlOffset=0.0029258728;
+					atlOffset=0.0027503967;
 				};
 				class Item3
 				{
@@ -14481,7 +14500,7 @@ class Mission
 					flags=4;
 					class Attributes
 					{
-						init="call{[ this, " \n """Переместиться на базу (?)"", " \n "[],  " \n """#a88d32"", " \n """true"", " \n "16 " \n "] call ZONT_fnc_addTeleportTerminal}";
+						init="call{[ this, " \n """Переместиться на основную базу"", " \n "[],  " \n """#a88d32"", " \n """true"", " \n "16 " \n "] call ZONT_fnc_addTeleportTerminal}";
 					};
 					id=5230;
 					type="Land_InfoStand_V2_F";
@@ -14489,7 +14508,7 @@ class Mission
 				};
 			};
 			id=5228;
-			atlOffset=-5.4839287;
+			atlOffset=-5.4839725;
 		};
 		class Item448
 		{

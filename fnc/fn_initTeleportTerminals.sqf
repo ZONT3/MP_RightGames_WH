@@ -15,8 +15,12 @@ private _teleportTerms = [];
   removeAllActions _thisTermX;
   _thisTermX addAction ["==========================", {},[],150,false,false,"","true",5];
   {
-    _x params ["_thisTerm", "_tooltip", "_color", "_posATL", "_cond", "_priority"];
-    if (_thisTermX != _thisTerm) then {
+    _x params ["_thisTerm", "_tooltip", "_color", "_posATL", "_cond", "_priority", "_createCond"];
+
+    private _cc = call _createCond;
+    if (typeName _cc != typeName true) then { _cc = true };
+
+    if (_thisTermX != _thisTerm && { _cc }) then {
       _thisTermX addAction [
       format ["<t color='%1'>%2</t>", _color, _tooltip],
       {
