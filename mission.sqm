@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=5361;
+		nextID=5362;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=371;
+		nextID=376;
 	};
 	class Camera
 	{
-		pos[]={3443.325,29.351795,14533.521};
-		dir[]={-0.12169525,-0.55316752,0.82429004};
-		up[]={-0.080803707,0.8330403,0.54730666};
-		aside[]={0.98935586,-8.7587978e-007,0.1460674};
+		pos[]={3415.3489,87.724564,14499.217};
+		dir[]={0.094722614,-0.80811322,0.58137387};
+		up[]={0.12995173,0.58902723,0.79759753};
+		aside[]={0.98699069,-7.278868e-008,-0.16080955};
 	};
 };
 binarizationWanted=0;
@@ -95,13 +95,14 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"A3_Structures_F_Mil_Barracks",
 	"A3_Structures_F_EPA_Items_Medical",
-	"Valkyrie"
+	"Valkyrie",
+	"task_force_radio_items"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=57;
+		items=58;
 		class Item0
 		{
 			className="RamirisMelee_Imperium_Patch";
@@ -430,6 +431,13 @@ class AddonsMetaData
 			name="There is Only War Valkyries";
 			author="Battlestad+SabreOne";
 		};
+		class Item57
+		{
+			className="task_force_radio_items";
+			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
 	};
 };
 randomSeed=16051377;
@@ -454,7 +462,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -718,7 +726,7 @@ class CustomAttributes
 		};
 		nAttributes=3;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -806,7 +814,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=668;
+		items=669;
 		class Item0
 		{
 			dataType="Comment";
@@ -35002,6 +35010,7 @@ class Mission
 					};
 					id=5151;
 					type="TIOW_OCC_PDF_Veteran_1";
+					atlOffset=-9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35387,7 +35396,7 @@ class Mission
 			};
 			id=5349;
 			type="TIOW_Valkyrie_Fuel_M_B";
-			atlOffset=1.2734375;
+			atlOffset=1.2728291;
 		};
 		class Item662
 		{
@@ -35405,7 +35414,7 @@ class Mission
 			};
 			id=5350;
 			type="TIOW_Valkyrie_Rocket_B";
-			atlOffset=0.68994904;
+			atlOffset=0.68963623;
 		};
 		class Item663
 		{
@@ -35423,7 +35432,7 @@ class Mission
 			};
 			id=5351;
 			type="TIOW_Valkyrie_Rocket_M_B";
-			atlOffset=0.34672356;
+			atlOffset=0.34555626;
 		};
 		class Item664
 		{
@@ -35441,7 +35450,7 @@ class Mission
 			};
 			id=5348;
 			type="TIOW_Valkyrie_Fuel_B";
-			atlOffset=0.5492878;
+			atlOffset=0.54871178;
 		};
 		class Item665
 		{
@@ -37431,6 +37440,154 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item668
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={3424.8132,16.314816,14562.487};
+				angles[]={-0,0,0.00084572798};
+			};
+			id=5361;
+			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					expression="_this setVariable ['radio_channel_password',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="4567924621685";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					expression="_this setVariable ['RiflemanRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					expression="_this setVariable ['radio_channel_name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="RG40K";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=7;
 			};
 		};
 	};
