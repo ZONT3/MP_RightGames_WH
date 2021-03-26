@@ -9,7 +9,7 @@ waitUntil {vehicle player == player};
 
 [] execVM "chatCommands.sqf";
 
-[] execVM "initPlayerAfterRespawn.sqf"; 
+[] execVM "initPlayerAfterRespawn.sqf";
 
 /******                            Zeus list                             ******/
 /* MCH_ZEUS_LIST = [{
@@ -49,3 +49,20 @@ private _fn_moveToSpawn = {
 };
 
 [player, false] call _fn_moveToSpawn;
+
+
+[] spawn {
+  waitUntil {
+  	{
+  		if (
+        agent _x isKindOf "Rabbit_F" ||
+        agent _x isKindOf "Snake_random_F" ||
+        agent _x isKindOf "Servo_skull"
+      ) then {
+  			deleteVehicle agent _x;
+  		};
+  	} forEach agents;
+
+  	sleep 0.01; false;
+  };
+};
