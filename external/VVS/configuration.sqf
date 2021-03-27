@@ -37,6 +37,11 @@ VVS_West_Land = [
   "ML700_Leman_BattleCannon"
 ];
 
+VVS_West_Mech = [
+	"AM_Hellhound",
+	"AM_Chimerro"
+];
+
 /*
 									Vehicle restriction
 		Again, similar to VAS's functionality. If you want to restrict a specific vehicle you can do it or

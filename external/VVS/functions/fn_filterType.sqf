@@ -16,6 +16,7 @@ _vehicleList = switch(_filter) do
 {
 	case "All":       { VVS_West_Land };
 	case "West":      { VVS_West_Land };
+	case "Mech":      { VVS_West_Mech };
 
 	default {[]};
 };
