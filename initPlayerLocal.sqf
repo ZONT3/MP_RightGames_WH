@@ -33,13 +33,17 @@ waitUntil {vehicle player == player};
 
 
 private _fn_checkSlotPermission = {
-  if not ([[this]] call ZONT_fnc_checkRole) then {
+  if not ([[],[],_this] call ZONT_fnc_checkRole) then {
     ["absrole"] call ZONT_fnc_forceExit;
   };
 };
 
-private _var = group player getVariable ["ZPR_rr", ""];
-if (_var != "") then {
+private _var = [];
+private _varg = group player getVariable ["ZPR_rr", ""];
+private _vars =       player getVariable ["ZPR_rr", ""];
+if _varg != "" then { _var pushBack _varg };
+if _vars != "" then { _var pushBack _vars };
+if (count _var > 0) then {
   _var spawn _fn_checkSlotPermission;
 };
 

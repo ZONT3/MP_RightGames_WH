@@ -80,8 +80,6 @@ uiNamespace setVariable ["zpr_list", _profiles];
 } forEach _profiles;
 
 
-if not _newUser then { _roles = [[0, "ДРУГОЙ"]] + _roles };
-
 {
   _x params ["_id", "_name", "_configName", "_tags", "_allowed"];
   private _alpha = if _allowed then {1} else {0.4};
