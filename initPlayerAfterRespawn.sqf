@@ -4,7 +4,9 @@ waituntil { sleep 0.1; !isNil 'ZPR_roles' };
 
 
 private _mechanicus = [["Mechanicus"]] call ZONT_fnc_checkRole;
+private _inqusition = [["Inqusition"]] call ZONT_fnc_checkRole;
 
 
-player enableStamina !_mechanicus;
+player enableStamina !(_mechanicus || _inqusition);
+
 player setUnitTrait ['engineer', _mechanicus];
