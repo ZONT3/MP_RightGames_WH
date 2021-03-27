@@ -31,6 +31,19 @@ waitUntil {vehicle player == player};
   hintSilent parseText _str;
 }, 1] call CBA_fnc_addPerFrameHandler; */
 
+
+private _fn_checkSlotPermission = {
+  if not ([[this]] call ZONT_fnc_checkRole) then {
+    ["absrole"] call ZONT_fnc_forceExit;
+  };
+};
+
+private _var = group player getVariable ["ZPR_rr", ""];
+if (_var != "") then {
+  _var spawn _fn_checkSlotPermission;
+};
+
+
 private _fn_moveToCustomSpawn = {
   params ['_player','_fn_moveToSpawn'];
   waituntil { sleep 0.1; !isNil 'ZPR_roles' };
