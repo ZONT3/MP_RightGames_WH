@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=545;
+		nextID=575;
 	};
 	class Camera
 	{
@@ -543,7 +543,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -807,10 +807,29 @@ class CustomAttributes
 		};
 		nAttributes=3;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
+		{
+			property="ENH_AddObjectsToZeus";
+			expression="    if (!is3DEN && isServer && _value && !(allCurators isEqualTo [])) then    {      [] spawn      {        scriptName 'ENH_Attribute_AddObjectsToZeus';        while {true} do        {          {          _x addCuratorEditableObjects            [              entities [[], ['Logic'], true],              true            ];          } count allCurators;          sleep 60;        };      };    }";
+			class Value
+			{
+				class data
+				{
+					class type
+					{
+						type[]=
+						{
+							"BOOL"
+						};
+					};
+					value=1;
+				};
+			};
+		};
+		class Attribute1
 		{
 			property="EnableTargetDebug";
 			expression="true";
@@ -829,7 +848,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute1
+		class Attribute2
 		{
 			property="EnableDebugConsole";
 			expression="true";
@@ -848,7 +867,7 @@ class CustomAttributes
 				};
 			};
 		};
-		class Attribute2
+		class Attribute3
 		{
 			property="cba_settings_hasSettingsFile";
 			expression="false";
@@ -867,7 +886,7 @@ class CustomAttributes
 				};
 			};
 		};
-		nAttributes=3;
+		nAttributes=4;
 	};
 };
 class Mission
@@ -153550,7 +153569,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={2946.5686,17.002232,13861.305};
-						angles[]={-0,4.1841183,0};
+						angles[]={0,4.1841183,0};
 					};
 					side="Empty";
 					flags=4;
@@ -153559,6 +153578,7 @@ class Mission
 					};
 					id=3641;
 					type="TIOW_IG_Mortar_836_Blu";
+					atlOffset=-1.9073486e-006;
 				};
 				class Item29
 				{
@@ -155302,6 +155322,7 @@ class Mission
 					};
 					id=7373;
 					type="Land_LampHarbour_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -155342,6 +155363,7 @@ class Mission
 					};
 					id=7374;
 					type="Land_LampHarbour_F";
+					atlOffset=9.5367432e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -155528,7 +155550,7 @@ class Mission
 				};
 			};
 			id=7338;
-			atlOffset=-0.010294914;
+			atlOffset=-0.010338783;
 		};
 	};
 };

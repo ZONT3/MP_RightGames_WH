@@ -50,7 +50,7 @@ force ace_cookoff_probabilityCoef = 1.2;
 
 // ACE Возрождение
 force ace_respawn_removeDeadBodiesDisconnected = true;
-force ace_respawn_savePreDeathGear = false;
+force ace_respawn_savePreDeathGear = true;
 
 // ACE Гранаты
 force ace_grenades_convertExplosives = true;
@@ -212,10 +212,10 @@ force ace_medical_painUnconsciousChance = 0.1;
 force ace_medical_playerDamageThreshold = 5;
 force ace_medical_spontaneousWakeUpChance = 0.3;
 force ace_medical_spontaneousWakeUpEpinephrineBoost = 30;
-force ace_medical_statemachine_AIUnconsciousness = true;
+force ace_medical_statemachine_AIUnconsciousness = false;
 force ace_medical_statemachine_cardiacArrestBleedoutEnabled = true;
 force ace_medical_statemachine_cardiacArrestTime = 420;
-force ace_medical_statemachine_fatalInjuriesAI = 1;
+force ace_medical_statemachine_fatalInjuriesAI = 0;
 force ace_medical_statemachine_fatalInjuriesPlayer = 2;
 force ace_medical_treatment_advancedBandages = 1;
 force ace_medical_treatment_advancedDiagnose = true;
