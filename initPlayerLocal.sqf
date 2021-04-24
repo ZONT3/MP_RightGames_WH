@@ -53,7 +53,9 @@ private _fn_moveToCustomSpawn = {
   params ['_player','_fn_moveToSpawn'];
   waituntil { sleep 0.1; !isNil 'ZPR_roles' };
   private _mechanicus = [["Mechanicus"]] call ZONT_fnc_checkRole;
+  private _astartes   = [["Astartes"]]   call ZONT_fnc_checkRole;
   if _mechanicus exitWith { [_player, true, 'MP_spawn_mech'] call _fn_moveToSpawn };
+  if _astartes   exitWith { [_player, true, 'MP_spawn_wolf'] call _fn_moveToSpawn };
 };
 
 private _fn_moveToSpawn = {
@@ -71,6 +73,7 @@ private _fn_moveToSpawn = {
 
   if (!isNil '_spawn') then {
     _player setPosATL getPosATL _spawn;
+    _player setDir getDir _spawn;
   };
 
   if (_cg) then {

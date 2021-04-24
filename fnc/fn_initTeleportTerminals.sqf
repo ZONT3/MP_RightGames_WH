@@ -12,12 +12,13 @@ private _teleportTerms = [];
 
 {
   private _thisTermX = _x select 0;
+  private _dist = _thisTermX getVariable ["ZTT_dist", 5];
   removeAllActions _thisTermX;
-  _thisTermX addAction ["==========================", {},[],150,false,false,"","true",5];
+  _thisTermX addAction ["==========================", {},[],150,false,false,"","true",_dist];
   {
     _x params ["_thisTerm", "_tooltip", "_color", "_posATL", "_cond", "_priority", "_createCond"];
 
-    private _cc = call _createCond;
+    private _cc = if (typeName _createCond == typeName {true}) then {call _createCond} else {true};
     if (typeName _cc != typeName true) then { _cc = true };
 
     if (_thisTermX != _thisTerm && { _cc }) then {
@@ -35,8 +36,8 @@ private _teleportTerms = [];
           titleText ["Перемещение...","BLACK IN",3];
         }
       },
-      [_posATL, _thisTerm], _priority + 100, true,true,"",_cond,5];
+      [_posATL, _thisTerm], _priority + 100, true,true,"",_cond,_dist];
     }
   } forEach _teleportTerms;
-  _thisTermX addAction ["==========================", {},[],100,false,false,"","true",5];
+  _thisTermX addAction ["==========================", {},[],100,false,false,"","true",_dist];
 } forEach _teleportTerms;
