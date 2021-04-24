@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=22418;
+		nextID=22420;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=562;
+		nextID=591;
 	};
 	class Camera
 	{
-		pos[]={18859.498,2129.3682,2592.3237};
-		dir[]={-0.78092456,-0.23504394,0.57873964};
-		up[]={-0.18884516,0.9719854,0.13995285};
-		aside[]={0.59541935,1.3876706e-007,0.80343038};
+		pos[]={17971.463,274.22128,2735.9744};
+		dir[]={0.40262377,-0.65471226,-0.63973284};
+		up[]={0.34873414,0.75587928,-0.55410844};
+		aside[]={-0.84634089,-2.3515895e-008,-0.53265417};
 	};
 };
 binarizationWanted=0;
@@ -122,13 +122,15 @@ addons[]=
 	"Valkyrie",
 	"IC_Cadia",
 	"TIOWSpaceMarines",
-	"Markers"
+	"Markers",
+	"A3_Modules_F_Curator_Curator",
+	"task_force_radio_items"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=68;
+		items=70;
 		class Item0
 		{
 			className="TIOW_structures";
@@ -538,6 +540,20 @@ class AddonsMetaData
 			className="Markers";
 			name="Markers";
 		};
+		class Item68
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item69
+		{
+			className="task_force_radio_items";
+			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
+		};
 	};
 };
 randomSeed=12890019;
@@ -913,7 +929,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=356;
+		items=357;
 		class Item0
 		{
 			dataType="Object";
@@ -67188,16 +67204,6 @@ class Mission
 		};
 		class Item296
 		{
-			dataType="Group";
-			side="West";
-			class Attributes
-			{
-			};
-			id=22045;
-			atlOffset=90;
-		};
-		class Item297
-		{
 			dataType="Object";
 			class PositionInfo
 			{
@@ -67211,7 +67217,7 @@ class Mission
 			type="AV_Tornado_Storm";
 			atlOffset=1.0378418;
 		};
-		class Item298
+		class Item297
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67226,7 +67232,7 @@ class Mission
 			type="AV_Tornado";
 			atlOffset=0.828125;
 		};
-		class Item299
+		class Item298
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67241,7 +67247,7 @@ class Mission
 			type="AV_Tornado_HF";
 			atlOffset=1.1032715;
 		};
-		class Item300
+		class Item299
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67256,7 +67262,7 @@ class Mission
 			type="AV_Tornado_M";
 			atlOffset=1.0786133;
 		};
-		class Item301
+		class Item300
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67271,7 +67277,7 @@ class Mission
 			type="AV_Typhoon";
 			atlOffset=1.3110352;
 		};
-		class Item302
+		class Item301
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67287,7 +67293,7 @@ class Mission
 			type="AV_TyphoonHF";
 			atlOffset=1.0063477;
 		};
-		class Item303
+		class Item302
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67303,7 +67309,7 @@ class Mission
 			type="AV_TyphoonM";
 			atlOffset=0.97998047;
 		};
-		class Item304
+		class Item303
 		{
 			dataType="Layer";
 			name="Вырубка Леса";
@@ -67370,7 +67376,7 @@ class Mission
 			id=22066;
 			atlOffset=87.237381;
 		};
-		class Item305
+		class Item304
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67388,7 +67394,7 @@ class Mission
 			type="Land_Pier_F";
 			atlOffset=4.2310791;
 		};
-		class Item306
+		class Item305
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67406,7 +67412,7 @@ class Mission
 			type="Land_Pier_F";
 			atlOffset=5.1611633;
 		};
-		class Item307
+		class Item306
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67424,7 +67430,7 @@ class Mission
 			type="WH40K_Imperium_woodcrate";
 			atlOffset=0.0012512207;
 		};
-		class Item308
+		class Item307
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67442,7 +67448,7 @@ class Mission
 			type="WH40K_Imperium_woodcrate";
 			atlOffset=0.00079345703;
 		};
-		class Item309
+		class Item308
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67459,7 +67465,7 @@ class Mission
 			id=22074;
 			type="WH40K_Imperium_woodcrate";
 		};
-		class Item310
+		class Item309
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67477,7 +67483,7 @@ class Mission
 			type="WH40K_Imperium_woodcrate";
 			atlOffset=1.0291901;
 		};
-		class Item311
+		class Item310
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67518,7 +67524,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item312
+		class Item311
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67534,7 +67540,7 @@ class Mission
 			id=22087;
 			type="AM_Hellhound";
 		};
-		class Item313
+		class Item312
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67550,7 +67556,7 @@ class Mission
 			id=22088;
 			type="AM_Chimerro";
 		};
-		class Item314
+		class Item313
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67567,7 +67573,7 @@ class Mission
 			id=22090;
 			type="Land_Barracks_02_F";
 		};
-		class Item315
+		class Item314
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67583,7 +67589,7 @@ class Mission
 			id=22098;
 			type="TIOW_Warhound_LP_VMB_BLU";
 		};
-		class Item316
+		class Item315
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67660,7 +67666,7 @@ class Mission
 				nAttributes=3;
 			};
 		};
-		class Item317
+		class Item316
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67775,7 +67781,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item318
+		class Item317
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67791,7 +67797,7 @@ class Mission
 			type="IC_Tauros_unarmed_woodland_F";
 			atlOffset=0.65307617;
 		};
-		class Item319
+		class Item318
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67807,7 +67813,7 @@ class Mission
 			type="IC_Tauros_unarmed_woodland_F";
 			atlOffset=0.56347656;
 		};
-		class Item320
+		class Item319
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67823,7 +67829,7 @@ class Mission
 			id=22130;
 			type="IC_Taurox_HS_snow";
 		};
-		class Item321
+		class Item320
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67844,7 +67850,7 @@ class Mission
 			type="ML700_Valkyrie_Multilas";
 			atlOffset=0.99145508;
 		};
-		class Item322
+		class Item321
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67865,7 +67871,7 @@ class Mission
 			type="ML700_Valkyrie_Multilas";
 			atlOffset=1.3669434;
 		};
-		class Item323
+		class Item322
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67884,7 +67890,7 @@ class Mission
 			type="TIOW_Valkyrie_Rocket_B";
 			atlOffset=1.1899414;
 		};
-		class Item324
+		class Item323
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67903,7 +67909,7 @@ class Mission
 			type="TIOW_Valkyrie_Rocket_B";
 			atlOffset=0.95385742;
 		};
-		class Item325
+		class Item324
 		{
 			dataType="Object";
 			class PositionInfo
@@ -67961,7 +67967,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item326
+		class Item325
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68019,7 +68025,7 @@ class Mission
 				nAttributes=2;
 			};
 		};
-		class Item327
+		class Item326
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68037,7 +68043,7 @@ class Mission
 			type="Land_Pier_F";
 			atlOffset=6.1825409;
 		};
-		class Item328
+		class Item327
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68055,7 +68061,7 @@ class Mission
 			type="Land_Pier_F";
 			atlOffset=7.1476746;
 		};
-		class Item329
+		class Item328
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68080,7 +68086,7 @@ class Mission
 			type="ML700_Valkyrie_Transport";
 			atlOffset=0.22930908;
 		};
-		class Item330
+		class Item329
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68123,7 +68129,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item331
+		class Item330
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68141,7 +68147,7 @@ class Mission
 			type="WH40K_Imperium_woodcrate";
 			atlOffset=0.0019226074;
 		};
-		class Item332
+		class Item331
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68158,7 +68164,7 @@ class Mission
 			id=22171;
 			type="WH40K_Imperium_woodcrate";
 		};
-		class Item333
+		class Item332
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68176,7 +68182,7 @@ class Mission
 			type="WH40K_Imperium_woodcrate";
 			atlOffset=1.0294647;
 		};
-		class Item334
+		class Item333
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68194,7 +68200,7 @@ class Mission
 			type="WH40K_Imperium_woodcrate";
 			atlOffset=0.24490356;
 		};
-		class Item335
+		class Item334
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68211,7 +68217,7 @@ class Mission
 			id=22175;
 			type="land_Crate";
 		};
-		class Item336
+		class Item335
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68228,7 +68234,7 @@ class Mission
 			id=22176;
 			type="land_Crate";
 		};
-		class Item337
+		class Item336
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68246,7 +68252,7 @@ class Mission
 			type="land_Crate";
 			atlOffset=0.44813538;
 		};
-		class Item338
+		class Item337
 		{
 			dataType="Object";
 			class PositionInfo
@@ -68361,7 +68367,7 @@ class Mission
 				nAttributes=5;
 			};
 		};
-		class Item339
+		class Item338
 		{
 			dataType="Layer";
 			name="Слоты";
@@ -78596,7 +78602,7 @@ class Mission
 			id=22353;
 			atlOffset=1006.5192;
 		};
-		class Item340
+		class Item339
 		{
 			dataType="Marker";
 			position[]={17885.143,199.62198,2560.4297};
@@ -78606,7 +78612,7 @@ class Mission
 			colorName="ColorWEST";
 			id=22062;
 		};
-		class Item341
+		class Item340
 		{
 			dataType="Marker";
 			position[]={18082.348,216.24899,2629.938};
@@ -78617,7 +78623,7 @@ class Mission
 			id=22065;
 			atlOffset=-0.00018310547;
 		};
-		class Item342
+		class Item341
 		{
 			dataType="Marker";
 			position[]={18034.703,212.069,2577.252};
@@ -78628,7 +78634,7 @@ class Mission
 			id=22064;
 			atlOffset=0.00045776367;
 		};
-		class Item343
+		class Item342
 		{
 			dataType="Marker";
 			position[]={17890.984,194.22,2541.082};
@@ -78639,7 +78645,7 @@ class Mission
 			id=22061;
 			atlOffset=0.00010681152;
 		};
-		class Item344
+		class Item343
 		{
 			dataType="Marker";
 			position[]={18007.678,216.444,2465.304};
@@ -78650,7 +78656,7 @@ class Mission
 			id=22063;
 			atlOffset=0.00035095215;
 		};
-		class Item345
+		class Item344
 		{
 			dataType="Marker";
 			position[]={18203.008,226.41228,2608.8545};
@@ -78661,7 +78667,7 @@ class Mission
 			id=2441;
 			atlOffset=-11.479004;
 		};
-		class Item346
+		class Item345
 		{
 			dataType="Marker";
 			position[]={18059.631,213.29652,2484.8518};
@@ -78670,7 +78676,7 @@ class Mission
 			type="Adeptus_astartes";
 			id=22396;
 		};
-		class Item347
+		class Item346
 		{
 			dataType="Marker";
 			position[]={18059.104,210.259,2519.458};
@@ -78680,7 +78686,7 @@ class Mission
 			id=22397;
 			atlOffset=-0.00044250488;
 		};
-		class Item348
+		class Item347
 		{
 			dataType="Object";
 			class PositionInfo
@@ -78695,7 +78701,7 @@ class Mission
 			type="TIOW_Warhound_LP_TLD_BLU";
 			atlOffset=21.666565;
 		};
-		class Item349
+		class Item348
 		{
 			dataType="Layer";
 			name="VVS";
@@ -79740,7 +79746,7 @@ class Mission
 			id=22402;
 			atlOffset=1457.0452;
 		};
-		class Item350
+		class Item349
 		{
 			dataType="Object";
 			class PositionInfo
@@ -79755,7 +79761,7 @@ class Mission
 			type="IC_Tauros_unarmed_woodland_F";
 			atlOffset=0.42993164;
 		};
-		class Item351
+		class Item350
 		{
 			dataType="Object";
 			class PositionInfo
@@ -79770,7 +79776,7 @@ class Mission
 			type="IC_Tauros_unarmed_woodland_F";
 			atlOffset=0.30834961;
 		};
-		class Item352
+		class Item351
 		{
 			dataType="Object";
 			class PositionInfo
@@ -79787,7 +79793,7 @@ class Mission
 			id=22411;
 			type="WH40K_Imperium_woodcrate";
 		};
-		class Item353
+		class Item352
 		{
 			dataType="Object";
 			class PositionInfo
@@ -79805,7 +79811,7 @@ class Mission
 			type="WH40K_Imperium_woodcrate";
 			atlOffset=1.0039063;
 		};
-		class Item354
+		class Item353
 		{
 			dataType="Object";
 			class PositionInfo
@@ -79822,7 +79828,7 @@ class Mission
 			id=22413;
 			type="WH40K_Imperium_woodcrate";
 		};
-		class Item355
+		class Item354
 		{
 			dataType="Object";
 			class PositionInfo
@@ -79838,6 +79844,245 @@ class Mission
 			};
 			id=22414;
 			type="WH40K_Imperium_woodcrate";
+		};
+		class Item355
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17991.721,226.85144,2679.7549};
+			};
+			name="mp_zuus";
+			id=22418;
+			type="ModuleCurator_F";
+			atlOffset=1.5258789e-005;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCurator_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="#adminLogged";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCurator_F_Forced";
+					expression="_this setVariable ['Forced',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCurator_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ZUUS";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCurator_F_Addons";
+					expression="_this setVariable ['Addons',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=3;
+						};
+					};
+				};
+				nAttributes=4;
+			};
+		};
+		class Item356
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={17984.27,228.25778,2688.9021};
+			};
+			id=22419;
+			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					expression="_this setVariable ['radio_channel_password',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="651sdayhy5461jr6jh8g2h";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					expression="_this setVariable ['RiflemanRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					expression="_this setVariable ['radio_channel_name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="TFAR-RG40K";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=7;
+			};
 		};
 	};
 };
