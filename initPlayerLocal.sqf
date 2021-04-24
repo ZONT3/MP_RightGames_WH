@@ -52,10 +52,10 @@ if (count _var > 0) then {
 private _fn_moveToCustomSpawn = {
   params ['_player','_fn_moveToSpawn'];
   waituntil { sleep 0.1; !isNil 'ZPR_roles' };
-  private _mechanicus = [["Mechanicus"]] call ZONT_fnc_checkRole;
   private _astartes   = [["Astartes"]]   call ZONT_fnc_checkRole;
-  if _mechanicus exitWith { [_player, true, 'MP_spawn_mech'] call _fn_moveToSpawn };
   if _astartes   exitWith { [_player, true, 'MP_spawn_wolf'] call _fn_moveToSpawn };
+  private _mechanicus = [["Mechanicus"]] call ZONT_fnc_checkRole;
+  if _mechanicus exitWith { [_player, true, 'MP_spawn_mech'] call _fn_moveToSpawn };
 };
 
 private _fn_moveToSpawn = {
@@ -83,8 +83,10 @@ private _fn_moveToSpawn = {
   };
 };
 
+
 [player, false] call _fn_moveToSpawn;
 [player, _fn_moveToSpawn] spawn _fn_moveToCustomSpawn;
+
 
 [] spawn {
   waitUntil {
