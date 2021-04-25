@@ -56,6 +56,8 @@ private _fn_moveToCustomSpawn = {
   if _astartes   exitWith { [_player, true, 'MP_spawn_wolf'] call _fn_moveToSpawn };
   private _mechanicus = [["Mechanicus"]] call ZONT_fnc_checkRole;
   if _mechanicus exitWith { [_player, true, 'MP_spawn_mech'] call _fn_moveToSpawn };
+  private _aero = [["Mechanicus"]] call ZONT_fnc_checkRole;
+  if _aero       exitWith { [_player, true, 'MP_spawn_aero'] call _fn_moveToSpawn };
 };
 
 private _fn_moveToSpawn = {
