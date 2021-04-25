@@ -42,7 +42,8 @@ VVS_West_Land = [
   "IC_Tauros_unarmed_snow_F",
   "TIOW_ValhallanChimAuto_White",
   "TIOW_ValhallanHydra_White",
-  "TIOW_ValhallanWyvern_White"
+  "TIOW_ValhallanWyvern_White",
+  "ML700_Basalisk_ARTY_base"
 ];
 
 VVS_West_Land_K = [
@@ -87,7 +88,7 @@ VVS_West_Air = [
 ];
 
 VVS_West_Astartes = [
-  "TIOW_SM_Rhino_SW", 
+  "TIOW_SM_Rhino_SW",
   "TIOW_SM_Predator_SW",
   "TIOW_SM_Vindicator_SW"
 ];
