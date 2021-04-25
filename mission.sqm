@@ -8,7 +8,7 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=23287;
+		nextID=23288;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=683;
+		nextID=698;
 	};
 	class Camera
 	{
-		pos[]={18051.951,374.13062,2672.2393};
-		dir[]={0.25021231,-0.78508723,-0.56676811};
-		up[]={0.31709206,0.61930966,-0.71826696};
-		aside[]={-0.91488868,3.2730168e-007,-0.40389615};
+		pos[]={18811.738,2174.2332,2588.5891};
+		dir[]={-0.49871239,-0.4575187,-0.7363615};
+		up[]={-0.25664291,0.88913041,-0.37893566};
+		aside[]={-0.82805091,-5.5774581e-007,0.56081182};
 	};
 };
 binarizationWanted=0;
@@ -660,7 +660,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=14;
+		items=15;
 		class Item0
 		{
 			dataType="Layer";
@@ -857,7 +857,7 @@ class Mission
 					};
 					id=22407;
 					type="ML700_Taurox_Unarmed";
-					atlOffset=0.11621094;
+					atlOffset=0.14550781;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -914,7 +914,7 @@ class Mission
 				};
 			};
 			id=2475;
-			atlOffset=1498.7168;
+			atlOffset=1498.7378;
 		};
 		class Item1
 		{
@@ -27706,16 +27706,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={18074.504,210.81989,2520.2849};
-						angles[]={-0,1.0400277,0};
+						angles[]={0,1.0400277,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						name="ars_vh";
 					};
 					id=23269;
 					type="TIOW_IG_Ammobox1_836";
+					atlOffset=0.26478577;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -29180,16 +29180,16 @@ class Mission
 					class PositionInfo
 					{
 						position[]={18062.33,210.81802,2540.241};
-						angles[]={-0,1.0355999,0};
+						angles[]={0,1.0355999,0};
 					};
 					side="Empty";
-					flags=4;
 					class Attributes
 					{
 						name="ars_krieg";
 					};
 					id=23270;
 					type="TIOW_IG_Ammobox1_836";
+					atlOffset=0.26292419;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -31843,6 +31843,7 @@ class Mission
 					};
 					id=23275;
 					type="land_simple_muni_tech";
+					atlOffset=-0.29693604;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -34161,7 +34162,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={18117.822,210.64868,2538.6167};
-						angles[]={-0,5.7636232,-0};
+						angles[]={0,5.7636232,0};
 					};
 					side="Empty";
 					flags=4;
@@ -34171,6 +34172,7 @@ class Mission
 					};
 					id=23276;
 					type="TIOW_IG_Ammobox1_836";
+					atlOffset=0.10188293;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -35323,6 +35325,7 @@ class Mission
 					};
 					id=23277;
 					type="TIOW_IG_Ammobox1_836";
+					atlOffset=0.088668823;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -37539,7 +37542,7 @@ class Mission
 				};
 			};
 			id=23268;
-			atlOffset=-19.678757;
+			atlOffset=-19.779572;
 		};
 		class Item13
 		{
@@ -42646,6 +42649,596 @@ class Mission
 			};
 			id=23278;
 			atlOffset=0.88916016;
+		};
+		class Item14
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18806.711,2169.2014,2583.0999};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=23287;
+			type="land_simple_muni_ammo_green";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=37;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_cad_laspistol";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_las_powerpack";
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_laspistol_powerpack";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Cadian_Pilot_Helmet";
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Cadian_Pilot_Uniform";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Cadian_Pilot_White_Armor";
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_Pilot_mask";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_Invisible_NVG";
+												};
+											};
+											class Item8
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_PhotovisorContacts";
+												};
+											};
+											class Item9
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Cadian_Pilot_Goggles";
+												};
+											};
+											class Item10
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Binocular";
+												};
+											};
+											class Item11
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Rangefinder";
+												};
+											};
+											class Item12
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemMap";
+												};
+											};
+											class Item13
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemCompass";
+												};
+											};
+											class Item14
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="tf_anprc152";
+												};
+											};
+											class Item15
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemWatch";
+												};
+											};
+											class Item16
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Altimeter";
+												};
+											};
+											class Item17
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="tf_microdagr";
+												};
+											};
+											class Item18
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ChemicalDetector_01_watch_F";
+												};
+											};
+											class Item19
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemGPS";
+												};
+											};
+											class Item20
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_White";
+												};
+											};
+											class Item21
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_Yellow";
+												};
+											};
+											class Item22
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_Green";
+												};
+											};
+											class Item23
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_Red";
+												};
+											};
+											class Item24
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellGreen";
+												};
+											};
+											class Item25
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShell";
+												};
+											};
+											class Item26
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="HandGrenade";
+												};
+											};
+											class Item27
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellYellow";
+												};
+											};
+											class Item28
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellBlue";
+												};
+											};
+											class Item29
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellPurple";
+												};
+											};
+											class Item30
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellOrange";
+												};
+											};
+											class Item31
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellRed";
+												};
+											};
+											class Item32
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_ig_frag_grenade_mag";
+												};
+											};
+											class Item33
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_MapTools";
+												};
+											};
+											class Item34
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ToolKit";
+												};
+											};
+											class Item35
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="MineDetector";
+												};
+											};
+											class Item36
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_artilleryTable";
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
 		};
 	};
 };
