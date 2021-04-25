@@ -76,7 +76,7 @@ VVS_west_car = [
 ];
 
 VVS_West_Air = [
-  "ML700_Valkyrie_Transport", 
+  "ML700_Valkyrie_Transport",
   "ML700_Valkyrie_Multilas",
   "TIOW_Valkyrie_Fuel_B",
   "TIOW_Valkyrie_Fuel_M_B",
@@ -84,6 +84,12 @@ VVS_West_Air = [
   "TIOW_Valkyrie_Rocket_M_B",
   "ML700_Avenger_BLU",
   "ML700_Thunderbolt_BLU"
+];
+
+VVS_West_Astartes = [
+  "TIOW_SM_Rhino_SW", 
+  "TIOW_SM_Predator_SW",
+  "TIOW_SM_Vindicator_SW"
 ];
 
 /*

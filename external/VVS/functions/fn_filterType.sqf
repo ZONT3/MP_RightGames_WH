@@ -20,6 +20,7 @@ _vehicleList = switch(_filter) do
 	case "Mech":      { VVS_West_Mech };
 	case "Car":       { VVS_West_Car };
 	case "Aero":      { VVS_West_Air };
+	case "Astartes":  { VVS_West_Astartes };
 
 	default {[]};
 };
