@@ -75,6 +75,17 @@ VVS_west_car = [
   "IC_Tauros_unarmed_woodland_F"
 ];
 
+VVS_West_Air = [
+  "ML700_Valkyrie_Transport", 
+  "ML700_Valkyrie_Multilas",
+  "TIOW_Valkyrie_Fuel_B",
+  "TIOW_Valkyrie_Fuel_M_B",
+  "TIOW_Valkyrie_Rocket_B",
+  "TIOW_Valkyrie_Rocket_M_B",
+  "ML700_Avenger_BLU",
+  "ML700_Thunderbolt_BLU"
+];
+
 /*
 									Vehicle restriction
 		Again, similar to VAS's functionality. If you want to restrict a specific vehicle you can do it or
