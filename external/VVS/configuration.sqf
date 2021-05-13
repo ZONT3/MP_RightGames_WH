@@ -65,11 +65,11 @@ VVS_West_Land_K = [
 ];
 
 VVS_West_Mech = [
-  "TIOW_Warhound_LP_TLD_BLU",
   "AM_Chimerro",
   "AM_Hellhound",
-  "TIOW_Warhound_LP_VMB_BLU",
-  "IC_Taurox_HS_snow"
+  "IC_Taurox_HS_snow",
+  "AM_Hellhound",
+  "AM_Chimerro"
 ];
 
 VVS_west_car = [
@@ -77,20 +77,23 @@ VVS_west_car = [
 ];
 
 VVS_West_Air = [
-  "ML700_Valkyrie_Transport",
-  "ML700_Valkyrie_Multilas",
-  "TIOW_Valkyrie_Fuel_B",
-  "TIOW_Valkyrie_Fuel_M_B",
-  "TIOW_Valkyrie_Rocket_B",
-  "TIOW_Valkyrie_Rocket_M_B",
-  "ML700_Avenger_BLU",
-  "ML700_Thunderbolt_BLU"
+"testHelo_Rocket_Las",
+"testHelo_Rocket_Auto",
+"ML700_Valkyrie_Multilas"
 ];
 
 VVS_West_Astartes = [
   "TIOW_SM_Rhino_SW",
   "TIOW_SM_Predator_SW",
   "TIOW_SM_Vindicator_SW"
+];
+
+VVS_West_Titans = [
+  "TIOW_Warhound_LP_TLD_BLU",
+  "TIOW_Warhound_LP_VMB_BLU",
+  "TIOW_Warhound_LP_VMB_OP",
+  "TIOW_Warhound_LP_PBG_OP",
+  "TIOW_Warhound_LP_TLD_OP"
 ];
 
 /*
