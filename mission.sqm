@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=2295;
+		nextID=2299;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=174;
+		nextID=189;
 	};
 	class Camera
 	{
-		pos[]={596.12994,56.07523,9365.5586};
-		dir[]={0.83018619,-0.5362916,0.15252578};
-		up[]={0.52747744,0.84401733,0.096911378};
-		aside[]={0.18070872,9.1062248e-007,-0.9835754};
+		pos[]={645.55267,23.733221,9347.8203};
+		dir[]={0.3423056,-0.3466408,0.87340617};
+		up[]={0.12650529,0.93796521,0.32278243};
+		aside[]={0.9311285,1.0433723e-006,-0.36492223};
 	};
 };
 binarizationWanted=0;
@@ -836,7 +836,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=231;
+		items=233;
 		class Item0
 		{
 			dataType="Layer";
@@ -31948,159 +31948,6 @@ class Mission
 		};
 		class Item186
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={752.1889,11.884194,9357.1582};
-				angles[]={0,3.1227431,0};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-			};
-			id=1494;
-			type="TIOW_DKOKTrojan_1489";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_repair_editorLoadedWheels";
-					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=10;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ammoBox";
-					expression="[_this,_value] call bis_fnc_initAmmoBox;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="[[[[],[]],[[],[]],[[""ACE_EntrenchingTool"",""ToolKit""],[10,10]],[[],[]]],false]";
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_refuel_fuelCargo";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1300;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_rearm_rearmCargo";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1300;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_isRepairVehicle";
-					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_repair_editorLoadedTracks";
-					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=10;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="ace_cargo_space";
-					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=20;
-						};
-					};
-				};
-				nAttributes=7;
-			};
-		};
-		class Item187
-		{
 			dataType="Comment";
 			class PositionInfo
 			{
@@ -32111,7 +31958,7 @@ class Mission
 			id=1526;
 			atlOffset=-0.00042152405;
 		};
-		class Item188
+		class Item187
 		{
 			dataType="Group";
 			side="West";
@@ -32418,7 +32265,7 @@ class Mission
 			id=1531;
 			atlOffset=0.84499931;
 		};
-		class Item189
+		class Item188
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34508,7 +34355,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item190
+		class Item189
 		{
 			dataType="Group";
 			side="West";
@@ -34791,7 +34638,7 @@ class Mission
 			id=1545;
 			atlOffset=0.93000031;
 		};
-		class Item191
+		class Item190
 		{
 			dataType="Object";
 			class PositionInfo
@@ -34809,7 +34656,7 @@ class Mission
 			type="land_simple_muni_tech";
 			atlOffset=-3.6239624e-005;
 		};
-		class Item192
+		class Item191
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -34819,7 +34666,7 @@ class Mission
 			title="Можно под хаты офицеров";
 			id=1554;
 		};
-		class Item193
+		class Item192
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -34830,18 +34677,7 @@ class Mission
 			id=1555;
 			atlOffset=1.5086679;
 		};
-		class Item194
-		{
-			dataType="Comment";
-			class PositionInfo
-			{
-				position[]={670.22198,11.434,9389.2432};
-			};
-			title="Савн техники";
-			id=1556;
-			atlOffset=0.00047206879;
-		};
-		class Item195
+		class Item193
 		{
 			dataType="Object";
 			class PositionInfo
@@ -35741,7 +35577,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item196
+		class Item194
 		{
 			dataType="Group";
 			side="West";
@@ -36019,7 +35855,7 @@ class Mission
 			id=1559;
 			atlOffset=9.059906e-005;
 		};
-		class Item197
+		class Item195
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36036,7 +35872,7 @@ class Mission
 			type="Land_DischargeStick_01_F";
 			atlOffset=1.3287222;
 		};
-		class Item198
+		class Item196
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36054,7 +35890,7 @@ class Mission
 			type="Land_HelicopterWheels_01_assembled_F";
 			atlOffset=0.39387822;
 		};
-		class Item199
+		class Item197
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36072,7 +35908,7 @@ class Mission
 			type="land_Aquilla";
 			atlOffset=7.0193529;
 		};
-		class Item200
+		class Item198
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36089,7 +35925,7 @@ class Mission
 			id=1599;
 			type="land_Mineral_long";
 		};
-		class Item201
+		class Item199
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36105,7 +35941,7 @@ class Mission
 			id=1600;
 			type="land_Mineral_short";
 		};
-		class Item202
+		class Item200
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -36116,7 +35952,7 @@ class Mission
 			id=1608;
 			atlOffset=-0.00031089783;
 		};
-		class Item203
+		class Item201
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36133,7 +35969,7 @@ class Mission
 			id=1616;
 			type="bunker_Static";
 		};
-		class Item204
+		class Item202
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36150,7 +35986,7 @@ class Mission
 			id=1617;
 			type="bunker_Static";
 		};
-		class Item205
+		class Item203
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36166,7 +36002,7 @@ class Mission
 			id=1619;
 			type="Land_dp_smallTank_F";
 		};
-		class Item206
+		class Item204
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36183,7 +36019,7 @@ class Mission
 			id=1631;
 			type="land_tiow_bomb_trolley_hellfury_102";
 		};
-		class Item207
+		class Item205
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36200,7 +36036,7 @@ class Mission
 			id=1632;
 			type="land_tiow_bomb_trailer_empty_102";
 		};
-		class Item208
+		class Item206
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36217,7 +36053,7 @@ class Mission
 			id=1633;
 			type="land_tiow_bomb_trolley_hand_empty";
 		};
-		class Item209
+		class Item207
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36235,7 +36071,7 @@ class Mission
 			type="land_tiow_steps_trailer_101";
 			atlOffset=2.3841858e-007;
 		};
-		class Item210
+		class Item208
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36251,7 +36087,7 @@ class Mission
 			id=1648;
 			type="land_tiow_breifing_container_102";
 		};
-		class Item211
+		class Item209
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36269,7 +36105,7 @@ class Mission
 			type="Land_IronPipes_F";
 			atlOffset=9.5367432e-007;
 		};
-		class Item212
+		class Item210
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -36279,7 +36115,7 @@ class Mission
 			title="Техника мешков обычная";
 			id=1663;
 		};
-		class Item213
+		class Item211
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36296,7 +36132,7 @@ class Mission
 			id=1671;
 			type="WH40K_Imperium_ig_plasma_generator";
 		};
-		class Item214
+		class Item212
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36313,7 +36149,7 @@ class Mission
 			id=1676;
 			type="WH40K_Imperium_ig_plasma_generator";
 		};
-		class Item215
+		class Item213
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36330,7 +36166,7 @@ class Mission
 			id=1679;
 			type="TIOW_Skyshield";
 		};
-		class Item216
+		class Item214
 		{
 			dataType="Comment";
 			class PositionInfo
@@ -36341,7 +36177,7 @@ class Mission
 			id=1680;
 			atlOffset=-0.00021910667;
 		};
-		class Item217
+		class Item215
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36382,7 +36218,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item218
+		class Item216
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36400,7 +36236,7 @@ class Mission
 			type="PortableHelipadLight_01_red_F";
 			atlOffset=0.012738466;
 		};
-		class Item219
+		class Item217
 		{
 			dataType="Object";
 			class PositionInfo
@@ -36417,7 +36253,7 @@ class Mission
 			type="PortableHelipadLight_01_red_F";
 			atlOffset=61.234684;
 		};
-		class Item220
+		class Item218
 		{
 			dataType="Layer";
 			name="Slots";
@@ -39355,7 +39191,7 @@ class Mission
 			id=1699;
 			atlOffset=-0.09671402;
 		};
-		class Item221
+		class Item219
 		{
 			dataType="Marker";
 			position[]={672.64697,16.111,9539.709};
@@ -39365,7 +39201,7 @@ class Mission
 			id=2276;
 			atlOffset=0.00035667419;
 		};
-		class Item222
+		class Item220
 		{
 			dataType="Marker";
 			position[]={663.08899,15.025391,9475.084};
@@ -39375,7 +39211,7 @@ class Mission
 			id=2277;
 			atlOffset=-0.0038375854;
 		};
-		class Item223
+		class Item221
 		{
 			dataType="Marker";
 			position[]={671.43591,11.175071,9394.0146};
@@ -39385,7 +39221,7 @@ class Mission
 			id=2278;
 			atlOffset=6.4849854e-005;
 		};
-		class Item224
+		class Item222
 		{
 			dataType="Marker";
 			position[]={633.9024,3.5564499,9780.0303};
@@ -39395,7 +39231,7 @@ class Mission
 			id=2279;
 			atlOffset=-2.3841858e-007;
 		};
-		class Item225
+		class Item223
 		{
 			dataType="Marker";
 			position[]={216.21002,11.560791,9304.8359};
@@ -39405,7 +39241,7 @@ class Mission
 			id=2280;
 			atlOffset=-0.001499176;
 		};
-		class Item226
+		class Item224
 		{
 			dataType="Marker";
 			position[]={656.92499,16.413,9556.041};
@@ -39415,7 +39251,7 @@ class Mission
 			id=2283;
 			atlOffset=-0.00023269653;
 		};
-		class Item227
+		class Item225
 		{
 			dataType="Object";
 			class PositionInfo
@@ -40553,13 +40389,13 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item228
+		class Item226
 		{
 			dataType="Object";
 			class PositionInfo
 			{
 				position[]={605.74402,13.523791,9347.3311};
-				angles[]={-0,0.14464286,-0};
+				angles[]={0,0.14464286,0};
 			};
 			side="Empty";
 			flags=4;
@@ -42490,7 +42326,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item229
+		class Item227
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43629,7 +43465,7 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item230
+		class Item228
 		{
 			dataType="Object";
 			class PositionInfo
@@ -43645,6 +43481,7 @@ class Mission
 			};
 			id=2292;
 			type="land_Crate";
+			atlOffset=-9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -48616,6 +48453,192 @@ class Mission
 				};
 				nAttributes=1;
 			};
+		};
+		class Item229
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={752.18896,11.884194,9357.1582};
+				angles[]={0,3.1227431,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=2295;
+			type="TIOW_CadianTrojan_836_OP";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_repair_editorLoadedWheels";
+					expression="_this setVariable ['ace_repair_editorLoadedWheels',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ammoBox";
+					expression="[_this,_value] call bis_fnc_initAmmoBox;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="[[[[],[]],[[],[]],[[""ACE_EntrenchingTool"",""ToolKit""],[10,10]],[[],[]]],false]";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ace_refuel_fuelCargo";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_refuel_fuelCargo"")) then {getNumber (configOf _this >> ""ace_refuel_fuelCargo"")} else {-1})) then {[_this, _value] call ace_refuel_fnc_makeSource}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1300;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ace_rearm_rearmCargo";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_rearm_defaultSupply"")) then {getNumber (configOf _this >> ""ace_rearm_defaultSupply"")} else {-1})) then {[_this, _value] call ace_rearm_fnc_makeSource}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1300;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ace_isRepairVehicle";
+					expression="if (_value != (if (isNumber (configOf _this >> ""ace_repair_canRepair"")) then {getNumber (configOf _this >> ""ace_repair_canRepair"")} else {0})) then {_this setVariable ['ace_isRepairVehicle', _value, true]}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ace_repair_editorLoadedTracks";
+					expression="_this setVariable ['ace_repair_editorLoadedTracks',_value];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=10;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ace_cargo_space";
+					expression="[_this, _value] call ace_cargo_fnc_setSpace;";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=20;
+						};
+					};
+				};
+				nAttributes=7;
+			};
+		};
+		class Item230
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={752.453,11.828,9348.0752};
+			};
+			title="Изменить троян";
+			id=2296;
+			atlOffset=0.0003156662;
+		};
+		class Item231
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={667.65997,11.463,9388.332};
+			};
+			title="Изменить технику на Кадию";
+			id=2297;
+			atlOffset=-4.0054321e-005;
+		};
+		class Item232
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={632.44,3.566,9744.7432};
+			};
+			title="Изменить троян";
+			id=2298;
+			atlOffset=0.00029301643;
 		};
 	};
 };
