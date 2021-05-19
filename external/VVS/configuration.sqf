@@ -28,40 +28,25 @@ VVS_Support = [];
 VVS_Civ_Land = [ ];
 
 VVS_West_Land = [
-  "TIOW_Valhallan_LR_Annihilator_Camo_Blu",
-  "TIOW_Valhallan_LR_Battlecannon_Camo_Blu",
-  "TIOW_Valhallan_LR_Conqueror_Camo_Blu",
-  "TIOW_Valhallan_LR_Demolisher_Camo_Blu",
-  "TIOW_Valhallan_LR_Executioner_Camo_Blu",
-  "TIOW_Valhallan_LR_Exterminator_Camo_Blu",
-  "TIOW_Valhallan_LR_Punisher_Camo_Blu",
-  "TIOW_Valhallan_LR_Vanquisher_Camo_Blu",
-  "IC_Taurox_HS_snow",
-  "IC_Tauros_GMG_snow_F",
-  "IC_Tauros_HMG_snow_F",
-  "IC_Tauros_unarmed_snow_F",
-  "TIOW_ValhallanChimAuto_White",
-  "TIOW_ValhallanHydra_White",
-  "TIOW_ValhallanWyvern_White",
+  "TIOW_CadianChimAuto_836",
+  "TIOW_Centaur_01_Cadian_836_Blu",
+  "TIOW_CadianTrojan_836",
+  "TIOW_CadianWyvern_836",
+  "TIOW_Cad_LR_Battlecannon_836th_Blu",
+  "TIOW_Cad_LR_Punisher_836th_Blu",
+  "TIOW_Cad_LR_Vanquisher_836th_Blu",
   "ML700_Basalisk_ARTY_base"
 ];
 
 VVS_West_Land_K = [
-  "TIOW_Krieg_LR_Annihilator_1489th_Blu",
-  "TIOW_Krieg_LR_Battlecannon_1489th_Blu",
-  "TIOW_Krieg_LR_Conqueror_1489th_Blu",
-  "TIOW_Krieg_LR_Demolisher_1489th_Blu",
-  "TIOW_Krieg_LR_Executioner_1489th_Blu",
-  "TIOW_Krieg_LR_Exterminator_1489th_Blu",
-  "TIOW_Krieg_LR_Punisher_1489th_Blu",
-  "TIOW_Krieg_LR_Vanquisher_1489th_Blu",
-  "TIOW_Centaur_01_Krieg_1489_Blu",
-  "_1489thChimAuto",
-  "TIOW_KriegHydra_1489th",
-  "TIOW_KriegWyvern_1489th",
   "Sentinel_AC_1489th_1",
-  "Sentinel_PC_1489th_1",
-  "Sentinel_LC_1489th_1"
+  "Sentinel_ML_1489th_1",
+  "Sentinel_LC_1489th_1",
+  "TIOW_Krieg_LR_Battlecannon_1489th_Blu",
+  "TIOW_Krieg_LR_Punisher_1489th_Blu",
+  "_1489thChimAuto",
+  "TIOW_Centaur_01_Krieg_1489_Blu",
+  "TIOW_DKOKTrojan_1489"
 ];
 
 VVS_West_Mech = [
@@ -77,9 +62,8 @@ VVS_west_car = [
 ];
 
 VVS_West_Air = [
-"testHelo_Rocket_Las",
-"testHelo_Rocket_Auto",
-"ML700_Valkyrie_Multilas"
+  "ML700_Valkyrie_Transport", 
+  "ML700_Valkyrie_Multilas"
 ];
 
 VVS_West_Astartes = [
