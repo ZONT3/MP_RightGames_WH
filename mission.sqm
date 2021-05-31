@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=10205;
+		nextID=10211;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=439;
+		nextID=457;
 	};
 	class Camera
 	{
-		pos[]={629.16394,26.738016,9338.5098};
-		dir[]={-0.74839211,-0.60745913,0.26670182};
-		up[]={-0.57224435,0.79431713,0.20392913};
-		aside[]={0.33572796,-1.3276731e-006,0.94209045};
+		pos[]={616.08844,130.57411,9762.3799};
+		dir[]={0.10338581,-0.93128562,0.34947294};
+		up[]={0.26418096,0.36436519,0.89300716};
+		aside[]={0.95897877,1.5817932e-007,-0.28369802};
 	};
 };
 binarizationWanted=0;
@@ -828,7 +828,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=231;
+		items=234;
 		class Item0
 		{
 			dataType="Layer";
@@ -9986,8 +9986,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={664.80469,15.022535,9287.7246};
-						angles[]={0,3.0322928,0};
+						position[]={664.80499,15.022821,9287.7246};
+						angles[]={0,3.0323002,0};
 					};
 					side="Empty";
 					flags=4;
@@ -9996,6 +9996,7 @@ class Mission
 					};
 					id=689;
 					type="TIOW_IG_WeaponBox2_836";
+					atlOffset=0.00028610229;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -10029,22 +10030,8 @@ class Mission
 												};
 												class value
 												{
-													items=64;
+													items=71;
 													class Item0
-													{
-														class data
-														{
-															class type
-															{
-																type[]=
-																{
-																	"STRING"
-																};
-															};
-															value="TIOW_Comissar_Cap";
-														};
-													};
-													class Item1
 													{
 														class data
 														{
@@ -10058,6 +10045,20 @@ class Mission
 															value="U_TIOW_Comissar";
 														};
 													};
+													class Item1
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="U_TIOW_Comissar_Krieg";
+														};
+													};
 													class Item2
 													{
 														class data
@@ -10069,7 +10070,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="U_TIOW_Comissar_Brown";
+															value="TIOW_Krieg_Comissar_Cap";
 														};
 													};
 													class Item3
@@ -10083,7 +10084,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="U_TIOW_Comissar_Red";
+															value="TIOW_Comissar_Cap";
 														};
 													};
 													class Item4
@@ -10097,7 +10098,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="U_TIOW_Comissar_Winter";
+															value="DKOKCOMMask";
 														};
 													};
 													class Item5
@@ -10125,7 +10126,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_Bolt_Pistol";
+															value="Meow_Meow_Invisywisy_Invs";
 														};
 													};
 													class Item7
@@ -10139,7 +10140,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_Bolt_Pistol2";
+															value="G_Aviator";
 														};
 													};
 													class Item8
@@ -10153,7 +10154,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_BoltPistol_Cadian_F";
+															value="IC_cad_preysense_02_down";
 														};
 													};
 													class Item9
@@ -10167,7 +10168,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="RamirisMelee_Chainsword_Officer";
+															value="Rangefinder";
 														};
 													};
 													class Item10
@@ -10181,7 +10182,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="RamirisMelee_Chainsword_Guard";
+															value="ItemMap";
 														};
 													};
 													class Item11
@@ -10195,7 +10196,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_B_LasPistol_F";
+															value="ItemCompass";
 														};
 													};
 													class Item12
@@ -10209,7 +10210,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_B_LasPistol_F_Black";
+															value="tf_anprc152";
 														};
 													};
 													class Item13
@@ -10223,7 +10224,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ic_cad_laspistol";
+															value="tf_microdagr";
 														};
 													};
 													class Item14
@@ -10237,7 +10238,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_IGBoltPistol_Mag";
+															value="ItemWatch";
 														};
 													};
 													class Item15
@@ -10251,7 +10252,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_BoltPistol_Stanag";
+															value="ACE_Altimeter";
 														};
 													};
 													class Item16
@@ -10265,7 +10266,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_BoltPistol_Metalstorm";
+															value="ItemGPS";
 														};
 													};
 													class Item17
@@ -10279,7 +10280,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_Laspistol_B_Battery";
+															value="SmokeShell";
 														};
 													};
 													class Item18
@@ -10293,7 +10294,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ic_laspistol_powerpack";
+															value="TIOW_ig_frag_grenade_mag";
 														};
 													};
 													class Item19
@@ -10307,7 +10308,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="IC_cad_rebreather_base";
+															value="ML700_frag_grenade_magazine";
 														};
 													};
 													class Item20
@@ -10321,7 +10322,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_F_Gloves_Black";
+															value="ML700_krak_grenade_magazine";
 														};
 													};
 													class Item21
@@ -10335,7 +10336,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_F_Gloves_Brown";
+															value="TIOW_ig_krak_grenade_mag";
 														};
 													};
 													class Item22
@@ -10349,7 +10350,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_F_Mittens_Black";
+															value="ACE_tourniquet";
 														};
 													};
 													class Item23
@@ -10363,7 +10364,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_F_Mittens_White";
+															value="ACE_fieldDressing";
 														};
 													};
 													class Item24
@@ -10377,7 +10378,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_F_Mittens_Brown";
+															value="ACE_elasticBandage";
 														};
 													};
 													class Item25
@@ -10391,7 +10392,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="Rangefinder";
+															value="ACE_EntrenchingTool";
 														};
 													};
 													class Item26
@@ -10405,7 +10406,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ItemMap";
+															value="ACE_packingBandage";
 														};
 													};
 													class Item27
@@ -10419,7 +10420,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ItemCompass";
+															value="ACE_salineIV_250";
 														};
 													};
 													class Item28
@@ -10433,7 +10434,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="Binocular";
+															value="ACE_salineIV_500";
 														};
 													};
 													class Item29
@@ -10447,7 +10448,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="tf_anprc152";
+															value="ACE_salineIV";
 														};
 													};
 													class Item30
@@ -10461,7 +10462,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_Altimeter";
+															value="ACE_splint";
 														};
 													};
 													class Item31
@@ -10475,7 +10476,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ItemWatch";
+															value="ACE_morphine";
 														};
 													};
 													class Item32
@@ -10489,7 +10490,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ItemGPS";
+															value="ACE_quikclot";
 														};
 													};
 													class Item33
@@ -10503,7 +10504,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_ig_smoke_grenade_mag";
+															value="ACE_epinephrine";
 														};
 													};
 													class Item34
@@ -10517,7 +10518,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_ig_krak_grenade_mag";
+															value="ACE_adenosine";
 														};
 													};
 													class Item35
@@ -10531,7 +10532,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_krak_grenade_magazine";
+															value="ACE_CableTie";
 														};
 													};
 													class Item36
@@ -10545,7 +10546,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ML700_frag_grenade_magazine";
+															value="Sashka_Russian";
 														};
 													};
 													class Item37
@@ -10559,7 +10560,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="TIOW_ig_frag_grenade_mag";
+															value="RamirisMelee_Chainsword_Officer";
 														};
 													};
 													class Item38
@@ -10573,7 +10574,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_HandFlare_White";
+															value="TIOW_Bolt_Pistol";
 														};
 													};
 													class Item39
@@ -10587,7 +10588,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_HandFlare_Yellow";
+															value="ML700_Bolter_F";
 														};
 													};
 													class Item40
@@ -10601,7 +10602,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_HandFlare_Green";
+															value="ML700_BolterOptic_IG";
 														};
 													};
 													class Item41
@@ -10615,7 +10616,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_HandFlare_Red";
+															value="TIOW_IGBoltPistol_Mag";
 														};
 													};
 													class Item42
@@ -10629,7 +10630,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_epinephrine";
+															value="ML700_Bolter_Stanag";
 														};
 													};
 													class Item43
@@ -10643,7 +10644,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_adenosine";
+															value="ML700_Bolter_Metalstorm";
 														};
 													};
 													class Item44
@@ -10657,7 +10658,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_personalAidKit";
+															value="U_TIOW_Comissar_Red";
 														};
 													};
 													class Item45
@@ -10671,7 +10672,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_tourniquet";
+															value="TIOW_F_Mittens_White";
 														};
 													};
 													class Item46
@@ -10685,7 +10686,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_CableTie";
+															value="TIOW_F_Mittens_Brown";
 														};
 													};
 													class Item47
@@ -10699,7 +10700,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_bloodIV";
+															value="TIOW_F_Mittens_Black";
 														};
 													};
 													class Item48
@@ -10713,7 +10714,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_bloodIV_250";
+															value="TIOW_F_Gloves_Brown";
 														};
 													};
 													class Item49
@@ -10727,7 +10728,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_bloodIV_500";
+															value="TIOW_F_Gloves_Black";
 														};
 													};
 													class Item50
@@ -10741,7 +10742,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_morphine";
+															value="TIOW_Bionic_Eye_Green";
 														};
 													};
 													class Item51
@@ -10755,7 +10756,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ToolKit";
+															value="TIOW_Bionic_Eye";
 														};
 													};
 													class Item52
@@ -10769,7 +10770,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_plasmaIV";
+															value="TIOW_Bionic_Eye_2_Green";
 														};
 													};
 													class Item53
@@ -10783,7 +10784,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_plasmaIV_250";
+															value="TIOW_Bionic_Eye_2";
 														};
 													};
 													class Item54
@@ -10797,7 +10798,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_plasmaIV_500";
+															value="RamirisMelee_Standard_Sororitas";
 														};
 													};
 													class Item55
@@ -10811,7 +10812,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_elasticBandage";
+															value="ACE_bloodIV_500";
 														};
 													};
 													class Item56
@@ -10825,7 +10826,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_fieldDressing";
+															value="ACE_bloodIV_250";
 														};
 													};
 													class Item57
@@ -10839,7 +10840,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_EntrenchingTool";
+															value="ACE_bloodIV";
 														};
 													};
 													class Item58
@@ -10853,7 +10854,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_packingBandage";
+															value="ACE_bodyBag";
 														};
 													};
 													class Item59
@@ -10867,7 +10868,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_salineIV";
+															value="ML700_B_LasPistol_F_Black";
 														};
 													};
 													class Item60
@@ -10881,7 +10882,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_salineIV_250";
+															value="ic_cad_laspistol";
 														};
 													};
 													class Item61
@@ -10895,7 +10896,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="ACE_salineIV_500";
+															value="ML700_Laspistol_B_Battery";
 														};
 													};
 													class Item62
@@ -10909,7 +10910,7 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="Meow_Meow_Invisywisy_Invs";
+															value="ic_laspistol_powerpack";
 														};
 													};
 													class Item63
@@ -10923,7 +10924,105 @@ class Mission
 																	"STRING"
 																};
 															};
-															value="Sashka_Russian";
+															value="U_TIOW_Comissar_Brown";
+														};
+													};
+													class Item64
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="U_TIOW_Comissar_Winter";
+														};
+													};
+													class Item65
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="IC_cad_rebreather_grey";
+														};
+													};
+													class Item66
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="MrServo_2";
+														};
+													};
+													class Item67
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="MrServo_1";
+														};
+													};
+													class Item68
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Binocular";
+														};
+													};
+													class Item69
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="B_IR_Grenade";
+														};
+													};
+													class Item70
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_personalAidKit";
 														};
 													};
 												};
@@ -11059,7 +11158,7 @@ class Mission
 				};
 			};
 			id=684;
-			atlOffset=0.046649933;
+			atlOffset=0.046669006;
 		};
 		class Item30
 		{
@@ -27289,8 +27388,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={603.88678,14.210623,9314.4014};
-				angles[]={0,0.12898159,0};
+				position[]={603.88708,14.210204,9314.4014};
+				angles[]={0,0.12897983,0};
 			};
 			side="Empty";
 			class Attributes
@@ -27299,7 +27398,7 @@ class Mission
 			};
 			id=1533;
 			type="TIOW_IG_Ammobox1_DKOK";
-			atlOffset=0.81742096;
+			atlOffset=0.81699944;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -34332,7 +34431,7 @@ class Mission
 										};
 										class value
 										{
-											items=148;
+											items=160;
 											class Item0
 											{
 												class data
@@ -34344,7 +34443,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_LongLas_836";
+													value="ML700_Lasgun_Aquila_Skull_Rifle";
 												};
 											};
 											class Item1
@@ -34358,7 +34457,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="M36KantRifle836";
+													value="ML700_Lasgun_Aquila_Skull_Rifle_Burst";
 												};
 											};
 											class Item2
@@ -34372,7 +34471,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_GL";
+													value="ML700_Longlas_Aquila_Skull_Rifle";
 												};
 											};
 											class Item3
@@ -34386,7 +34485,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_U_776_B";
+													value="IC_Launcher_AT_grey";
 												};
 											};
 											class Item4
@@ -34400,7 +34499,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_KasrArmor_green_TL";
+													value="IC_Launcher_AA_grey";
 												};
 											};
 											class Item5
@@ -34414,7 +34513,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_FlakArmor_03_green";
+													value="MissileLauncherDKOKGreen";
 												};
 											};
 											class Item6
@@ -34428,7 +34527,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_FlakArmor_02_green";
+													value="Knife_m3";
 												};
 											};
 											class Item7
@@ -34442,7 +34541,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_FlakVest";
+													value="RamirisMelee_Chainsword_Officer";
 												};
 											};
 											class Item8
@@ -34456,7 +34555,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_FlakArmor_green";
+													value="RamirisMelee_Chainsword_Guard";
 												};
 											};
 											class Item9
@@ -34470,7 +34569,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_04_camo";
+													value="ML700_B_LasPistol_F";
 												};
 											};
 											class Item10
@@ -34484,7 +34583,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_04_grey";
+													value="TIOW_Bolt_Pistol2";
 												};
 											};
 											class Item11
@@ -34498,7 +34597,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_medicae_grey_03";
+													value="ML700_PlasmaPistol_F";
 												};
 											};
 											class Item12
@@ -34512,7 +34611,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_medicae_white_03";
+													value="ML700_BoltPistol_Cadian_F";
 												};
 											};
 											class Item13
@@ -34526,7 +34625,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_grey_03";
+													value="LuciusLaspistolGreen";
 												};
 											};
 											class Item14
@@ -34540,7 +34639,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_camo_green_03";
+													value="IC_CAD_kasr_pack_green";
 												};
 											};
 											class Item15
@@ -34554,7 +34653,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_02_grey";
+													value="IC_CAD_kasr_pack_green_02";
 												};
 											};
 											class Item16
@@ -34568,7 +34667,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_02_camo";
+													value="TIOW_MeltaGun_01";
 												};
 											};
 											class Item17
@@ -34582,7 +34681,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_medicae_grey";
+													value="IC_Hellgun";
 												};
 											};
 											class Item18
@@ -34596,7 +34695,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_medicae_white";
+													value="TIOW_IG_Plasmagun_01";
 												};
 											};
 											class Item19
@@ -34610,7 +34709,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_grey";
+													value="TIOW_IG_Flamer";
 												};
 											};
 											class Item20
@@ -34624,7 +34723,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_assaultpack_camo_green";
+													value="TIOW_IG_GL";
 												};
 											};
 											class Item21
@@ -34638,7 +34737,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_Vox_Caster_Green";
+													value="IC_CAD_U_776_B";
 												};
 											};
 											class Item22
@@ -34652,7 +34751,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="VNG_Vanguard_Vox_Operator_pack";
+													value="IC_CAD_FlakArmor_03_green";
 												};
 											};
 											class Item23
@@ -34666,7 +34765,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_LMG_Stubber_Black";
+													value="IC_CAD_FlakArmor_02_green";
 												};
 											};
 											class Item24
@@ -34680,7 +34779,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Plasmagun_01";
+													value="IC_CAD_FlakArmor_green";
 												};
 											};
 											class Item25
@@ -34694,7 +34793,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_Shotgun";
+													value="IC_CAD_assaultpack_04_grey";
 												};
 											};
 											class Item26
@@ -34708,7 +34807,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_MeltaGun_01";
+													value="IC_CAD_assaultpack_04_camo";
 												};
 											};
 											class Item27
@@ -34722,7 +34821,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_PlasmaPistol_Silver";
+													value="IC_CAD_assaultpack_medicae_grey_03";
 												};
 											};
 											class Item28
@@ -34736,7 +34835,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="RamirisMelee_Chainsword_Guard";
+													value="IC_CAD_assaultpack_medicae_white_03";
 												};
 											};
 											class Item29
@@ -34750,7 +34849,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="RamirisMelee_Chainsword_Officer";
+													value="IC_CAD_assaultpack_camo_green_03";
 												};
 											};
 											class Item30
@@ -34764,7 +34863,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_adenosine";
+													value="IC_CAD_assaultpack_02_grey";
 												};
 											};
 											class Item31
@@ -34778,7 +34877,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_epinephrine";
+													value="IC_CAD_assaultpack_grey_03";
 												};
 											};
 											class Item32
@@ -34792,7 +34891,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_S_Plasma_Coolant";
+													value="IC_CAD_assaultpack_02_camo";
 												};
 											};
 											class Item33
@@ -34806,7 +34905,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_L_Plasma_Coolant";
+													value="IC_CAD_assaultpack_medicae_grey";
 												};
 											};
 											class Item34
@@ -34820,7 +34919,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_fieldDressing";
+													value="IC_CAD_assaultpack_medicae_white";
 												};
 											};
 											class Item35
@@ -34834,7 +34933,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_elasticBandage";
+													value="IC_CAD_assaultpack_grey";
 												};
 											};
 											class Item36
@@ -34848,7 +34947,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_salineIV_500";
+													value="IC_CAD_assaultpack_camo_green";
 												};
 											};
 											class Item37
@@ -34862,7 +34961,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_salineIV_250";
+													value="TIOW_IG_Vox_Caster";
 												};
 											};
 											class Item38
@@ -34876,7 +34975,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_salineIV";
+													value="OM_BackPack_01";
 												};
 											};
 											class Item39
@@ -34890,7 +34989,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_packingBandage";
+													value="OM_LegBag_01";
 												};
 											};
 											class Item40
@@ -34904,7 +35003,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_morphine";
+													value="OM_Beret_01";
 												};
 											};
 											class Item41
@@ -34918,7 +35017,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_DefusalKit";
+													value="OM_Helmet_01";
 												};
 											};
 											class Item42
@@ -34932,7 +35031,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_DeadManSwitch";
+													value="OM_Armor_03";
 												};
 											};
 											class Item43
@@ -34946,7 +35045,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_LongLas_Mag";
+													value="OM_Armor_01";
 												};
 											};
 											class Item44
@@ -34960,7 +35059,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="M36KantRifle_mag";
+													value="OM_Armor_02";
 												};
 											};
 											class Item45
@@ -34974,7 +35073,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="VNG_HighPoweredM36KantRifle_mag";
+													value="OM_Nartecium_01";
 												};
 											};
 											class Item46
@@ -34988,7 +35087,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_GL_Frag_mag";
+													value="IC_cad_helmet_green";
 												};
 											};
 											class Item47
@@ -35002,7 +35101,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_GL_Krak_mag";
+													value="H_B_KUL_AQUILABERET";
 												};
 											};
 											class Item48
@@ -35016,7 +35115,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_GL_Smoke_mag";
+													value="IC_officer_cap_green";
 												};
 											};
 											class Item49
@@ -35030,7 +35129,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_Krieg_Flamer_mag";
+													value="IC_cad_kasr_helmet_green";
 												};
 											};
 											class Item50
@@ -35044,7 +35143,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_Stubber_Drum";
+													value="IC_cad_rebreather_green";
 												};
 											};
 											class Item51
@@ -35058,7 +35157,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_Stubber_Drum_Green";
+													value="IC_cad_preysense_down";
 												};
 											};
 											class Item52
@@ -35072,7 +35171,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_Stubber_Drum_Red";
+													value="IC_cad_preysense_up";
 												};
 											};
 											class Item53
@@ -35086,7 +35185,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_Stubber_Drum_Yellow";
+													value="IC_cad_preysense_02_down";
 												};
 											};
 											class Item54
@@ -35100,7 +35199,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="DK_PlasmaGun_Flask";
+													value="IC_cad_preysense_02_up";
 												};
 											};
 											class Item55
@@ -35114,7 +35213,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="DK_Overcharge_PlasmaGun_Flask";
+													value="ML700_Lasgun_CarryHandle";
 												};
 											};
 											class Item56
@@ -35128,7 +35227,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_Shotgun_pellets_mag";
+													value="ML700_Lasgun_CarryHandle_black";
 												};
 											};
 											class Item57
@@ -35142,7 +35241,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_CadianHellgun_Mag";
+													value="ML700_Longlas_Scope";
 												};
 											};
 											class Item58
@@ -35156,7 +35255,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_Meltagun_Mag";
+													value="ML700_Longlas_Scope_black";
 												};
 											};
 											class Item59
@@ -35170,7 +35269,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_PlasmaPistol_Battery";
+													value="ic_hellgun_optic";
 												};
 											};
 											class Item60
@@ -35184,7 +35283,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_PlasmaPistol_Battery_Overcharged";
+													value="ML700_Lasgun_Rifle_B_50_Battery";
 												};
 											};
 											class Item61
@@ -35198,7 +35297,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="VNG_LuciusLaspistol_mag";
+													value="ML700_Longlas_Rifle_B_Battery";
 												};
 											};
 											class Item62
@@ -35212,7 +35311,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="VNG_LuciusLaspistol_High_mag";
+													value="ML700_Longlas_Heavy_Rifle_B_Battery";
 												};
 											};
 											class Item63
@@ -35226,7 +35325,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_officer_cap_green";
+													value="IC_krakk_Missile_mag";
 												};
 											};
 											class Item64
@@ -35240,7 +35339,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_cad_kasr_helmet_green";
+													value="IC_frag_Missile_mag";
 												};
 											};
 											class Item65
@@ -35254,7 +35353,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_cad_preysense_02_down";
+													value="IC_Flak_Missile_mag";
 												};
 											};
 											class Item66
@@ -35268,7 +35367,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_cad_preysense_down";
+													value="MLAT_Mag";
 												};
 											};
 											class Item67
@@ -35282,7 +35381,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ItemMap";
+													value="MLHE_Mag";
 												};
 											};
 											class Item68
@@ -35296,7 +35395,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ItemCompass";
+													value="VNG_MLSmoke_Mag";
 												};
 											};
 											class Item69
@@ -35310,7 +35409,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tf_anprc152";
+													value="VNG_MLMelta_Mag";
 												};
 											};
 											class Item70
@@ -35324,7 +35423,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ItemWatch";
+													value="ML700_Laspistol_B_Battery";
 												};
 											};
 											class Item71
@@ -35338,7 +35437,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="tf_microdagr";
+													value="TIOW_IGBoltPistol_Mag";
 												};
 											};
 											class Item72
@@ -35352,7 +35451,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ItemGPS";
+													value="ML700_PlasmaPistol_Battery";
 												};
 											};
 											class Item73
@@ -35366,7 +35465,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="SmokeShell";
+													value="ML700_PlasmaPistol_Battery_Overcharged";
 												};
 											};
 											class Item74
@@ -35380,7 +35479,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_melta_bomb_magazine";
+													value="ML700_BoltPistol_Stanag";
 												};
 											};
 											class Item75
@@ -35394,7 +35493,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_ig_krak_grenade_mag";
+													value="VNG_LuciusLaspistol_mag";
 												};
 											};
 											class Item76
@@ -35408,7 +35507,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_krak_grenade_magazine";
+													value="VNG_LuciusLaspistol_High_mag";
 												};
 											};
 											class Item77
@@ -35422,7 +35521,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ML700_frag_grenade_magazine";
+													value="TIOW_Meltagun_Mag";
 												};
 											};
 											class Item78
@@ -35436,7 +35535,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_ig_frag_grenade_mag";
+													value="ic_hellgun_mag";
 												};
 											};
 											class Item79
@@ -35450,7 +35549,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_melta_bomb_placeable_Mag";
+													value="ic_hellgun_mag2";
 												};
 											};
 											class Item80
@@ -35464,7 +35563,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_Clacker";
+													value="DK_PlasmaGun_Flask";
 												};
 											};
 											class Item81
@@ -35478,7 +35577,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_tourniquet";
+													value="DK_Overcharge_PlasmaGun_Flask";
 												};
 											};
 											class Item82
@@ -35492,7 +35591,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="MineDetector";
+													value="TIOW_Krieg_Flamer_mag";
 												};
 											};
 											class Item83
@@ -35506,7 +35605,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_quikclot";
+													value="TIOW_IG_GL_Frag_mag";
 												};
 											};
 											class Item84
@@ -35520,7 +35619,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_EntrenchingTool";
+													value="TIOW_IG_GL_Krak_mag";
 												};
 											};
 											class Item85
@@ -35534,7 +35633,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Binocular";
+													value="TIOW_IG_GL_Smoke_mag";
 												};
 											};
 											class Item86
@@ -35548,7 +35647,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Rangefinder";
+													value="TIOW_IG_GL_Flare_mag";
 												};
 											};
 											class Item87
@@ -35562,7 +35661,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_cad_preysense_up";
+													value="G_Bandanna_oli";
 												};
 											};
 											class Item88
@@ -35576,7 +35675,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_cad_preysense_02_up";
+													value="G_Bandanna_beast";
 												};
 											};
 											class Item89
@@ -35590,7 +35689,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Headset";
+													value="G_Bandanna_tan";
 												};
 											};
 											class Item90
@@ -35604,7 +35703,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="muzzle_snds_L";
+													value="TIOW_IG_Headset";
 												};
 											};
 											class Item91
@@ -35618,7 +35717,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_muzzle_mzls_smg_02";
+													value="Rangefinder";
 												};
 											};
 											class Item92
@@ -35632,7 +35731,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_M36_flashlight";
+													value="Binocular";
 												};
 											};
 											class Item93
@@ -35646,7 +35745,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_2x4xScope_1";
+													value="ItemMap";
 												};
 											};
 											class Item94
@@ -35660,7 +35759,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_6xScope_1";
+													value="ItemCompass";
 												};
 											};
 											class Item95
@@ -35674,7 +35773,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_10xScope_1";
+													value="tf_anprc152";
 												};
 											};
 											class Item96
@@ -35688,7 +35787,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="MissileLauncherDKOKBlack";
+													value="ItemWatch";
 												};
 											};
 											class Item97
@@ -35702,7 +35801,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_Launcher_AA_grey";
+													value="tf_microdagr";
 												};
 											};
 											class Item98
@@ -35716,7 +35815,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_Launcher_AT_grey";
+													value="ItemGPS";
 												};
 											};
 											class Item99
@@ -35730,7 +35829,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_personalAidKit";
+													value="ML700_krak_grenade_magazine";
 												};
 											};
 											class Item100
@@ -35744,7 +35843,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_IR_Strobe_Item";
+													value="ML700_frag_grenade_magazine";
 												};
 											};
 											class Item101
@@ -35758,7 +35857,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_CableTie";
+													value="TIOW_ig_melta_bomb_mag";
 												};
 											};
 											class Item102
@@ -35772,7 +35871,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ACE_wirecutter";
+													value="SmokeShell";
 												};
 											};
 											class Item103
@@ -35786,7 +35885,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_HeavyBolter_Bag1_Blu";
+													value="B_IR_Grenade";
 												};
 											};
 											class Item104
@@ -35800,7 +35899,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_HeavyBolter_Bag2_Blu";
+													value="TIOW_melta_bomb_placeable_Mag";
 												};
 											};
 											class Item105
@@ -35814,7 +35913,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Meow_Meow_Invisywisy_Invs";
+													value="ACE_epinephrine";
 												};
 											};
 											class Item106
@@ -35828,7 +35927,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Lascannon_Bag2_Blu";
+													value="ACE_adenosine";
 												};
 											};
 											class Item107
@@ -35842,7 +35941,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Lascannon_Bag1_Blu";
+													value="ACE_personalAidKit";
 												};
 											};
 											class Item108
@@ -35856,7 +35955,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Mortar_Bag2_Blu";
+													value="ACE_Clacker";
 												};
 											};
 											class Item109
@@ -35870,7 +35969,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Mortar_Bag1_Blu";
+													value="ACE_tourniquet";
 												};
 											};
 											class Item110
@@ -35884,7 +35983,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Autocannon_Bag2_Blu";
+													value="ACE_CableTie";
 												};
 											};
 											class Item111
@@ -35898,7 +35997,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Autocannon_Bag1_Blu";
+													value="ACE_DeadManSwitch";
 												};
 											};
 											class Item112
@@ -35912,7 +36011,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_MissileLauncher_AT_Bag2_Blu";
+													value="ACE_wirecutter";
 												};
 											};
 											class Item113
@@ -35926,7 +36025,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_MissileLauncher_AT_Bag1_Blu";
+													value="ACE_DefusalKit";
 												};
 											};
 											class Item114
@@ -35940,7 +36039,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_MissileLauncher_AA_Bag1_Blu";
+													value="ACE_bloodIV";
 												};
 											};
 											class Item115
@@ -35954,7 +36053,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_MissileLauncher_AA_Bag2_Blu";
+													value="ACE_bloodIV_250";
 												};
 											};
 											class Item116
@@ -35968,7 +36067,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_LegBag_01";
+													value="ACE_bloodIV_500";
 												};
 											};
 											class Item117
@@ -35982,7 +36081,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_BackPack_01";
+													value="ACE_bodyBag";
 												};
 											};
 											class Item118
@@ -35996,7 +36095,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_kasr_pack_green";
+													value="MineDetector";
 												};
 											};
 											class Item119
@@ -36010,7 +36109,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_CAD_kasr_pack_green_02";
+													value="ACE_morphine";
 												};
 											};
 											class Item120
@@ -36024,7 +36123,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_Bolt_Pistol2";
+													value="ACE_quikclot";
 												};
 											};
 											class Item121
@@ -36038,7 +36137,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="Knife_m3";
+													value="ACE_plasmaIV";
 												};
 											};
 											class Item122
@@ -36052,7 +36151,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ic_cad_laspistol";
+													value="ACE_plasmaIV_250";
 												};
 											};
 											class Item123
@@ -36066,7 +36165,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="MLAT_Mag";
+													value="ACE_plasmaIV_500";
 												};
 											};
 											class Item124
@@ -36080,7 +36179,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="MLHE_Mag";
+													value="ACE_elasticBandage";
 												};
 											};
 											class Item125
@@ -36094,7 +36193,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="VNG_MLSmoke_Mag";
+													value="ACE_fieldDressing";
 												};
 											};
 											class Item126
@@ -36108,7 +36207,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="VNG_MLMelta_Mag";
+													value="ACE_EntrenchingTool";
 												};
 											};
 											class Item127
@@ -36122,7 +36221,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="RPG7_F";
+													value="ACE_packingBandage";
 												};
 											};
 											class Item128
@@ -36136,7 +36235,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_Flak_Missile_mag";
+													value="ACE_salineIV";
 												};
 											};
 											class Item129
@@ -36150,7 +36249,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_krakk_Missile_mag";
+													value="ACE_salineIV_250";
 												};
 											};
 											class Item130
@@ -36164,7 +36263,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_frag_Missile_mag";
+													value="ACE_salineIV_500";
 												};
 											};
 											class Item131
@@ -36178,7 +36277,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IGBoltPistol_Mag";
+													value="ACE_splint";
 												};
 											};
 											class Item132
@@ -36192,7 +36291,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ic_laspistol_powerpack";
+													value="ML700_S_Plasma_Coolant";
 												};
 											};
 											class Item133
@@ -36206,7 +36305,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_Flamer";
+													value="ML700_L_Plasma_Coolant";
 												};
 											};
 											class Item134
@@ -36220,7 +36319,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_Nartecium_01";
+													value="APERSMine_Range_Mag";
 												};
 											};
 											class Item135
@@ -36234,7 +36333,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_cad_rebreather_green";
+													value="ATMine_Range_Mag";
 												};
 											};
 											class Item136
@@ -36248,7 +36347,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_Helmet_01";
+													value="G_Bandanna_khk";
 												};
 											};
 											class Item137
@@ -36262,7 +36361,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_Armor_03";
+													value="G_Bandanna_blk";
 												};
 											};
 											class Item138
@@ -36276,7 +36375,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_Armor_01";
+													value="IC_single_HS_weapon";
 												};
 											};
 											class Item139
@@ -36290,7 +36389,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_Armor_02";
+													value="ML700_Autocannon_Gun_Bag_High";
 												};
 											};
 											class Item140
@@ -36304,7 +36403,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="OM_Beret_01";
+													value="ML700_Autocannon_Gun_Bag";
 												};
 											};
 											class Item141
@@ -36318,7 +36417,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_cad_helmet_green";
+													value="ML700_HeavyBolter_Gun_Bag";
 												};
 											};
 											class Item142
@@ -36332,7 +36431,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="IC_Hellgun";
+													value="ML700_HeavyBolter_Gun_Bag_High";
 												};
 											};
 											class Item143
@@ -36346,7 +36445,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_GL_Buck_mag";
+													value="ML700_Mortar_Gun_Bag";
 												};
 											};
 											class Item144
@@ -36360,7 +36459,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_GL_Flare_mag";
+													value="ML700_Lascannon_Gun_Bag";
 												};
 											};
 											class Item145
@@ -36374,7 +36473,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="TIOW_IG_GL_Flame_mag";
+													value="ML700_Lascannon_TripodHigh_Bag";
 												};
 											};
 											class Item146
@@ -36388,7 +36487,7 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ic_hellgun_mag";
+													value="ML700_Locke_Gun_Bag";
 												};
 											};
 											class Item147
@@ -36402,7 +36501,175 @@ class Mission
 															"STRING"
 														};
 													};
-													value="ic_hellgun_mag2";
+													value="ML700_Locke_TripodHigh_Bag";
+												};
+											};
+											class Item148
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_MultiLaser_Gun_Bag_High";
+												};
+											};
+											class Item149
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_MultiLaser_Gun_Bag";
+												};
+											};
+											class Item150
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="G_Squares";
+												};
+											};
+											class Item151
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Chemlight_HiRed";
+												};
+											};
+											class Item152
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_HandFlare_Red";
+												};
+											};
+											class Item153
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_surgicalKit";
+												};
+											};
+											class Item154
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_Shotgun";
+												};
+											};
+											class Item155
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_LMG_Stubber_Black";
+												};
+											};
+											class Item156
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Stubber_Drum";
+												};
+											};
+											class Item157
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Stubber_Drum_Green";
+												};
+											};
+											class Item158
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Stubber_Drum_Red";
+												};
+											};
+											class Item159
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Stubber_Drum_Yellow";
 												};
 											};
 										};
@@ -43665,6 +43932,1689 @@ class Mission
 			alpha=0.37716013;
 			id=10204;
 			atlOffset=0.00041007996;
+		};
+		class Item231
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={607.87799,13.251403,9360.6953};
+						angles[]={0,1.6811883,0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						init="call{this disableAI ""move""; this disableAI ""radioprotocol""; this disableAI ""autocombat""; this disableAI ""weaponaim""; " \n "}";
+						disableSimulation=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_TANKER_02_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="HandGrenade";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="IC_CAD_FlakArmor_02_green";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="TIOW_OCC_PDF_ATMissilePack";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="Cad_Tnk_Helm";
+						};
+					};
+					id=10208;
+					type="TIOW_Valhallan_Trooper_2_Blu";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_AmbientAnimations";
+							expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=4;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"STRING"
+													};
+												};
+												value="GUARD";
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"ARRAY"
+													};
+												};
+												class value
+												{
+													items=2;
+													class Item0
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="inbasemoves_handsbehindback1";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="inbasemoves_handsbehindback2";
+														};
+													};
+												};
+											};
+										};
+										class Item2
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"BOOL"
+													};
+												};
+												value=0;
+											};
+										};
+										class Item3
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"BOOL"
+													};
+												};
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male03ENGB";
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_allowSprint";
+							expression="_this allowSprint _value";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="enableStamina";
+							expression="_this enablestamina _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=6;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=10207;
+		};
+		class Item232
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={608.04199,13.523521,9362.4609};
+				angles[]={0,0.14463542,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				dynamicSimulation=1;
+			};
+			id=10209;
+			type="TIOW_IG_Ammobox1_836";
+			atlOffset=0.00012016296;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=94;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_Bolt_Pistol2";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_cad_laspistol";
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_stub_smg";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Cad_Tnk_Helm";
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_TANKER_02_U_776_B";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_TANKER_01_U_776_B";
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_TANKER_01_U_836_B";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_TANKER_02_U_836_B";
+												};
+											};
+											class Item8
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_FlakVest";
+												};
+											};
+											class Item9
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_assaultpack_grey";
+												};
+											};
+											class Item10
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_assaultpack_02_grey";
+												};
+											};
+											class Item11
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_assaultpack_grey_03";
+												};
+											};
+											class Item12
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_CAD_assaultpack_04_grey";
+												};
+											};
+											class Item13
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Meow_Meow_Invisywisy_Invs";
+												};
+											};
+											class Item14
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_cad_preysense_02_down";
+												};
+											};
+											class Item15
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_cad_preysense_down";
+												};
+											};
+											class Item16
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Rangefinder";
+												};
+											};
+											class Item17
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Binocular";
+												};
+											};
+											class Item18
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemMap";
+												};
+											};
+											class Item19
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemCompass";
+												};
+											};
+											class Item20
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="tf_anprc152";
+												};
+											};
+											class Item21
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemWatch";
+												};
+											};
+											class Item22
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="tf_microdagr";
+												};
+											};
+											class Item23
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ItemGPS";
+												};
+											};
+											class Item24
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShell";
+												};
+											};
+											class Item25
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_melta_bomb_magazine";
+												};
+											};
+											class Item26
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellGreen";
+												};
+											};
+											class Item27
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellRed";
+												};
+											};
+											class Item28
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellOrange";
+												};
+											};
+											class Item29
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellPurple";
+												};
+											};
+											class Item30
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellBlue";
+												};
+											};
+											class Item31
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="SmokeShellYellow";
+												};
+											};
+											class Item32
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_ig_krak_grenade_mag";
+												};
+											};
+											class Item33
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_krak_grenade_magazine";
+												};
+											};
+											class Item34
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_frag_grenade_magazine";
+												};
+											};
+											class Item35
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_ig_frag_grenade_mag";
+												};
+											};
+											class Item36
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_epinephrine";
+												};
+											};
+											class Item37
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_adenosine";
+												};
+											};
+											class Item38
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_personalAidKit";
+												};
+											};
+											class Item39
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_artilleryTable";
+												};
+											};
+											class Item40
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_tourniquet";
+												};
+											};
+											class Item41
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_IR_Strobe_Item";
+												};
+											};
+											class Item42
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_CableTie";
+												};
+											};
+											class Item43
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_wirecutter";
+												};
+											};
+											class Item44
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_DeadManSwitch";
+												};
+											};
+											class Item45
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_elasticBandage";
+												};
+											};
+											class Item46
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_EntrenchingTool";
+												};
+											};
+											class Item47
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV_250";
+												};
+											};
+											class Item48
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV_500";
+												};
+											};
+											class Item49
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="MineDetector";
+												};
+											};
+											class Item50
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_morphine";
+												};
+											};
+											class Item51
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ToolKit";
+												};
+											};
+											class Item52
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_DefusalKit";
+												};
+											};
+											class Item53
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_MapTools";
+												};
+											};
+											class Item54
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_tanker_cap";
+												};
+											};
+											class Item55
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_officer_cap_green";
+												};
+											};
+											class Item56
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_B_LasPistol_F_Black";
+												};
+											};
+											class Item57
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_cad_stubPistol";
+												};
+											};
+											class Item58
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_cad_carbine_folded_lasgun";
+												};
+											};
+											class Item59
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_cad_carbine_lasgun";
+												};
+											};
+											class Item60
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_IGBoltPistol_Mag";
+												};
+											};
+											class Item61
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_laspistol_powerpack";
+												};
+											};
+											class Item62
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_stubSMG_drum_mag";
+												};
+											};
+											class Item63
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ML700_Laspistol_B_Battery";
+												};
+											};
+											class Item64
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_stub_mag";
+												};
+											};
+											class Item65
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ic_las_powerpack";
+												};
+											};
+											class Item66
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="acc_flashlight";
+												};
+											};
+											class Item67
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="acc_pointer_IR";
+												};
+											};
+											class Item68
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_splint";
+												};
+											};
+											class Item69
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV_500";
+												};
+											};
+											class Item70
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV_250";
+												};
+											};
+											class Item71
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV";
+												};
+											};
+											class Item72
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_Clacker";
+												};
+											};
+											class Item73
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_melta_bomb_placeable_Mag";
+												};
+											};
+											class Item74
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_ig_melta_bomb_mag";
+												};
+											};
+											class Item75
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Laserdesignator_01_khk_F";
+												};
+											};
+											class Item76
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TIOW_IG_Vox_Caster";
+												};
+											};
+											class Item77
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="G_Aviator";
+												};
+											};
+											class Item78
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_officer_cap_beige";
+												};
+											};
+											class Item79
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Cad_TnkGear836th";
+												};
+											};
+											class Item80
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_cad_preysense_up";
+												};
+											};
+											class Item81
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="IC_cad_preysense_02_up";
+												};
+											};
+											class Item82
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="B_IR_Grenade";
+												};
+											};
+											class Item83
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="APERSMine_Range_Mag";
+												};
+											};
+											class Item84
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ATMine_Range_Mag";
+												};
+											};
+											class Item85
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_quikclot";
+												};
+											};
+											class Item86
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV_250";
+												};
+											};
+											class Item87
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV";
+												};
+											};
+											class Item88
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV_500";
+												};
+											};
+											class Item89
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_fieldDressing";
+												};
+											};
+											class Item90
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_packingBandage";
+												};
+											};
+											class Item91
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV";
+												};
+											};
+											class Item92
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_surgicalKit";
+												};
+											};
+											class Item93
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bodyBag";
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item233
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={608.90399,13.25,9362.0889};
+			};
+			title="Арсенал танкистов";
+			id=10210;
+			atlOffset=3.6239624e-005;
 		};
 	};
 };
