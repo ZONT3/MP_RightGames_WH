@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=10211;
+		nextID=10379;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=457;
+		nextID=477;
 	};
 	class Camera
 	{
-		pos[]={616.08844,130.57411,9762.3799};
-		dir[]={0.10338581,-0.93128562,0.34947294};
-		up[]={0.26418096,0.36436519,0.89300716};
-		aside[]={0.95897877,1.5817932e-007,-0.28369802};
+		pos[]={506.75699,130.85356,9497.6104};
+		dir[]={-0.6310249,-0.66161847,0.40518391};
+		up[]={-0.55674452,0.74981749,0.35748819};
+		aside[]={0.54033947,7.4872514e-007,0.84151131};
 	};
 };
 binarizationWanted=0;
@@ -101,13 +101,32 @@ addons[]=
 	"A3_Characters_F",
 	"TIOWSpaceMarines",
 	"TIOWM_APCs",
-	"ML700_Vehicles_Valkyrie"
+	"ML700_Vehicles_Valkyrie",
+	"A3_Structures_F_EPA_Items_Food",
+	"CUP_CAStructures_E_Misc_Misc_Market",
+	"CUP_CAStructures_E_Misc_Misc_Interier",
+	"A3_Structures_F_Exp_Infrastructure_WaterSupply",
+	"acex_field_rations",
+	"A3_Props_F_Enoch_Military_Decontamination",
+	"A3_Structures_F_Bootcamp_Items_Sport",
+	"A3_Props_F_Orange_Humanitarian_Supplies",
+	"cba_xeh",
+	"A3_Structures_F_Heli_Items_Food",
+	"A3_Structures_F_EPB_Civ_Camping",
+	"ace_interaction",
+	"ace_cargo",
+	"ace_dragging",
+	"A3_Props_F_Orange_Humanitarian_Garbage",
+	"TIOW_SM_Vehs",
+	"CUP_Misc_e_Config",
+	"CUP_Editor_Buildings_Config",
+	"A3_Missions_F_Oldman"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=57;
+		items=71;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -439,6 +458,94 @@ class AddonsMetaData
 		{
 			className="ML700_Vehicles_Valkyrie";
 			name="ML700_Vehicles_Valkyrie";
+		};
+		class Item57
+		{
+			className="A3_Structures_F_EPA";
+			name="Arma 3 Survive Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item58
+		{
+			className="CUP_CAStructures_E_Misc_Misc_Market";
+			name="CUP_CAStructures_E_Misc_Misc_Market";
+		};
+		class Item59
+		{
+			className="CUP_CAStructures_E_Misc_Misc_Interier";
+			name="CUP_CAStructures_E_Misc_Misc_Interier";
+		};
+		class Item60
+		{
+			className="A3_Structures_F_Exp_Infrastructure";
+			name="Arma 3 Apex - Infrastructure Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item61
+		{
+			className="acex_field_rations";
+			name="ACEX - Field Rations";
+			author="Команда ACE";
+			url="http://ace3mod.com/";
+		};
+		class Item62
+		{
+			className="A3_Structures_F_Bootcamp";
+			name="Arma 3 Bootcamp Update - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item63
+		{
+			className="A3_Structures_F_EPB";
+			name="Arma 3 Adapt Episode - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item64
+		{
+			className="ace_interaction";
+			name="ACE3 - Interaction";
+			author="Команда ACE";
+			url="http://ace3mod.com/";
+		};
+		class Item65
+		{
+			className="ace_cargo";
+			name="ACE3 - Cargo";
+			author="Команда ACE";
+			url="http://ace3mod.com/";
+		};
+		class Item66
+		{
+			className="ace_dragging";
+			name="ACE3 - Dragging";
+			author="Команда ACE";
+			url="http://ace3mod.com/";
+		};
+		class Item67
+		{
+			className="TIOW_SM_Vehs";
+			name="TIOW_SM_Vehs";
+		};
+		class Item68
+		{
+			className="CUP_Misc_e_Config";
+			name="CUP_Misc_e_Config";
+		};
+		class Item69
+		{
+			className="CUP_Editor_Buildings_Config";
+			name="CUP_Editor_Buildings_Config";
+		};
+		class Item70
+		{
+			className="A3_Missions_F_Oldman";
+			name="Arma 3 Old Man - Playable Content";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
 		};
 	};
 };
@@ -828,7 +935,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=234;
+		items=247;
 		class Item0
 		{
 			dataType="Layer";
@@ -25912,8 +26019,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={699.00806,13.615561,9290.8682};
-				angles[]={0,4.6818924,0};
+				position[]={699.008,13.615561,9290.8682};
+				angles[]={0,4.6818981,0};
 			};
 			side="Empty";
 			class Attributes
@@ -25921,10 +26028,469 @@ class Mission
 			};
 			id=984;
 			type="land_mini_muni_204";
-			atlOffset=1.2889986;
+			atlOffset=1.2889996;
 			class CustomAttributes
 			{
 				class Attribute0
+				{
+					property="ace_arsenal_attribute";
+					expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"ARRAY"
+								};
+							};
+							class value
+							{
+								items=2;
+								class Item0
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"ARRAY"
+											};
+										};
+										class value
+										{
+											items=29;
+											class Item0
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_epinephrine";
+												};
+											};
+											class Item1
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_adenosine";
+												};
+											};
+											class Item2
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_personalAidKit";
+												};
+											};
+											class Item3
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_tourniquet";
+												};
+											};
+											class Item4
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV_500";
+												};
+											};
+											class Item5
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV_250";
+												};
+											};
+											class Item6
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bloodIV";
+												};
+											};
+											class Item7
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_bodyBag";
+												};
+											};
+											class Item8
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_morphine";
+												};
+											};
+											class Item9
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_quikclot";
+												};
+											};
+											class Item10
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV";
+												};
+											};
+											class Item11
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV_250";
+												};
+											};
+											class Item12
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_plasmaIV_500";
+												};
+											};
+											class Item13
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_elasticBandage";
+												};
+											};
+											class Item14
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_fieldDressing";
+												};
+											};
+											class Item15
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_packingBandage";
+												};
+											};
+											class Item16
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV";
+												};
+											};
+											class Item17
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV_250";
+												};
+											};
+											class Item18
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_salineIV_500";
+												};
+											};
+											class Item19
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_surgicalKit";
+												};
+											};
+											class Item20
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="ACE_splint";
+												};
+											};
+											class Item21
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_Helmet_01";
+												};
+											};
+											class Item22
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_Beret_01";
+												};
+											};
+											class Item23
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_Armor_01";
+												};
+											};
+											class Item24
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_Armor_03";
+												};
+											};
+											class Item25
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_Armor_02";
+												};
+											};
+											class Item26
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_LegBag_01";
+												};
+											};
+											class Item27
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_BackPack_01";
+												};
+											};
+											class Item28
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="OM_Nartecium_01";
+												};
+											};
+										};
+									};
+								};
+								class Item1
+								{
+									class data
+									{
+										class type
+										{
+											type[]=
+											{
+												"SCALAR"
+											};
+										};
+										value=0;
+									};
+								};
+							};
+						};
+					};
+				};
+				class Attribute1
 				{
 					property="ammoBox";
 					expression="[_this,_value] call bis_fnc_initAmmoBox;";
@@ -25943,7 +26509,7 @@ class Mission
 						};
 					};
 				};
-				nAttributes=1;
+				nAttributes=2;
 			};
 		};
 		class Item131
@@ -45615,6 +46181,6659 @@ class Mission
 			title="Арсенал танкистов";
 			id=10210;
 			atlOffset=3.6239624e-005;
+		};
+		class Item234
+		{
+			dataType="Layer";
+			name="SWBunker";
+			class Entities
+			{
+				items=40;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13634.827,14.703408,8458.8984};
+						angles[]={4.7130523,3.1529198,3.4906585e-005};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10219;
+					type="WH40K_Spacemarine_Barracks";
+					atlOffset=2.4175234;
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13643.519,15.298229,8410.4863};
+						angles[]={0,3.159622,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10270;
+					type="TIOW_Comms_Array_good_condition";
+					atlOffset=67.725418;
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13676.648,10.598418,8436.8877};
+						angles[]={0,1.6223708,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10263;
+					type="land_TIOW_Interiors_Oven";
+					atlOffset=67.918419;
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13645.512,15.441229,8428.5059};
+						angles[]={0,0.87800533,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10271;
+					type="TIOW_Comms_Array_battered";
+					atlOffset=67.868416;
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13670.072,12.9865,8440.8877};
+						angles[]={0,4.7085319,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10232;
+					type="land_tunnel_room_2_empty";
+					atlOffset=67.725418;
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13676.588,10.598418,8435.1367};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10264;
+					type="land_TIOW_Interiors_Table";
+					atlOffset=67.918419;
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13649.596,12.808472,8424.1992};
+						angles[]={0,0.84081233,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10265;
+					type="land_Aquilla";
+					atlOffset=68.90242;
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13666.158,11.980708,8442.3418};
+						angles[]={0,4.4420199,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10222;
+					type="Land_Canteen_F";
+					atlOffset=0.00069046021;
+				};
+				class Item8
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13635.818,11.221709,8425.7793};
+						angles[]={0,4.7434912,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10266;
+					type="land_Crate_stack";
+					atlOffset=67.868416;
+				};
+				class Item9
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13636.658,10.773723,8427.9658};
+						angles[]={0,5.3854055,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10267;
+					type="land_Crate";
+					atlOffset=67.868416;
+				};
+				class Item10
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13669.526,11.100573,8432.9678};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10224;
+					type="Land_stand_small_EP1";
+				};
+				class Item11
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13641.092,11.936165,8416.2559};
+						angles[]={0,0.81618577,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10268;
+					type="land_tiow_screens_stand_101a";
+					atlOffset=67.868416;
+				};
+				class Item12
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13673.642,11.659983,8433.5273};
+						angles[]={0,0.020193458,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10225;
+					type="Land_stand_meat_EP1";
+					atlOffset=67.918419;
+				};
+				class Item13
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13668.194,11.033779,8432.7344};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10226;
+					type="Land_Wicker_basket_EP1";
+					atlOffset=9.5367432e-007;
+				};
+				class Item14
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13668.359,11.01643,8433.3613};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10227;
+					type="Land_Bag_EP1";
+					atlOffset=9.5367432e-007;
+				};
+				class Item15
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13650.596,11.005866,8412.4395};
+						angles[]={0,0.86917394,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10269;
+					type="land_simple_field_table";
+					atlOffset=67.868416;
+				};
+				class Item16
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13672.324,11.093369,8433.4141};
+						angles[]={-0,2.6554661,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10228;
+					type="Land_bags_EP1";
+					atlOffset=9.5367432e-007;
+				};
+				class Item17
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13645.24,13.385056,8421.9043};
+					};
+					side="Empty";
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10211;
+					type="tunnel_corner";
+					atlOffset=67.725418;
+				};
+				class Item18
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13664.893,13.385056,8412.0605};
+						angles[]={0,3.14346,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10212;
+					type="tunnel_corner";
+					atlOffset=67.725418;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="allowDamage";
+							expression="_this allowdamage _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item19
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13640.908,13.248425,8437.7129};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10213;
+					type="land_tunnel_4";
+					atlOffset=67.725418;
+				};
+				class Item20
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13653.435,12.748245,8437.7363};
+						angles[]={0,1.5624537,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10214;
+					type="land_tunnel_long";
+					atlOffset=67.725418;
+				};
+				class Item21
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13664.127,11.392966,8440.8086};
+						angles[]={0,2.9907787,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10233;
+					type="Land_WaterTank_03_F";
+					atlOffset=67.918419;
+				};
+				class Item22
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13637.84,12.9865,8452.7188};
+						angles[]={0,3.1368454,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10215;
+					type="land_tunnel_room_2";
+					atlOffset=67.725418;
+				};
+				class Item23
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13670.906,11.517735,8433.1045};
+					};
+					side="Empty";
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10229;
+					type="Land_Basket_EP1";
+					atlOffset=0.58952332;
+				};
+				class Item24
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13643.797,11.095589,8419.5078};
+						angles[]={0,2.3800008,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10220;
+					type="land_briefing_table201";
+					atlOffset=67.868416;
+				};
+				class Item25
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13666.371,11.859786,8442.1689};
+						angles[]={0,4.2007108,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10234;
+					type="AntidoteKit_01_F";
+					atlOffset=0.00069046021;
+				};
+				class Item26
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13666.432,11.994882,8441.9434};
+						angles[]={0,4.7558651,0};
+					};
+					side="Empty";
+					flags=4;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10235;
+					type="Land_Trophy_01_bronze_F";
+					atlOffset=0.00069046021;
+				};
+				class Item27
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13670.877,10.720473,8433.0488};
+						angles[]={0,2.7836778,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10223;
+					type="Land_Chest_EP1";
+					atlOffset=67.918419;
+				};
+				class Item28
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13663.67,11.392966,8441.9453};
+						angles[]={0,2.3292813,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10230;
+					type="Land_WaterTank_03_F";
+					atlOffset=67.918419;
+				};
+				class Item29
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13665.948,11.55818,8441.7832};
+						angles[]={0,6.1435413,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10231;
+					type="Land_WaterTank_04_F";
+					atlOffset=67.918419;
+				};
+				class Item30
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13646.281,11.936165,8414.3164};
+						angles[]={0,3.1192176,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10221;
+					type="land_tiow_screens_stand_101b";
+					atlOffset=67.868416;
+				};
+				class Item31
+				{
+					dataType="Layer";
+					name="стол";
+					class Entities
+					{
+						items=21;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.965,11.048287,8438.2363};
+								angles[]={0,0,3.1415927};
+							};
+							side="Empty";
+							flags=1;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10237;
+							type="land_tiow_briefing_table_no_screen101";
+							atlOffset=67.918419;
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.438,12.065377,8438.3945};
+								angles[]={0,6.0359244,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10238;
+							type="Land_Vase_loam_EP1";
+							atlOffset=1.1095228;
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.914,11.923254,8438.3467};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10239;
+							type="Land_Sack_EP1";
+							atlOffset=1.1095238;
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13669.594,11.778169,8438.8828};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10240;
+							type="Land_Bowl_EP1";
+							atlOffset=1.1095228;
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13669.744,11.778169,8437.7383};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10241;
+							type="Land_Bowl_EP1";
+							atlOffset=1.1095228;
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13671.31,11.778169,8438.9551};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10242;
+							type="Land_Bowl_EP1";
+							atlOffset=1.1095228;
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13671.278,11.778169,8437.6455};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10243;
+							type="Land_Bowl_EP1";
+							atlOffset=1.1095228;
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.629,11.811954,8438.0957};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10244;
+							type="Land_Pumpkin_01_F";
+							atlOffset=1.1095228;
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.484,11.242288,8438.3027};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10245;
+							type="land_tiow_briefing_table_no_screen101";
+							atlOffset=0.19352341;
+						};
+						class Item9
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.344,11.811774,8438.1543};
+							};
+							side="Empty";
+							class Attributes
+							{
+							};
+							id=10246;
+							type="Land_Ketchup_01_F";
+							atlOffset=1.1097374;
+						};
+						class Item10
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.4,11.811774,8438.1074};
+							};
+							side="Empty";
+							class Attributes
+							{
+							};
+							id=10247;
+							type="Land_Mustard_01_F";
+							atlOffset=1.1097374;
+						};
+						class Item11
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13672.221,11.778169,8438.3711};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10248;
+							type="Land_Bowl_EP1";
+							atlOffset=1.1095228;
+						};
+						class Item12
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.7,11.827093,8438.5908};
+								angles[]={0,1.3900151,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+							};
+							id=10249;
+							type="Land_Camping_Light_F";
+							atlOffset=1.1095238;
+						};
+						class Item13
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13671.561,11.852881,8438.6465};
+								angles[]={0,3.4782665,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10250;
+							type="Land_Trophy_01_silver_F";
+							atlOffset=1.1095238;
+						};
+						class Item14
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13672.215,11.852881,8437.916};
+								angles[]={0,4.864006,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10251;
+							type="Land_Trophy_01_gold_F";
+							atlOffset=1.1095238;
+						};
+						class Item15
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13669.983,11.853095,8438.707};
+								angles[]={0,2.6555362,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+							};
+							id=10252;
+							type="Land_Trophy_01_silver_F";
+							atlOffset=1.1097374;
+						};
+						class Item16
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13669.422,11.852881,8438.1152};
+								angles[]={0,1.4554998,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10253;
+							type="Land_Trophy_01_silver_F";
+							atlOffset=1.1095238;
+						};
+						class Item17
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.821,11.852881,8437.6973};
+								angles[]={0,2.0720549,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10254;
+							type="Land_Trophy_01_silver_F";
+							atlOffset=1.1095238;
+						};
+						class Item18
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.556,11.734098,8438.6777};
+								angles[]={0,1.158043,0};
+							};
+							side="Empty";
+							flags=1;
+							class Attributes
+							{
+							};
+							id=10255;
+							type="MedicalGarbage_01_Bandage_F";
+							atlOffset=0.013286591;
+						};
+						class Item19
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.25,11.748009,8438.2305};
+								angles[]={0,3.8760097,0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10256;
+							type="Land_Tableware_01_stackOfNapkins_F";
+							atlOffset=1.1095228;
+						};
+						class Item20
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={13670.838,11.749618,8438.5938};
+							};
+							side="Empty";
+							class Attributes
+							{
+								disableSimulation=1;
+							};
+							id=10257;
+							type="Land_Orange_01_F";
+							atlOffset=1.1095238;
+						};
+					};
+					id=10236;
+					atlOffset=0.0013256073;
+				};
+				class Item32
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13664.133,12.489966,8441.6787};
+						angles[]={0,2.9166369,0};
+					};
+					side="Empty";
+					flags=5;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10258;
+					type="Land_WaterTank_03_F";
+					atlOffset=0.014320374;
+				};
+				class Item33
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13664.826,11.392966,8441.832};
+						angles[]={0,3.8585913,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10259;
+					type="Land_WaterTank_03_F";
+					atlOffset=67.918419;
+				};
+				class Item34
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13678.139,13.600332,8442.8438};
+						angles[]={0,4.7035751,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10260;
+					type="land_TIOW_Skyshield_Wall_short";
+					atlOffset=67.918419;
+				};
+				class Item35
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13624.662,12.9865,8435.9648};
+						angles[]={0,4.7085319,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10216;
+					type="land_tunnel_room_2_empty";
+					atlOffset=67.725418;
+				};
+				class Item36
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13669.196,13.550333,8403.3848};
+						angles[]={0,3.1693609,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10261;
+					type="land_TIOW_Skyshield_Wall_short";
+					atlOffset=67.868416;
+				};
+				class Item37
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13619.325,14.748408,8431.8613};
+						angles[]={3.1416624,4.7266655,4.7215695};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						disableSimulation=1;
+					};
+					id=10217;
+					type="WH40K_Spacemarine_Barracks";
+					atlOffset=2.4625235;
+				};
+				class Item38
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13625.686,10.598418,8432.7031};
+						angles[]={0,4.7153211,0};
+					};
+					side="Empty";
+					class Attributes
+					{
+						fuel=0;
+						disableSimulation=1;
+					};
+					id=10218;
+					type="TIOW_SM_Rhino_SW";
+					atlOffset=67.918419;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ammoBox";
+							expression="[_this,_value] call bis_fnc_initAmmoBox;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="[[[[""TIOW_GodwynBoltgun_1"",""FirstAidKit""],[2,6]],[[""TIOW_30rnd_GodwynBoltgunMag"",""TIOW_sm_frag_grenade_mag"",""TIOW_sm_krak_grenade_mag"",""TIOW_sm_smoke_grenade_mag""],[16,8,6,8]],[[""Rangefinder"",""ToolKit""],[2,2]],[[],[]]],false]";
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item39
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={13635.377,11.474945,8419.8447};
+						angles[]={0,4.7121797,0};
+					};
+					side="Empty";
+					flags=1;
+					class Attributes
+					{
+						ammo=0;
+					};
+					id=10262;
+					type="land_tiow_weapons_rack_noanimate";
+					atlOffset=67.867996;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ace_arsenal_attribute";
+							expression="if (!is3DEN) then {[_this, +_value] call ace_arsenal_fnc_attributeInit}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"ARRAY"
+										};
+									};
+									class value
+									{
+										items=2;
+										class Item0
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"ARRAY"
+													};
+												};
+												class value
+												{
+													items=378;
+													class Item0
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_SM_GL_1";
+														};
+													};
+													class Item1
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Shotgun_1";
+														};
+													};
+													class Item2
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Shotgun_3";
+														};
+													};
+													class Item3
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Auto_Cannon_1";
+														};
+													};
+													class Item4
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Auto_Cannon_4";
+														};
+													};
+													class Item5
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Plasma_cannon_1";
+														};
+													};
+													class Item6
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Plasma_cannon_3";
+														};
+													};
+													class Item7
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Multi_Melta_1";
+														};
+													};
+													class Item8
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Multi_Melta_3";
+														};
+													};
+													class Item9
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_PhobosShield_1";
+														};
+													};
+													class Item10
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigrusShield_1";
+														};
+													};
+													class Item11
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phaestos_Flamer_1";
+														};
+													};
+													class Item12
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phaestos_Flamer_3";
+														};
+													};
+													class Item13
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phaistos_Heavy_Flamer_1";
+														};
+													};
+													class Item14
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phaistos_Heavy_Flamer_3";
+														};
+													};
+													class Item15
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_Phobos_Atrox_1";
+														};
+													};
+													class Item16
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_Phobos_Atrox_3";
+														};
+													};
+													class Item17
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_PhobosBoltgun_1";
+														};
+													};
+													class Item18
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_PhobosBoltgun_3";
+														};
+													};
+													class Item19
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_PhobosCombiBolt_1";
+														};
+													};
+													class Item20
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_PhobosCombiBolt_3";
+														};
+													};
+													class Item21
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Primus_Metla_01";
+														};
+													};
+													class Item22
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Primus_Metla_03";
+														};
+													};
+													class Item23
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Rotor_Cannon_01";
+														};
+													};
+													class Item24
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Rotor_Cannon_04";
+														};
+													};
+													class Item25
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_SM_LasCan_01";
+														};
+													};
+													class Item26
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_SM_LasCan_03";
+														};
+													};
+													class Item27
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Ryza_Plasma_03";
+														};
+													};
+													class Item28
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigComb_bolt_1";
+														};
+													};
+													class Item29
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_30k_Tig_Pistol";
+														};
+													};
+													class Item30
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigrusExitusBoltgun_1";
+														};
+													};
+													class Item31
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigrusExitusBoltgun_3";
+														};
+													};
+													class Item32
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigrusBoltgun_1";
+														};
+													};
+													class Item33
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigrusBoltgun_3";
+														};
+													};
+													class Item34
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_Tigrus_Combi_1";
+														};
+													};
+													class Item35
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_Tigrus_Combi_3";
+														};
+													};
+													class Item36
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigComb_Flamer_1";
+														};
+													};
+													class Item37
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigComb_Plasma_1";
+														};
+													};
+													class Item38
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_TigComb_Melta_1";
+														};
+													};
+													class Item39
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_GodwynBoltgun_2";
+														};
+													};
+													class Item40
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mars_HeavyBolter";
+														};
+													};
+													class Item41
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_SM_MeltaGun_01";
+														};
+													};
+													class Item42
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_SM_Ragefire_PlasmaGun";
+														};
+													};
+													class Item43
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="W_B_KUL_SWBOLTER";
+														};
+													};
+													class Item44
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="muzzle_snds_H";
+														};
+													};
+													class Item45
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_01_F_snd";
+														};
+													};
+													class Item46
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_01_F_blk";
+														};
+													};
+													class Item47
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_01_F_mtp";
+														};
+													};
+													class Item48
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_01_F_khk";
+														};
+													};
+													class Item49
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_02_F_blk";
+														};
+													};
+													class Item50
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_02_F_tan";
+														};
+													};
+													class Item51
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_02_F_hex";
+														};
+													};
+													class Item52
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_02_F_lush";
+														};
+													};
+													class Item53
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_02_F_arid";
+														};
+													};
+													class Item54
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_03_F_blk";
+														};
+													};
+													class Item55
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="bipod_03_F_oli";
+														};
+													};
+													class Item56
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_SM_GL_HE";
+														};
+													};
+													class Item57
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_SM_GL_Smoke";
+														};
+													};
+													class Item58
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_SM_GL_RAD";
+														};
+													};
+													class Item59
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Sm_Solid";
+														};
+													};
+													class Item60
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Sm_Pellet";
+														};
+													};
+													class Item61
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_Autocannon12RndHEMag";
+														};
+													};
+													class Item62
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_30k_PlasmaCannon_Mag";
+														};
+													};
+													class Item63
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="STEVE_30k_PlasmaCannon_OC_Mag";
+														};
+													};
+													class Item64
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_MultiMelta_Mag";
+														};
+													};
+													class Item65
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_BoltgunMag";
+														};
+													};
+													class Item66
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_BoltgunMag_K";
+														};
+													};
+													class Item67
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_BoltgunMag_DF";
+														};
+													};
+													class Item68
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_BoltgunMag";
+														};
+													};
+													class Item69
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_BoltgunMag_K";
+														};
+													};
+													class Item70
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_BoltgunMag_DF";
+														};
+													};
+													class Item71
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_BoltgunMag_INF";
+														};
+													};
+													class Item72
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Smol_Flamer_Mag";
+														};
+													};
+													class Item73
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Flamer_Mag";
+														};
+													};
+													class Item74
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_Atrox_BoltgunMag";
+														};
+													};
+													class Item75
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_Atrox_BoltgunMag_K";
+														};
+													};
+													class Item76
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_Atrox_BoltgunMag_DF";
+														};
+													};
+													class Item77
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_CombiBoltgunMag";
+														};
+													};
+													class Item78
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_CombiBoltgunMag_K";
+														};
+													};
+													class Item79
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Phob_CombiBoltgunMag_DF";
+														};
+													};
+													class Item80
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Meltagun_Mag";
+														};
+													};
+													class Item81
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Rotor_Cannon_Mag";
+														};
+													};
+													class Item82
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_SM_Lascannon_Mag";
+														};
+													};
+													class Item83
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_SM_Plasmagun_Mag";
+														};
+													};
+													class Item84
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_SM_Overcharge_Plasmagun_Mag";
+														};
+													};
+													class Item85
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_combi_seek_Mag";
+														};
+													};
+													class Item86
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Tig_Combi_Mag";
+														};
+													};
+													class Item87
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_BoltPistolMag";
+														};
+													};
+													class Item88
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_BoltPistolMag_K";
+														};
+													};
+													class Item89
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_BoltPistolMag_DF";
+														};
+													};
+													class Item90
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_Exitus_BoltgunMag";
+														};
+													};
+													class Item91
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_Exitus_BoltgunMag_K";
+														};
+													};
+													class Item92
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_Exitus_BoltgunMag_DF";
+														};
+													};
+													class Item93
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_Exitus_BoltgunMag_INF";
+														};
+													};
+													class Item94
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_CombiBoltgunMag";
+														};
+													};
+													class Item95
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_CombiBoltgunMag_DF";
+														};
+													};
+													class Item96
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_CombiBoltgunMag_K";
+														};
+													};
+													class Item97
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Trig_CombiBoltgunMag_INF";
+														};
+													};
+													class Item98
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_CombiFlamer_Mag";
+														};
+													};
+													class Item99
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_CombiPlas_Mag";
+														};
+													};
+													class Item100
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_CombiPlasOVER_Mag";
+														};
+													};
+													class Item101
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_CombiMelta_Mag";
+														};
+													};
+													class Item102
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_30rnd_GodwynBoltgunMag";
+														};
+													};
+													class Item103
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mars_HeavyBolterMag_85rnd";
+														};
+													};
+													class Item104
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Meltagun_Mag";
+														};
+													};
+													class Item105
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_SM_Plasmagun_Mag";
+														};
+													};
+													class Item106
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_SM_Overcharge_Plasmagun_Mag";
+														};
+													};
+													class Item107
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK2Helmet_SW_Alt";
+														};
+													};
+													class Item108
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK2Helmet_SW";
+														};
+													};
+													class Item109
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK3Helmet_SW_Alt";
+														};
+													};
+													class Item110
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7KnightHelmet_SW";
+														};
+													};
+													class Item111
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7KnightHelmet_SW_Alt";
+														};
+													};
+													class Item112
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7Helmet_1_SW";
+														};
+													};
+													class Item113
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7Helmet_SW";
+														};
+													};
+													class Item114
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7Helmet_1_SW_Alt";
+														};
+													};
+													class Item115
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7Helmet_SW_Alt";
+														};
+													};
+													class Item116
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK6Helmet_SW";
+														};
+													};
+													class Item117
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK6Helmet_SW_Alt";
+														};
+													};
+													class Item118
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK5Helmet_SW";
+														};
+													};
+													class Item119
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK5Helmet_SW_Alt";
+														};
+													};
+													class Item120
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK4Helmet_SW";
+														};
+													};
+													class Item121
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK4Helmet_SW_Alt";
+														};
+													};
+													class Item122
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK3Helmet_SW";
+														};
+													};
+													class Item123
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk8PowerArmor_1_SW";
+														};
+													};
+													class Item124
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk7PowerArmorImperialis_1_SW";
+														};
+													};
+													class Item125
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk7PowerArmor_1_SW";
+														};
+													};
+													class Item126
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk6PowerArmor_1_SW";
+														};
+													};
+													class Item127
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk5PowerArmor_1_SW";
+														};
+													};
+													class Item128
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk4PowerArmor_1_SW";
+														};
+													};
+													class Item129
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk3PowerArmor_1_SW";
+														};
+													};
+													class Item130
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk2PowerArmor_1_SW";
+														};
+													};
+													class Item131
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk2Limbs_SW";
+														};
+													};
+													class Item132
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk4Limbs_SW";
+														};
+													};
+													class Item133
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk6Limbs_SW";
+														};
+													};
+													class Item134
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk7Limbs_SW";
+														};
+													};
+													class Item135
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk2Powerpack_SW";
+														};
+													};
+													class Item136
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk4Powerpack_SW";
+														};
+													};
+													class Item137
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk5Powerpack_SW";
+														};
+													};
+													class Item138
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="30k_Steve_Jump_Pack_5_5";
+														};
+													};
+													class Item139
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="30k_Steve_Jump_Pack_5_3";
+														};
+													};
+													class Item140
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_SM_Scout_Helm_1_2";
+														};
+													};
+													class Item141
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_SM_Scout_Helm_1";
+														};
+													};
+													class Item142
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Black_1";
+														};
+													};
+													class Item143
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Green_1";
+														};
+													};
+													class Item144
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Wht1_1";
+														};
+													};
+													class Item145
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Wht2_1";
+														};
+													};
+													class Item146
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Black_2";
+														};
+													};
+													class Item147
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Green_2";
+														};
+													};
+													class Item148
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Wht1_2";
+														};
+													};
+													class Item149
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_Wht2_2";
+														};
+													};
+													class Item150
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_YLW_1";
+														};
+													};
+													class Item151
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Recon_Pp_YLW_2";
+														};
+													};
+													class Item152
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_1_5";
+														};
+													};
+													class Item153
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_1";
+														};
+													};
+													class Item154
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_1_2";
+														};
+													};
+													class Item155
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_1_3";
+														};
+													};
+													class Item156
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_1_6";
+														};
+													};
+													class Item157
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_1_4";
+														};
+													};
+													class Item158
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_2_5";
+														};
+													};
+													class Item159
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_2";
+														};
+													};
+													class Item160
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_2_2";
+														};
+													};
+													class Item161
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_2_3";
+														};
+													};
+													class Item162
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_2_6";
+														};
+													};
+													class Item163
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_3_5";
+														};
+													};
+													class Item164
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_2_4";
+														};
+													};
+													class Item165
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_3";
+														};
+													};
+													class Item166
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_3_2";
+														};
+													};
+													class Item167
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_3_3";
+														};
+													};
+													class Item168
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_3_6";
+														};
+													};
+													class Item169
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_3_4";
+														};
+													};
+													class Item170
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_4_5";
+														};
+													};
+													class Item171
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_4";
+														};
+													};
+													class Item172
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_4_2";
+														};
+													};
+													class Item173
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_4_3";
+														};
+													};
+													class Item174
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_4_6";
+														};
+													};
+													class Item175
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_4_4";
+														};
+													};
+													class Item176
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_5_5";
+														};
+													};
+													class Item177
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_5";
+														};
+													};
+													class Item178
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_5_2";
+														};
+													};
+													class Item179
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_5_3";
+														};
+													};
+													class Item180
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_5_6";
+														};
+													};
+													class Item181
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_5_4";
+														};
+													};
+													class Item182
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_6_5";
+														};
+													};
+													class Item183
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_6";
+														};
+													};
+													class Item184
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_6_2";
+														};
+													};
+													class Item185
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_6_3";
+														};
+													};
+													class Item186
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_6_6";
+														};
+													};
+													class Item187
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Visor_6_4";
+														};
+													};
+													class Item188
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_EmptySM_NVG_1";
+														};
+													};
+													class Item189
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Skull_helm2";
+														};
+													};
+													class Item190
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SM_Skull_helm1";
+														};
+													};
+													class Item191
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Servo_Arm";
+														};
+													};
+													class Item192
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Servo_Arm_Black";
+														};
+													};
+													class Item193
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Servo_Arm_Black_2";
+														};
+													};
+													class Item194
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Servo_Arm_2";
+														};
+													};
+													class Item195
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="MrServo_2";
+														};
+													};
+													class Item196
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Lib_hood_Dos_3";
+														};
+													};
+													class Item197
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Lib_hood_Dos_4";
+														};
+													};
+													class Item198
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Lib_hood_Dos_6";
+														};
+													};
+													class Item199
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Lib_hood_Dos_5";
+														};
+													};
+													class Item200
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Lib_hood_Dos_2";
+														};
+													};
+													class Item201
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Lib_hood_Dos";
+														};
+													};
+													class Item202
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Iron_Halo_Dos_S";
+														};
+													};
+													class Item203
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Iron_Halo_Dos_S_2";
+														};
+													};
+													class Item204
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Iron_Halo_Dos_S_3";
+														};
+													};
+													class Item205
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Apoth_Head_Dos";
+														};
+													};
+													class Item206
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Apoth_Gear_Dos";
+														};
+													};
+													class Item207
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Apoth_Back_Dos";
+														};
+													};
+													class Item208
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Studs_1";
+														};
+													};
+													class Item209
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Studs_4";
+														};
+													};
+													class Item210
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Studs_2";
+														};
+													};
+													class Item211
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Studs_3";
+														};
+													};
+													class Item212
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Combat_S_7_NVG";
+														};
+													};
+													class Item213
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Combat_S_2_NVG";
+														};
+													};
+													class Item214
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Combat_S_3_NVG";
+														};
+													};
+													class Item215
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Combat_S_1_NVG";
+														};
+													};
+													class Item216
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Rangefinder";
+														};
+													};
+													class Item217
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Laserdesignator_01_khk_F";
+														};
+													};
+													class Item218
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_MX2A";
+														};
+													};
+													class Item219
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ItemMap";
+														};
+													};
+													class Item220
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ItemCompass";
+														};
+													};
+													class Item221
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="tf_anprc152";
+														};
+													};
+													class Item222
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ItemWatch";
+														};
+													};
+													class Item223
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Altimeter";
+														};
+													};
+													class Item224
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="tf_microdagr";
+														};
+													};
+													class Item225
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ItemGPS";
+														};
+													};
+													class Item226
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_sm_smoke_grenade_mag";
+														};
+													};
+													class Item227
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_sm_krak_grenade_mag";
+														};
+													};
+													class Item228
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_sm_frag_grenade_mag";
+														};
+													};
+													class Item229
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ML700_melta_bomb_magazine";
+														};
+													};
+													class Item230
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SmokeShell";
+														};
+													};
+													class Item231
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SmokeShellYellow";
+														};
+													};
+													class Item232
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SmokeShellPurple";
+														};
+													};
+													class Item233
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SmokeShellBlue";
+														};
+													};
+													class Item234
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SmokeShellOrange";
+														};
+													};
+													class Item235
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SmokeShellRed";
+														};
+													};
+													class Item236
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="SmokeShellGreen";
+														};
+													};
+													class Item237
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_HandFlare_Red";
+														};
+													};
+													class Item238
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_HandFlare_Green";
+														};
+													};
+													class Item239
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_HandFlare_Yellow";
+														};
+													};
+													class Item240
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_HandFlare_White";
+														};
+													};
+													class Item241
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_ig_smoke_grenade_mag";
+														};
+													};
+													class Item242
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_ig_melta_bomb_mag";
+														};
+													};
+													class Item243
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_HiBlue";
+														};
+													};
+													class Item244
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_HiRed";
+														};
+													};
+													class Item245
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_HiGreen";
+														};
+													};
+													class Item246
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_HiYellow";
+														};
+													};
+													class Item247
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_HiWhite";
+														};
+													};
+													class Item248
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_UltraHiOrange";
+														};
+													};
+													class Item249
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_Orange";
+														};
+													};
+													class Item250
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_IR";
+														};
+													};
+													class Item251
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Chemlight_White";
+														};
+													};
+													class Item252
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Chemlight_blue";
+														};
+													};
+													class Item253
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Chemlight_red";
+														};
+													};
+													class Item254
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Chemlight_yellow";
+														};
+													};
+													class Item255
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Chemlight_green";
+														};
+													};
+													class Item256
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="O_IR_Grenade";
+														};
+													};
+													class Item257
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="I_IR_Grenade";
+														};
+													};
+													class Item258
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="O_R_IR_Grenade";
+														};
+													};
+													class Item259
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="B_IR_Grenade";
+														};
+													};
+													class Item260
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="I_E_IR_Grenade";
+														};
+													};
+													class Item261
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_EarPlugs";
+														};
+													};
+													class Item262
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_M26_Clacker";
+														};
+													};
+													class Item263
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Clacker";
+														};
+													};
+													class Item264
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_rope36";
+														};
+													};
+													class Item265
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_rope27";
+														};
+													};
+													class Item266
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_rope18";
+														};
+													};
+													class Item267
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_rope15";
+														};
+													};
+													class Item268
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_rope12";
+														};
+													};
+													class Item269
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_CableTie";
+														};
+													};
+													class Item270
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Fortify";
+														};
+													};
+													class Item271
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_MapTools";
+														};
+													};
+													class Item272
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="MineDetector";
+														};
+													};
+													class Item273
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_bodyBag";
+														};
+													};
+													class Item274
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Flashlight_XL50";
+														};
+													};
+													class Item275
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Flashlight_KSF1";
+														};
+													};
+													class Item276
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_Kestrel4500";
+														};
+													};
+													class Item277
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_plasmaIV_500";
+														};
+													};
+													class Item278
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_plasmaIV_250";
+														};
+													};
+													class Item279
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_plasmaIV";
+														};
+													};
+													class Item280
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_elasticBandage";
+														};
+													};
+													class Item281
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_fieldDressing";
+														};
+													};
+													class Item282
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="FirstAidKit";
+														};
+													};
+													class Item283
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_bloodIV_500";
+														};
+													};
+													class Item284
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_bloodIV_250";
+														};
+													};
+													class Item285
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_bloodIV";
+														};
+													};
+													class Item286
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_DefusalKit";
+														};
+													};
+													class Item287
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_wirecutter";
+														};
+													};
+													class Item288
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_IR_Strobe_Item";
+														};
+													};
+													class Item289
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_epinephrine";
+														};
+													};
+													class Item290
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_adenosine";
+														};
+													};
+													class Item291
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_morphine";
+														};
+													};
+													class Item292
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_salineIV";
+														};
+													};
+													class Item293
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_salineIV_250";
+														};
+													};
+													class Item294
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_salineIV_500";
+														};
+													};
+													class Item295
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_tourniquet";
+														};
+													};
+													class Item296
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_packingBandage";
+														};
+													};
+													class Item297
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ACE_personalAidKit";
+														};
+													};
+													class Item298
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Medikit";
+														};
+													};
+													class Item299
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ToolKit";
+														};
+													};
+													class Item300
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Gen_Chap_1_w";
+														};
+													};
+													class Item301
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Chap_PP_1";
+														};
+													};
+													class Item302
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Chap_PP_2";
+														};
+													};
+													class Item303
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Iron_Halo_Dos";
+														};
+													};
+													class Item304
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Iron_Halo_Dos_2";
+														};
+													};
+													class Item305
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Iron_Halo_Dos_3";
+														};
+													};
+													class Item306
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_SkullHelmet_1_Loyalist";
+														};
+													};
+													class Item307
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_3";
+														};
+													};
+													class Item308
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_1";
+														};
+													};
+													class Item309
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_2";
+														};
+													};
+													class Item310
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_7";
+														};
+													};
+													class Item311
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_4";
+														};
+													};
+													class Item312
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_5";
+														};
+													};
+													class Item313
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_6";
+														};
+													};
+													class Item314
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Lib_Helm_8";
+														};
+													};
+													class Item315
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Relic_6";
+														};
+													};
+													class Item316
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Phy_Staff_1";
+														};
+													};
+													class Item317
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Bolter_15rnd_Kraken";
+														};
+													};
+													class Item318
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Bolter_25rnd_Inferno";
+														};
+													};
+													class Item319
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_Phy_Staff_Mag1";
+														};
+													};
+													class Item320
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7KnightHelmet_Apoth";
+														};
+													};
+													class Item321
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk4Helmet_Apoth";
+														};
+													};
+													class Item322
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk5Helmet_Apoth";
+														};
+													};
+													class Item323
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK6Helmet_Apoth";
+														};
+													};
+													class Item324
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7Helmet_Apoth";
+														};
+													};
+													class Item325
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_MK7Helmet_1_Apoth";
+														};
+													};
+													class Item326
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_AP_PP_1";
+														};
+													};
+													class Item327
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_AP_PP_2";
+														};
+													};
+													class Item328
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk4Powerpack_APOTH";
+														};
+													};
+													class Item329
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="MK8_TK_2_W";
+														};
+													};
+													class Item330
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Tek_PP_Mk2";
+														};
+													};
+													class Item331
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_Tek_PP_Mk4";
+														};
+													};
+													class Item332
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_TEK_PP_3";
+														};
+													};
+													class Item333
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_TEK_PP_2";
+														};
+													};
+													class Item334
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_TEK_PP_NA_2";
+														};
+													};
+													class Item335
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_TEK_PP_NAA_2";
+														};
+													};
+													class Item336
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_TEK_PP_NA_3";
+														};
+													};
+													class Item337
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_Mk6Limbs_Libs_Dos";
+														};
+													};
+													class Item338
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="TIOW_GodwynBoltgun_1";
+														};
+													};
+													class Item339
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Studs_1_NVG";
+														};
+													};
+													class Item340
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Studs_4_NVG";
+														};
+													};
+													class Item341
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Studs_2_NVG";
+														};
+													};
+													class Item342
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Steve_30k_Studs_3_NVG";
+														};
+													};
+													class Item343
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_40k_Skull_NVG";
+														};
+													};
+													class Item344
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_40k_Skull_2_NVG";
+														};
+													};
+													class Item345
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="AOD_S_GravFuel";
+														};
+													};
+													class Item346
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ML700_S_GravFuel";
+														};
+													};
+													class Item347
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ML700_M_GravFuel";
+														};
+													};
+													class Item348
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="ML700_L_GravFuel";
+														};
+													};
+													class Item349
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="AOD_L_GravFuel";
+														};
+													};
+													class Item350
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="AOD_M_GravFuel";
+														};
+													};
+													class Item351
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_Chain_Axe_1";
+														};
+													};
+													class Item352
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_Chain_Test";
+														};
+													};
+													class Item353
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_Chain_Sword_2";
+														};
+													};
+													class Item354
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_Chain_Sword_3";
+														};
+													};
+													class Item355
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_Chain_Sword_4";
+														};
+													};
+													class Item356
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_Chain_Sword_5";
+														};
+													};
+													class Item357
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_KnifeSM";
+														};
+													};
+													class Item358
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_LC";
+														};
+													};
+													class Item359
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_P_Axe_5";
+														};
+													};
+													class Item360
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_P_Axe_4";
+														};
+													};
+													class Item361
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_P_Axe_3";
+														};
+													};
+													class Item362
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_P_Axe_2";
+														};
+													};
+													class Item363
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_P_Axe_1";
+														};
+													};
+													class Item364
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_PowerFists";
+														};
+													};
+													class Item365
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_PowerSword";
+														};
+													};
+													class Item366
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_PS_2";
+														};
+													};
+													class Item367
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_PS_3";
+														};
+													};
+													class Item368
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_PS_4";
+														};
+													};
+													class Item369
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_PS_6";
+														};
+													};
+													class Item370
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_TM_Axe_2";
+														};
+													};
+													class Item371
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_TM_Axe_1";
+														};
+													};
+													class Item372
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_ThunderHammer";
+														};
+													};
+													class Item373
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Web_Melee_ThunderHammer_2";
+														};
+													};
+													class Item374
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_LC_PP_UM_1";
+														};
+													};
+													class Item375
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_HB_PP_UM_1";
+														};
+													};
+													class Item376
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_HB_PP_BL_1";
+														};
+													};
+													class Item377
+													{
+														class data
+														{
+															class type
+															{
+																type[]=
+																{
+																	"STRING"
+																};
+															};
+															value="Dos_LC_PP_BL_1";
+														};
+													};
+												};
+											};
+										};
+										class Item1
+										{
+											class data
+											{
+												class type
+												{
+													type[]=
+													{
+														"SCALAR"
+													};
+												};
+												value=0;
+											};
+										};
+									};
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+			};
+			id=10272;
+			atlOffset=68.198448;
+		};
+		class Item235
+		{
+			dataType="Comment";
+			class PositionInfo
+			{
+				position[]={13630.099,2.5261669,8456.8867};
+			};
+			title="Бункер и арсенал волков (телепорт сюда)";
+			id=10273;
+			atlOffset=59.846169;
+		};
+		class Item236
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={647.091,16.233873,9290.25};
+				angles[]={0,2.0501509,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10278;
+			type="land_tiow_screens_stand_101a";
+			atlOffset=1.6049995;
+		};
+		class Item237
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={647.24298,16.234655,9286.2783};
+				angles[]={0,4.1149979,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10280;
+			type="land_tiow_screens_stand_101b";
+			atlOffset=0.000415802;
+		};
+		class Item238
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={645.50897,15.573657,9288.0527};
+				angles[]={0,1.4582226,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10288;
+			type="land_tiow_control_chair_brains101_no_screens";
+			atlOffset=1.6050005;
+		};
+		class Item239
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={608.19702,20.371012,9341.4102};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10292;
+			type="836th_flag";
+			atlOffset=4.0460005;
+		};
+		class Item240
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={611.97498,20.649988,9369.4941};
+				angles[]={0,3.1700416,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10293;
+			type="836th_flag";
+			atlOffset=0.093301773;
+		};
+		class Item241
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={639.25989,16.36459,9288.2744};
+				angles[]={0,4.6051035,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10326;
+			type="Map_for_briefing_EP1";
+			atlOffset=0.93986416;
+		};
+		class Item242
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={642.01398,16.078817,9287.9678};
+				angles[]={0,6.1331396,0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10277;
+			type="land_tiow_briefing_table201b";
+			atlOffset=1.604001;
+		};
+		class Item243
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={657.56818,15.476851,9287.5615};
+				angles[]={0,2.2701378,0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10350;
+			type="land_tiow_briefing_chair_101";
+			atlOffset=0.00014400482;
+		};
+		class Item244
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={658.50299,15.206624,9286.249};
+				angles[]={0,4.650517,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10353;
+			type="land_simple_field_table";
+			atlOffset=7.8201294e-005;
+		};
+		class Item245
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={660.17499,14.749059,9285.9785};
+				angles[]={0,3.075532,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10354;
+			type="CUP_Dhangar_knihovna";
+			atlOffset=1.5089998;
+		};
+		class Item246
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={659.27502,15.93175,9285.9746};
+				angles[]={0,5.521646,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+				disableSimulation=1;
+			};
+			id=10363;
+			type="Item_SecretFiles";
+			atlOffset=0.91501713;
 		};
 	};
 };
