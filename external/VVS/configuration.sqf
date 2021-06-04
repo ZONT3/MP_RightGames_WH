@@ -32,9 +32,13 @@ VVS_West_Land = [
   "TIOW_Centaur_01_Cadian_836_Blu",
   "TIOW_CadianTrojan_836",
   "TIOW_CadianWyvern_836",
+  "IC_Taurox_HS_woodland",
   "TIOW_Cad_LR_Battlecannon_836th_Blu",
   "TIOW_Cad_LR_Punisher_836th_Blu",
   "TIOW_Cad_LR_Vanquisher_836th_Blu",
+  "Sentinel_PC_1490th_1",
+  "Sentinel_AC_1490th_1",
+  "Sentinel_HB_1490th_1",
   "ML700_Basalisk_ARTY_base"
 ];
 
@@ -58,12 +62,16 @@ VVS_West_Mech = [
 ];
 
 VVS_west_car = [
-  "IC_Tauros_unarmed_woodland_F"
+  "IC_Tauros_unarmed_woodland_F",
+  "IC_Tauros_GMC_woodland_F",
+  "IC_Tauros_HMG_woodland_F"
 ];
 
 VVS_West_Air = [
   "ML700_Valkyrie_Transport", 
-  "ML700_Valkyrie_Multilas"
+  "ML700_Valkyrie_Multilas",
+  "ML700_Avenger_BLU",
+  "ML700_Thunderbolt_BLU"
 ];
 
 VVS_West_Astartes = [
