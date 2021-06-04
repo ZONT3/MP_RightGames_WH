@@ -14,5 +14,5 @@ player enableStamina !(_mechanicus or _inqusition or _astartes or _comissare);
 player setUnitTrait ['engineer', _mechanicus];
 
 if (_mechanicus or _astartes) then {
-  // TODO: вырубить кровотечение, пока не знаю, как
+  player setCustomAimCoef 0.01;
 };
