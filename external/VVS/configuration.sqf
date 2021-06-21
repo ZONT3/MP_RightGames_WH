@@ -75,9 +75,9 @@ VVS_West_Air = [
 ];
 
 VVS_West_Astartes = [
-  "TIOW_SM_Rhino_SW",
-  "TIOW_SM_Predator_SW",
-  "TIOW_SM_Vindicator_SW"
+  "TIOW_SM_Rhino_BA",
+  "TIOW_SM_Predator_BA",
+  "TIOW_SM_Vindicator_BA"
 ];
 
 VVS_West_Titans = [
