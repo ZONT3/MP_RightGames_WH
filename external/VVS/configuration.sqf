@@ -44,12 +44,9 @@ VVS_West_Land = [
 
 VVS_West_Land_K = [
   "Sentinel_AC_1489th_1",
-  "Sentinel_ML_1489th_1",
-  "Sentinel_LC_1489th_1",
-  "TIOW_Krieg_LR_Battlecannon_1489th_Blu",
-  "TIOW_Krieg_LR_Punisher_1489th_Blu",
-  "_1489thChimAuto",
-  "TIOW_Centaur_01_Krieg_1489_Blu",
+  "Dos_SOB_Rhino_1",
+  "TIOW_CadianChimAuto_IQ",
+  "TIOW_Cad_LR_Vanquisher_IQ_Blu",
   "TIOW_DKOKTrojan_1489"
 ];
 
