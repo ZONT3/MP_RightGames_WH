@@ -61,6 +61,7 @@ VVS_West_Mech = [
 VVS_west_car = [
   "IC_Tauros_unarmed_woodland_F",
   "IC_Tauros_GMC_woodland_F",
+  "IC_Tauros_Venator_woodland_F",
   "IC_Tauros_HMG_woodland_F"
 ];
 
