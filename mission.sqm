@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=3939;
+		nextID=3940;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=507;
+		nextID=536;
 	};
 	class Camera
 	{
-		pos[]={7195.9287,333.20963,920.33734};
-		dir[]={0.26045921,-0.8470723,0.46331221};
-		up[]={0.41509846,0.53148621,0.73838884};
-		aside[]={0.87171471,-3.75534e-007,-0.49004966};
+		pos[]={7296.9893,268.14459,1064.0157};
+		dir[]={-0.010904241,-0.99167073,-0.1284104};
+		up[]={-0.083908826,0.12865123,-0.98812813};
+		aside[]={-0.9964208,-5.6388672e-008,0.084612563};
 	};
 };
 binarizationWanted=0;
@@ -105,13 +105,14 @@ addons[]=
 	"DOS_SM",
 	"TIOW_Comissar",
 	"VNG_TIOW_ADDON",
-	"TIOW_SM_Drop_Pod"
+	"TIOW_SM_Drop_Pod",
+	"task_force_radio_items"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=59;
+		items=60;
 		class Item0
 		{
 			className="Dos_40k_Tau_Props";
@@ -203,7 +204,7 @@ class AddonsMetaData
 		{
 			className="acex_sitting";
 			name="ACEX - Sitting";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item16
@@ -222,14 +223,14 @@ class AddonsMetaData
 		{
 			className="ace_cargo";
 			name="ACE3 - Cargo";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item19
 		{
 			className="ace_dragging";
 			name="ACE3 - Dragging";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item20
@@ -414,14 +415,14 @@ class AddonsMetaData
 		{
 			className="ace_medical_engine";
 			name="ACE3 - Medical Engine";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item50
 		{
 			className="ace_medical_treatment";
 			name="ACE3 - Medical Treatment";
-			author="Команда ACE";
+			author="ACE-Team";
 			url="http://ace3mod.com/";
 		};
 		class Item51
@@ -470,6 +471,13 @@ class AddonsMetaData
 			className="TIOW_SM_Drop_Pod";
 			name="TIOW_Drop_Pod";
 			author="Dosiel";
+		};
+		class Item59
+		{
+			className="task_force_radio_items";
+			name="task_force_radio_items";
+			author="[TF]Nkey";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
 	};
 };
@@ -856,7 +864,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=75;
+		items=76;
 		class Item0
 		{
 			dataType="Layer";
@@ -46515,6 +46523,154 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item75
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7312.3701,20.05492,1073.677};
+			};
+			id=3939;
+			type="tfar_ModuleTaskForceRadioEnforceUsage";
+			atlOffset=8.6269999;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
+					expression="_this setVariable ['radio_channel_password',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="4567924621685";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
+					expression="_this setVariable ['RiflemanRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
+					expression="_this setVariable ['radio_channel_name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="RG40K";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
+					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
+					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
+					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
+					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=7;
+						};
+					};
+				};
+				nAttributes=7;
 			};
 		};
 	};
