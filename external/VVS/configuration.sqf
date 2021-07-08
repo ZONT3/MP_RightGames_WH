@@ -104,7 +104,13 @@ VVS_West_sm = [
 ];
 
 VVS_west_car = [
-  "IC_Tauros_unarmed_desert_F",
+  "TIOW_CadianChimAuto_776",
+  "TIOW_Krieg_LR_Vanquisher_1489th_Blu",
+  "TIOW_Krieg_LR_Demolisher_1489th_Blu",
+  "TIOW_DKOKTrojan_1489",
+  "Sentinel_AC_1489th_1",
+  "Sentiel_MLA_1489th_1",
+  "Sentinel_LC_1489_1",
   "TIOW_Centaur_01_Cadian_700_Blu"
 ];
 
