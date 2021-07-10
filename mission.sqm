@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=4059;
+		nextID=4060;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=623;
+		nextID=652;
 	};
 	class Camera
 	{
-		pos[]={7264.3193,48.041172,1074.5707};
-		dir[]={-0.43154255,-0.68816793,-0.5834071};
-		up[]={-0.40924811,0.72553694,-0.55326664};
-		aside[]={-0.8040216,1.9612489e-006,0.59473252};
+		pos[]={8270.0527,39.990101,1337.146};
+		dir[]={-0.63465029,-0.43130443,-0.64125198};
+		up[]={-0.30346119,0.90216118,-0.30661869};
+		aside[]={-0.71075869,1.1883094e-007,0.70344144};
 	};
 };
 binarizationWanted=0;
@@ -872,7 +872,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=83;
+		items=84;
 		class Item0
 		{
 			dataType="Layer";
@@ -22753,11 +22753,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7512.1802,11.34,1210.7629};
+				position[]={7509.9092,11.336472,1217.0786};
 			};
 			name="mp_zuus";
 			id=3763;
 			type="ModuleCurator_F";
+			atlOffset=0.036471367;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22844,11 +22845,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7204.6177,21.647142,1050.8411};
+				position[]={7204.6182,21.64727,1050.8409};
 			};
 			id=3768;
 			type="ModuleRespawnPosition_F";
-			atlOffset=1.0305653;
+			atlOffset=1.0306931;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22885,7 +22886,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Хирургениум";
+							value="Гвардейский хирургениум";
 						};
 					};
 				};
@@ -50108,11 +50109,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7517.9995,13.24403,1211.9749};
+				position[]={7521.9546,13.244034,1216.5151};
 			};
 			id=3950;
 			type="tfar_ModuleTaskForceRadioEnforceUsage";
-			atlOffset=1.9040298;
+			atlOffset=1.9282751;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -53198,6 +53199,116 @@ class Mission
 					};
 				};
 				nAttributes=1;
+			};
+		};
+		class Item83
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={7757.9722,17.900383,1180.1639};
+			};
+			id=4059;
+			type="ModuleRespawnPosition_F";
+			atlOffset=0.44672012;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleRespawnPosition_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleRespawnPosition_F_Name";
+					expression="_this setVariable ['Name',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Твердыня Астартес";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleRespawnPosition_F_Side";
+					expression="_this setVariable ['Side',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleRespawnPosition_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleRespawnPosition_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				nAttributes=5;
 			};
 		};
 	};
