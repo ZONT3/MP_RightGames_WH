@@ -12,22 +12,22 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=4362;
+		nextID=4389;
 	};
 	class MarkerIDProvider
 	{
-		nextID=38;
+		nextID=53;
 	};
 	class LayerIndexProvider
 	{
-		nextID=827;
+		nextID=857;
 	};
 	class Camera
 	{
-		pos[]={7312.7822,152.2359,1288.1318};
-		dir[]={-0.02308218,-0.40858141,-0.91255552};
-		up[]={-0.010333917,0.91264862,-0.40856349};
-		aside[]={-0.99979335,-4.5377965e-007,0.025288226};
+		pos[]={7307.7974,94.404091,1158.4814};
+		dir[]={0.079174794,-0.48066899,-0.8734206};
+		up[]={0.043395918,0.87688619,-0.47872207};
+		aside[]={-0.99601346,4.4266926e-007,-0.090287261};
 	};
 };
 binarizationWanted=0;
@@ -937,7 +937,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=126;
+		items=136;
 		class Item0
 		{
 			dataType="Layer";
@@ -2438,7 +2438,6 @@ class Mission
 											flags=1;
 											class Attributes
 											{
-												dynamicSimulation=1;
 											};
 											id=83;
 											type="land_tiow_tf_r_1010d_doors_l";
@@ -2456,7 +2455,6 @@ class Mission
 											flags=1;
 											class Attributes
 											{
-												dynamicSimulation=1;
 											};
 											id=84;
 											type="land_tiow_tf_r_1010d_doors_r";
@@ -23203,12 +23201,12 @@ class Mission
 		class Item49
 		{
 			dataType="Marker";
-			position[]={7395.2095,11.689941,1065.8774};
+			position[]={7493.0933,11.689941,1085.9928};
 			name="marker_6";
 			type="Lasgun_1";
 			colorName="ColorWEST";
 			id=3777;
-			atlOffset=-0.055490494;
+			atlOffset=-0.16005898;
 		};
 		class Item50
 		{
@@ -32019,12 +32017,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={7760.3472,17.532442,1184.4041};
+				position[]={7760.3472,18.087742,1184.4041};
 			};
 			name="mp_spawn_sm";
 			id=3914;
 			type="Logic";
-			atlOffset=0.07178688;
+			atlOffset=0.62708664;
 		};
 		class Item69
 		{
@@ -32265,12 +32263,12 @@ class Mission
 							dataType="Logic";
 							class PositionInfo
 							{
-								position[]={7716.5718,17.465435,1186.551};
+								position[]={7716.5718,17.893517,1186.551};
 							};
 							name="vvs_west_sm";
 							id=3928;
 							type="Logic";
-							atlOffset=0.0010643005;
+							atlOffset=0.42914581;
 						};
 						class Item1
 						{
@@ -32292,7 +32290,7 @@ class Mission
 						};
 					};
 					id=3929;
-					atlOffset=0.0015029907;
+					atlOffset=0.21554375;
 				};
 				class Item6
 				{
@@ -32338,7 +32336,7 @@ class Mission
 				};
 			};
 			id=3916;
-			atlOffset=7.2555027;
+			atlOffset=7.3090134;
 		};
 		class Item71
 		{
@@ -61044,7 +61042,7 @@ class Mission
 			colorName="ColorBlue";
 			a=30;
 			b=800;
-			angle=17.175997;
+			angle=17.175993;
 			id=4328;
 			atlOffset=41.123989;
 		};
@@ -61065,7 +61063,7 @@ class Mission
 		class Item102
 		{
 			dataType="Marker";
-			position[]={8705.7676,0.014,5211.54};
+			position[]={10414.957,0.013999999,5233.5234};
 			name="marker_19";
 			markerType="RECTANGLE";
 			type="rectangle";
@@ -61074,7 +61072,7 @@ class Mission
 			b=2000;
 			angle=90;
 			id=4330;
-			atlOffset=41.513275;
+			atlOffset=40.085739;
 		};
 		class Item103
 		{
@@ -61090,11 +61088,11 @@ class Mission
 		class Item104
 		{
 			dataType="Marker";
-			position[]={6365.9409,34.851002,6491.2295};
+			position[]={6365.9409,34.851002,6491.23};
 			name="marker_22";
-			text="База орков";
+			text="База еретиков";
 			type="mil_warning";
-			colorName="ColorGUER";
+			colorName="ColorRed";
 			id=4333;
 			atlOffset=0.95100021;
 		};
@@ -61239,7 +61237,7 @@ class Mission
 		class Item118
 		{
 			dataType="Marker";
-			position[]={8320.4453,-0.093000002,5336.7109};
+			position[]={10501.331,-0.093000002,5355.7998};
 			name="marker_20";
 			markerType="RECTANGLE";
 			type="rectangle";
@@ -61248,21 +61246,21 @@ class Mission
 			b=2000;
 			angle=90;
 			id=4349;
-			atlOffset=36.162277;
+			atlOffset=36.420185;
 		};
 		class Item119
 		{
 			dataType="Marker";
-			position[]={3929.3206,27.0979,9717.7188};
+			position[]={3940.0249,27.098,9759.7705};
 			name="marker_31";
 			markerType="RECTANGLE";
 			type="rectangle";
 			colorName="ColorGreen";
 			a=30;
-			b=5000;
-			angle=151.53339;
+			b=3000;
+			angle=151.533;
 			id=4350;
-			atlOffset=55.042633;
+			atlOffset=55.587299;
 		};
 		class Item120
 		{
@@ -61274,7 +61272,7 @@ class Mission
 			colorName="ColorRed";
 			a=30;
 			b=550;
-			angle=222.27386;
+			angle=222.27383;
 			id=4353;
 			atlOffset=2.5625954;
 		};
@@ -61288,7 +61286,7 @@ class Mission
 			colorName="ColorRed";
 			a=30;
 			b=800;
-			angle=193.3542;
+			angle=193.35417;
 			id=4354;
 			atlOffset=-34.451046;
 		};
@@ -61302,7 +61300,7 @@ class Mission
 			colorName="ColorRed";
 			a=30;
 			b=500;
-			angle=185.33897;
+			angle=185.33894;
 			id=4355;
 			atlOffset=20.119625;
 		};
@@ -61328,7 +61326,7 @@ class Mission
 			type="rectangle";
 			colorName="ColorRed";
 			a=30;
-			b=5000;
+			b=3000;
 			angle=151.533;
 			id=4358;
 			atlOffset=101.01897;
@@ -64715,6 +64713,143 @@ class Mission
 			};
 			id=4359;
 			atlOffset=3.398735;
+		};
+		class Item126
+		{
+			dataType="Marker";
+			position[]={8231.6074,-0.070999146,5921.6514};
+			name="marker_42";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGreen";
+			a=30;
+			b=650;
+			angle=153.907;
+			id=4363;
+			atlOffset=-25.531502;
+		};
+		class Item127
+		{
+			dataType="Marker";
+			position[]={6661.7612,27.589111,6794.7827};
+			name="marker_43";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorGreen";
+			a=30;
+			b=1350;
+			angle=284.28195;
+			id=4365;
+			atlOffset=-8.7267151;
+		};
+		class Item128
+		{
+			dataType="Marker";
+			position[]={6610.9312,-0.021999836,5324.1431};
+			name="marker_44";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=30;
+			b=400;
+			angle=78.541;
+			id=4366;
+			atlOffset=-26.904045;
+		};
+		class Item129
+		{
+			dataType="Marker";
+			position[]={6975.7334,0.032724142,5946.1016};
+			name="marker_45";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=30;
+			b=550;
+			angle=178.38078;
+			id=4367;
+			atlOffset=46.562721;
+		};
+		class Item130
+		{
+			dataType="Marker";
+			position[]={6123.5347,30.795898,6747.4688};
+			name="marker_46";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorRed";
+			a=30;
+			b=900;
+			angle=107.09284;
+			id=4368;
+			atlOffset=3.6661606;
+		};
+		class Item131
+		{
+			dataType="Marker";
+			position[]={7501.7441,0.059000015,6151.7412};
+			name="marker_47";
+			text="АВТ ""Стойкий""";
+			type="Astra_militarum";
+			colorName="ColorBlue";
+			id=4370;
+			atlOffset=-26.181396;
+		};
+		class Item132
+		{
+			dataType="Marker";
+			position[]={6921.2119,0.068999998,5215.5703};
+			name="marker_48";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorBlue";
+			a=30;
+			b=200;
+			angle=90.179985;
+			id=4375;
+			atlOffset=29.740919;
+		};
+		class Item133
+		{
+			dataType="Marker";
+			position[]={7088.834,-0.088999748,5880.5601};
+			name="marker_49";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorBlue";
+			a=30;
+			b=700;
+			angle=359.63293;
+			id=4376;
+			atlOffset=27.048878;
+		};
+		class Item134
+		{
+			dataType="Marker";
+			position[]={8168.7544,-0.039000001,5817.3608};
+			name="marker_50";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorBlue";
+			a=30;
+			b=650;
+			angle=333.66693;
+			id=4377;
+			atlOffset=-1.1597447;
+		};
+		class Item135
+		{
+			dataType="Marker";
+			position[]={7498.2681,1.5620117,6479.5977};
+			name="marker_51";
+			markerType="RECTANGLE";
+			type="rectangle";
+			colorName="ColorBlue";
+			a=30;
+			b=450;
+			angle=280.95419;
+			id=4378;
+			atlOffset=-29.26783;
 		};
 	};
 };
