@@ -66,9 +66,19 @@ VVS_West_Inq = [
 ];
 
 VVS_West_scy = [
-"IC_Taurox_AutoCannon",
-"IC_Taurox_BattleCannon",
-"IC_Taurox_GatlingGun"
+  "TIOW_SM_Whirlwind_Arty_DA",
+  "TIOW_SM_Rhino_DA",
+  "TIOW_SM_Razorback_LC_DA",
+  "TIOW_SM_Razorback_DA",
+  "TIOW_SM_Razorback_AC_DA",
+  "TIOW_SM_Vindicator_DA",
+  "TIOW_SM_Predator_DA",
+  "TIOW_DA_Storm",
+  "TIOW_DA_Temp",
+  "Steve_Ass_Ram_DA_1",
+  "TIOW_DA_Tornado",
+  "TIOW_DA_Typhoon",
+  "TIOW_Drop_Pod_DA"
 ];
 
 VVS_West_Guard = [
@@ -96,6 +106,7 @@ VVS_West_sm = [
   "TIOW_SM_Razorback_AC_BA",
   "TIOW_SM_Vindicator_BA",
   "TIOW_SM_Predator_BA",
+  "Steve_Ass_Ram_BA_1",
   "TIOW_BA_Storm",
   "TIOW_BA_Temp",
   "TIOW_BA_Tornado",
