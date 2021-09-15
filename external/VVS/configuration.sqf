@@ -51,12 +51,14 @@ VVS_West_Land_K = [
 ];
 
 VVS_West_Mech = [
-  "AM_Chimerro", 
+  "TIOW_Centaur_01_Cadian_667_Blu",
+  "IC_Chimera_01_snow",
+  "O_ScorpiusDisintegrator",
+  "AM_Chimerro",
   "AM_Hellhound",
-  "IC_Taurox_HS_desert",
-  "IC_Tauros_Venator_desert_F",
-  "B_Truck_01_covered_F",
-  "TIOW_Centaur_01_Cadian_700_Blu"
+  "B_Truck_01_cargo_F",
+  "VNG_Vanguard_Trojan",
+  "B_Truck_01_transport_F"
 ];
 
 VVS_West_Inq = [
@@ -82,20 +84,24 @@ VVS_West_scy = [
 ];
 
 VVS_West_Guard = [
-  "IC_Taurox_HS_desert",
-  "IC_Tauros_GMG_desert_F",
-  "IC_Tauros_HMG_desert_F",
-  "IC_Tauros_unarmed_desert_F",
-  "IC_Tauros_Venator_desert_F",
-  "TIOW_CadianChimAuto_700",
-  "TIOW_Cad_LR_Battlecannon_700th_Blu",
-  "TIOW_Cad_LR_Punisher_700th_Blu",
-  "Sentinel_AC_1491th_1",
-  "Sentinel_HB_1491th_1",
-  "TIOW_CadianTrojan_700",
-  "TIOW_Centaur_01_Cadian_700_Blu",
-  "TIOW_CadianHydra_700",
-  "Sentinel_PC_1491th_1"
+  "IC_Taurox_HS_snow",
+  "IC_Tauros_GMG_snow_F",
+  "IC_Tauros_HMG_snow_F",
+  "IC_Tauros_unarmed_snow_F",
+  "IC_Tauros_Venator_snow_F",
+  "IC_Chimera_01_snow",
+  "TIOW_CadianChimAuto_667",
+  "TIOW_Cad_LR_Battlecannon_667th_Blu",
+  "TIOW_Cad_LR_Punisher_667th_Blu",
+  "Sentinel_AC_1490th_1",
+  "Sentinel_HB_1490th_1",
+  "Sentinel_MLA_1490th_1",
+  "Sentinel_HB_1490th_1",
+  "TIOW_CadianTrojan_667",
+  "TIOW_Centaur_01_Cadian_667_Blu",
+  "TIOW_CadianHydra_667",
+  "B_Truck_01_cargo_F",
+  "B_Truck_01_transport_F"
 ];
 
 VVS_West_sm = [
@@ -132,9 +138,17 @@ VVS_West_Air = [
 ];
 
 VVS_West_Astartes = [
-  "TIOW_SM_Rhino_BA",
-  "TIOW_SM_Predator_BA",
-  "TIOW_SM_Vindicator_BA"
+  "TIOW_SM_Whirlwind_Arty_IH",
+  "TIOW_SM_Razorback_LC_IH",
+  "TIOW_SM_Vindicator_IH",
+  "TIOW_SM_Razorback_IH",
+  "TIOW_SM_Razorback_AC_IH",
+  "TIOW_SM_Predator_IH",
+  "TIOW_IH_Temp",
+  "TIOW_IH_Storm",
+  "TIOW_IH_Tornado",
+  "TIOW_IH_Typhoon",
+  "TIOW_SM_Rhino_IH"
 ];
 
 VVS_West_Titans = [
