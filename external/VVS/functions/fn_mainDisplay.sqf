@@ -16,8 +16,6 @@ if((lnbSize 38101) select 0 > -1) then
 	lnbClear _control;
 };
 
-_vehicleList = [_mode] call VVS_fnc_filterType;
-
 
 _checkBox = ((findDisplay 38100) displayCtrl 38103);
 
@@ -33,20 +31,13 @@ if(VVS_Checkbox) then
 };
 
 //Fill out the filter menu.
-if(_mode == "Все") then
-{
-	{
-		lbAdd[38102,_x];
-		lbSetData[38102,(lbSize 38102)-1,_x];
-	} foreach ["Все","Наземная_техника_ВАР","Воздушная_техника_ВАР","Наемники","Лодки","Броня","БПА","Поддержка"];
 
-	lbSetCurSel[38102,0];
-}
-	else
-{
+call {
 	ctrlShow[38102,false]; //Hide it.
 	_row = 0;
 	_vehicleList = [_mode] call VVS_fnc_filterType;
+	VVS_spawnMode = _mode;
+	VVS_onSpawn = (_mode call ZONT_fnc_onSpawnVVS);
 
 	if(count _vehicleList == 0) exitWith {hint "ОЙ, что-то пошло не так! Попробуйте позже!"};
 	{

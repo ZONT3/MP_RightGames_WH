@@ -12,23 +12,7 @@ if(_filter == "") exitWith {[]};
 //Setup our array.
 _ret = [];
 
-_vehicleList = switch(_filter) do
-{
-	case "All":       { VVS_West_Land + VVS_West_Land_K + VVS_West_Mech + VVS_West_Air };
-	case "WH":        { VVS_West_Land };
-	case "Krig":      { VVS_West_Land_K };
-	case "Mech":      { VVS_West_Mech };
-	case "Titans":    { VVS_West_Titans };
-	case "Car":       { VVS_West_Car };
-	case "Inq":       { VVS_West_Inq };
-	case "Scy":       { VVS_West_scy };
-	case "Guard":     { VVS_West_guard };
-	case "SM":        { VVS_West_sm };
-	case "Aero":      { VVS_West_Air };
-	case "Astartes":  { VVS_West_Astartes };
-
-	default {[]};
-};
+_vehicleList = _filter call ZONT_fnc_filterVVS;
 
 if(count _vehicleList == 0) exitWith {[]};
 {
