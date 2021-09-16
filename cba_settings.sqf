@@ -1058,3 +1058,7 @@ zen_faction_filter_3_DSA_Spooks = true;
 zen_faction_filter_3_Horror_Units_F = true;
 zen_faction_filter_3_IND_L_F = true;
 zen_faction_filter_3_sab_nl_faction_civ = true;
+
+// TFAR - Global settings
+force TFAR_Teamspeak_Channel_Name = "RG40K";
+force TFAR_Teamspeak_Channel_Password = "4567924621685";

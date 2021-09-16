@@ -16,7 +16,7 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=84;
+		nextID=95;
 	};
 	class Camera
 	{
@@ -65,11 +65,11 @@ addons[]=
 	"ML700_Vehicles_Valkyrie",
 	"REFORT_VIC",
 	"A3_Modules_F_Curator_Curator",
-	"task_force_radio_items",
 	"A3_Characters_F",
 	"A3_Weapons_F",
 	"IC_Cadia",
 	"TIOWSpaceMarines",
+	"tfar_handhelds",
 	"WBK_DreadnoughtForm",
 	"Psykers_Pack"
 };
@@ -229,28 +229,27 @@ class AddonsMetaData
 		};
 		class Item26
 		{
-			className="task_force_radio_items";
-			name="task_force_radio_items";
-			author="[TF]Nkey";
-			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
-		};
-		class Item27
-		{
 			className="A3_Weapons_F";
 			name="Arma 3 Alpha - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item28
+		class Item27
 		{
 			className="IC_Cadia";
 			name="IC_Cadia";
 		};
-		class Item29
+		class Item28
 		{
 			className="TIOWSpaceMarines";
 			name="There is Only War Space Marines";
 			author="E_50_Panzer";
+		};
+		class Item29
+		{
+			className="tfar_handhelds";
+			name="tfar_handhelds";
+			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
 		class Item30
 		{
@@ -648,7 +647,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=33;
+		items=32;
 		class Item0
 		{
 			dataType="Layer";
@@ -40788,7 +40787,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={18352.391,134.59377,2233.7739};
-				angles[]={-0,2.2339261,0};
+				angles[]={0,2.2339261,0};
 			};
 			name="VVS_mech_Land";
 			id=5947;
@@ -40800,7 +40799,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={18220.342,134.59377,2074.0947};
-				angles[]={-0,5.4184899,0};
+				angles[]={0,5.4184899,0};
 			};
 			name="VVS_guard_Land";
 			id=5948;
@@ -40922,154 +40921,6 @@ class Mission
 			};
 		};
 		class Item31
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={18331.939,153.74336,1909.136};
-				angles[]={6.1983972,0,6.0618777};
-			};
-			id=5952;
-			type="tfar_ModuleTaskForceRadioEnforceUsage";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_password";
-					expression="_this setVariable ['radio_channel_password',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="4567924621685";
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_RiflemanRadio";
-					expression="_this setVariable ['RiflemanRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_radio_channel_name";
-					expression="_this setVariable ['radio_channel_name',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"STRING"
-								};
-							};
-							value="RG40K";
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_sw_frequencies_for_side";
-					expression="_this setVariable ['same_sw_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_TeamLeaderRadio";
-					expression="_this setVariable ['TeamLeaderRadio',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_same_lr_frequencies_for_side";
-					expression="_this setVariable ['same_lr_frequencies_for_side',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="tfar_ModuleTaskForceRadioEnforceUsage_terrain_interception_coefficient";
-					expression="_this setVariable ['terrain_interception_coefficient',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=7;
-						};
-					};
-				};
-				nAttributes=7;
-			};
-		};
-		class Item32
 		{
 			dataType="Layer";
 			name="Slots";
