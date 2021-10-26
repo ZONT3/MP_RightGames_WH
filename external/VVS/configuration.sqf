@@ -80,9 +80,10 @@ VVS_West_sm = [
 ];
 
 VVS_West_Astartes = [
+  "DW_Rhino",
+  "DW_VIND",
   "TIOW_SM_Whirlwind_Arty_IH",
   "TIOW_SM_Razorback_LC_IH",
-  "TIOW_SM_Vindicator_IH",
   "TIOW_SM_Razorback_IH",
   "TIOW_SM_Razorback_AC_IH",
   "TIOW_SM_Predator_IH",
@@ -99,6 +100,12 @@ VVS_West_Navy = [
   "ML700_Avenger_BLU",
   "ML700_Valkyrie_Multilas",
   "ML700_Valkyrie_Transport",
+  "TIOW_Valkyrie_Fuel_B",
+  "TIOW_Valkyrie_Fuel_M_B",
+  "TIOW_Valkyrie_Rocket_B",
+  "TIOW_Valkyrie_Rocket_M_B",
+  "testHelo_Rocket_Auto",
+  "testHelo_Rocket_Las",
   "TIOW_CadianTrojan_667"
 ];
 
