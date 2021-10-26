@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=2;
+	toggles=514;
 	mods[]=
 	{
 		"3denEnhanced"
 	};
 	class ItemIDProvider
 	{
-		nextID=29875;
+		nextID=29906;
 	};
 	class MarkerIDProvider
 	{
@@ -20,14 +20,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=443;
+		nextID=468;
 	};
 	class Camera
 	{
-		pos[]={18164.234,141.76392,1966.9999};
-		dir[]={-0.12451904,-0.31420857,0.94121796};
-		up[]={-0.041212101,0.9493258,0.31151819};
-		aside[]={0.99143112,1.8491846e-008,0.13115917};
+		pos[]={18298.059,166.49532,2165.2158};
+		dir[]={-0.73930943,-0.64939356,0.1782285};
+		up[]={-0.63132256,0.76044154,0.15219598};
+		aside[]={0.23436703,-9.7526936e-008,0.97217792};
 	};
 };
 binarizationWanted=0;
@@ -103,9 +103,9 @@ addons[]=
 	"A3_Structures_F_Bootcamp_Training",
 	"ML700_Vehicles_Wreck",
 	"OPTRE_UNSC_Structure_HoloObjects",
-	"ML700_Vehicles_Valkyrie",
 	"A3_Structures_F_Exp_Infrastructure_Airports",
 	"TIOWM_APCs",
+	"ML700_Vehicles_Valkyrie",
 	"CUP_Editor_A2_Roads_Config",
 	"A3_Structures_F_Exp_Industrial_DieselPowerPlant_01",
 	"A3_Structures_F_Exp_Industrial_SugarCaneFactory_01",
@@ -140,13 +140,14 @@ addons[]=
 	"ML700_Hydra_Platform",
 	"ace_rearm",
 	"A3_Modules_F_Supports",
-	"ScorpiusDisintegrator"
+	"ScorpiusDisintegrator",
+	"ML700_Avengers"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=80;
+		items=81;
 		class Item0
 		{
 			className="A3_Structures_F";
@@ -460,20 +461,20 @@ class AddonsMetaData
 		};
 		class Item52
 		{
-			className="ML700_Vehicles_Valkyrie";
-			name="ML700_Vehicles_Valkyrie";
-		};
-		class Item53
-		{
 			className="A3_Structures_F_Exp_Infrastructure";
 			name="Arma 3 Apex - Infrastructure Objects";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item54
+		class Item53
 		{
 			className="TIOWM_APCs";
 			name="TIOWM_APCs";
+		};
+		class Item54
+		{
+			className="ML700_Vehicles_Valkyrie";
+			name="ML700_Vehicles_Valkyrie";
 		};
 		class Item55
 		{
@@ -624,6 +625,11 @@ class AddonsMetaData
 		{
 			className="ScorpiusDisintegrator";
 			name="ScorpiusDisintegrator";
+		};
+		class Item80
+		{
+			className="ML700_Avengers";
+			name="ML700_Avengers";
 		};
 	};
 };
@@ -1036,7 +1042,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=93;
+		items=96;
 		class Item0
 		{
 			dataType="Layer";
@@ -1050,7 +1056,7 @@ class Mission
 					name="425th fortress_1";
 					class Entities
 					{
-						items=353;
+						items=354;
 						class Item0
 						{
 							dataType="Object";
@@ -25247,6 +25253,7 @@ class Mission
 							};
 							id=5924;
 							type="land_tiow_weapons_rack_noanimate_black";
+							atlOffset=1.5258789e-005;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -46672,9 +46679,50 @@ class Mission
 							id=29874;
 							type="land_tiow_briefing_table_triple_screens101";
 						};
+						class Item353
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={18232.332,139.48657,2164.406};
+								angles[]={0,0.70392621,0};
+							};
+							side="Empty";
+							flags=5;
+							class Attributes
+							{
+								init="this addAction [ " \n "  ""Запрос авиации"", " \n "  VVS_fnc_openVVS, " \n "  [VVS_Navy_Land,""Navy""], " \n "  6, " \n "  true, " \n "  true, " \n "  """", " \n "  ""true"", " \n "  5 " \n "];";
+								disableSimulation=1;
+							};
+							id=29895;
+							type="TIOW_Comms_Array_battered";
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
 					};
 					id=345;
-					atlOffset=4.2187347;
+					atlOffset=2.1093597;
 				};
 				class Item1
 				{
@@ -154220,13 +154268,12 @@ class Mission
 								angles[]={0,5.4685044,0};
 							};
 							side="Empty";
-							flags=4;
 							class Attributes
 							{
 							};
 							id=26473;
 							type="TIOW_IG_Mortar_836_Blu";
-							atlOffset=0.018562317;
+							atlOffset=6.4879456;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -157336,7 +157383,7 @@ class Mission
 			colorName="ColorRed";
 			a=50;
 			b=1522.0126;
-			angle=228.44501;
+			angle=228.44495;
 			id=15239;
 			atlOffset=127.92434;
 		};
@@ -159793,10 +159840,9 @@ class Mission
 		{
 			dataType="Layer";
 			name="IN";
-			state=1;
 			class Entities
 			{
-				items=9;
+				items=8;
 				class Item0
 				{
 					dataType="Object";
@@ -159853,26 +159899,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={18231.648,137.17439,2190.1089};
-						angles[]={0,2.3035159,0};
-					};
-					side="Empty";
-					class Attributes
-					{
-						reportRemoteTargets=1;
-						receiveRemoteTargets=1;
-						reportOwnPosition=1;
-						pylons="ML700_4rnd_Hellfire_AT;ML700_4rnd_Hellfire_AT;ML700_400_multilas_magazine_pylon;";
-					};
-					id=15359;
-					type="ML700_Valkyrie_Multilas";
-					atlOffset=0.36949158;
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={18201.41,134.49184,2206.5515};
 						angles[]={0,5.4202881,0};
 					};
@@ -159884,7 +159910,7 @@ class Mission
 					id=15361;
 					type="land_promethium_tanks_203";
 				};
-				class Item5
+				class Item4
 				{
 					dataType="Object";
 					class PositionInfo
@@ -159900,7 +159926,7 @@ class Mission
 					id=15362;
 					type="land_promethium_tanks_203";
 				};
-				class Item6
+				class Item5
 				{
 					dataType="Object";
 					class PositionInfo
@@ -159917,7 +159943,7 @@ class Mission
 					type="Land_Airport_02_controlTower_F";
 					atlOffset=0.38285828;
 				};
-				class Item7
+				class Item6
 				{
 					dataType="Object";
 					class PositionInfo
@@ -159994,7 +160020,7 @@ class Mission
 						nAttributes=3;
 					};
 				};
-				class Item8
+				class Item7
 				{
 					dataType="Object";
 					class PositionInfo
@@ -160016,7 +160042,7 @@ class Mission
 				};
 			};
 			id=15575;
-			atlOffset=4.5776825;
+			atlOffset=4.5357666;
 		};
 		class Item68
 		{
@@ -160626,7 +160652,7 @@ class Mission
 			colorName="ColorBlue";
 			a=50;
 			b=1522.0131;
-			angle=228.44528;
+			angle=228.44522;
 			id=15609;
 			atlOffset=84.750214;
 		};
@@ -167390,7 +167416,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={18172.928,140.6169,1973.4321};
-				angles[]={0,2.2814777,-0};
+				angles[]={0,2.2814777,0};
 			};
 			side="Empty";
 			flags=4;
@@ -167399,6 +167425,53 @@ class Mission
 			};
 			id=29870;
 			type="land_simple_field_table";
+		};
+		class Item93
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={18251.598,134.59377,2172.6389};
+				angles[]={0,2.2848458,-0};
+			};
+			name="VVS_Navy_Land";
+			id=29901;
+			type="VirtualAISquad";
+		};
+		class Item94
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18230.441,136.68423,2205.1826};
+				angles[]={6.2829223,2.6109409,6.2815876};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				reportRemoteTargets=1;
+				receiveRemoteTargets=1;
+				reportOwnPosition=1;
+			};
+			id=29904;
+			type="776th_Valk_Multilas";
+		};
+		class Item95
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={18213.381,134.56052,2190.7678};
+				angles[]={0.0008601023,1.8877027,6.2818131};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=29905;
+			type="ML700_Avenger_776th";
 		};
 	};
 	class Connections

@@ -12,6 +12,7 @@ ZONT_fnc_filterVVS = {
   	case "Mechanicus": { VVS_West_Mech };
   	case "Astartes": { VVS_West_Astartes };
   	case "SM": { VVS_West_sm };
+	case "Navy": { VVS_West_Navy };
 
   	default {[]};
   };
@@ -92,6 +93,14 @@ VVS_West_Astartes = [
   "TIOW_SM_Rhino_IH"
 ];
 
+VVS_West_Navy = [
+  "ML700_Thunderbolt_BLU",
+  "TIOW_Thunderbolt_Base",
+  "ML700_Avenger_BLU",
+  "ML700_Valkyrie_Multilas",
+  "ML700_Valkyrie_Transport",
+  "TIOW_CadianTrojan_667"
+];
 
 VVS_Car = [];
 VVS_Air = [];
