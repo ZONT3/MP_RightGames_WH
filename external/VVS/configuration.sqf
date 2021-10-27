@@ -13,6 +13,7 @@ ZONT_fnc_filterVVS = {
   	case "Astartes": { VVS_West_Astartes };
   	case "SM": { VVS_West_sm };
 	case "Navy": { VVS_West_Navy };
+	case "Scion": { VVS_West_Scion };
 
   	default {[]};
   };
@@ -107,6 +108,12 @@ VVS_West_Navy = [
   "testHelo_Rocket_Auto",
   "testHelo_Rocket_Las",
   "TIOW_CadianTrojan_667"
+];
+
+VVS_West_Scion = [
+  "IC_Taurox_GatlingGun",
+  "IC_Taurox_BattleCannon",
+  "IC_Taurox_AutoCannon"
 ];
 
 VVS_Car = [];
