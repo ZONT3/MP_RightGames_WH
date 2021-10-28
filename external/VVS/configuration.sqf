@@ -81,18 +81,19 @@ VVS_West_sm = [
 ];
 
 VVS_West_Astartes = [
-  "DW_Rhino",
-  "DW_VIND",
-  "TIOW_SM_Whirlwind_Arty_IH",
-  "TIOW_SM_Razorback_LC_IH",
-  "TIOW_SM_Razorback_IH",
-  "TIOW_SM_Razorback_AC_IH",
-  "TIOW_SM_Predator_IH",
-  "TIOW_IH_Temp",
-  "TIOW_IH_Storm",
-  "TIOW_IH_Tornado",
-  "TIOW_IH_Typhoon",
-  "TIOW_SM_Rhino_IH"
+  "dg1_tiow_ASTARTES_Rhino_DW_B",
+  "dg1_tiow_ASTARTES_Razorback_AC_DW_B",
+  "dg1_tiow_ASTARTES_Razorback_DW_B",
+  "dg1_tiow_ASTARTES_Razorback_LC_DW_B",
+  "dg1_tiow_ASTARTES_Predator_LC_DW_B",
+  "dg1_tiow_ASTARTES_Predator_DW_B",
+  "dg1_tiow_ASTARTES_Vindicator_DW_B",
+  "dg1_tiow_ASTARTES_Whirlwind_Arty_DW_B",
+  "dg1_tiow_ASTARTES_LandSpeeder_Storm_DW_B",
+  "dg1_tiow_ASTARTES_LandSpeeder_Temp_DW_B",
+  "dg1_tiow_ASTARTES_LandSpeeder_Tornado_DW_B",
+  "dg1_tiow_ASTARTES_LandSpeeder_Typhoon_DW_B",
+  "dg1_tiow_ASTARTES_LandSpeeder_AssRam_DW_B"
 ];
 
 VVS_West_Navy = [
