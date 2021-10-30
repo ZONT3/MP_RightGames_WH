@@ -108,6 +108,9 @@ VVS_West_Navy = [
   "TIOW_Valkyrie_Rocket_M_B",
   "testHelo_Rocket_Auto",
   "testHelo_Rocket_Las",
+  "B_Truck_01_box_F",
+  "B_Truck_01_ammo_F",
+  "TIOW_Centaur_01_Cadian_667_Blu",
   "TIOW_CadianTrojan_667"
 ];
 
