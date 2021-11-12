@@ -44,24 +44,14 @@ VVS_West_Mech = [
 ];
 
 VVS_West_Guard = [
-  "IC_Taurox_HS_snow",
-  "IC_Tauros_GMG_snow_F",
-  "IC_Tauros_HMG_snow_F",
-  "IC_Tauros_unarmed_snow_F",
-  "IC_Tauros_Venator_snow_F",
-  "IC_Chimera_01_snow",
-  "TIOW_CadianChimAuto_667",
-  "TIOW_Cad_LR_Battlecannon_667th_Blu",
-  "TIOW_Cad_LR_Punisher_667th_Blu",
-  "Sentinel_AC_1490th_1",
-  "Sentinel_HB_1490th_1",
-  "Sentinel_MLA_1490th_1",
-  "Sentinel_HB_1490th_1",
-  "TIOW_CadianTrojan_667",
-  "TIOW_Centaur_01_Cadian_667_Blu",
-  "TIOW_CadianHydra_667",
-  "B_Truck_01_cargo_F",
-  "B_Truck_01_transport_F"
+  "TIOW_Cad_LR_Battlecannon_700th_Blu",
+  "TIOW_CadianChimAuto_700",
+  "IC_Tauros_HMG_desert_F",
+  "IC_Tauros_GMG_desert_F",
+  "IC_Tauros_Venator_desert_F",
+  "IC_Tauros_unarmed_desert_F",
+  "TIOW_CadianTrojan_700",
+  "IC_Taurox_HS_desert"
 ];
 
 VVS_West_sm = [
@@ -97,21 +87,15 @@ VVS_West_Astartes = [
 ];
 
 VVS_West_Navy = [
-  "ML700_Thunderbolt_BLU",
-  "TIOW_Thunderbolt_Base",
-  "ML700_Avenger_BLU",
+  "TIOW_CadianTrojan_700",
+  "B_Truck_01_ammo_F",
+  "TIOW_Valkyrie_Rocket_M_B",
+  "TIOW_Valkyrie_Rocket_B",
+  "TIOW_Valkyrie_Fuel_M_B",
+  "TIOW_Valkyrie_Fuel_B",
   "ML700_Valkyrie_Multilas",
   "ML700_Valkyrie_Transport",
-  "TIOW_Valkyrie_Fuel_B",
-  "TIOW_Valkyrie_Fuel_M_B",
-  "TIOW_Valkyrie_Rocket_B",
-  "TIOW_Valkyrie_Rocket_M_B",
-  "testHelo_Rocket_Auto",
-  "testHelo_Rocket_Las",
-  "B_Truck_01_box_F",
-  "B_Truck_01_ammo_F",
-  "TIOW_Centaur_01_Cadian_667_Blu",
-  "TIOW_CadianTrojan_667"
+  "TIOW_Valkyrie_Rocket_M_B"
 ];
 
 VVS_West_Scion = [
