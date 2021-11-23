@@ -69,25 +69,18 @@ GF_DAC_Pool_Air_Vehicles = [
 	//________________	Pool_Units	________________
 
 GF_Pool_Units = [
-	"WD_ACamo_Rifleman_Heavy","WD_ACamo_Rifleman_Light","WD_ACamo_Rifleman_Medium","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Light","WD_A2Camo_Rifleman_Medium","SC_AR_Urban_Officer","WD_ACamo_Marksman"
+	"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
 	];
 
 GF_Pool_Land_Vehicles = [
-	"SC_Ferret_AR","SC_Ferret_AA_AR","SC_Ferret_Autocannon_AR","OPTRE_M12_FAV_APC","OPTRE_M12_FAV","OPTRE_M12_LRV",
-	"OPTRE_M12A1_LRV","OPTRE_M12G1_LRV","OPTRE_M12R_AA","OPTRE_M914_RV","OPTRE_M813_TT",
-	"OPTRE_M274_ATV"
+	"ML700_Taurox_Stubber_BP","Sentinel_ML_Possessed_0_BL","Sentinel_CS_Possessed_0_BL"
 	];
 GF_Pool_Armoured_Vehicles = [
-	"OPTRE_M413_MGS_UNSC","OPTRE_M412_IFV_UNSC","B_APC_Wheeled_01_cannon_F","B_AFV_Wheeled_01_cannon_F","B_MBT_01_arty_F",
-	"OPTRE_M808B_UNSC","OPTRE_M808B2","OPTRE_M808S","OPTRE_M850_UNSC"
+	"ML700_Chimera_Multilas_BP"
 	];
 GF_Pool_Air_Vehicles = [
-	"OPTRE_Pelican_armed","OPTRE_UNSC_hornet","OPTRE_AV22_Sparrowhawk","OPTRE_UNSC_falcon","SC_VTOL_X41A_AR",
-	"SC_VTOL_X42S_AR"
+	"ML700_Valk_Multilas_BLOOD"
 	];
 
 GF_Pool_Static_Weapons = [
-	"I_HMG_01_F","I_HMG_01_high_F","I_HMG_01_A_F","I_GMG_01_F","I_GMG_01_high_F","I_GMG_01_A_F","I_Mortar_01_F","I_G_Mortar_01_F","I_static_AA_F",
-	"I_static_AT_F","OPTRE_Static_ATGM","OPTRE_LAU65D_pod","OPTRE_Static_M247H_Tripod","OPTRE_Static_M247H_Shielded_Tripod","OPTRE_Static_M247T_Tripod",
-	"OPTRE_Static_M41","OPTRE_Static_Gauss","OPTRE_Scythe","OPTRE_Static_AA","OPTRE_Lance"
 	];
