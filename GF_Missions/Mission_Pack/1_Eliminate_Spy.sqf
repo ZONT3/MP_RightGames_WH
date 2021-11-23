@@ -511,8 +511,8 @@ _Unit addGoggles GF_Missions_Goggles;
 	_Unit setCombatMode "YELLOW";		//	YELLOW	RED
 
 	//________________	Change Side	________________
-	_Join_West = creategroup west;
-	units _Unit joinSilent _Join_West;
+	_Join_East = creategroup east;
+	units _Unit joinSilent _Join_East;
 
  	//________________	Arm	________________
 	for "_i" from 1 to 6 do {_Unit addItemToUniform "30Rnd_45ACP_Mag_SMG_01";};
@@ -549,7 +549,7 @@ _Unit addGoggles GF_Missions_Goggles;
 	call{
 	_changing = allUnits select {(side _x isEqualTo civilian) &&  (!isPlayer _x)};
 	_changing apply {
-	units _x joinSilent _Join_West;
+	units _x joinSilent _Join_East;
 
 //________________	Type of _weapons	________________
 _weapons = selectRandom [
@@ -676,7 +676,7 @@ _x linkItem "ItemWatch";
 };};
 
 
-	waitUntil {sleep 3;({alive _x} count units _Join_West) isEqualTo 0;};
+	waitUntil {sleep 3;({alive _x} count units _Join_East) isEqualTo 0;};
 
 	["1_1_Eliminate_Spy", "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 

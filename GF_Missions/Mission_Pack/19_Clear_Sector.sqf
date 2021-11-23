@@ -111,10 +111,10 @@ _DAC_Values = [
 [_Group_Pos,GF_Missions_DAC_Area_Spawn_Meters,GF_Missions_DAC_Area_Spawn_Meters,0,0,_DAC_Values] call DAC_fNewZone;
 waituntil{DAC_NewZone == 0};
 
-_Trigger_WEST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
-_Trigger_WEST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
-_Trigger_WEST_PRESENT setTriggerActivation ["WEST", "PRESENT", false];
-_Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
+_Trigger_EAST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
+_Trigger_EAST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
+_Trigger_EAST_PRESENT setTriggerActivation ["EAST", "PRESENT", false];
+_Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 	if (GF_Missions_Systemchat_info) then {
 	systemchat "Mission is Generated";
@@ -126,7 +126,7 @@ _Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
 
 	sleep 2;
 
-	waitUntil {sleep 3; count list _Trigger_WEST_PRESENT < 1};
+	waitUntil {sleep 3; count list _Trigger_EAST_PRESENT < 1};
 
 	["19_Clear_Sector", "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 
@@ -142,7 +142,7 @@ _Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
 	//________________	Spawn Units	________________
 
 for "_x" from 0 to (random(2)+2) do {
-_Vehicle_Patrol = createGroup WEST;
+_Vehicle_Patrol = createGroup EAST;
 _random_Land_Vehicle = GF_Pool_Land_Vehicles call BIS_fnc_selectRandom;
 
 _random_Driver = GF_Pool_Units call BIS_fnc_selectRandom;
@@ -176,7 +176,7 @@ _random_Cargo		createUnit [_randomPos, _Vehicle_Patrol];
 
 
 for "_x" from 0 to (random(1)+2) do {
-_Vehicle_Patrol = createGroup WEST;
+_Vehicle_Patrol = createGroup EAST;
 _random_Land_Vehicle = GF_Pool_Armoured_Vehicles call BIS_fnc_selectRandom;
 
 _random_Driver = GF_Pool_Units call BIS_fnc_selectRandom;
@@ -211,9 +211,8 @@ _random_Cargo		createUnit [_randomPos, _Vehicle_Patrol];
 
 for "_x" from 0 to (random(3)+2) do {
 _randomPos = [[[_Group_Pos, (1500)],[]],["water","out"]] call BIS_fnc_randomPos;
-_Group_Attack = [ _randomPos, WEST, [
-"O_G_officer_F","O_G_Soldier_F","O_G_engineer_F","O_G_medic_F","O_G_Soldier_exp_F",
-"O_G_Soldier_AR_F","O_G_Soldier_GL_F","O_G_Soldier_A_F","O_G_Soldier_LAT_F"
+_Group_Attack = [ _randomPos, EAST, [
+"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Attack setBehaviour "COMBAT";		//	AWARE
@@ -223,11 +222,11 @@ _Group_Attack setCombatMode "RED";	//	YELLOW
 };
 
 
-	waitUntil {sleep 3; count list _Trigger_WEST_PRESENT < 1};
+	waitUntil {sleep 3; count list _Trigger_EAST_PRESENT < 1};
 
 	["19_Clear_Sector_2", "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 
-	deleteVehicle _Trigger_WEST_PRESENT;
+	deleteVehicle _Trigger_EAST_PRESENT;
 
 	sleep 2;
 	if (GF_Missions_Systemchat_info) then {

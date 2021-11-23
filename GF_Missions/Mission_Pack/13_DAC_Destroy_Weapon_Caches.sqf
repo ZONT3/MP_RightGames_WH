@@ -73,7 +73,7 @@ _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 
 //________________	Overwatch	________________
-_Group_Overwatch = [ _Overwatch_Pos, WEST, [
+_Group_Overwatch = [ _Overwatch_Pos, EAST, [
 "O_spotter_F","O_sniper_F","O_sniper_F"
 ]] call BIS_fnc_spawnGroup;
 
@@ -83,9 +83,8 @@ _Group_Overwatch setCombatMode "RED";	//	YELLOW
 sleep 1;
 
 //________________	_Group_Defend	________________
-_Group_Defend = [ _Group_Pos, WEST, [
-"O_G_officer_F","O_G_Soldier_F","O_G_engineer_F","O_G_medic_F","O_G_Soldier_exp_F",
-"O_G_Soldier_AR_F","O_G_Soldier_GL_F","O_G_Soldier_A_F","O_G_Soldier_LAT_F"
+_Group_Defend = [ _Group_Pos, EAST, [
+"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Defend setBehaviour "COMBAT";		//	AWARE
@@ -135,13 +134,13 @@ _DAC_Values = [
 [(random(0)+1),4,5],
 
 //	I Zone belongs to Site > 0 = East, 1 = West, 2 = RACS, 3 = civilian (for more see readme page 7)
-[1,
+[0,
 
 //	J Unit configuration of the zone (DAC_Config_Units) > default units = 0 for East, 1 for West, 2 for RACS, 3 for civilians
 5,	//	Custom editable Units in DAC\DAC_Units_GEORGE.sqf
 
 //	K Behaviour configuration of the zone (DAC_Config_Behaviour) > default behaviour = 0 for East, 1 for West, 2 for RACS, 3 for civilian
-1,
+0,
 
 //	L Camp configuration of the zone (DAC_Config_Camps) > needed only if 1 camp minimum will be generated in the respective zone.
 0
@@ -153,10 +152,10 @@ _DAC_Values = [
 [_Group_Pos,GF_Missions_DAC_Area_Spawn_Meters,GF_Missions_DAC_Area_Spawn_Meters,0,0,_DAC_Values] call DAC_fNewZone;
 waituntil{DAC_NewZone == 0};
 
-_Trigger_WEST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
-_Trigger_WEST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
-_Trigger_WEST_PRESENT setTriggerActivation ["WEST", "PRESENT", false];
-_Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
+_Trigger_EAST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
+_Trigger_EAST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
+_Trigger_EAST_PRESENT setTriggerActivation ["EAST", "PRESENT", false];
+_Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 
 	if (GF_Missions_Systemchat_info) then {
@@ -171,11 +170,11 @@ _Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
 	sleep 2;
 
 	waitUntil {sleep 3; !alive _Object_1};
-	waitUntil {sleep 3; count list _Trigger_WEST_PRESENT < 1};
+	waitUntil {sleep 3; count list _Trigger_EAST_PRESENT < 1};
 	waitUntil {sleep 3;({alive _x} count units _Group_Overwatch) isEqualTo 0;};
 	waitUntil {sleep 3;({alive _x} count units _Group_Defend) isEqualTo 0;};
 
-	deleteVehicle _Trigger_WEST_PRESENT;
+	deleteVehicle _Trigger_EAST_PRESENT;
 
 	["13_DAC_Destroy_Weapon_Caches", "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 

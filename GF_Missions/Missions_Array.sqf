@@ -31,7 +31,7 @@ https://forums.bohemia.net/forums/topic/215850-compilation-list-of-my-gf-scripts
 
 
 diag_log "//________________ GF_Missions_Array _____________";
-	
+
 GF_Missions_Array = [
 "GF_Missions\Mission_Pack\1_Eliminate_Spy.sqf",
 "GF_Missions\Mission_Pack\2_Eliminate_Suspects.sqf",
@@ -47,7 +47,6 @@ GF_Missions_Array = [
 "GF_Missions\Mission_Pack\12_DAC_Destroy_Weaponry.sqf",
 "GF_Missions\Mission_Pack\13_DAC_Destroy_Weapon_Caches.sqf",
 "GF_Missions\Mission_Pack\14_DAC_Search_for_Supplies.sqf",
-"GF_Missions\Mission_Pack\15_Clear_Bunker.sqf",
 "GF_Missions\Mission_Pack\16_Find_the_Prisoners.sqf",
 "GF_Missions\Mission_Pack\17_Prisoners_Escaped.sqf",
 "GF_Missions\Mission_Pack\18_Move_to.sqf",

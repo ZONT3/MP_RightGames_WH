@@ -545,7 +545,7 @@ _Flag setDir (random 360);
 //________________ Spawn Groups	________________
 
 //________________	Defend	________________
-_Group_Defend = [ _Group_Pos, WEST, [
+_Group_Defend = [ _Group_Pos, EAST, [
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F",
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F",
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F",

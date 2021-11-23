@@ -59,7 +59,7 @@ _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 
 //________________	Defend	________________
-_Group_Defend = [ _Group_Pos, WEST, [
+_Group_Defend = [ _Group_Pos, EAST, [
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F"
 ]] call BIS_fnc_spawnGroup;
 

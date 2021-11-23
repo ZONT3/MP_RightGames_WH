@@ -46,28 +46,28 @@ execVM "DAC\DAC_Config_Creator.sqf";
 //________________ Settings _____________
 //________________ Set true to delete or false  _____________
 
-_Repeat_Missions						= false;				//	Change this for Non stop.Set this to false , if you are using the DAC missions
-GF_Missions_Systemchat_info				= true;					//	Show Systemchat information
-GF_Missions_saveGame					= true;					//	Save Game
-GF_Missions_Wait_Time					= 10;					// 	The time to move to the next mission	
-GF_Missions_Show_Server_info			= true;					//	Show Server Systemchat information
-GF_Missions_DAC_Area_Spawn_Meters 		= (random(350)+350);	//	The size of the area
-GF_Missions_Delete_Objects				= true;					//	Delete the objects with the mission end
-GF_Missions_Delete_Objects_Distance		= 2000;					// 	The Distance to Delete the mission's Objects
-
+_Repeat_Missions						= true;				//	Change this for Non stop.Set this to false , if you are using the DAC missions
+GF_Missions_Systemchat_info				= false;					//	Отображение информации
+GF_Missions_saveGame					= false;					//	Сохранение
+GF_Missions_Wait_Time					= 10;					// 	Время до след.миссии
+GF_Missions_Show_Server_info			= false;					//	отображение серверной информации
+GF_Missions_DAC_Area_Spawn_Meters 		= (random(350)+350);	//	размер территории
+GF_Missions_Delete_Objects				= true;					//	Удалять объекты после завершения
+GF_Missions_Delete_Objects_Distance		= 2000;					// 	Дистанция от игрока, на которой объекты удаляются
+GF_Missions_Rolling                        = false;                //  добавить ли ручной вызов миссии?
 //________________ The position of the mission	________________
 
-//	GF_Missions_pos = getPos player;    				//    For test purpose
-	GF_Missions_pos = [] call BIS_fnc_randomPos; 		//    For random location
-//	GF_Missions_pos = getmarkerPos "MarkerName_1";    	//    Create a Marker if you want a certain location -
+//	GF_Missions_pos = getPos player;    				//    для тестов
+	GF_Missions_pos = [] call BIS_fnc_randomPos; 		//    Рандомные позиции
+//	GF_Missions_pos = getmarkerPos "MarkerName_1";    	//    создание маркера
 
-//	or select a random marker , 
+//	or select a random marker ,
 //	copy this inside the mission that you want to suffle markers
-	_Marker_array =selectRandom[    
-            "MarkerName_1",        
+	_Marker_array =selectRandom[
+            "MarkerName_1",
             "MarkerName_2",
-			"MarkerName_3"			
-            ];			
+			"MarkerName_3"
+            ];
 //	GF_Missions_pos = getmarkerPos _Marker_array;		//		Or select a random marker
 
 
@@ -80,12 +80,12 @@ if (GF_Missions_Show_Server_info) then {
     _i = 0;
     waitUntil {
 	sleep 1;
-    _i = _i + 1;		
+    _i = _i + 1;
     diag_tickTime >= _time
-    };	
-	
+    };
+
 diag_log format ["FPS : %1    ||    Objects : %2    ||    allUnits : %3",round diag_fps,count allMissionObjects "All",count allUnits,{count _x;}];
-systemchat format ["FPS : %1    ||    Objects : %2    ||    allUnits : %3",round diag_fps,count allMissionObjects "All",count allUnits,{count _x;}];	
+systemchat format ["FPS : %1    ||    Objects : %2    ||    allUnits : %3",round diag_fps,count allMissionObjects "All",count allUnits,{count _x;}];
 
 	};
 };
@@ -230,7 +230,7 @@ GF_Missions_weapons = selectRandom [
 			"arifle_MX_SW_F",
 			"LMG_Mk200_F",
 			"LMG_Zafir_F",
-			"LMG_03_F",				
+			"LMG_03_F",
 			"MMG_01_hex_F",
 			"MMG_01_tan_F",
 			"MMG_02_black_F",
@@ -258,7 +258,7 @@ GF_Missions_weapons = selectRandom [
 			"arifle_SDAR_F",
 			"arifle_TRG20_F",
 			"arifle_TRG21_F",
-			"arifle_TRG21_GL_F",			
+			"arifle_TRG21_GL_F",
 			//Apex AssaultRifles
 			"arifle_AK12_F",
 			"arifle_AK12_GL_F",
@@ -290,7 +290,7 @@ GF_Missions_weapons = selectRandom [
 			"arifle_SPAR_01_GL_snd_F",
 			"arifle_SPAR_02_blk_F",
 			"arifle_SPAR_02_khk_F",
-			"arifle_SPAR_02_snd_F",			
+			"arifle_SPAR_02_snd_F",
 			"arifle_SPAR_03_blk_F",
 			"arifle_SPAR_03_khk_F",
 			"arifle_SPAR_03_snd_F",
@@ -322,20 +322,20 @@ GF_Missions_weapons = selectRandom [
 			"srifle_GM6_camo_F",
 			"srifle_GM6_F",
 			"srifle_LRR_camo_F",
-			"srifle_LRR_F",			
+			"srifle_LRR_F",
 			//Apex SniperRifles
 			"srifle_LRR_tna_F",
 			"srifle_GM6_ghex_F",
 			"srifle_DMR_07_blk_F",
 			"srifle_DMR_07_hex_F",
-			"srifle_DMR_07_ghex_F"		
+			"srifle_DMR_07_ghex_F"
 			];
 
 //________________	weapon's mags	________________
 GF_Missions_magazines_weapon = getArray (configFile / "CfgWeapons" / GF_Missions_weapons / "magazines");
-GF_Missions_magazine_Class_weapon = GF_Missions_magazines_weapon call bis_fnc_selectRandom; 
+GF_Missions_magazine_Class_weapon = GF_Missions_magazines_weapon call bis_fnc_selectRandom;
 
-	
+
 
 GF_Missions_Vests_array = selectRandom [
 			"V_Press_F",
@@ -404,8 +404,8 @@ GF_Missions_Vests_array = selectRandom [
 			"V_EOD_blue_F",
 			"V_EOD_IDAP_blue_F",
 			"V_EOD_coyote_F",
-			"V_EOD_olive_F"			
-			]; 
+			"V_EOD_olive_F"
+			];
 
 
 GF_Missions_Backpacks_array = selectRandom [
@@ -460,7 +460,7 @@ GF_Missions_Backpacks_array = selectRandom [
 			"B_ViperLightHarness_hex_F",
 			"B_ViperLightHarness_khk_F",
 			"B_ViperLightHarness_oli_F",
-			
+
 			"O_HMG_01_high_weapon_F",
 			"O_HMG_01_weapon_F",
 			"O_GMG_01_high_weapon_F",
@@ -473,7 +473,7 @@ GF_Missions_Backpacks_array = selectRandom [
 			"O_AT_01_weapon_F",
 			"O_Static_Designator_02_weapon_F",
 			"B_Static_Designator_01_weapon_F",
-			
+
 			"B_LegStrapBag_black_F",
 			"B_LegStrapBag_coyote_F",
 			"B_LegStrapBag_olive_F",
@@ -483,40 +483,41 @@ GF_Missions_Backpacks_array = selectRandom [
 			"I_UAV_06_backpack_F",
 			"O_UAV_06_backpack_F",
 			"B_UAV_06_backpack_F"
-			];  
+			];
 
-	
+
 waitUntil {time >2};
-
+if() then{}; to mission start script to check if GF_Missions_Rolling = true;
+if (GF_Missions_Rolling) then {
 
 [GF_Missions_allPlayers,["GF_Missions"],["The missions will be running , until they are all complete , Have a good Game ! ","GF_Missions",""], objNull,1,1,true,"whiteboard"] call BIS_fnc_taskCreate;
 ["GF_Missions","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
-if (count GF_Missions_Array > 0) 
+if (count GF_Missions_Array > 0)
 	then {
-	
+
 _Random_Missions = floor (random count GF_Missions_Array);
 _Random_Script = GF_Missions_Array select _Random_Missions;
 
 null = [] execVM _Random_Script;
-	
-if (!_Repeat_Missions)  then {				
+
+if (!_Repeat_Missions)  then {
 GF_Missions_Array = GF_Missions_Array - [_Random_Script];
-	
+
 if (GF_Missions_Systemchat_info) then {
 systemchat "Next mission is generating";
 };
 
 diag_log "//________________ Next GF_Missions is generating	_____________";
-		
+
 	};
-	}else{	
+	}else{
 
 ["GF_Missions","SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 
 if (GF_Missions_Systemchat_info) then {
 systemchat "Well done! All the GF_Missions are Complete";
-};	
+};
 
 diag_log "//________________ All the GF_Missions are Complete _____________";
 
@@ -524,5 +525,7 @@ sleep 3;
 
 	if (GF_Missions_saveGame) then {
 	saveGame;
-	};	
+	};
+};
+} else {
 };

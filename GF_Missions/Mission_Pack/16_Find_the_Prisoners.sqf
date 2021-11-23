@@ -75,8 +75,8 @@ _Object_3 setDamage 0.9;
 _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 //________________	Overwatch	________________
-_Group_Overwatch = [ _Overwatch_Pos, WEST, [
-"O_spotter_F","O_sniper_F","O_G_Sharpshooter_F","O_G_Sharpshooter_F","O_G_Soldier_M_F"
+_Group_Overwatch = [ _Overwatch_Pos, EAST, [
+"ML700_Bloodpact_Marksman","ML700_Bloodpact_Marksman","ML700_Bloodpact_Marksman","ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Autorifleman"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Overwatch setBehaviour "COMBAT";		//	AWARE
@@ -84,7 +84,7 @@ _Group_Overwatch setCombatMode "RED";		//	YELLOW
 
 
 //________________	Defend	________________
-_Group_Defend = [ _Group_Pos, WEST, [
+_Group_Defend = [ _Group_Pos, EAST, [
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F",
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F"
 ]] call BIS_fnc_spawnGroup;

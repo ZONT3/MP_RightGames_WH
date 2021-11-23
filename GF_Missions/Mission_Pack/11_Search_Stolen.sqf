@@ -73,9 +73,9 @@ _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 for "_x" from 0 to (random(8)+10) do {
 
-_Spawn_Group_Patrol = createGroup WEST;
+_Spawn_Group_Patrol = createGroup EAST;
 _taskPatrol = [_Spawn_Group_Patrol, _Group_Pos,(random(150)+150)] call BIS_fnc_taskPatrol;
-_Group_Patrol = _Spawn_Group_Patrol createUnit ["WD_A2Camo_Rifleman_Medium", _Overwatch_Pos, [], 0, "CAN_COLLIDE"];
+_Group_Patrol = _Spawn_Group_Patrol createUnit ["ML700_Bloodpact_Autorifleman", _Overwatch_Pos, [], 0, "CAN_COLLIDE"];
 units _Group_Patrol joinSilent _Spawn_Group_Patrol;
 
 
@@ -94,8 +94,8 @@ for "_i" from 1 to 6 do {_Group_Patrol addItemToUniform _magazineClass_weapon;};
 //________________ Spawn the Defend Units	________________
 
 //________________	Defend	________________
-_Group_Defend = [ _Group_Pos, WEST, [
-"WD_A2Camo_Marksman","WD_A2Camo_Marksman","WD_A2Camo_Marksman","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Heavy"
+_Group_Defend = [ _Group_Pos, EAST, [
+"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_Rifleman_Autogun"
 ]] call BIS_fnc_spawnGroup;
 
 [_Group_Defend, _Group_Pos] call BIS_fnc_taskDefend;

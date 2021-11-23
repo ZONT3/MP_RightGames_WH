@@ -66,7 +66,7 @@ _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 for "_x" from 0 to (random(8)+10) do {
 
-_Spawn_Group_Patrol = createGroup WEST;
+_Spawn_Group_Patrol = createGroup EAST;
 _taskPatrol = [_Spawn_Group_Patrol, _taskPatrol_Pos,(random(150)+150)] call BIS_fnc_taskPatrol;
 _Group_Patrol = _Spawn_Group_Patrol createUnit ["O_G_Survivor_F", _Overwatch_Pos, [], 0, "CAN_COLLIDE"];
 units _Group_Patrol joinSilent _Spawn_Group_Patrol;
@@ -492,7 +492,7 @@ for "_i" from 1 to 6 do {_Group_Patrol addItemToUniform _magazineClass_weapon;};
 //________________ Spawn the Defend Units	________________
 
 //________________	Defend	________________
-_Group_Defend = [ _Group_Defend_Pos, WEST, [
+_Group_Defend = [ _Group_Defend_Pos, EAST, [
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F", "O_G_Survivor_F",
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F",
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F", "O_G_Survivor_F"
@@ -965,13 +965,13 @@ _DAC_Values = [
 [(random(0)+1),4,5],
 
 //	I Zone belongs to Site > 0 = East, 1 = West, 2 = RACS, 3 = civilian (for more see readme page 7)
-[1,
+[0,
 
 //	J Unit configuration of the zone (DAC_Config_Units) > default units = 0 for East, 1 for West, 2 for RACS, 3 for civilians
 5,	//	Custom editable Units in DAC\DAC_Units_GEORGE.sqf
 
 //	K Behaviour configuration of the zone (DAC_Config_Behaviour) > default behaviour = 0 for East, 1 for West, 2 for RACS, 3 for civilian
-1,
+0,
 
 //	L Camp configuration of the zone (DAC_Config_Camps) > needed only if 1 camp minimum will be generated in the respective zone.
 0
@@ -983,10 +983,10 @@ _DAC_Values = [
 [_Group_Pos,GF_Missions_DAC_Area_Spawn_Meters,GF_Missions_DAC_Area_Spawn_Meters,0,0,_DAC_Values] call DAC_fNewZone;
 waituntil{DAC_NewZone == 0};
 
-_Trigger_WEST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
-_Trigger_WEST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
-_Trigger_WEST_PRESENT setTriggerActivation ["WEST", "PRESENT", false];
-_Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
+_Trigger_EAST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
+_Trigger_EAST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
+_Trigger_EAST_PRESENT setTriggerActivation ["EAST", "PRESENT", false];
+_Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 
 
@@ -1002,9 +1002,9 @@ _Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
 
 	waitUntil { { _x distance _Building < 20 } count GF_Missions_allPlayers > 0 };
 	waitUntil {sleep 3;({alive _x} count units _Group_Defend) isEqualTo 0;};
-	waitUntil {sleep 3; count list _Trigger_WEST_PRESENT < 1};
+	waitUntil {sleep 3; count list _Trigger_EAST_PRESENT < 1};
 
-	deleteVehicle _Trigger_WEST_PRESENT;
+	deleteVehicle _Trigger_EAST_PRESENT;
 
 	["20_Search_Device", "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 

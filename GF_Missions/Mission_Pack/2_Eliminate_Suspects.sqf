@@ -46,7 +46,7 @@ sleep 2;
 _Overwatch_Pos = [(GF_Missions_pos)] call BIS_fnc_findOverwatch;
 
 //________________	Overwatch	________________
-_Group_Overwatch = [ _Overwatch_Pos, WEST, [
+_Group_Overwatch = [ _Overwatch_Pos, East, [
 "O_spotter_F","O_G_Survivor_F"
 ]] call BIS_fnc_spawnGroup;
 
@@ -54,7 +54,7 @@ _Group_Overwatch setBehaviour "COMBAT";		//	AWARE
 _Group_Overwatch setCombatMode "RED";		//	YELLOW
 
 //________________	Patrol	________________
-_Group_Patrol = [ _Overwatch_Pos, WEST, [
+_Group_Patrol = [ _Overwatch_Pos, EAST, [
 "O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F","O_G_Survivor_F"
 ]] call BIS_fnc_spawnGroup;
 

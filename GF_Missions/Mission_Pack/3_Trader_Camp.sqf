@@ -113,8 +113,8 @@ _Building allowDamage false;
 _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 //________________	Overwatch	________________
-_Group_Overwatch = [ _Overwatch_Pos, WEST, [
-"WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Rifleman_Heavy"
+_Group_Overwatch = [ _Overwatch_Pos, EAST, [
+"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Autorifleman"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Overwatch setBehaviour "COMBAT";		//	AWARE
@@ -122,16 +122,16 @@ _Group_Overwatch setCombatMode "RED";	//	YELLOW
 
 
 //________________	Patrol	________________
-_Group_Patrol = [ _Group_Pos, WEST, [
-"SC_AR_Woodland_Officer","WD_A2Camo_Rifleman_Light","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Marksman","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Heavy"
+_Group_Patrol = [ _Group_Pos, EAST, [
+"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
 ]] call BIS_fnc_spawnGroup;
 
 [_Group_Patrol, _Overwatch_Pos,(random(150)+150)] call BIS_fnc_taskPatrol;
 
 
 //________________	Defend	________________
-_Group_Defend = [ _Group_Pos, WEST, [
-"SC_AR_Woodland_Officer","WD_A2Camo_Rifleman_Light","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Medium","WD_A2Camo_Marksman","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Heavy"
+_Group_Defend = [ _Group_Pos, EAST, [
+"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
 ]] call BIS_fnc_spawnGroup;
 
 [_Group_Defend, _Group_Pos] call BIS_fnc_taskDefend;
