@@ -18,9 +18,7 @@ switch (_TypNumber) do
   case 0:
   {
     _Unit_Pool_S = [
-	"O_crew_F","O_Helipilot_F","O_Soldier_SL_F","O_soldier_AR_F","O_soldier_AR_F","O_soldier_exp_F",
-	"O_soldier_GL_F","O_soldier_GL_F","O_soldier_M_F","O_medic_F","O_soldier_AA_F","O_soldier_repair_F",
-	"O_Soldier_F","O_Soldier_F","O_soldier_LAT_F","O_soldier_LAT_F","O_soldier_lite_F","O_soldier_TL_F","O_soldier_TL_F"
+	"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
 	];
     _Unit_Pool_V = [
 	"O_MRAP_02_gmg_F","O_MRAP_02_hmg_F","B_G_Offroad_01_armed_F","O_APC_Wheeled_02_rcws_F","I_APC_Wheeled_03_cannon_F"

@@ -36,7 +36,7 @@ https://forums.bohemia.net/forums/topic/215850-compilation-list-of-my-gf-scripts
 
 //________________	DAC	________________
 GF_DAC_Pool_Units = [
-	"WD_ACamo_Rifleman_Heavy","WD_ACamo_Rifleman_Light","WD_ACamo_Rifleman_Medium","WD_A2Camo_Rifleman_Heavy","WD_A2Camo_Rifleman_Light","WD_A2Camo_Rifleman_Medium","SC_AR_Urban_Officer","WD_ACamo_Marksman"
+	"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
 	];
 GF_DAC_Pool_Land_Vehicles = [
 	"I_G_Offroad_01_repair_F","I_G_Offroad_01_F","I_G_Offroad_01_armed_F","I_Quadbike_01_F","I_G_Quadbike_01_F","I_MRAP_03_hmg_F",
