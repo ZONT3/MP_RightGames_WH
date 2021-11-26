@@ -145,7 +145,7 @@ _Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["6_DAC_Disable_Transmitter","GF_Missions_Pack"],["Отключить передатчик","Отключить передатчик",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["6_DAC_Disable_Transmitter","GF_Missions_Pack"],["Отключите Передатчик","Отключите Передатчик",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
 	["6_DAC_Disable_Transmitter","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;

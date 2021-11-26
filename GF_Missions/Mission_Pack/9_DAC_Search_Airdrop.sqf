@@ -107,13 +107,13 @@ _DAC_Values = [
 [(random(0)+1),4,5],
 
 //	I Zone belongs to Site > 0 = East, 1 = West, 2 = RACS, 3 = civilian (for more see readme page 7)
-[1,
+[0,
 
 //	J Unit configuration of the zone (DAC_Config_Units) > default units = 0 for East, 1 for West, 2 for RACS, 3 for civilians
 5,	//	Custom editable Units in DAC\DAC_Units_GEORGE.sqf
 
 //	K Behaviour configuration of the zone (DAC_Config_Behaviour) > default behaviour = 0 for East, 1 for West, 2 for RACS, 3 for civilian
-1,
+0,
 
 //	L Camp configuration of the zone (DAC_Config_Camps) > needed only if 1 camp minimum will be generated in the respective zone.
 0
@@ -125,10 +125,10 @@ _DAC_Values = [
 [_Group_Pos,GF_Missions_DAC_Area_Spawn_Meters,GF_Missions_DAC_Area_Spawn_Meters,0,0,_DAC_Values] call DAC_fNewZone;
 waituntil{DAC_NewZone == 0};
 
-_Trigger_WEST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
-_Trigger_WEST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
-_Trigger_WEST_PRESENT setTriggerActivation ["WEST", "PRESENT", false];
-_Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
+_Trigger_EAST_PRESENT = createTrigger ["EmptyDetector", _Group_Pos];
+_Trigger_EAST_PRESENT setTriggerArea [GF_Missions_DAC_Area_Spawn_Meters, GF_Missions_DAC_Area_Spawn_Meters, 0, false];
+_Trigger_EAST_PRESENT setTriggerActivation ["EAST", "PRESENT", false];
+_Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 
 	if (GF_Missions_Systemchat_info) then {
@@ -137,7 +137,7 @@ _Trigger_WEST_PRESENT setTriggerStatements ["this","",""];
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["9_DAC_Search_Airdrop","GF_Missions_Pack"],["Найдите Груз","Найдите Груз",""], _Group_Pos,true,1,true,"search",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["9_DAC_Search_Airdrop","GF_Missions_Pack"],["Найдите сброшенные припасы","Найдите сброшенные припасы",""], _Group_Pos,true,1,true,"search",true] call BIS_fnc_taskCreate;
 	["9_DAC_Search_Airdrop","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;
@@ -189,6 +189,13 @@ publicVariable _Plane_sound;
 //    add     clearItemCargoGlobal _Cargo;     to remove medkits
 clearWeaponCargoGlobal _Cargo;
 clearMagazineCargoGlobal _Cargo;
+
+
+//________________ add Virtual Arsenal to Cargo ________________
+if (_2_Virtual_Arsenal) then {
+//    systemchat "_2_Virtual_Arsenal";
+_Cargo addAction ["Open Virtual Arsenal", {["Open",true] spawn BIS_fnc_arsenal}];
+};
 
 
 //________________ Add random loot , you need to select this or the one below ________________
@@ -867,9 +874,9 @@ _Cargo enableSimulation true;
 
 
 
-	waitUntil {sleep 3; count list _Trigger_WEST_PRESENT < 1};
+	waitUntil {sleep 3; count list _Trigger_EAST_PRESENT < 1};
 
-	deleteVehicle _Trigger_WEST_PRESENT;
+	deleteVehicle _Trigger_EAST_PRESENT;
 
 	["9_DAC_Search_Airdrop", "SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 

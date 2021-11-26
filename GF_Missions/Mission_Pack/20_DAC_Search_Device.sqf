@@ -995,7 +995,7 @@ _Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 	};
 
 
-	[GF_Missions_allPlayers,["20_Search_Device","GF_Missions_Pack"],["Найдите украденное устройство","Найдите украденное устройство",""], _Group_Pos,true,1,true,"search",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["20_Search_Device","GF_Missions_Pack"],["Найдите Устройство","Найдите Устройство",""], _Group_Pos,true,1,true,"search",true] call BIS_fnc_taskCreate;
 	["20_Search_Device","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;

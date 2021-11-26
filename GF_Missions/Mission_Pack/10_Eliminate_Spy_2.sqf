@@ -73,7 +73,7 @@ _Unit addGoggles GF_Missions_Goggles;
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["10_Eliminate_Spy_2","GF_Missions_Pack"],["Устраните шпиона","УСтраните шпиона",""], getPos _Unit,true,1,true,"kill",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["10_Eliminate_Spy_2","GF_Missions_Pack"],["Устраните Шпиона","Устраните Шпиона",""], getPos _Unit,true,1,true,"kill",true] call BIS_fnc_taskCreate;
 	["10_Eliminate_Spy_2","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	//________________	Distance from the Players	________________
@@ -89,8 +89,8 @@ _Unit addGoggles GF_Missions_Goggles;
 	_Unit setCombatMode "YELLOW";		//	YELLOW	RED
 
 	//________________	Change Side	________________
-	_Join_West = creategroup west;
-	units _Unit joinSilent _Join_West;
+	_Join_East = creategroup east;
+	units _Unit joinSilent _Join_East;
 
  	//________________	Arm	________________
 	for "_i" from 1 to 6 do {_Unit addItemToUniform "30Rnd_45ACP_Mag_SMG_01";};

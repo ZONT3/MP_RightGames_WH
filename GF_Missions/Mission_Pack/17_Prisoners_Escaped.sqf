@@ -236,7 +236,7 @@ waitUntil{!isNull _Building};
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["17_Prisoners_Escaped","GF_Missions_Pack"],["Заложники сбежали, найдите их","Заложники убежали",""], _Group_Pos,true,1,true,"scout",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["17_Prisoners_Escaped","GF_Missions_Pack"],["Заключенный устроили побег, найдите их","Заключенные сбежали",""], _Group_Pos,true,1,true,"scout",true] call BIS_fnc_taskCreate;
 	["17_Prisoners_Escaped","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	waitUntil { { _x distance _Building < 400 } count GF_Missions_allPlayers > 0 };
@@ -255,7 +255,7 @@ waitUntil{!isNull _Building};
 
 	//________________	Set Task 2	________________
 
-	[GF_Missions_allPlayers,["17_Prisoners_Escaped_2","GF_Missions_Pack"],["Заложники находятся в 400 метрах, они вооружены, Устраните все угрозы","Устраните все угрозы",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["17_Prisoners_Escaped_2","GF_Missions_Pack"],["Устраните заключенных","Устраните все угрозы",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
 	["17_Prisoners_Escaped_2","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	waitUntil {sleep 3;({alive _x} count units _Group_Defend) isEqualTo 0;};

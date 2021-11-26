@@ -13,18 +13,18 @@ if (!GF_Repeat_Missions)  then {
 GF_Missions_Array = GF_Missions_Array - [_Random_Script];
 
 if (GF_Missions_Systemchat_info) then {
-systemchat "Next mission is generating";
+systemchat "Миссия генерируется";
 };
 
 diag_log "//________________ Next GF_Missions is generating    _____________";
 
     };
-    }else{
+    }else{    
 
 ["GF_Missions","SUCCEEDED",true] spawn BIS_fnc_taskSetState;
 
 if (GF_Missions_Systemchat_info) then {
-systemchat "Well done! All the GF_Missions are Complete";
+systemchat "АААААААААААААААААААААААААА! Я Долбаеб";
 };
 
 diag_log "//________________ All the GF_Missions are Complete _____________";

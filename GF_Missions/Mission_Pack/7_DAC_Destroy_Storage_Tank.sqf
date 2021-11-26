@@ -136,7 +136,7 @@ _Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["7_DAC_Destroy_Storage_Tank","GF_Missions_Pack"],["Уничтожьте резервуар для хранения","Уничтожьте резервуар для хранения",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["7_DAC_Destroy_Storage_Tank","GF_Missions_Pack"],["Уничтожьте резервуар","Уничтожьте резервуар",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
 	["7_DAC_Destroy_Storage_Tank","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;

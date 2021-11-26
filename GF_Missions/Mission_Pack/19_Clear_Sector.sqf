@@ -121,7 +121,7 @@ _Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 	};
 
 
-	[GF_Missions_allPlayers,["19_Clear_Sector","GF_Missions_Pack"],["Зачистите сектор","Зачистите сектор",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["19_Clear_Sector","GF_Missions_Pack"],["Зачистите Сектор","Зачистите Сектор",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
 	["19_Clear_Sector","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;
@@ -134,9 +134,9 @@ _Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 	sleep 5;
 
 
-	[GF_Missions_allPlayers,["19_Clear_Sector_2","GF_Missions_Pack"],["Защитите сектор","Защитите сектор",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["19_Clear_Sector_2","GF_Missions_Pack"],["Защитите Сектор","Защитите Сектор",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
 	["19_Clear_Sector_2","ASSIGNED",true] spawn BIS_fnc_taskSetState;
-
+		
 	sleep 2;
 
 	//________________	Spawn Units	________________
@@ -212,7 +212,8 @@ _random_Cargo		createUnit [_randomPos, _Vehicle_Patrol];
 for "_x" from 0 to (random(3)+2) do {
 _randomPos = [[[_Group_Pos, (1500)],[]],["water","out"]] call BIS_fnc_randomPos;
 _Group_Attack = [ _randomPos, EAST, [
-"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
+"O_G_officer_F","O_G_Soldier_F","O_G_engineer_F","O_G_medic_F","O_G_Soldier_exp_F",
+"O_G_Soldier_AR_F","O_G_Soldier_GL_F","O_G_Soldier_A_F","O_G_Soldier_LAT_F"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Attack setBehaviour "COMBAT";		//	AWARE

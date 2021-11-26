@@ -84,7 +84,8 @@ sleep 1;
 
 //________________	_Group_Defend	________________
 _Group_Defend = [ _Group_Pos, EAST, [
-"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
+"O_G_officer_F","O_G_Soldier_F","O_G_engineer_F","O_G_medic_F","O_G_Soldier_exp_F",
+"O_G_Soldier_AR_F","O_G_Soldier_GL_F","O_G_Soldier_A_F","O_G_Soldier_LAT_F"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Defend setBehaviour "COMBAT";		//	AWARE
@@ -164,7 +165,7 @@ _Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["13_DAC_Destroy_Weapon_Caches","GF_Missions_Pack"],["Уничтожить Схроны оружия","Уничтожить Схроны оружия",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["13_DAC_Destroy_Weapon_Caches","GF_Missions_Pack"],["Уничтожьте схрон","Уничтожьте схрон",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
 	["13_DAC_Destroy_Weapon_Caches","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;

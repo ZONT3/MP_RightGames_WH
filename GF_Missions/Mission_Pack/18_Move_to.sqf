@@ -708,7 +708,7 @@ _x setskill 0.9;
 
 	//________________	Set Task 2	________________
 
-	[GF_Missions_allPlayers,["18_Move_to_2","GF_Missions_Pack"],["Заложники убежали, найдите их","Найдите местоположение заложников",""], _Group_Pos,true,1,true,"navigate",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["18_Move_to_2","GF_Missions_Pack"],["Заключенные сбежали, найдите их","Найди заключенных",""], _Group_Pos,true,1,true,"navigate",true] call BIS_fnc_taskCreate;
 	["18_Move_to_2","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	waitUntil { { _x distance _Building < 400 } count GF_Missions_allPlayers > 0 };
@@ -728,7 +728,7 @@ _x setskill 0.9;
 
 	//________________	Set Task 2	________________
 
-	[GF_Missions_allPlayers,["18_Move_to_3","GF_Missions_Pack"],["Заложники находятся в 400 метрах, они вооружены, Устраните все угрозы","Устраните все угрозы",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["18_Move_to_3","GF_Missions_Pack"],["Заключенные рядом, они вооружены, ликвидируйте их","Ликвидируйте все угрозы",""], _Group_Pos,true,1,true,"attack",true] call BIS_fnc_taskCreate;
 	["18_Move_to_3","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	waitUntil {sleep 3;({alive _x} count units _Group_Defend) isEqualTo 0;};

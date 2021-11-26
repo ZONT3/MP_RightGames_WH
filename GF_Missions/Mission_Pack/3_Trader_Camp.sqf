@@ -104,8 +104,15 @@ _Object_3 = createVehicle [_Object_3_array, _Object_3_Pos, [], 0, "CAN_COLLIDE"]
 _Object_3 setDir (random 360);
 
 
+//________________ Create a Flag with your pic 256x256 ________________
+_Flag = "FlagPole_F" createVehicle _Flag_Pos;
+_Flag setFlagTexture "GF_Missions\images\GF_Spartan_Flag.jpg";	//	Set your image for the flag
+_Flag setDir (random 360);
+
+
 //________________	Disable damage	________________
 _Building allowDamage false;
+_Flag allowDamage false;
 
 
 //________________ Spawn Groups	________________
@@ -114,7 +121,7 @@ _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 //________________	Overwatch	________________
 _Group_Overwatch = [ _Overwatch_Pos, EAST, [
-"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Autorifleman"
+"O_G_Sharpshooter_F","O_G_Sharpshooter_F","O_G_Soldier_M_F"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Overwatch setBehaviour "COMBAT";		//	AWARE
@@ -123,7 +130,8 @@ _Group_Overwatch setCombatMode "RED";	//	YELLOW
 
 //________________	Patrol	________________
 _Group_Patrol = [ _Group_Pos, EAST, [
-"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
+"O_G_officer_F","O_G_Soldier_SL_F","O_G_Soldier_TL_F","O_G_Soldier_AR_F","O_G_Soldier_F",
+"O_G_Soldier_LAT_F","O_G_medic_F","O_G_Soldier_LAT2_F","O_G_Soldier_lite_F"
 ]] call BIS_fnc_spawnGroup;
 
 [_Group_Patrol, _Overwatch_Pos,(random(150)+150)] call BIS_fnc_taskPatrol;
@@ -131,7 +139,8 @@ _Group_Patrol = [ _Group_Pos, EAST, [
 
 //________________	Defend	________________
 _Group_Defend = [ _Group_Pos, EAST, [
-"ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Etogaur","ML700_Bloodpact_Light_AT","ML700_Bloodpact_Marksman","ML700_Bloodpact_Officer","ML700_Bloodpact_Plasma","ML700_Bloodpact_Rifleman_Autogun","ML700_Bloodpact_VOX"
+"O_G_officer_F","O_G_Soldier_F","O_G_engineer_F","O_G_medic_F","O_G_Soldier_exp_F",
+"O_G_Soldier_AR_F","O_G_Soldier_GL_F","O_G_Soldier_A_F","O_G_Soldier_LAT_F"
 ]] call BIS_fnc_spawnGroup;
 
 [_Group_Defend, _Group_Pos] call BIS_fnc_taskDefend;
@@ -143,7 +152,7 @@ _Group_Defend = [ _Group_Pos, EAST, [
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["3_Trader_Camp","GF_Missions_Pack"],["Устраните лагерь противника","Устраните лагерь противника",""], _Group_Pos,true,1,true,"kill",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["3_Trader_Camp","GF_Missions_Pack"],["Устранение лагеря","Устранение лагеря",""], _Group_Pos,true,1,true,"kill",true] call BIS_fnc_taskCreate;
 	["3_Trader_Camp","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;

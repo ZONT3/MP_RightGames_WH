@@ -76,7 +76,7 @@ _Overwatch_Pos = [(_Group_Pos)] call BIS_fnc_findOverwatch;
 
 //________________	Overwatch	________________
 _Group_Overwatch = [ _Overwatch_Pos, EAST, [
-"ML700_Bloodpact_Marksman","ML700_Bloodpact_Marksman","ML700_Bloodpact_Marksman","ML700_Bloodpact_Autorifleman","ML700_Bloodpact_Autorifleman"
+"O_spotter_F","O_sniper_F","O_G_Sharpshooter_F","O_G_Sharpshooter_F","O_G_Soldier_M_F"
 ]] call BIS_fnc_spawnGroup;
 
 _Group_Overwatch setBehaviour "COMBAT";		//	AWARE
@@ -249,7 +249,7 @@ _x setskill 0.8;
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["16_Find_the_Prisoners","GF_Missions_Pack"],["Найдите заложников","Найдите заложников",""], _Group_Pos,true,1,true,"scout ",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["16_Find_the_Prisoners","GF_Missions_Pack"],["Найдите Заключенных","Найдите заключенных",""], _Group_Pos,true,1,true,"scout ",true] call BIS_fnc_taskCreate;
 	["16_Find_the_Prisoners","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	waitUntil { { _x distance _Building < 400 } count GF_Missions_allPlayers > 0 };
@@ -268,7 +268,7 @@ _x setskill 0.8;
 
 	//________________	Set Task 2	________________
 
-	[GF_Missions_allPlayers,["16_Find_the_Prisoners_2","GF_Missions_Pack"],["Заложники находятся в 400 метрах, они вооружены, Устраните все угрозы","Устраните все угрозы",""], _Group_Pos,true,1,true,"attack ",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["16_Find_the_Prisoners_2","GF_Missions_Pack"],["Устраните заключенных","УСтраните все угрозы",""], _Group_Pos,true,1,true,"attack ",true] call BIS_fnc_taskCreate;
 	["16_Find_the_Prisoners_2","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	waitUntil {sleep 3;({alive _x} count units _Group_Overwatch) isEqualTo 0;};

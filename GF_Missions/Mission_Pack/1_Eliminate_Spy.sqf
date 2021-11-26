@@ -542,7 +542,7 @@ _Unit addGoggles GF_Missions_Goggles;
 	saveGame;
 	};
 
-	[GF_Missions_allPlayers,["1_1_Eliminate_Spy","GF_Missions_Pack"],["Шпион установил ловушку! , Устраните все угрозы! ","Шпион установил ловушку! Устраните все угрозы!",""], getPos _Unit,true,1,true,"kill",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["1_1_Eliminate_Spy","GF_Missions_Pack"],["Это ловушка! Устраните все угрозы ","Это ловушка! Устраните все угрозы",""], getPos _Unit,true,1,true,"kill",true] call BIS_fnc_taskCreate;
 	["1_1_Eliminate_Spy","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 

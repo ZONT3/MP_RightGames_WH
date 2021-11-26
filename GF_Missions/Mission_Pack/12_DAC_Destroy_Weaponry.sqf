@@ -163,7 +163,7 @@ _Trigger_EAST_PRESENT setTriggerStatements ["this","",""];
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["12_DAC_Destroy_Weaponry","GF_Missions_Pack"],["Уничтожить секретное оружие","Уничтожить секретное оружие",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["12_DAC_Destroy_Weaponry","GF_Missions_Pack"],["Уничтожьте оружие","Уничтожьте оружие",""], _Group_Pos,true,1,true,"destroy",true] call BIS_fnc_taskCreate;
 	["12_DAC_Destroy_Weaponry","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;

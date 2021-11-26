@@ -46,7 +46,7 @@ sleep 2;
 _Overwatch_Pos = [(GF_Missions_pos)] call BIS_fnc_findOverwatch;
 
 //________________	Overwatch	________________
-_Group_Overwatch = [ _Overwatch_Pos, East, [
+_Group_Overwatch = [ _Overwatch_Pos, EAST, [
 "O_spotter_F","O_G_Survivor_F"
 ]] call BIS_fnc_spawnGroup;
 
@@ -158,7 +158,7 @@ _x setskill 0.8;
 
 	//________________	Set Task	________________
 
-	[GF_Missions_allPlayers,["2_Eliminate_Suspects","GF_Missions_Pack"],["Убейте Подозреваемых","Убейте Подозреваемых",""], _Overwatch_Pos,true,1,true,"kill",true] call BIS_fnc_taskCreate;
+	[GF_Missions_allPlayers,["2_Eliminate_Suspects","GF_Missions_Pack"],["Устраните неверных","Устраните неверных",""], _Overwatch_Pos,true,1,true,"kill",true] call BIS_fnc_taskCreate;
 	["2_Eliminate_Suspects","ASSIGNED",true] spawn BIS_fnc_taskSetState;
 
 	sleep 2;
