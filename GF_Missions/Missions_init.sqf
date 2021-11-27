@@ -40,7 +40,7 @@ execVM "DAC\DAC_Config_Creator.sqf";
 //________________ Settings _____________
 //________________ Set true to delete or false  _____________
 
-GF_Repeat_Missions                        = false;                //    EDIT i made this a global variable. Change this for Non stop.Set this to false , if you are using the DAC missions
+GF_Repeat_Missions                        = true;                //    EDIT i made this a global variable. Change this for Non stop.Set this to false , if you are using the DAC missions
 GF_Missions_Systemchat_info                = true;                    //    Show Systemchat information
 GF_Missions_saveGame                    = true;                    //    Save Game
 GF_Missions_Wait_Time                    = 10;                    //     The time to move to the next mission
@@ -48,7 +48,7 @@ GF_Missions_Show_Server_info            = true;                    //    Show Se
 GF_Missions_DAC_Area_Spawn_Meters         = (random(350)+350);    //    The size of the area
 GF_Missions_Delete_Objects                = true;                    //    Delete the objects with the mission end
 GF_Missions_Delete_Objects_Distance        = 2000;                    //     The Distance to Delete the mission's Objects
-GF_Missions_Rolling                        = false;                //  ADDED choose wether to have rolling or triggered missions
+GF_Missions_Rolling                        = true;                //  ADDED choose wether to have rolling or triggered missions
 
 //________________ The position of the mission    ________________
 
