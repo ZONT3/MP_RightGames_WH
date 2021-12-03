@@ -482,7 +482,7 @@ GF_Missions_Backpacks_array = selectRandom [
 
 
 waitUntil {time >2};
-// ADDED if() then{}; to mission start script to check if GF_Missions_Rolling = true;
+ if() then{}; to mission start script to check if GF_Missions_Rolling = true;
 if (GF_Missions_Rolling) then {
         [GF_Missions_allPlayers,["GF_Missions"],["Have a good Game ! ","GF_Missions",""], objNull,1,1,true,"whiteboard"] call BIS_fnc_taskCreate;
         ["GF_Missions","ASSIGNED",true] spawn BIS_fnc_taskSetState;
