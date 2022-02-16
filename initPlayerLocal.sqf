@@ -69,6 +69,7 @@ private _fn_moveToSpawn = {
     if (_side == east)       then { _spawn = MP_spawn_east };
     if (_side == west)       then { _spawn = MP_spawn_west };
     if (_side == resistance) then { _spawn = MP_spawn_guer };
+    if (_side == civilian)   then { _spawn = MP_spawn_civ };
   } else {
     _spawn = missionNamespace getVariable _spawnName;
   };
