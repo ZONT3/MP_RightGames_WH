@@ -53,7 +53,7 @@ private _fn_moveToCustomSpawn = {
   params ['_player','_fn_moveToSpawn'];
   waituntil { sleep 0.1; !isNil 'ZPR_roles' };
   if ([["Mechanicus"]] call ZONT_fnc_checkRole)
-  exitWith { [_player, true, 'MP_spawn_mech'] call _fn_moveToSpawn };
+  exitWith { [_player, true, 'MP_spawn_mec'] call _fn_moveToSpawn };
   if ([["Astartes"]] call ZONT_fnc_checkRole)
   exitWith { [_player, true, 'MP_spawn_sm'] call _fn_moveToSpawn };
   if ([["Inqusition"]] call ZONT_fnc_checkRole)

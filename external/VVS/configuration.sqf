@@ -8,10 +8,10 @@ VVS_Premade_List = false;
 
 ZONT_fnc_filterVVS = {
   switch(_this) do {
-  	case "PDF": { VVS_West_Guard };
+  	case "Fist": { VVS_West_Fist };
   	case "Mechanicus": { VVS_West_Mech };
   	case "Astartes": { VVS_West_Astartes };
-  	case "SM": { VVS_West_sm };
+  	case "SL": { VVS_West_Salo };
 	case "Navy": { VVS_West_Navy };
 	case "Scion": { VVS_West_Scion };
 
@@ -33,76 +33,45 @@ ZONT_fnc_onSpawnVVS = {
 
 
 VVS_West_Mech = [
-  "TIOW_Centaur_01_Cadian_667_Blu",
-  "IC_Chimera_01_snow",
-  "O_ScorpiusDisintegrator",
-  "AM_Chimerro",
-  "AM_Hellhound",
-  "B_Truck_01_cargo_F",
-  "VNG_Vanguard_Trojan",
-  "B_Truck_01_transport_F"
+"Land_Elevator_Base",
+"Mars_annihilator",
+"Mars_Conqueror",
+"Mars_Executioneer",
+"Mars_Exterminator",
+"AM_Chimerro",
+"AM_Hellhound",
+"O_ScorpiusDisintegrator",
+"O_ScorpiusDisintegrator13",
+"O_ScorpiusBelleros_base",
+"O_ScorpiusBelleros13_base"
 ];
 
-VVS_West_Guard = [
-  "TIOW_Cad_LR_Battlecannon_700th_Blu",
-  "TIOW_CadianChimAuto_700",
-  "IC_Tauros_HMG_desert_F",
-  "IC_Tauros_GMG_desert_F",
-  "IC_Tauros_Venator_desert_F",
-  "IC_Tauros_unarmed_desert_F",
-  "TIOW_CadianTrojan_700",
-  "IC_Taurox_HS_desert"
+VVS_West_Fist = [
+"TIOW_SM_Predator_IF",
+"TIOW_SM_Razorback_AC_IF",
+"TIOW_SM_Razorback_IF",
+"TIOW_SM_Razorback_LC_IF",
+"TIOW_SM_Rhino_IF",
+"TIOW_SM_Vindicator_IF",
+"Steve_IF_Jetbike_HB",
+"Steve_IF_Jetbike_MM",
+"Steve_IF_Jetbike_PC",
+"Steve_IF_Jetbike_VLK"
 ];
 
-VVS_West_sm = [
-  "TIOW_SM_Whirlwind_Arty_BA",
-  "TIOW_SM_Rhino_BA",
-  "TIOW_SM_Razorback_LC_BA",
-  "TIOW_SM_Razorback_BA",
-  "TIOW_SM_Razorback_AC_BA",
-  "TIOW_SM_Vindicator_BA",
-  "TIOW_SM_Predator_BA",
-  "Steve_Ass_Ram_BA_1",
-  "TIOW_BA_Storm",
-  "TIOW_BA_Temp",
-  "TIOW_BA_Tornado",
-  "TIOW_BA_Typhoon",
-  "TIOW_Drop_Pod_BA"
+VVS_West_Salo = [
+"TIOW_SM_Predator_SL",
+"TIOW_SM_Razorback_AC_SL",
+"TIOW_SM_Razorback_SL",
+"TIOW_SM_Razorback_LC_SL",
+"TIOW_SM_Rhino_SL",
+"TIOW_SM_Vindicator_SL",
+"Steve_SAL_Jetbike_HB",
+"Steve_SAL_Jetbike_MM",
+"Steve_SAL_Jetbike_PC",
+"Steve_SAL_Jetbike_VLK"
 ];
 
-VVS_West_Astartes = [
-  "dg1_tiow_ASTARTES_Rhino_DW_B",
-  "dg1_tiow_ASTARTES_Razorback_AC_DW_B",
-  "dg1_tiow_ASTARTES_Razorback_DW_B",
-  "dg1_tiow_ASTARTES_Razorback_LC_DW_B",
-  "dg1_tiow_ASTARTES_Predator_LC_DW_B",
-  "dg1_tiow_ASTARTES_Predator_DW_B",
-  "dg1_tiow_ASTARTES_Vindicator_DW_B",
-  "dg1_tiow_ASTARTES_Whirlwind_Arty_DW_B",
-  "dg1_tiow_ASTARTES_LandSpeeder_Storm_DW_B",
-  "dg1_tiow_ASTARTES_LandSpeeder_Temp_DW_B",
-  "dg1_tiow_ASTARTES_LandSpeeder_Tornado_DW_B",
-  "dg1_tiow_ASTARTES_LandSpeeder_Typhoon_DW_B",
-  "dg1_tiow_ASTARTES_LandSpeeder_AssRam_DW_B"
-];
-
-VVS_West_Navy = [
-  "TIOW_CadianTrojan_700",
-  "B_Truck_01_ammo_F",
-  "TIOW_Valkyrie_Rocket_M_B",
-  "TIOW_Valkyrie_Rocket_B",
-  "TIOW_Valkyrie_Fuel_M_B",
-  "TIOW_Valkyrie_Fuel_B",
-  "ML700_Valkyrie_Multilas",
-  "ML700_Valkyrie_Transport",
-  "TIOW_Valkyrie_Rocket_M_B"
-];
-
-VVS_West_Scion = [
-  "IC_Taurox_GatlingGun",
-  "IC_Taurox_BattleCannon",
-  "IC_Taurox_AutoCannon"
-];
 
 VVS_Car = [];
 VVS_Air = [];
