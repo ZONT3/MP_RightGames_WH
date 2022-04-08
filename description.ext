@@ -63,7 +63,15 @@ class CfgSounds {
   sounds[] = {};
 };
 
+author			  = "RG Team";
+onLoadName		= "WH40K | Right Games";
+onLoadMission	= "";
 loadScreen = "pic\loading.paa";
+class Header {
+	gameType   = RPG;
+	minPlayers =   0;
+	maxPlayers = 128;
+};
 
 class CfgDebriefing {
   class force {
