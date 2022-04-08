@@ -41291,8 +41291,7 @@ class Mission
 			flags=1;
 			class Attributes
 			{
-				init="call{this addAction [   " \n " ""Техника Механикум"",   " \n " VVS_fnc_openVVS,   " \n " [VVS_west_Land_Mec, ""MECL""],6,    " \n " true,    " \n " true,    " \n " """",    " \n " ""true"",   " \n " 5]}";
-				disableSimulation=1;
+			this execVM "init_vvs.sqf"
 			};
 			id=5796;
 			type="TIOW_Comms_Array_good_condition";
