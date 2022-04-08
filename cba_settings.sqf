@@ -1244,8 +1244,8 @@ TFAR_VolumeHudTransparency = 0;
 TFAR_volumeModifier_forceSpeech = false;
 
 // TFAR - Global settings
-force TFAR_AICanHearPlayer = false;
-force TFAR_AICanHearSpeaker = false;
+force TFAR_AICanHearPlayer = true;
+force TFAR_AICanHearSpeaker = true;
 force TFAR_allowDebugging = true;
 tfar_core_noTSNotConnectedHint = false;
 force TFAR_defaultIntercomSlot = 0;
@@ -1288,7 +1288,7 @@ force TFAR_spectatorCanHearEnemyUnits = true;
 force TFAR_spectatorCanHearFriendlies = true;
 force TFAR_takingRadio = 2;
 force TFAR_Teamspeak_Channel_Name = "RG40K";
-force TFAR_Teamspeak_Channel_Password = "4567924621685";
+force TFAR_Teamspeak_Channel_Password = "645789345166";
 force tfar_terrain_interception_coefficient = 7;
 force TFAR_voiceCone = true;
 
