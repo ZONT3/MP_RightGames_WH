@@ -8,7 +8,7 @@ _this addAction [
   true,
   true,
   "",
-  "[['Fist']] call ZONT_fnc_checkRole",
+  "[['Fist', 'HQ']] call ZONT_fnc_checkRole",
   5
 ];
 
@@ -20,7 +20,7 @@ _this addAction [
   true,
   true,
   "",
-  "[['SL']] call ZONT_fnc_checkRole",
+  "[['SL', 'HQ']] call ZONT_fnc_checkRole",
   5
 ];
 
@@ -32,6 +32,6 @@ _this addAction [
   true,
   true,
   "",
-  "[['Mechanicus']] call ZONT_fnc_checkRole",
+  "[['Mechanicus', 'HQ']] call ZONT_fnc_checkRole",
   5
 ];
