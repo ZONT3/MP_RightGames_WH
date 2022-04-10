@@ -11,6 +11,9 @@ waitUntil {vehicle player == player};
 
 [] execVM "initPlayerAfterRespawn.sqf";
 
+[] execVM "external\scripts\autoheal_list.sqf";
+
+
 /******                            Zeus list                             ******/
 /* MCH_ZEUS_LIST = [{
   if (isnull (finddisplay 312)) exitWith {};
