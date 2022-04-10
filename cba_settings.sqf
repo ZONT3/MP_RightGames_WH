@@ -468,7 +468,7 @@ ace_tagging_quickTag = 1;
 
 // ACE User Interface
 force ace_ui_allowSelectiveUI = true;
-ace_ui_ammoCount = false;
+ace_ui_ammoCount = true;
 ace_ui_ammoType = true;
 ace_ui_commandMenu = true;
 force ace_ui_enableSpeedIndicator = true;
