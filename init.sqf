@@ -20,3 +20,4 @@ enableRadio false;
 enableSentences false;
 enableSaving [false, false];
 player enableFatigue false;
+Player enableStamina false;
