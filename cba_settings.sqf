@@ -563,7 +563,7 @@ force ace_zeus_radioOrdnance = false;
 force ace_zeus_remoteWind = false;
 force ace_zeus_revealMines = 0;
 force ace_zeus_zeusAscension = false;
-force ace_zeus_zeusBird = false;
+force ace_zeus_zeusBird = true;
 
 // Achilles - Available Factions
 Achilles_var_armst_mut_new = true;
@@ -1303,7 +1303,7 @@ zen_camera_defaultSpeedCoef = 1;
 zen_camera_fastSpeedCoef = 1;
 zen_camera_followTerrain = true;
 force zen_common_ascensionMessages = false;
-force zen_common_autoAddObjects = false;
+force zen_common_autoAddObjects = true;
 force zen_common_cameraBird = false;
 zen_common_darkMode = false;
 zen_common_disableGearAnim = false;
@@ -1575,4 +1575,3 @@ zen_faction_filter_3_Default = true;
 zen_faction_filter_3_EdCat_1776_Civilian = true;
 zen_faction_filter_3_IND_L_F = true;
 zen_faction_filter_3_LIB_CIV = true;
-
