@@ -33,7 +33,6 @@ ZONT_fnc_onSpawnVVS = {
 
 
 VVS_West_Mech = [
-"Land_Elevator_Base",
 "Mars_annihilator",
 "Mars_Conqueror",
 "Mars_Executioneer",
@@ -43,6 +42,7 @@ VVS_West_Mech = [
 "O_ScorpiusDisintegrator",
 "O_ScorpiusDisintegrator13",
 "O_ScorpiusBelleros_base",
+"Dos_Drop_Pod7",
 "O_ScorpiusBelleros13_base"
 ];
 
