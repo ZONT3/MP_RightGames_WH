@@ -8,7 +8,7 @@ VVS_Premade_List = false;
 
 ZONT_fnc_filterVVS = {
   switch(_this) do {
-  	case "Fist": { VVS_West_Fist };
+  	case "Guard": { VVS_West_IG };
   	case "Mechanicus": { VVS_West_Mech };
   	case "Astartes": { VVS_West_Astartes };
   	case "SL": { VVS_West_Salo };
@@ -46,17 +46,17 @@ VVS_West_Mech = [
 "O_ScorpiusBelleros13_base"
 ];
 
-VVS_West_Fist = [
-"TIOW_SM_Predator_IF",
-"TIOW_SM_Razorback_AC_IF",
-"TIOW_SM_Razorback_IF",
-"TIOW_SM_Razorback_LC_IF",
-"TIOW_SM_Rhino_IF",
-"TIOW_SM_Vindicator_IF",
-"Steve_IF_Jetbike_HB",
-"Steve_IF_Jetbike_MM",
-"Steve_IF_Jetbike_PC",
-"Steve_IF_Jetbike_VLK"
+VVS_West_IG = [
+"TIOW_CadianChimAuto_776", 
+"TIOW_Centaur_01_Cadian_776_Blu", 
+"TIOW_CadianTrojan_776", 
+"IC_Tauros_GMG_woodland_F", 
+"IC_Tauros_HMG_woodland_F", 
+"IC_Tauros_unarmed_woodland_F", 
+"IC_Tauros_Venator_woodland_F", 
+"OM_Tauros_Unarmed_Medicae_IC", 
+"ML700_Taurox_Stubber", 
+"ML700_Taurox_Unarmed"
 ];
 
 VVS_West_Salo = [
