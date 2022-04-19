@@ -1328,6 +1328,7 @@ force digi_medical_avail_gasmask = """IC_SL_GASMASK"",""93rd_Scion_mask_02"",""I
 force digi_medical_gasmask_durability = 600;
 force digi_medical_infectTime = 60;
 
+
 // Drongo's DYEL
 dyelActiveInventory = true;
 dyelArrestDebug = true;
