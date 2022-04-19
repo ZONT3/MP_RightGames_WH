@@ -1128,6 +1128,12 @@ force CBRN_factionMask_TIOW_IG_HQ_B = "";
 force CBRN_factionMask_TIOW_IG_HQ_I = "";
 force CBRN_factionMask_TIOW_IG_HQ_O = "";
 force CBRN_factionMask_TIOW_IQF = "";
+
+// WebKnight's Zombies
+force WBK_ZombiesIsUseParticleDeathControl = true;
+force WBK_ZombiesIsUseStatDeathControl = true;
+
+
 force CBRN_factionMask_TIOW_Mordian_Blu = "";
 force CBRN_factionMask_TIOW_Mordian_Indep = "";
 force CBRN_factionMask_TIOW_Mordian_OP = "";
@@ -1317,11 +1323,10 @@ CBRN_factionMask_WBK_Warhammer_AS = "";
 CBRN_factionMask_WBK_Warhammer_CH = "";
 
 // DIGI Chemical warfare
-digi_medical_affectAI = false;
-force digi_medical_avail_gasmask = ""IC_cad_rebreather_green","IC_SL_GASMASK","IC_SL_GASMASK_02","553rd_Scion_Mask_03","IC_Pilot_mask HWE_arbites_rebreather","IC_SL_GASMASK","93rd_Scion_mask_02","IC_Scion_mask_03","PJ_Scion_mask_stripes","PJ_Scion_mask_01"";
+force digi_medical_affectAI = false;
+force digi_medical_avail_gasmask = """IC_SL_GASMASK"",""93rd_Scion_mask_02"",""IC_Scion_mask_03"",""PJ_Scion_mask_stripes"",""PJ_Scion_mask_01"", ""IC_SL_GASMASK"",""IC_SL_GASMASK_02"", ""IC_cad_rebreather_green""";
 force digi_medical_gasmask_durability = 600;
-digi_medical_infectTime = 60;
-
+force digi_medical_infectTime = 60;
 
 // Drongo's DYEL
 dyelActiveInventory = true;
@@ -1392,17 +1397,17 @@ IMS_ShowHealthHud = true;
 
 // Improved Melee System (Server Settings)
 force IMS_AddKnifeToUnit = false;
-force IMS_BayonetDistance = "20";
-force IMS_BayonetOnAI = false;
-force IMS_BluntWeapon = true;
+force IMS_BayonetDistance = "6";
+force IMS_BayonetOnAI = true;
+force IMS_BluntWeapon = false;
 force IMS_CustomAIHEALTH = "2";
-force IMS_DamageMultiplierParam = "15";
+force IMS_DamageMultiplierParam = "1";
 force IMS_ExecutionChanceParametr = "20";
 force IMS_isHumansCanHitSM = true;
 force IMS_isImsCanHitAllies = true;
-force IMS_isKickButtInstaKill = true;
+force IMS_isKickButtInstaKill = false;
 force IMS_isStaticDeaths = false;
-force IMS_RifleDodgeSet = true;
+force IMS_RifleDodgeSet = false;
 force IMS_StealthAI_Ears = 15;
 force IMS_StealthAI_Eyes = 40;
 force IMS_WBK_CUSTOMCAMSERVER = false;
@@ -1537,6 +1542,20 @@ force TFAR_voiceCone = true;
 force IMS_NobOrksHp = "100";
 force IMS_NormalOrksHp = "10";
 force IMS_OrksMaskArray = "[""DKOKQMMask"",""DKOKCOMMask"",""DKOKEngMask"",""DKOKGrenMask"",""DKOKGrenMask1489th"",""DKOKGrenMask1490th"",""DKOKGrenMask1491st"",""DKOKGrenMask82nd"",""DKOKOffMask"",""DKOKTroopMask"",""Ren_Gasmask_01"",""Ren_Gasmask_02""]";
+
+// Necroplague Mutants
+dev_cba_damageMultiplier = 1;
+dev_cba_friendly = "[""VirtualCurator_F"", ""B_VirtualCurator_F"", ""O_VirtualCurator_F"", ""I_VirtualCurator_F"", ""C_VirtualCurator_F""]";
+force dev_cba_friendlySide = true;
+force dev_cba_infection = true;
+dev_cba_infection_prolongTime = 500;
+dev_cba_infection_resurrectAmugusChance = 0;
+dev_cba_infection_resurrectParasiteChance = 0.1;
+dev_cba_infection_resurrectTime = "[25,30,35]";
+force dev_cba_infection_resurrectWebknight = true;
+force dev_cba_infection_resurrectZombie = true;
+dev_cba_infection_totalTime = 400;
+force dev_cba_killswitch = false;
 
 // Zeus Enhanced
 zen_camera_adaptiveSpeed = true;
