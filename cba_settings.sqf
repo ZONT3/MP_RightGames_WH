@@ -1318,7 +1318,7 @@ CBRN_factionMask_WBK_Warhammer_CH = "";
 
 // DIGI Chemical warfare
 digi_medical_affectAI = false;
-force digi_medical_avail_gasmask = ""IC_cad_rebreather_green","IC_SL_GASMASK","IC_SL_GASMASK_02","553rd_Scion_Mask_03","IC_Pilot_mask HWE_arbites_rebreather","IC_SL_GASMASK","93rd_Scion_mask_02","IC_Scion_mask_03","PJ_Scion_mask_stripes","PJ_Scion_mask_01"";
+force digi_medical_avail_gasmask = "IC_cad_rebreather_green","IC_SL_GASMASK","IC_SL_GASMASK_02","553rd_Scion_Mask_03","IC_Pilot_mask HWE_arbites_rebreather","IC_SL_GASMASK","93rd_Scion_mask_02","IC_Scion_mask_03","PJ_Scion_mask_stripes","PJ_Scion_mask_01";
 force digi_medical_gasmask_durability = 600;
 digi_medical_infectTime = 60;
 
