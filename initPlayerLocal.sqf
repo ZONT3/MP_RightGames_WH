@@ -11,7 +11,10 @@ waitUntil {vehicle player == player};
 
 [] execVM "initPlayerAfterRespawn.sqf";
 
+/*** Custom Scripts ***/
+
 [] execVM "external\scripts\autoheal_list.sqf";
+[] execVM "external\scripts\introtext.sqf";
 
 
 /******                            Zeus list                             ******/
