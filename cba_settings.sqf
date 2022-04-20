@@ -1324,10 +1324,9 @@ CBRN_factionMask_WBK_Warhammer_CH = "";
 
 // DIGI Chemical warfare
 force digi_medical_affectAI = false;
-force digi_medical_avail_gasmask = """IC_SL_GASMASK"",""93rd_Scion_mask_02"",""IC_Scion_mask_03"",""PJ_Scion_mask_stripes"",""PJ_Scion_mask_01"", ""IC_SL_GASMASK"",""IC_SL_GASMASK_02"", ""IC_cad_rebreather_green""";
+force digi_medical_avail_gasmask = """FS_ICP_Rebreather_green"",  FS_ICP_Rebreather_grey"", ""FS_ISP_SL_Gasmask"", ""FS_ISP_SL_Gasmask_2"", ""FS_ISP_Scion_mask_01"", ""FS_ISP_Scion_mask_02"", ""FS_ISP_Scion_mask_03"", ""FS_ISP_Pilot_mask""";
 force digi_medical_gasmask_durability = 600;
 force digi_medical_infectTime = 60;
-
 
 // Drongo's DYEL
 dyelActiveInventory = true;
