@@ -13,12 +13,12 @@ private _apot       = [["Apot"]]       call ZONT_fnc_checkRole;
 private _fist       = [["Fist"]]       call ZONT_fnc_checkRole;
 
 
-player enableFatigue false;
-Player enableStamina false;
+player enableFatigue ture;
+Player enableStamina true;
 
 player setUnitTrait ['engineer', _mechanicus];
 player setUnitTrait ['medic', _hirurg or _apot];
 
-if (_mechanicus or _astartes or _fist) then {
+if (_mechanicus or _astartes) then {
   player setCustomAimCoef 0.01;
 };
