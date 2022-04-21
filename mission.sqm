@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.017453292;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=41;
+	toggles=9;
 	mods[]=
 	{
 		"WBK_Zombies_AdvancedEditorSettings",
@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=9778;
+		nextID=9800;
 	};
 	class MarkerIDProvider
 	{
@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=218;
+		nextID=222;
 	};
 	class Camera
 	{
-		pos[]={8199.5625,34.412708,949.9093};
-		dir[]={-0.53940082,-0.7491591,0.38467568};
-		up[]={-0.60993218,0.66239613,0.4349758};
-		aside[]={0.58068091,-1.197448e-006,0.8142435};
+		pos[]={8252.8779,23.30105,886.64288};
+		dir[]={-0.81439137,-0.45368162,-0.36221084};
+		up[]={-0.41458741,0.89110279,-0.18438891};
+		aside[]={-0.40643537,-1.9822619e-006,0.91383708};
 	};
 };
 binarizationWanted=0;
@@ -151,13 +151,17 @@ addons[]=
 	"ace_realisticnames",
 	"ace_repair",
 	"Sentinel_addons",
-	"Dos_Cosmetics"
+	"Dos_Cosmetics",
+	"A3_Props_F_Enoch_Civilian_InfoBoards",
+	"A3_Props_F_Orange_Furniture",
+	"A3_Structures_F_Heli_Furniture",
+	"A3_Structures_F_Furniture"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=82;
+		items=84;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -651,6 +655,20 @@ class AddonsMetaData
 			name="Dos_Cosmetics";
 			author="People";
 		};
+		class Item82
+		{
+			className="A3_Props_F_Orange";
+			name="Arma 3 Orange - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item83
+		{
+			className="A3_Structures_F_Heli";
+			name="Arma 3 Helicopters - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
 	};
 };
 dlcs[]=
@@ -663,7 +681,8 @@ dlcs[]=
 	"Orange",
 	"OPTRE",
 	"Tank",
-	"Jets"
+	"Jets",
+	"Heli"
 };
 randomSeed=3180599;
 class ScenarioData
@@ -1081,7 +1100,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1041;
+		items=1052;
 		class Item0
 		{
 			dataType="Marker";
@@ -58329,8 +58348,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8172.7959,12.220043,924.125};
-				angles[]={0,5.5152407,0};
+				position[]={8173.3291,12.220043,929.26807};
+				angles[]={-0,3.9195945,0};
 			};
 			side="Empty";
 			flags=4;
@@ -59986,7 +60005,7 @@ class Mission
 			};
 			id=9689;
 			type="Land_PortableLight_single_F";
-			atlOffset=-9.5367432e-007;
+			atlOffset=1.335144e-005;
 		};
 		class Item990
 		{
@@ -60174,7 +60193,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={10295.705,16.367405,10139.838};
-				angles[]={0,1.6486681,-0};
+				angles[]={0,1.6486681,0};
 			};
 			side="Empty";
 			flags=5;
@@ -60529,6 +60548,7 @@ class Mission
 			};
 			id=9719;
 			type="Land_Cargo_House_V1_F";
+			atlOffset=-4.0054321e-005;
 		};
 		class Item1019
 		{
@@ -60623,7 +60643,7 @@ class Mission
 			};
 			id=9725;
 			type="Land_Plank_01_4m_F";
-			atlOffset=-6.6757202e-006;
+			atlOffset=-9.5367432e-007;
 		};
 		class Item1025
 		{
@@ -60681,7 +60701,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8050.6782,11.064231,802.52881};
-				angles[]={-0,6.195919,0};
+				angles[]={0,6.195919,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60697,7 +60717,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8049.8281,11.064231,811.37823};
-				angles[]={-0,6.1784658,0};
+				angles[]={0,6.1784658,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60728,7 +60748,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8213.6836,13.716306,979.02661};
-				angles[]={-0,2.5830872,0};
+				angles[]={0,2.5830872,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60744,7 +60764,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8219.0771,13.716306,984.09924};
-				angles[]={-0,2.6179938,0};
+				angles[]={0,2.6179938,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60769,6 +60789,7 @@ class Mission
 			};
 			id=9745;
 			type="B_Truck_01_Repair_F";
+			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -60856,7 +60877,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8242.4482,14.07692,962.66431};
-				angles[]={-0,3.8571777,0};
+				angles[]={0,3.8571777,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60872,7 +60893,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8247.2871,14.07692,957.77258};
-				angles[]={-0,3.8571777,0};
+				angles[]={0,3.8571777,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60888,7 +60909,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8253.2813,14.07692,951.70923};
-				angles[]={-0,3.8397245,0};
+				angles[]={0,3.8397245,0};
 			};
 			side="Empty";
 			flags=4;
@@ -60944,7 +60965,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={8242.3252,14.742731,880.57751};
-				angles[]={0,2.3387411,-0};
+				angles[]={0,2.3387411,0};
 			};
 			side="Empty";
 			class Attributes
@@ -61023,6 +61044,187 @@ class Mission
 			id=9774;
 			type="Dos_Servo_UAV_1";
 			atlOffset=0.85342407;
+		};
+		class Item1041
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8188.5591,13.243609,936.77228};
+				angles[]={0,2.3258548,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=9778;
+			type="land_tiow_briefing_table201b";
+		};
+		class Item1042
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8182.9375,13.243609,931.5658};
+				angles[]={0,5.489471,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=9779;
+			type="land_tiow_briefing_table201a";
+		};
+		class Item1043
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8185.3843,13.367682,939.58417};
+				angles[]={0,1.3735588,-0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=9783;
+			type="land_tiow_screens_stand_101a";
+			atlOffset=0.97993565;
+		};
+		class Item1044
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8187.8213,13.85627,938.66125};
+				angles[]={0,0.75520808,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=9788;
+			type="Land_MapBoard_01_Wall_Enoch_F";
+			atlOffset=1.2947464;
+		};
+		class Item1045
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8170.0322,12.465919,927.30145};
+				angles[]={-0,0.78382319,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9789;
+			type="Land_WoodenBed_01_F";
+		};
+		class Item1046
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8171.9858,12.432404,923.83789};
+				angles[]={-0,3.9319208,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9791;
+			type="OfficeTable_01_new_F";
+		};
+		class Item1047
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8172.6455,12.009344,924.21484};
+				angles[]={-0,1.3232088,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=9792;
+			type="Land_ChairWood_F";
+		};
+		class Item1048
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8242.7988,12.29341,876.12457};
+				angles[]={0,3.8488929,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=9795;
+			type="land_tiow_trolley_201_medical_ace";
+			atlOffset=0.0017623901;
+		};
+		class Item1049
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8243.958,12.418941,874.57196};
+				angles[]={0,2.4025674,-0};
+			};
+			side="Empty";
+			flags=5;
+			class Attributes
+			{
+			};
+			id=9797;
+			type="land_tiow_medi_bed_base";
+			atlOffset=0.0027484894;
+		};
+		class Item1050
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8249.4795,12.446425,875.39178};
+				angles[]={0,3.8917866,-0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=9798;
+			type="land_tiow_medi_bed_02_covered_opaque";
+			atlOffset=0.57723522;
+		};
+		class Item1051
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8246.8711,12.506319,877.93958};
+				angles[]={0,3.9215074,-0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=9799;
+			type="land_tiow_medi_bed_02_covered";
+			atlOffset=0.67610264;
 		};
 	};
 };
