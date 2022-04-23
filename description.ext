@@ -4,6 +4,14 @@
 /**********                       RSC includes                       **********/
 #include "external\VVS\menu.ext"
 
+/**********                        Custom Scripts                        **********/
+#include "external\scripts\common.hpp"  // Худ в технике
+
+class RscTitles
+	{
+		#include "external\scripts\namesleft.hpp"	// Параметры текста для худа в технике
+	};
+
 /**********                        Properties                        **********/
 respawnOnStart = -1;
 cba_settings_hasSettingsFile = 1;

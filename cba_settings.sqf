@@ -1117,9 +1117,9 @@ cba_ui_StorePasswords = 1;
 
 // DIGI Chemical warfare
 force digi_medical_affectAI = false;
-force digi_medical_avail_gasmask = "FS_ICP_Rebreather_green","FS_ICP_Rebreather_grey","FS_ISP_SL_Gasmask","FS_ISP_SL_Gasmask_2","FS_ISP_Scion_mask_01","FS_ISP_Scion_mask_02","FS_ISP_Scion_mask_03","FS_ISP_Pilot_mask";
+force digi_medical_avail_gasmask = """FS_ICP_SL_Gasmask"",""FS_ICP_SL_Gasmask_2"",""FS_ICP_Scion_mask_01"",""FS_ICP_Scion_mask_02"",""FS_ICP_Scion_mask_03"",""FS_ICP_Pilot_mask"",""FS_ICP_Reabreather_beige"",""FS_ICP_Reabreather_green"",""FS_ICP_Reabreather_grey"",""FS_ICP_Reabreather_white""";
 force digi_medical_gasmask_durability = 600;
-force digi_medical_infectTime = 60;
+force digi_medical_infectTime = 20;
 
 
 // Drongo's DYEL
