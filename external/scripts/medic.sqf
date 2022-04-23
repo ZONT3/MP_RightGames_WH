@@ -22,7 +22,7 @@ disableSerialization;
           _hr1 = _x getVariable ['ACE_medical_heartrate', 0];
           _bv1 = _x getVariable ['ACE_medical_bloodVolume', 0];
 		  
-		  _gv = _x getVariable ['digi_medical_enteredPoisen', 0];
+		  _gv = _x getVariable ['digi_gasmask_durability', 10];
 		  
          // _spo2 = _x getVariable ["KAT_medical_airwayStatus", 100];
 
