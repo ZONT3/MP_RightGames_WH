@@ -13,26 +13,26 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=10428;
+		nextID=10444;
 	};
 	class MarkerIDProvider
 	{
-		nextID=3;
+		nextID=4;
 	};
 	class LayerIndexProvider
 	{
-		nextID=282;
+		nextID=286;
 	};
 	class Camera
 	{
-		pos[]={8234.6504,24.756804,870.8125};
-		dir[]={-0.56121552,-0.66557831,0.49211469};
-		up[]={-0.50045151,0.74631143,0.43883291};
-		aside[]={0.65934914,1.0291114e-007,0.75193107};
+		pos[]={8196.9883,52.171799,945.74323};
+		dir[]={0.76846188,-0.61167663,-0.18849394};
+		up[]={0.59412855,0.79103684,-0.14573412};
+		aside[]={-0.23825102,1.2817472e-006,-0.97130883};
 	};
 };
 binarizationWanted=0;
-sourceName="MP_RightGames_WH";
+sourceName="RHWH";
 addons[]=
 {
 	"A3_Modules_F",
@@ -184,13 +184,14 @@ addons[]=
 	"A3_Props_F_Orange_Humanitarian_Camps",
 	"A3_Structures_F_EPA_Items_Tools",
 	"A3_Props_F_Enoch_Items_AluminiumFoil",
-	"A3_Characters_F_Enoch_Headgear"
+	"A3_Characters_F_Enoch_Headgear",
+	"ace_fortify"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=96;
+		items=97;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -770,6 +771,13 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item96
+		{
+			className="ace_fortify";
+			name="ace_fortify";
+			author="Команда ACE";
+			url="http://ace3mod.com/";
+		};
 	};
 };
 dlcs[]=
@@ -1205,7 +1213,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1397;
+		items=1399;
 		class Item0
 		{
 			dataType="Logic";
@@ -64718,7 +64726,7 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8173.0879,12.220043,929.12457};
+				position[]={8173.0879,12.220043,929.125};
 				angles[]={0,3.9195907,0};
 			};
 			side="Empty";
@@ -64726,7 +64734,6 @@ class Mission
 			class Attributes
 			{
 				health=0.91582412;
-				disableSimulation=1;
 			};
 			id=9681;
 			type="VirtualReammoBox_small_F";
@@ -67271,10 +67278,10 @@ class Mission
 			flags=4;
 			class Attributes
 			{
+				name="truck";
 			};
 			id=9745;
 			type="B_Truck_01_Repair_F";
-			atlOffset=9.5367432e-007;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -67387,7 +67394,7 @@ class Mission
 									"SCALAR"
 								};
 							};
-							value=1200;
+							value=0;
 						};
 					};
 				};
@@ -72143,13 +72150,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8242.3506,13.787466,2300.8848};
+				position[]={8242.3506,13.787466,2300.885};
 				angles[]={0,4.1015239,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				health=0;
 				disableSimulation=1;
 			};
 			id=10196;
@@ -72160,13 +72168,14 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={8246.9014,17.731266,2297.4954};
-				angles[]={0,0.95993155,0};
+				position[]={8246.9014,17.731266,2297.4951};
+				angles[]={0,0.95993108,0};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
+				health=0;
 				disableSimulation=1;
 			};
 			id=10197;
@@ -75181,7 +75190,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7408.8428,0.49458227,2186.27};
-			angle=6.1959167;
+			angle=6.1959152;
 			class Attributes
 			{
 				sizeA=560;
@@ -75194,6 +75203,54 @@ class Mission
 			id=10427;
 			type="EmptyDetector";
 			atlOffset=0.023999989;
+		};
+		class Item1397
+		{
+			dataType="Marker";
+			position[]={7982.7729,0.79500002,1932.623};
+			name="marker_3";
+			text="Уничтожено";
+			type="mil_destroy";
+			colorName="ColorRed";
+			angle=135;
+			id=10432;
+			atlOffset=0.29500002;
+		};
+		class Item1398
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={8225.4863,11,987.77179};
+				angles[]={0,2.7925267,-0};
+			};
+			init="[this, truck] call BIS_fnc_attachToRelative";
+			areaSize[]={75,0,75};
+			areaIsRectangle=1;
+			flags=1;
+			id=10437;
+			type="acex_fortify_buildLocationModule";
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=1;
+		};
+		class Links
+		{
+			items=1;
+			class Item0
+			{
+				linkID=0;
+				item0=10437;
+				item1=9745;
+				class CustomData
+				{
+					type="TriggerOwner";
+				};
+			};
 		};
 	};
 };
