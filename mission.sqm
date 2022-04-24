@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=274;
+		nextID=278;
 	};
 	class Camera
 	{
-		pos[]={8299.0869,67.438614,834.5379};
-		dir[]={-0.5465194,-0.61158973,0.57228214};
-		up[]={-0.42246315,0.79109532,0.442377};
-		aside[]={0.72327149,1.5637779e-006,0.69071466};
+		pos[]={8236.6113,20.080704,878.42792};
+		dir[]={-0.80005324,-0.56650746,-0.19744463};
+		up[]={-0.55000597,0.82405651,-0.13573563};
+		aside[]={-0.23960078,0,0.97087157};
 	};
 };
 binarizationWanted=0;
@@ -75153,10 +75153,9 @@ class Mission
 			position[]={8227.9785,11.092772,874.78601};
 			class Attributes
 			{
-				onActivation="[""<t size='2' color='#888888' align=`left` font='PuristaBold'>Warhammer 40k</t><br /><t size='2' color='#888888' align=`left` font='PuristaBold'>Right Games</t><br />"", -0.45, 1, 5, 0, 0] spawn BIS_fnc_dynamicText;" \n "[""unnamed.paa"", [-0.7,1,0.23,0.3]] spawn BIS_fnc_textTiles;";
+				onActivation="[] execVM ""external\scripts\t1.sqf"";";
 				sizeA=25;
 				sizeB=25;
-				timeout[]={62,62,62};
 				activationBy="ANYPLAYER";
 			};
 			id=10425;
@@ -75182,7 +75181,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={7408.8428,0.49458227,2186.27};
-			angle=6.1959186;
+			angle=6.1959171;
 			class Attributes
 			{
 				sizeA=560;
