@@ -7,7 +7,7 @@ txt2Layer = "txt2" call BIS_fnc_rscLayer;
 txt3Layer = "txt3" call BIS_fnc_rscLayer; 
 txt4Layer = "txt4" call BIS_fnc_rscLayer; 
 
-_onScreenTime = 12;
+_onScreenTime = 7;
 
 titleCut ["","BLACK IN",20];
 uisleep 10;
@@ -27,14 +27,10 @@ _role1 = "Warhammer 40.000";
 _role1names = ["Right Games"];
 _role2 = "Во мраке далекого будущего";
 _role2names = ["есть только война"];
-_role3 = "";
+_role3 = "Где-то на полях бесконечных сражений";
 _role3names = [""];
-_role4 = "Где-то на полях бесконечных сражений";
-_role4names = [""];
-_role5 = "";
-_role5names = [""];
-_role6 = "Бог-Император смотрит на тебя";
-_role6names = [profileName];
+_role4 = "Бог-Император смотрит на тебя";
+_role4names = [profileName];
 {
 sleep 2; // #1f75fe
 _memberFunction = _x select 0;
@@ -43,7 +39,7 @@ _finalText = format ["<t size='0.7' color='#aaaaaa' align='right'>%1<br /></t>",
 _finalText = _finalText + "<t size='0.8' color='#ffeeee' align='right'>";
 {_finalText = _finalText + format ["%1<br />", _x]} forEach _memberNames;
 _finalText = _finalText + "</t>";
-_onScreenTime + (((count _memberNames) - 1) * 0.9);
+_onScreenTime + (((count _memberNames) - 1) * 0.6);
 [
 _finalText,
 [safezoneX + safezoneW - 0.8,0.7], //Стандарт: 0.5,0.35
@@ -57,7 +53,5 @@ sleep (_onScreenTime);
 [_role1, _role1names],
 [_role2, _role2names],
 [_role3, _role3names],
-[_role4, _role4names],
-[_role5, _role5names],
-[_role6, _role6names]
+[_role4, _role4names]
 ];

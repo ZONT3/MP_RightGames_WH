@@ -12,6 +12,18 @@ class RscTitles
 		#include "external\scripts\namesleft.hpp"	// Параметры текста для худа в технике
 	};
 
+class CfgMusic   //Кастомная музыка в файле мисии
+
+{
+               tracks[] = {BtIE.ogg};
+               class music1
+               {
+                               name = " Jyc Row - Before the Infinite Eclipse, Non-Narrated";
+                               sound[] = {BtIE.ogg, db + 0, 1.0};
+               };
+};
+
+
 /**********                        Properties                        **********/
 respawnOnStart = -1;
 cba_settings_hasSettingsFile = 1;

@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=10425;
+		nextID=10428;
 	};
 	class MarkerIDProvider
 	{
@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=250;
+		nextID=274;
 	};
 	class Camera
 	{
-		pos[]={8227.6797,23.73575,885.2229};
-		dir[]={-0.90562677,-0.32976687,0.2667188};
-		up[]={-0.31639332,0.94403923,0.093181387};
-		aside[]={0.28252155,2.7567148e-007,0.95928496};
+		pos[]={8299.0869,67.438614,834.5379};
+		dir[]={-0.5465194,-0.61158973,0.57228214};
+		up[]={-0.42246315,0.79109532,0.442377};
+		aside[]={0.72327149,1.5637779e-006,0.69071466};
 	};
 };
 binarizationWanted=0;
@@ -1205,7 +1205,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=1394;
+		items=1397;
 		class Item0
 		{
 			dataType="Logic";
@@ -60326,9 +60326,10 @@ class Mission
 			position[]={8227.9678,11.085041,876.70801};
 			class Attributes
 			{
+				onActivation="PlayMusic """"; " \n "[""Before the Infinite Eclipse"", ""Jyc Row""] spawn BIS_fnc_infoText;" \n "playMusic [""music1"", 73];";
 				sizeA=25;
 				sizeB=25;
-				effectMusic="EventTrack01_F_Jets";
+				activationBy="ANYPLAYER";
 			};
 			id=9299;
 			type="EmptyDetectorAreaR50";
@@ -60346,7 +60347,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8244.2461,11.065144,885.89868};
-						angles[]={0,5.4525361,0};
+						angles[]={0,5.4525309,0};
 					};
 					side="West";
 					flags=7;
@@ -60472,7 +60473,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=1;
 								};
 							};
 						};
@@ -60637,7 +60638,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8245.6338,11.081135,884.63116};
-						angles[]={0,5.4525361,0};
+						angles[]={0,5.4525309,0};
 					};
 					side="West";
 					flags=5;
@@ -60763,7 +60764,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=1;
 								};
 							};
 						};
@@ -60928,7 +60929,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={8244.9541,11.073261,885.25348};
-						angles[]={0,5.4525361,0};
+						angles[]={0,5.4525309,0};
 					};
 					side="West";
 					flags=5;
@@ -61054,7 +61055,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=1;
 								};
 							};
 						};
@@ -75145,6 +75146,55 @@ class Mission
 			id=10392;
 			type="Land_BuoyBig_F";
 			atlOffset=0.5;
+		};
+		class Item1394
+		{
+			dataType="Trigger";
+			position[]={8227.9785,11.092772,874.78601};
+			class Attributes
+			{
+				onActivation="[""<t size='2' color='#888888' align=`left` font='PuristaBold'>Warhammer 40k</t><br /><t size='2' color='#888888' align=`left` font='PuristaBold'>Right Games</t><br />"", -0.45, 1, 5, 0, 0] spawn BIS_fnc_dynamicText;" \n "[""unnamed.paa"", [-0.7,1,0.23,0.3]] spawn BIS_fnc_textTiles;";
+				sizeA=25;
+				sizeB=25;
+				timeout[]={62,62,62};
+				activationBy="ANYPLAYER";
+			};
+			id=10425;
+			type="EmptyDetectorAreaR50";
+			atlOffset=9.5367432e-007;
+		};
+		class Item1395
+		{
+			dataType="Trigger";
+			position[]={7952.3872,-0.5,1532.984};
+			class Attributes
+			{
+				sizeA=40;
+				sizeB=40;
+				sizeC=20;
+				activationBy="ANYPLAYER";
+				effectSoundEnvironment="TreesNight";
+			};
+			id=10426;
+			type="EmptyDetector";
+		};
+		class Item1396
+		{
+			dataType="Trigger";
+			position[]={7408.8428,0.49458227,2186.27};
+			angle=6.1959186;
+			class Attributes
+			{
+				sizeA=560;
+				sizeB=6;
+				sizeC=20;
+				activationBy="ANYPLAYER";
+				isRectangle=1;
+				effectMusic="Music_Menu_Contact";
+			};
+			id=10427;
+			type="EmptyDetector";
+			atlOffset=0.023999989;
 		};
 	};
 };
