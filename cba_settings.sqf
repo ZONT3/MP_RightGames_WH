@@ -115,7 +115,7 @@ ace_advanced_throwing_showThrowArc = true;
 
 // ACE Advanced Vehicle Damage
 force ace_vehicle_damage_enableCarDamage = false;
-force ace_vehicle_damage_enabled = true;
+force ace_vehicle_damage_enabled = false;
 force ace_vehicle_damage_removeAmmoDuringCookoff = false;
 
 // ACE Arsenal
@@ -154,13 +154,18 @@ ace_common_settingFeedbackIcons = 1;
 ace_common_settingProgressBarLocation = 0;
 force ace_noradio_enabled = true;
 
-// ACE Cook off
-force ace_cookoff_ammoCookoffDuration = 1;
-force ace_cookoff_enable = 0;
-force ace_cookoff_enableAmmobox = false;
-force ace_cookoff_enableAmmoCookoff = false;
-force ace_cookoff_enableFire = false;
-force ace_cookoff_probabilityCoef = 1;
+// ACE Возгорание
+ace_cookoff_ammoCookoffDuration = 1;
+ace_cookoff_enable = 0;
+ace_cookoff_enableAmmobox = true;
+ace_cookoff_enableAmmoCookoff = false;
+ace_cookoff_enableFire = false;
+ace_cookoff_probabilityCoef = 1;
+ace_fire_dropWeapon = 1;
+ace_fire_enabled = true;
+ace_fire_enableFlare = false;
+ace_fire_enableScreams = true;
+
 
 // ACE Crew Served Weapons
 force ace_csw_ammoHandling = 2;
@@ -454,12 +459,12 @@ ace_nametags_showSoundWaves = 1;
 ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
-// ACE Nightvision
-force ace_nightvision_aimDownSightsBlur = 0;
+// ACE ПНВ
+force ace_nightvision_aimDownSightsBlur = 1;
 force ace_nightvision_disableNVGsWithSights = false;
-force ace_nightvision_effectScaling = 0;
-force ace_nightvision_fogScaling = 0;
-force ace_nightvision_noiseScaling = 0;
+force ace_nightvision_effectScaling = 0.6;
+force ace_nightvision_fogScaling = 0.6;
+force ace_nightvision_noiseScaling = 0.6;
 ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
