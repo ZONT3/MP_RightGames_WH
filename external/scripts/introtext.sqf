@@ -13,11 +13,11 @@ titleCut ["","BLACK IN",20];
 uisleep 10;
 [ 
  [
-  ["Планета Атрия. Сегментум Ультима. ", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
+  ["Планета Энкелад. Сегментум Ультима. ", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
   ["","<br/>"],
   ["117-й Кадианский полк", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"], 
   ["","<br/>"], 
-  ["Военная база Андвари","align = 'center' shadow = '1' size = '1.0'"]
+  ["Технический аванпост Мао","align = 'center' shadow = '1' size = '1.0'"]
  ] 
 ] spawn BIS_fnc_typeText2;
 

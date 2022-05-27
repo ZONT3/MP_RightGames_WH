@@ -88,7 +88,7 @@ force force ace_medical_treatment_medicPAK = 0;
 force force ace_medical_treatment_medicSurgicalKit = 0;
 force force ace_medical_treatment_timeCoefficientPAK = 1;
 force force ace_medical_treatment_treatmentTimeAutoinjector = 2.005;
-force force ace_medical_treatment_treatmentTimeBodyBag = 15;
+force force ace_medical_treatment_treatmentTimeBodyBag = 5;
 force force ace_medical_treatment_treatmentTimeCPR = 3.02;
 force force ace_medical_treatment_treatmentTimeIV = 3;
 force force ace_medical_treatment_treatmentTimeSplint = 4.005;
@@ -460,11 +460,11 @@ ace_nametags_showVehicleCrewInfo = true;
 ace_nametags_tagSize = 2;
 
 // ACE ПНВ
-force ace_nightvision_aimDownSightsBlur = 1;
+force ace_nightvision_aimDownSightsBlur = 0;
 force ace_nightvision_disableNVGsWithSights = false;
-force ace_nightvision_effectScaling = 0.6;
-force ace_nightvision_fogScaling = 0.6;
-force ace_nightvision_noiseScaling = 0.6;
+force ace_nightvision_effectScaling = 0.4;
+force ace_nightvision_fogScaling = 0.4;
+force ace_nightvision_noiseScaling = 0.3;
 ace_nightvision_shutterEffects = true;
 
 // ACE Overheating
