@@ -13,7 +13,7 @@ private _apot       = [["Apot"]]       call ZONT_fnc_checkRole;
 private _fist       = [["Fist"]]       call ZONT_fnc_checkRole;
 
 
-player enableFatigue ture;
+player enableFatigue true;
 Player enableStamina true;
 
 player setUnitTrait ['engineer', _mechanicus];
