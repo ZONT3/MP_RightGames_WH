@@ -19,6 +19,6 @@ Player enableStamina true;
 player setUnitTrait ['engineer', _mechanicus];
 player setUnitTrait ['medic', _hirurg or _apot];
 
-if (_mechanicus or _astartes) then {
+if () then {
   player setCustomAimCoef 0.01;
 };
