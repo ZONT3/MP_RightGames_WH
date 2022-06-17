@@ -4,6 +4,7 @@ waitUntil {vehicle player == player};
 [] spawn ZONT_fnc_autoSaveInit;
 
 [] spawn ZONT_fnc_initTeleportTerminals;
+//[] spawn ZONT_fnc_initArsenals;
 
 [] spawn ZONT_fnc_addReverse;
 
