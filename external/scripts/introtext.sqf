@@ -2,23 +2,23 @@
 	File: introtext.sqf
 	Description: Добавляет текст после загрузки игрока на сервер
 */
-txt1Layer = "txt1" call BIS_fnc_rscLayer; 
-txt2Layer = "txt2" call BIS_fnc_rscLayer; 
-txt3Layer = "txt3" call BIS_fnc_rscLayer; 
-txt4Layer = "txt4" call BIS_fnc_rscLayer; 
+txt1Layer = "txt1" call BIS_fnc_rscLayer;
+txt2Layer = "txt2" call BIS_fnc_rscLayer;
+txt3Layer = "txt3" call BIS_fnc_rscLayer;
+txt4Layer = "txt4" call BIS_fnc_rscLayer;
 
 _onScreenTime = 7;
 
 titleCut ["","BLACK IN",20];
 uisleep 10;
-[ 
+[
  [
   ["Планета Энкелад. Сегментум Ультима. ", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
   ["","<br/>"],
-  ["117-й Кадианский полк", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"], 
-  ["","<br/>"], 
-  ["Технический аванпост Мао","align = 'center' shadow = '1' size = '1.0'"]
- ] 
+  ["117-й Кадианский полк", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"],
+  ["","<br/>"],
+  ["Военный аэродром Гнева Джанкарло Грамолаццио","align = 'center' shadow = '1' size = '1.0'"]
+ ]
 ] spawn BIS_fnc_typeText2;
 
 uisleep 12; //Время до начала титров
