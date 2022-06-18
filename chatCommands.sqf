@@ -93,6 +93,12 @@ private _fn_getRange = {
             if (_tv tvData _path == "rs") exitWith { hint "Эта роль доступна не всем!" };
             private _pid = _tv tvValue _path;
 
+            {
+              if ((_x select 5) and (_x select 0) != _pid) then {
+                ZPR_roles deleteAt (ZPR_roles find (_x select 0));
+              };
+            } forEach call ZONT_fnc_getRoles;
+
             ZPR_roles pushBack _pid;
             ZPR_roles = ZPR_roles arrayIntersect ZPR_roles;
             if (player call ZONT_fnc_saveProfile) then {

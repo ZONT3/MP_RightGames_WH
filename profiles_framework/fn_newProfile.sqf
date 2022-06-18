@@ -26,7 +26,7 @@
       _corrupt = true;
     } else {
       systemChat "Looks like this is a local test";
-      ZPR_roles = [0,228];
+      ZPR_roles = [33,32];
     }
   };
   if _corrupt then {

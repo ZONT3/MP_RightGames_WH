@@ -1,6 +1,6 @@
 [{
   params ["_name", "_side", "_t"];
-  _t params ["_id", "_name", "_side", "_roles", "_equip", "_pos"];
+  _t params ["_id", "_oname", "_oside", "_roles", "_equip", "_pos"];
   [MPS_BDL_pres, "setChar", [_name, _side, _roles, _id]] call ZONT_fnc_bd_customRequest;
   _t
 },{

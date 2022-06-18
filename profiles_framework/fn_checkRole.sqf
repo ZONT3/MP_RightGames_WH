@@ -41,6 +41,9 @@ private _fn_toID = {
        _x ];
 } foreach ["_wl", "_bl", "_rl"];
 
+
+if (-100 in ZPR_roles) exitWith { true };
+
 private _b = true;
 
 {

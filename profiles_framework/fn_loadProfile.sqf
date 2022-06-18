@@ -32,8 +32,9 @@ waitUntil {sleep 0.1; !dialog};
     };
   } foreach _chars;
 
-  if (not isNil "ZPR_ID") exitWith { };
+  if (not isNil "ZPR_ID") exitWith { diag_log format ["ZPR ID: %1", ZPR_ID]; };
 
+  diag_log format ["ZPR Char not found (%1 %2) in %3", name player, str side player, str _chars];
+  waitUntil {sleep 0.1; !isNull findDisplay 46};
   [_chars] call ZONT_fnc_profilesGUI;
-
 }, _uid] call ZONT_fnc_remoteExecCallback;

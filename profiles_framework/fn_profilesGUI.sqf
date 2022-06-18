@@ -4,7 +4,7 @@ params [
   ["_handlerEscape", nil],
   ["_headerOverride", nil],
   ["_str_role", "НОВЫЙ ПРОФИЛЬ [ %1 ]", [""]],
-  ["_roles", call ZONT_fnc_getRoles, [[]]]
+  ["_roles", (/*[[0, "ДРУГОЙ"]] + */call ZONT_fnc_getRoles), [[]]]
 ];
 
 private _newUser = count _profiles == 0;
@@ -18,14 +18,15 @@ if (isNil "_headerOverride") then {
     "<a size='2.9' href='https://discord.gg/HHdQZFE'><img image='pic\dis.paa'/></a><br/>" +
     "<a size='1.8' href='https://docs.google.com/document/d/13KvnvSIP2fGQsu39qdsHtUesWyb4LCEdPNQrOIkXULo'>" +
     "<img image='pic\doc.paa'/><t colorLink='#0788ff' color='#0788ff'> Устав</t></a><br/>" +
-    "<t size='0.8'>Ниже выбери подразделение. Если нужная тебе недоступна - свяжись со своим КМД.</t>",
+    "<t size='0.8'>Ниже выбери подразделение. Если нужное тебе недоступно - свяжись со своим КМД.</t><br/>",
+    // "<t size='0.8'>Скорее всего, просто выбери ""Другой"".</t>",
     0.49, 0.04 ]
   } else {
     [
     "Ты зашел с новым ником, либо за другую сторону. Если ты просто его поменял, "+
     "то выбери профиль, для которого применить новый ник/сторону.<br/>" +
     "Иначе, выбери роль, для которой создать новый профиль.<br/>" +
-    "Если нужной роли нет в списке, выбери ""Другой""",
+    "<t size='0.8'>Ниже выбери подразделение. Если нужное тебе недоступно - свяжись со своим КМД.</t><br/>",
     0.28, 0.7 ]
   }
 } else {
@@ -59,9 +60,12 @@ _background ctrlCommit 0;
 
 private _title = _display ctrlCreate ["RscStructuredText", -1];
 _title ctrlSetPosition [_startX,_startY,_width,_headerH];
-_title ctrlSetBackgroundColor [128/255,0/255,0/255,1];
-_title ctrlSetStructuredText parseText ("<t align='center'><t shadow='1' size='2.5' color='#d5d5d5'>Right Games</t><br/>" +
-    _synopsis + "<br/><t size='0.6'>Двойной клик по пункту в списке, что бы выбрать его</t></t>");
+_title ctrlSetBackgroundColor [0/255,67/255,89/255,1];
+_title ctrlSetStructuredText parseText (
+    "<t align='center'><t shadow='1' size='2.5' color='#d5d5d5'>Right Games</t><br/>" +
+    _synopsis +
+    "<br/><t size='0.6'>Двойной клик по пункту в списке, что бы выбрать его</t></t>"
+);
 _title ctrlCommit 0;
 
 private _tv = _display ctrlCreate ["RscTreeSearch", -1];
@@ -81,7 +85,7 @@ uiNamespace setVariable ["zpr_list", _profiles];
 
 
 {
-  _x params ["_id", "_name", "_configName", "_tags", "_allowed"];
+  _x params ["_id", "_name", "_configName", "_tags", ["_allowed", true]];
   private _alpha = if _allowed then {1} else {0.4};
   private _allow = if _allowed then {"new"} else {"rs"};
   private _c = _tv tvAdd [[], format [_str_role, _name]];

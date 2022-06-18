@@ -14,7 +14,8 @@ if (isNil 'ZPR_allowedIDs' or { typeName ZPR_allowedIDs != typeName [] }) then {
       [_x, "name", configName _x] call BIS_fnc_returnConfigEntry,
       configName _x,
       [_x, "tags", []] call BIS_fnc_returnConfigEntry,
-      ! _restricted
+      ! _restricted,
+      [_x, "autoRemove", "false"] call BIS_fnc_returnConfigEntry == "true"
     ];
     if not _restricted
     then { _res   pushBack _elem }
