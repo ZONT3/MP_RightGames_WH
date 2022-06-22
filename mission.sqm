@@ -13,18 +13,18 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=11974;
+		nextID=11986;
 	};
 	class LayerIndexProvider
 	{
-		nextID=1295;
+		nextID=1409;
 	};
 	class Camera
 	{
-		pos[]={683.88934,36.775585,1350.2323};
-		dir[]={-0.23064992,-0.97309142,-0.012191379};
-		up[]={-0.97163349,0.23073214,-0.0513555};
-		aside[]={-0.05279002,-4.2054389e-006,0.99870682};
+		pos[]={685.37378,27.826725,1354.5148};
+		dir[]={-0.29734728,-0.95428753,-0.034313571};
+		up[]={-0.94791561,0.29906407,-0.10938622};
+		aside[]={-0.11465093,-3.6345991e-006,0.99350727};
 	};
 };
 binarizationWanted=0;
@@ -621,7 +621,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category1
+	class Category0
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -885,7 +885,7 @@ class CustomAttributes
 		};
 		nAttributes=3;
 	};
-	class Category2
+	class Category1
 	{
 		name="Scenario";
 		class Attribute0
@@ -1064,7 +1064,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=497;
+		items=496;
 		class Item0
 		{
 			dataType="Logic";
@@ -22128,7 +22128,7 @@ class Mission
 				};
 			};
 			id=10322;
-			atlOffset=1.0411167;
+			atlOffset=1.040617;
 		};
 		class Item269
 		{
@@ -28740,7 +28740,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={675.20197,15.039852,1353.7966};
-								angles[]={0,3.1106539,-0};
+								angles[]={0,3.1106539,0};
 							};
 							side="West";
 							flags=7;
@@ -29373,7 +29373,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={673.73199,15.329492,1353.6122};
-								angles[]={0,3.0177736,-0};
+								angles[]={0,3.0177736,0};
 							};
 							side="West";
 							flags=3;
@@ -29722,7 +29722,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={673.61298,15.336473,1354.563};
-								angles[]={0,3.0177736,-0};
+								angles[]={0,3.0177736,0};
 							};
 							side="West";
 							flags=1;
@@ -30079,7 +30079,7 @@ class Mission
 					side="West";
 					class Entities
 					{
-						items=28;
+						items=38;
 						class Item0
 						{
 							dataType="Object";
@@ -34413,7 +34413,7 @@ class Mission
 							class PositionInfo
 							{
 								position[]={680.44568,15.04086,1355.9084};
-								angles[]={0,4.6007752,0};
+								angles[]={0,4.6007748,0};
 							};
 							side="West";
 							flags=5;
@@ -35850,6 +35850,2456 @@ class Mission
 									};
 								};
 								nAttributes=8;
+							};
+						};
+						class Item28
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={683.0105,15.052001,1355.1492};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11965;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0053491592;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item29
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={681.85016,15.048802,1350.2092};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11953;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0047712326;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item30
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={681.82813,15.045252,1348.6591};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11955;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0044116974;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item31
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={681.70496,15.049685,1354.5072};
+								angles[]={0,4.6007748,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11877;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0059814453;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item32
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={681.86646,15.050048,1353.0802};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11949;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.005979538;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item33
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={681.90863,15.050145,1351.5756};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11951;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0059814453;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item34
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={683.31714,15.044818,1348.8308};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11957;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.00022697449;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item35
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={683.19373,15.046887,1350.355};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11959;
+							type="IC_CAD_inf_776_B";
+							atlOffset=-0.0001783371;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item36
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={683.14124,15.05293,1351.7007};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11961;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0059833527;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
+							};
+						};
+						class Item37
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={683.05658,15.052737,1353.1669};
+								angles[]={0,4.6007752,0};
+							};
+							side="West";
+							flags=5;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский механик";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_TANKER_01_U_776_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=11963;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0059814453;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="_this setUnitTrait ['CamouflageCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="_this setUnitTrait ['AudibleCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=2;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="ace_isEOD";
+									expression="_this setVariable ['ACE_isEOD', _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.01;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="_this setUnitTrait ['LoadCoef', _value]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.40000001;
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male03ENGB";
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute8
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.8066318;
+										};
+									};
+								};
+								class Attribute9
+								{
+									property="threshold";
+									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.4709828;
+										};
+									};
+								};
+								nAttributes=10;
 							};
 						};
 					};
@@ -39390,7 +41840,7 @@ class Mission
 				};
 			};
 			id=10899;
-			atlOffset=0.0053834915;
+			atlOffset=0.0059013367;
 		};
 		class Item459
 		{
@@ -57849,7 +60299,7 @@ class Mission
 					dataType="Layer";
 					name="Raised Military Compound";
 					id=11498;
-					atlOffset=-5.8365426;
+					atlOffset=37.633904;
 				};
 				class Item8
 				{
@@ -57867,2471 +60317,7 @@ class Mission
 				};
 			};
 			id=11865;
-			atlOffset=16.909752;
-		};
-		class Item496
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
-				items=10;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={683.0105,15.052001,1355.1492};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11965;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.0053491592;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item1
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={681.85016,15.048802,1350.2092};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11953;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.0047712326;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item2
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={681.82813,15.045252,1348.6591};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11955;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.0044116974;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item3
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={681.70496,15.049685,1354.5072};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11877;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.005982399;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item4
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={681.86646,15.050048,1353.0802};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11949;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.005979538;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item5
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={681.90863,15.050145,1351.5756};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11951;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.0059814453;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item6
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={683.31714,15.044818,1348.8308};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11957;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.00022697449;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item7
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={683.19373,15.046887,1350.355};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11959;
-					type="IC_CAD_inf_776_B";
-					atlOffset=-0.0001783371;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item8
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={683.14124,15.05293,1351.7007};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11961;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.0059833527;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-				class Item9
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={683.05658,15.052737,1353.1669};
-						angles[]={0,4.6007752,0};
-					};
-					side="West";
-					flags=5;
-					class Attributes
-					{
-						skill=0.23988292;
-						description="Имперский механик";
-						isPlayable=1;
-						class Inventory
-						{
-							class uniform
-							{
-								typeName="IC_CAD_TANKER_01_U_776_B";
-								isBackpack=0;
-								class MagazineCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="IC_CAD_FRAG_mag";
-										count=2;
-										ammoLeft=1;
-									};
-								};
-								class ItemCargo
-								{
-									items=1;
-									class Item0
-									{
-										name="FirstAidKit";
-										count=1;
-									};
-								};
-							};
-							map="ItemMap";
-							compass="ItemCompass";
-							watch="ItemWatch";
-							radio="ItemRadio";
-						};
-					};
-					id=11963;
-					type="IC_CAD_inf_776_B";
-					atlOffset=0.0059814453;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="ENH_unitTraits_camouflage";
-							expression="_this setUnitTrait ['CamouflageCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="ENH_unitTraits_audibleCoef";
-							expression="_this setUnitTrait ['AudibleCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.80000001;
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="ace_isEngineer";
-							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute3
-						{
-							property="ace_isEOD";
-							expression="_this setVariable ['ACE_isEOD', _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.01;
-								};
-							};
-						};
-						class Attribute5
-						{
-							property="ENH_unitTraits_loadCoef";
-							expression="_this setUnitTrait ['LoadCoef', _value]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.40000001;
-								};
-							};
-						};
-						class Attribute6
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03ENGB";
-								};
-							};
-						};
-						class Attribute7
-						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1;
-								};
-							};
-						};
-						class Attribute8
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.8066318;
-								};
-							};
-						};
-						class Attribute9
-						{
-							property="threshold";
-							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.4709828;
-								};
-							};
-						};
-						nAttributes=10;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=11966;
-			atlOffset=0.0053491592;
+			atlOffset=37.633904;
 		};
 	};
 };
