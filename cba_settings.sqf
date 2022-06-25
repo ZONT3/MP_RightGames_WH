@@ -1108,6 +1108,7 @@ force CBRN_factionMask_WBK_Warhammer_CH = "";
 // WebKnight's Zombies
 force WBK_ZombiesIsUseParticleDeathControl = true;
 force WBK_ZombiesIsUseStatDeathControl = true;
+force_ZombiesIsUseBitingAnimation = false;
 
 
 // Community Base Addons
@@ -1201,7 +1202,7 @@ force IMS_BayonetOnAI = true;
 force IMS_BluntWeapon = false;
 force IMS_CustomAIHEALTH = "2";
 force IMS_DamageMultiplierParam = "1";
-force IMS_ExecutionChanceParametr = "20";
+force IMS_ExecutionChanceParametr = "60";
 force IMS_isHumansCanHitSM = true;
 force IMS_isImsCanHitAllies = true;
 force IMS_isKickButtInstaKill = false;
