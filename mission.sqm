@@ -1,7 +1,7 @@
 version=54;
 class EditorData
 {
-	moveGridStep=10.5741;
+	moveGridStep=16;
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=13052;
+		nextID=13652;
 	};
 	class MarkerIDProvider
 	{
@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1874;
+		nextID=1913;
 	};
 	class Camera
 	{
-		pos[]={3781.3804,24.292969,8095.502};
-		dir[]={-0.68797642,-0.64258564,-0.33767423};
-		up[]={-0.57691461,0.76609576,-0.2831623};
-		aside[]={-0.44065535,-4.6136338e-006,0.8977927};
+		pos[]={18962.143,124.05078,20404.336};
+		dir[]={0.64517528,-0.51450449,0.56483442};
+		up[]={0.38711479,0.85748732,0.33890864};
+		aside[]={0.65870792,-4.8792572e-008,-0.75240254};
 	};
 };
 binarizationWanted=0;
@@ -178,13 +178,24 @@ addons[]=
 	"A3_Structures_F_Enoch_VR_Helpers",
 	"A3_Structures_F_Enoch_Cultural_Cemeteries",
 	"A3_Structures_F_Orange_VR_Helpers",
-	"A3_Rocks_F_Enoch"
+	"A3_Rocks_F_Enoch",
+	"A3_Missions_F_Oldman",
+	"A3_Supplies_F_Heli_CargoNets",
+	"A3_Supplies_F_Heli_Fuel",
+	"A3_Structures_F_EPB_Items_Military",
+	"A3_Props_F_Tank_Military_TankAcc",
+	"A3_Weapons_F_Ammoboxes",
+	"A3_Structures_F_Civ_Constructions",
+	"A3_Structures_F_Heli_Civ_Market",
+	"A3_Weapons_F_Exp",
+	"ace_interaction",
+	"A3_Structures_F_Heli_Items_Airport"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=93;
+		items=98;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -755,6 +766,41 @@ class AddonsMetaData
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
+		class Item93
+		{
+			className="A3_Missions_F_Oldman";
+			name="Arma 3 Old Man - Playable Content";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item94
+		{
+			className="A3_Supplies_F_Heli";
+			name="Arma 3 Helicopters - Ammoboxes and Supplies";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item95
+		{
+			className="A3_Props_F_Tank";
+			name="Arma 3 Tank - Decorative and Mission Objects";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item96
+		{
+			className="A3_Weapons_F_Exp";
+			name="Arma 3 Apex - Weapons and Accessories";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item97
+		{
+			className="ace_interaction";
+			name="ACE3 - Interaction";
+			author="Команда ACE";
+			url="https://ace3.acemod.org/";
+		};
 	};
 };
 dlcs[]=
@@ -769,7 +815,8 @@ dlcs[]=
 	"OPTRE",
 	"Contact",
 	"Curator",
-	"ML700"
+	"ML700",
+	"Tank"
 };
 randomSeed=7077854;
 class ScenarioData
@@ -1233,7 +1280,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=670;
+		items=676;
 		class Item0
 		{
 			dataType="Logic";
@@ -64345,11 +64392,12 @@ class Mission
 		class Item559
 		{
 			dataType="Marker";
-			position[]={6454.4585,3.4988871,3394.2444};
+			position[]={6432,0,3440};
 			name="marker_73";
 			type="Aquila";
 			colorName="ColorUNKNOWN";
 			id=12092;
+			atlOffset=-3.2890475;
 		};
 		class Item560
 		{
@@ -64800,7 +64848,7 @@ class Mission
 			name="Small Concrete Outpost [No Mods]";
 			class Entities
 			{
-				items=145;
+				items=144;
 				class Item0
 				{
 					dataType="Object";
@@ -66575,24 +66623,6 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={3895.4224,6.9649663,8265.0205};
-						angles[]={0,4.712389,0};
-					};
-					side="Empty";
-					flags=4;
-					class Attributes
-					{
-						disableSimulation=1;
-					};
-					id=12770;
-					type="Land_Cargo20_military_green_F";
-					atlOffset=-0.13559628;
-				};
-				class Item103
-				{
-					dataType="Object";
-					class PositionInfo
-					{
 						position[]={3890.7603,6.707355,8253.2412};
 					};
 					side="Empty";
@@ -66605,7 +66635,7 @@ class Mission
 					type="Land_Cargo20_EMP_F";
 					atlOffset=-0.15601683;
 				};
-				class Item104
+				class Item103
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66623,7 +66653,7 @@ class Mission
 					type="Land_PaperBox_closed_F";
 					atlOffset=-0.036475658;
 				};
-				class Item105
+				class Item104
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66640,7 +66670,7 @@ class Mission
 					type="Land_PaperBox_open_full_F";
 					atlOffset=-0.071044445;
 				};
-				class Item106
+				class Item105
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66658,7 +66688,7 @@ class Mission
 					type="Land_Pallet_MilBoxes_F";
 					atlOffset=-0.031603813;
 				};
-				class Item107
+				class Item106
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66676,7 +66706,7 @@ class Mission
 					type="Land_ConcreteHedgehog_01_palette_F";
 					atlOffset=-0.11009073;
 				};
-				class Item108
+				class Item107
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66694,7 +66724,7 @@ class Mission
 					type="Land_ConcreteHedgehog_01_palette_F";
 					atlOffset=-0.12376595;
 				};
-				class Item109
+				class Item108
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66712,7 +66742,7 @@ class Mission
 					type="Land_ConcreteHedgehog_01_palette_F";
 					atlOffset=-0.10115004;
 				};
-				class Item110
+				class Item109
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66730,7 +66760,7 @@ class Mission
 					type="Land_SignM_WarningMilAreaSmall_english_F";
 					atlOffset=-0.2717247;
 				};
-				class Item111
+				class Item110
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66748,7 +66778,7 @@ class Mission
 					type="Land_SignM_WarningMilAreaSmall_english_F";
 					atlOffset=-0.11907578;
 				};
-				class Item112
+				class Item111
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66765,7 +66795,7 @@ class Mission
 					type="Land_RoadBarrier_01_F";
 					atlOffset=-0.28693056;
 				};
-				class Item113
+				class Item112
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66782,7 +66812,7 @@ class Mission
 					type="Land_RoadBarrier_01_F";
 					atlOffset=-0.12471771;
 				};
-				class Item114
+				class Item113
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66800,7 +66830,7 @@ class Mission
 					type="Land_cargo_addon01_V1_F";
 					atlOffset=-0.052465916;
 				};
-				class Item115
+				class Item114
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66818,7 +66848,7 @@ class Mission
 					type="Land_cargo_addon01_V1_F";
 					atlOffset=-0.11118126;
 				};
-				class Item116
+				class Item115
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66835,7 +66865,7 @@ class Mission
 					type="Land_cargo_addon01_V2_F";
 					atlOffset=-0.01044035;
 				};
-				class Item117
+				class Item116
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66853,7 +66883,7 @@ class Mission
 					type="Land_Bunker_01_blocks_1_F";
 					atlOffset=0.98381996;
 				};
-				class Item118
+				class Item117
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66871,7 +66901,7 @@ class Mission
 					type="Land_Bunker_01_blocks_1_F";
 					atlOffset=0.97926426;
 				};
-				class Item119
+				class Item118
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66889,7 +66919,7 @@ class Mission
 					type="Land_Bunker_01_blocks_1_F";
 					atlOffset=0.8956995;
 				};
-				class Item120
+				class Item119
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66907,7 +66937,7 @@ class Mission
 					type="Land_Bunker_01_blocks_1_F";
 					atlOffset=0.96826649;
 				};
-				class Item121
+				class Item120
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66924,7 +66954,7 @@ class Mission
 					type="Land_Bunker_01_blocks_1_F";
 					atlOffset=0.94173574;
 				};
-				class Item122
+				class Item121
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66942,7 +66972,7 @@ class Mission
 					type="Land_Bunker_01_blocks_1_F";
 					atlOffset=0.85715389;
 				};
-				class Item123
+				class Item122
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66960,7 +66990,7 @@ class Mission
 					type="Land_GarbageContainer_closed_F";
 					atlOffset=-0.18297195;
 				};
-				class Item124
+				class Item123
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66977,7 +67007,7 @@ class Mission
 					type="Land_WheelieBin_01_F";
 					atlOffset=-0.15037155;
 				};
-				class Item125
+				class Item124
 				{
 					dataType="Object";
 					class PositionInfo
@@ -66994,7 +67024,7 @@ class Mission
 					type="Land_WheelieBin_01_F";
 					atlOffset=-0.13062572;
 				};
-				class Item126
+				class Item125
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67011,7 +67041,7 @@ class Mission
 					type="Land_Garbage_square5_F";
 					atlOffset=-0.17296505;
 				};
-				class Item127
+				class Item126
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67029,7 +67059,7 @@ class Mission
 					type="Land_Garbage_square3_F";
 					atlOffset=-0.17942858;
 				};
-				class Item128
+				class Item127
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67046,7 +67076,7 @@ class Mission
 					type="Land_WaterTank_F";
 					atlOffset=-0.09465456;
 				};
-				class Item129
+				class Item128
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67063,7 +67093,7 @@ class Mission
 					type="Land_WaterBarrel_F";
 					atlOffset=-0.091152191;
 				};
-				class Item130
+				class Item129
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67081,7 +67111,7 @@ class Mission
 					type="Land_BarrelWater_F";
 					atlOffset=-0.078932762;
 				};
-				class Item131
+				class Item130
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67099,7 +67129,7 @@ class Mission
 					type="Land_BarrelWater_F";
 					atlOffset=-0.074032784;
 				};
-				class Item132
+				class Item131
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67117,7 +67147,7 @@ class Mission
 					type="Land_BarrelWater_F";
 					atlOffset=-0.067595959;
 				};
-				class Item133
+				class Item132
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67134,7 +67164,7 @@ class Mission
 					id=12802;
 					type="EauDeCombat_01_F";
 				};
-				class Item134
+				class Item133
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67151,7 +67181,7 @@ class Mission
 					id=12803;
 					type="EauDeCombat_01_F";
 				};
-				class Item135
+				class Item134
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67167,7 +67197,7 @@ class Mission
 					id=12804;
 					type="Land_WaterBottle_01_stack_F";
 				};
-				class Item136
+				class Item135
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67184,7 +67214,7 @@ class Mission
 					id=12805;
 					type="Land_WaterCooler_01_old_F";
 				};
-				class Item137
+				class Item136
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67202,7 +67232,7 @@ class Mission
 					type="Land_WeldingTrolley_01_F";
 					atlOffset=0.067102432;
 				};
-				class Item138
+				class Item137
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67219,7 +67249,7 @@ class Mission
 					type="Land_ToolTrolley_01_F";
 					atlOffset=0.04762888;
 				};
-				class Item139
+				class Item138
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67235,7 +67265,7 @@ class Mission
 					type="Land_Grinder_F";
 					atlOffset=0.894907;
 				};
-				class Item140
+				class Item139
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67252,7 +67282,7 @@ class Mission
 					type="Land_Workbench_01_F";
 					atlOffset=0.060259819;
 				};
-				class Item141
+				class Item140
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67269,7 +67299,7 @@ class Mission
 					id=12810;
 					type="Land_Wrench_F";
 				};
-				class Item142
+				class Item141
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67287,7 +67317,7 @@ class Mission
 					type="Land_PlasticBucket_01_closed_F";
 					atlOffset=0.072732449;
 				};
-				class Item143
+				class Item142
 				{
 					dataType="Object";
 					class PositionInfo
@@ -67304,7 +67334,7 @@ class Mission
 					id=12812;
 					type="Land_CanisterFuel_White_F";
 				};
-				class Item144
+				class Item143
 				{
 					dataType="Object";
 					class PositionInfo
@@ -69545,6 +69575,1660 @@ class Mission
 			};
 			id=13051;
 			atlOffset=2.1104736;
+		};
+		class Item670
+		{
+			dataType="Layer";
+			name="AIO Arsenal (Service Station)";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="M9SD_virtualArsenal_serviceStation";
+					id=13052;
+					atlOffset=1.46733;
+				};
+			};
+			id=13082;
+			atlOffset=1.46733;
+		};
+		class Item671
+		{
+			dataType="Layer";
+			name="AIO Arsenal (Service Station)";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="M9SD_virtualArsenal_serviceStation_1";
+					class Entities
+					{
+						items=29;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.3411,7.3866701,8264.8398};
+								angles[]={0,3.1678355,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;";
+								disableSimulation=1;
+							};
+							id=13084;
+							type="VirtualReammoBox_F";
+							atlOffset=0.022218227;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item1
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.0154,6.8071647,8266.502};
+								angles[]={0,0.031899218,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "[this, 0.8] remoteExec ['setObjectScale', 0, this];" \n "clearWeaponCargoGlobal this; " \n "clearBackpackCargoGlobal this; " \n "clearMagazineCargoGlobal this; " \n "clearItemCargoGlobal this;" \n "[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;";
+								disableSimulation=1;
+							};
+							id=13085;
+							type="B_CargoNet_01_ammo_F";
+							atlOffset=0.22646618;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[""arifle_MXC_F"",""arifle_MXM_F"",""arifle_MX_F"",""arifle_MX_GL_F"",""arifle_MX_SW_F"",""arifle_SDAR_F"",""hgun_P07_F"",""hgun_Pistol_heavy_01_F"",""launch_NLAW_F"",""launch_Titan_F"",""launch_Titan_short_F"",""SMG_01_F"",""srifle_EBR_F"",""srifle_LRR_camo_F"",""srifle_LRR_F""],[4,2,8,4,4,2,2,2,2,2,2,2,2,2,2]],[[""100Rnd_65x39_caseless_mag_Tracer"",""11Rnd_45ACP_Mag"",""16Rnd_9x21_Mag"",""1Rnd_HE_Grenade_shell"",""1Rnd_SmokeBlue_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""1Rnd_SmokeOrange_Grenade_shell"",""1Rnd_SmokePurple_Grenade_shell"",""1Rnd_SmokeRed_Grenade_shell"",""1Rnd_SmokeYellow_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""20Rnd_556x45_UW_mag"",""20Rnd_762x51_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""30Rnd_556x45_Stanag_red"",""30Rnd_65x39_caseless_mag"",""3Rnd_HE_Grenade_shell"",""7Rnd_408_Mag"",""APERSBoundingMine_Range_Mag"",""APERSMine_Range_Mag"",""APERSTripMine_Wire_Mag"",""ATMine_Range_Mag"",""B_IR_Grenade"",""ClaymoreDirectionalMine_Remote_Mag"",""DemoCharge_Remote_Mag"",""HandGrenade"",""Laserbatteries"",""MiniGrenade"",""NLAW_F"",""SatchelCharge_Remote_Mag"",""SLAMDirectionalMine_Wire_Mag"",""SmokeShell"",""SmokeShellBlue"",""SmokeShellGreen"",""SmokeShellOrange"",""SmokeShellPurple"",""SmokeShellRed"",""SmokeShellYellow"",""Titan_AA"",""Titan_AP"",""Titan_AT"",""UGL_FlareGreen_F"",""UGL_FlareWhite_F""],[16,14,14,15,2,2,2,2,2,2,2,6,24,14,6,52,3,12,5,5,5,5,8,5,5,24,5,24,8,5,5,2,2,2,2,2,2,2,6,6,6,2,2]],[[""Binocular"",""Laserdesignator"",""Rangefinder"",""acc_flashlight"",""acc_pointer_IR"",""FirstAidKit"",""ItemGPS"",""Medikit"",""MineDetector"",""muzzle_snds_acp"",""muzzle_snds_B"",""muzzle_snds_H"",""muzzle_snds_H_SW"",""muzzle_snds_L"",""optic_Aco"",""optic_Aco_smg"",""optic_DMS"",""optic_Hamr"",""optic_Holosight"",""optic_LRPS"",""optic_MRD"",""optic_NVS"",""optic_SOS"",""optic_tws"",""optic_tws_mg"",""ToolKit""],[1,1,1,5,5,10,5,1,1,5,5,5,1,5,2,2,2,2,2,2,2,2,2,2,2,1]],[[],[]]],false]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item2
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3896.0247,6.5277543,8267.5791};
+								angles[]={0,4.8168535,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "[this, 0.75] remoteExec ['setObjectScale', 0, this];";
+								disableSimulation=1;
+							};
+							id=13086;
+							type="FlexibleTank_01_forest_F";
+							atlOffset=0.25101948;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item3
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3894.699,6.258224,8269.2813};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13087;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.035042763;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item4
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3896.0054,6.2220831,8267.6729};
+								angles[]={0,0.64644176,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13088;
+							type="Land_RefuelingHose_01_F";
+							atlOffset=0.024031639;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item5
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.9382,6.821907,8268.6963};
+								angles[]={0,3.2047658,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13089;
+							type="Item_ToolKit";
+							atlOffset=0.042811871;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item6
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3896.02,6.8474288,8266.4297};
+								angles[]={0,4.7446017,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;";
+								disableSimulation=1;
+							};
+							id=13090;
+							type="Land_WeldingTrolley_01_F";
+							atlOffset=0.034270287;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item7
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3894.8154,6.7772846,8268.1875};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "[this, 0.7] remoteExec ['setObjectScale', 0, this];" \n "clearWeaponCargoGlobal this; " \n "clearBackpackCargoGlobal this; " \n "clearMagazineCargoGlobal this; " \n "clearItemCargoGlobal this;" \n "[""AmmoboxInit"",[this,true]] call BIS_fnc_arsenal;";
+								disableSimulation=1;
+							};
+							id=13091;
+							type="B_supplyCrate_F";
+							atlOffset=0.14830351;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ammoBox";
+									expression="[_this,_value] call bis_fnc_initAmmoBox;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="[[[[""launch_NLAW_F"",""arifle_MX_F"",""arifle_MX_SW_F""],[1,2,1]],[[""30Rnd_65x39_caseless_mag"",""16Rnd_9x21_Mag"",""30Rnd_45ACP_Mag_SMG_01"",""20Rnd_762x51_Mag"",""100Rnd_65x39_caseless_mag"",""1Rnd_HE_Grenade_shell"",""3Rnd_HE_Grenade_shell"",""1Rnd_Smoke_Grenade_shell"",""1Rnd_SmokeGreen_Grenade_shell"",""Chemlight_green"",""NLAW_F"",""Laserbatteries"",""HandGrenade"",""MiniGrenade"",""SmokeShell"",""SmokeShellGreen"",""UGL_FlareWhite_F"",""UGL_FlareGreen_F""],[24,6,6,6,6,3,1,2,2,6,3,2,6,6,2,2,2,2]],[[""Laserdesignator"",""FirstAidKit"",""acc_flashlight"",""bipod_01_F_blk""],[1,10,2,1]],[[""B_Kitbag_mcamo""],[2]]],false]";
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item8
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.3848,6.2838984,8264.8252};
+								angles[]={0,4.736063,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "[this, 1.1] remoteExec ['setObjectScale', 0, this];";
+								disableSimulation=1;
+							};
+							id=13092;
+							type="Land_Pallet_F";
+							atlOffset=0.065039158;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item9
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.3879,6.4718986,8264.8252};
+								angles[]={0,4.736063,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "[this, 1.1] remoteExec ['setObjectScale', 0, this];";
+								disableSimulation=1;
+							};
+							id=13093;
+							type="Land_Pallet_F";
+							atlOffset=0.25300026;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item10
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.0349,6.6916466,8266.8613};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;";
+								disableSimulation=1;
+							};
+							id=13094;
+							type="Land_PalletTrolley_01_khaki_F";
+							atlOffset=0.026212692;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item11
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3894.9231,6.3657608,8269.2598};
+								angles[]={0,0.030556202,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13095;
+							type="Land_PaperBox_01_small_open_brown_F";
+							atlOffset=0.034999847;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item12
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3894.8652,6.258224,8269.2764};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13096;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.035042763;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item13
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.1956,6.258224,8269.2705};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13097;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.035042763;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item14
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.0298,6.258224,8269.2764};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13098;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.035042763;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item15
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.1951,6.4642243,8269.2285};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13099;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.24104309;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item16
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.0305,6.4642243,8269.2334};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13100;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.24104309;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item17
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3894.8652,6.4642243,8269.2324};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13101;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.24104309;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item18
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3894.6982,6.4642243,8269.2363};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13102;
+							type="Land_Ammobox_rounds_F";
+							atlOffset=0.24104309;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item19
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.3633,6.4243588,8267.6611};
+								angles[]={0,4.7099957,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;";
+								disableSimulation=1;
+							};
+							id=13103;
+							type="Land_CanisterFuel_F";
+							atlOffset=0.033106327;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item20
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.5962,6.4243588,8267.6592};
+								angles[]={0,4.8030372,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;";
+								disableSimulation=1;
+							};
+							id=13104;
+							type="Land_CanisterFuel_Red_F";
+							atlOffset=0.033106327;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item21
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.9348,6.3657608,8268.8857};
+								angles[]={0,4.7279129,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13105;
+							type="Land_PaperBox_01_small_open_brown_F";
+							atlOffset=0.034999847;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item22
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.9248,6.8219271,8268.8594};
+								angles[]={0,3.1311946,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13106;
+							type="Item_ToolKit";
+							atlOffset=0.042831898;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item23
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.9216,6.8211594,8269.0244};
+								angles[]={0,3.2047658,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13107;
+							type="Item_ToolKit";
+							atlOffset=0.04206419;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item24
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.9377,6.8208189,8269.1895};
+								angles[]={0,3.2047658,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13108;
+							type="Item_ToolKit";
+							atlOffset=0.041723728;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item25
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3894.844,7.1048617,8268.1797};
+								angles[]={0,1.467123,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13109;
+							type="Weapon_arifle_SPAR_01_blk_F";
+							atlOffset=0.98699999;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item26
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.3982,6.2675719,8268.1582};
+								angles[]={0,4.7896967,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "private _lamp = createVehicle ['#lightpoint',getPos this,[],0,'CAN_COLLIDE']; " \n "[_lamp, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative; " \n "[_lamp, 0.21] remoteExec ['setLightBrightness', 0, _lamp]; " \n "[_lamp, [1,0.7,0]] remoteExec ['setLightAmbient', 0, _lamp]; " \n "[_lamp, [1,0.7,0]] remoteExec ['setLightColor', 0, _lamp]; ";
+								disableSimulation=1;
+							};
+							id=13110;
+							type="Land_Camping_Light_off_F";
+							atlOffset=0.031046391;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+						class Item27
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.3672,7.0395603,8266.7002};
+								angles[]={0,1.596818,-0};
+							};
+							side="Empty";
+							flags=4;
+							class Attributes
+							{
+								init="comment ""Branch: Official Pub Zeus Compatible (Service Station)""; " \n "M9SD_mainCrate_RRR = this; " \n "publicVariable 'M9SD_mainCrate_RRR'; " \n "private _faradayCage = M9SD_mainCrate_RRR;  " \n "M9SD_fnc_addFaradayArsenalActions =  " \n "{ " \n " params [['_faradayCage', objNull]]; " \n " if (isNull _faradayCage) exitWith {};  " \n " if (_faradayCage getVariable ['M9SD_hasAIOArsenalActions_serviceStation', false]) exitWith {}; " \n " _faradayCage setVariable ['M9SD_hasAIOArsenalActions_serviceStation', true, true]; " \n " if (isNil 'M9SD_AIOArsenal_JIPCount') then  " \n " { " \n "  M9SD_AIOArsenal_JIPCount = 0; " \n " }; " \n " M9SD_AIOArsenal_JIPCount = M9SD_AIOArsenal_JIPCount + 1; " \n " publicVariable 'M9SD_AIOArsenal_JIPCount'; " \n " private _uniqueJIP = format ['M9SD_JIP_AIOArsenalActions_%1', M9SD_AIOArsenal_JIPCount]; " \n " [[_faradayCage, _uniqueJIP], " \n " { " \n "  if (!hasInterface) exitWith {}; " \n "  waitUntil {!isNil {player} && {!isNull player}}; " \n "  params [['_faradayCage', objNull], ['_uniqueJIP', '']]; " \n "  if (isNull _faradayCage) exitWith {remoteExec ['', _uniqueJIP]}; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='a3\ui_f\data\logos\a_64_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Full Arsenal</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    ['Preload'] call BIS_fnc_arsenal; " \n "    comment ""['Open', [true]] call BIS_fnc_arsenal; <-- WTF IS THE DIFFERENCE?""; " \n "    ['Open', true] spawn BIS_fnc_arsenal; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification1' cutText [""<br/><t color='#ffd700' size='2.1' shadow='2' font='puristaMedium'>AIO Arsenal</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 1; " \n "     if !(isNull findDisplay -1) then  " \n "     { " \n "      'arsenalNotification2' cutFadeOut 0; " \n "      'arsenalNotification2' cutText [""<br/><br/><br/><t color='#00a6ff' size='1.4' shadow='2' font='puristaSemiBold'>by <t color='#00c9ff'>M9-SD</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     }; " \n "     uiSleep 7; " \n "     'arsenalNotification1' cutFadeOut 2.1; " \n "     'arsenalNotification2' cutFadeOut 2.1; " \n "    }; " \n "    private _arsenalAnims =  " \n "    [ " \n "     {player playActionNow ""Salute"";}, " \n "     {[player, 'acts_civilidle_1'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_civilListening_2'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_commenting_on_fight_loop'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_gallery_visitor_01'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_gallery_visitor_02'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_hilltop_calibration_loop'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_kore_talkingoverradio_loop'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_staticPose_photo'] remoteExec ['switchMove'];}, " \n "     {player playActionNow 'gear';}, " \n "     {[player, 'Acts_Taking_Cover_From_Jets'] remoteExec ['switchMove'];}, " \n "     {[player, 'Acts_standingSpeakingUnarmed'] remoteExec ['switchMove'];}, " \n "     {player playMoveNow 'acts_Mentor_Freeing_Player';}, " \n "     {[player, 'acts_kore_talkingOverRadio_In'] remoteExec ['switchMove'];}, " \n "     {[player, 'acts_kore_idleNoWeapon_In'] remoteExec ['switchMove'];}, " \n "     {[player, 'Acts_JetsOfficerSpilling'] remoteExec ['switchMove'];}, " \n "     {player playMoveNow 'Acts_Hilltop_Calibration_Pointing_Left';}, " \n "     {player playMoveNow 'Acts_Hilltop_Calibration_Pointing_Right';}, " \n "     {[player, 'Acts_Grieving'] remoteExec ['switchMove'];} " \n "    ]; " \n "    private _arsenalAnimsAdd = switch (currentWeapon player) do  " \n "    { " \n "     case '': {[]}; " \n "     case (primaryWeapon player):  " \n "     { " \n "      [ " \n "       {[player, 'acts_briefing_SA_loop'] remoteExec ['switchMove'];}, " \n "       {[player, 'acts_getAttention_loop'] remoteExec ['switchMove'];}, " \n "       {[player, 'acts_millerIdle'] remoteExec ['switchMove'];}, " \n "       {player playMoveNow 'Acts_SupportTeam_Right_ToKneelLoop';}, " \n "       {player playMoveNow 'Acts_SupportTeam_Left_ToKneelLoop';}, " \n "       {player playMoveNow 'Acts_SupportTeam_Front_ToKneelLoop';}, " \n "       {player playMoveNow 'Acts_SupportTeam_Back_ToKneelLoop';}, " \n "       {[player, 'Acts_starGazer'] remoteExec ['switchMove'];}, " \n "       {player playMoveNow 'acts_RU_briefing_Turn';}, " \n "       {player playMoveNow 'acts_RU_briefing_point';}, " \n "       {player playMoveNow 'acts_RU_briefing_point_tl';}, " \n "       {player playMoveNow 'acts_RU_briefing_move';}, " \n "       {[player, 'acts_rifle_operations_zeroing'] remoteExec ['switchMove'];}, " \n "       {player playMoveNow 'acts_rifle_operations_right';}, " \n "       {player playMoveNow 'acts_rifle_operations_left';}, " \n "       {player playMoveNow 'acts_rifle_operations_front';}, " \n "       {player playMoveNow 'acts_rifle_operations_checking_chamber';}, " \n "       {player playMoveNow 'acts_rifle_operations_barrel';}, " \n "       {player playMoveNow 'acts_rifle_operations_back';}, " \n "       {player playMoveNow 'acts_pointing_up';}, " \n "       {player playMoveNow 'acts_pointing_down';}, " \n "       {player playMoveNow 'acts_peering_up';}, " \n "       {player playMoveNow 'acts_peering_down';}, " \n "       {player playMoveNow 'acts_peering_front';}, " \n "       {[player, 'Acts_Helping_Wake_Up_1'] remoteExec ['switchMove'];} " \n "      ] " \n "     }; " \n "     case (handgunWeapon player):  " \n "     { " \n "      [ " \n "       {[player, 'acts_examining_device_player'] remoteExec ['switchMove'];}, " \n "       {[player, 'acts_executioner_standingloop'] remoteExec ['switchMove'];}, " \n "       {player playMoveNow 'Acts_ViperMeeting_A_End';}, " \n "       {player playMoveNow 'Acts_UGV_Jamming_Loop';}, " \n "       {player playMoveNow 'Acts_starterPistol_Fire';} " \n "      ] " \n "     }; " \n "     default {[]}; " \n "    }; " \n "    _arsenalAnims = _arsenalAnims + _arsenalAnimsAdd; " \n "    private _playAnim = selectRandom _arsenalAnims; " \n "    call _playAnim; " \n "    if !(isNil ""M9SD_EH_ResetPlayerAnimsOnArsenalClosed"") then  " \n "    { " \n "     (findDisplay 46) displayRemoveEventHandler ['keyDown', M9SD_EH_ResetPlayerAnimsOnArsenalClosed]; " \n "    }; " \n "    M9SD_EH_ResetPlayerAnimsOnArsenalClosed = (findDisplay 46) displayAddEventHandler ['keyDown',  " \n "    { " \n "     params [""_displayOrControl"", ""_key"", ""_shift"", ""_ctrl"", ""_alt""]; " \n "     private _w = 17; " \n "     private _a = 30; " \n "     private _s = 31; " \n "     private _d = 32; " \n "     private _keys = [_w, _a, _s, _d]; " \n "     if (_key in _keys) then  " \n "     { " \n "      comment  " \n "      "" " \n "      playSound ['addItemOK', true]; " \n "      playSound ['addItemOK', false]; " \n "      ""; " \n "      if !(isNil ""M9SD_EH_ResetPlayerAnimsOnArsenalClosed"") then  " \n "      { " \n "       (findDisplay 46) displayRemoveEventHandler ['keyDown', M9SD_EH_ResetPlayerAnimsOnArsenalClosed]; " \n "      }; " \n "      player enableSimulation true; " \n "      player playActionNow ''; " \n "      player playMoveNow ''; " \n "      player switchMove ''; " \n "      if (isMultiplayer) then {[player, ''] remoteExec ['switchMove']}; " \n "      'arsenalNotification1' cutFadeOut 0; " \n "      'arsenalNotification2' cutFadeOut 0; " \n "      comment  " \n "      "" " \n "      playSound ['hintCollapse', true]; " \n "      playSound ['hintCollapse', false]; " \n "      ""; " \n "     }; " \n "    }]; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this == vehicle _this)"", 7] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='\A3\ui_f\data\map\diary\icons\taskCustom_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Copy Loadout</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    player playmovenow 'AinvPknlMstpSnonWnonDnon_1'; " \n "    private _nearMen = nearestObjects [player, ['Man'], 21]; " \n "    if ((count _nearMen) <= 1) exitWith  " \n "    { " \n "     playSound ['AddItemFailed', true]; " \n "     playSound ['AddItemFailed', false]; " \n "     0 = [] spawn  " \n "     { " \n "      for '_i' from 1 to 12 do  " \n "      { " \n "       (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "      }; " \n "      'arsenalNotification8' cutFadeOut 0;  " \n "      'arsenalNotification8' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>ERROR:<br/>No unit is close enough.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "      uiSleep 3.5; " \n "      'arsenalNotification8' cutFadeOut 0.35; " \n "     }; " \n "    }; " \n "    private _nearestMan = _nearMen # 1; " \n "    private _loadout = getUnitLoadout _nearestMan; " \n "    player setUnitLoadout _loadout; " \n "    private _unitName = name _nearestMan; " \n "    private _notifText = format [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Nearest unit’s loadout copied:<br/><br/><t color='#FFFFFF' font='puristaSemiBold'>“%1”</t>"", _unitName]; " \n "    0 = _notifText spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification8' cutFadeOut 0;  " \n "     'arsenalNotification8' cutText [_this, ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.5; " \n "     'arsenalNotification8' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this == vehicle _this)"", 7] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='a3\ui_f\data\igui\cfg\actions\obsolete\ui_action_gear_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Empty Loadout</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    player playmovenow 'AinvPknlMstpSnonWnonDnon_1'; " \n "    removeAllWeapons player; " \n "    removeAllItems player; " \n "    removeAllAssignedItems player; " \n "    removeUniform player; " \n "    removeVest player; " \n "    removeBackpack player; " \n "    removeHeadgear player; " \n "    removeGoggles player; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification4' cutFadeOut 0;  " \n "     'arsenalNotification4' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Loadout removed.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.5; " \n "     'arsenalNotification4' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this == vehicle _this)"", 7] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='a3\3den\data\displays\Display3DEN\ToolBar\save_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Save Respawn Loadout</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    player playActionNow 'putdown'; " \n "    [player, [missionnamespace, ""M9SD_arsenalRespawnLoadout""]] call BIS_fnc_saveInventory; " \n "    if (!isNil ""M9SD_EH_arsenalRespawnLoadout"") then  " \n "    { " \n "     player removeEventHandler [""Respawn"", M9SD_EH_arsenalRespawnLoadout]; " \n "    }; " \n "    M9SD_EH_arsenalRespawnLoadout = player addEventHandler " \n "    [ " \n "     ""Respawn"", " \n "     { " \n "      0 = [] spawn  " \n "      { " \n "       waitUntil {(alive player)}; " \n "       sleep 0.07; " \n "       [player, [missionnamespace, ""M9SD_arsenalRespawnLoadout""]] call BIS_fnc_loadInventory; " \n "      }; " \n "     } " \n "    ]; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification6' cutFadeOut 0;  " \n "     'arsenalNotification6' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Respawn loadout set.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.5; " \n "     'arsenalNotification6' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this == vehicle _this)"", 7] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='a3\3den\data\displays\Display3DEN\ToolBar\open_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Load Respawn Loadout</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    player playActionNow 'putdown'; " \n "    if (isNil 'M9SD_EH_arsenalRespawnLoadout') then  " \n "    { " \n "     playSound ['AddItemFailed', true]; " \n "     playSound ['AddItemFailed', false]; " \n "     0 = [] spawn  " \n "     { " \n "      for '_i' from 1 to 12 do  " \n "      { " \n "       (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "      }; " \n "      'arsenalNotification12' cutFadeOut 0;  " \n "      'arsenalNotification12' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>ERROR:<br/>No respawn loadout saved.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "      uiSleep 3.5; " \n "      'arsenalNotification12' cutFadeOut 0.35; " \n "     }; " \n "    } else  " \n "    { " \n "     [player, [missionnamespace, ""M9SD_arsenalRespawnLoadout""]] call BIS_fnc_loadInventory; " \n "     0 = [] spawn  " \n "     { " \n "      for '_i' from 1 to 12 do  " \n "      { " \n "       (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "      }; " \n "      'arsenalNotification12' cutFadeOut 0;  " \n "      'arsenalNotification12' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Respawn loadout applied.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "      uiSleep 3.5; " \n "      'arsenalNotification12' cutFadeOut 0.35; " \n "     }; " \n "     playSound ['hintExpand', true]; " \n "     playSound ['hintExpand', false]; " \n "    }; " \n "   }, nil, 7777, true, true, """", ""(_this == vehicle _this)"", 7] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='\a3\3den\data\Cfg3DEN\History\deleteItems_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Delete Respawn Loadout</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    player playActionNow 'putdown'; " \n "    if (!isNil ""M9SD_EH_arsenalRespawnLoadout"") then  " \n "    { " \n "     player removeEventHandler [""Respawn"", M9SD_EH_arsenalRespawnLoadout]; " \n "    }; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification5' cutFadeOut 0;  " \n "     'arsenalNotification5' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Respawn loadout disabled.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.5; " \n "     'arsenalNotification5' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this == vehicle _this)"", 7] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='\A3\ui_f\data\IGUI\Cfg\simpleTasks\types\heal_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Heal</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    player playActionNow 'Medic'; " \n "    [player] call BIS_fnc_reviveEhRespawn; " \n "    player setDamage 0; " \n "    player setUnconscious false; " \n "    player setCaptive false; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification3' cutFadeOut 0;  " \n "     'arsenalNotification3' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Healing...</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 6.33; " \n "     playSound ['hintCollapse', true]; " \n "     playSound ['hintCollapse', false]; " \n "     'arsenalNotification3' cutFadeOut 0;  " \n "     'arsenalNotification3' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Healed.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.33; " \n "     'arsenalNotification3' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this == vehicle _this)"", 7] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='\A3\ui_f\data\IGUI\Cfg\simpleTasks\types\repair_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Repair</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    private _soundSource = vehicle player; " \n "    private _range = 28 * 2; " \n "    private _position = getPosWorld _soundSource; " \n "    playSound3D [""a3\sounds_f\sfx\ui\vehicles\vehicle_repair.wss"", _soundSource, false, _position, 5, 1, _range]; " \n "    playSound3D [""a3\sounds_f_orange\missionsfx\pastambiences\carpenter\orange_carpentershop_tools_02.wss"", _soundSource, false, _position, 5, 1, _range]; " \n "    [vehicle player, 1] remoteExec ['setVehicleArmor']; " \n "    [vehicle player, 0] remoteExec ['setDamage']; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification9' cutFadeOut 0;  " \n "     'arsenalNotification9' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Vehicle repaired.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.5; " \n "     'arsenalNotification9' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this != vehicle _this)"", 28] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='\A3\ui_f\data\IGUI\Cfg\simpleTasks\types\rearm_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Rearm</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    [vehicle player, 1] remoteExec ['setVehicleAmmo']; " \n "    private _soundSource = vehicle player; " \n "    private _range = 28 * 2; " \n "    private _position = getPosWorld _soundSource; " \n "    playSound3D [""a3\sounds_f\weapons\Mortar\mortar_reload_01.wss"", _soundSource, false, _position, 5, 1, _range]; " \n "    playSound3D [""a3\sounds_f\weapons\Zafir\zafir_reload.wss"", _soundSource, false, _position, 5, 1, _range]; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification10' cutFadeOut 0;  " \n "     'arsenalNotification10' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Vehicle rearmed.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.5; " \n "     'arsenalNotification10' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this != vehicle _this)"", 28] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n "  [ " \n "   _faradayCage, " \n "   [""<t color='#FFFFFF' size='1.4'><img image='\A3\ui_f\data\IGUI\Cfg\simpleTasks\types\refuel_ca.paa'></img><t color='#ffd700' size='1.4' font='puristaBold'> Refuel</t>"",  " \n "   { " \n "    playSound ['beep_target', true]; " \n "    playSound ['beep_target', false]; " \n "    [vehicle player, 1] remoteExec ['setFuel']; " \n "    private _soundSource = vehicle player; " \n "    private _range = 28 * 2; " \n "    private _position = getPosWorld _soundSource; " \n "    playSound3D [""a3\missions_f_epa\data\sounds\fall_into_water.wss"", _soundSource, false, _position, 5, 1, _range]; " \n "    playSound3D [""a3\missions_f_oldman\data\sound\refueling\refueling_loop.wss"", _soundSource, false, _position, 5, 1, _range]; " \n "    playSound3D [""a3\missions_f_oldman\data\sound\refueling\refueling_start.wss"", _soundSource, false, _position, 5, 1, _range]; " \n "    comment ""playSound3D ['a3\missions_f_oldman\data\sound\refueling\refueling_end.wss', _soundSource, false, _position, 5, 1, _range];""; " \n "    0 = [] spawn  " \n "    { " \n "     for '_i' from 1 to 12 do  " \n "     { " \n "      (format ['arsenalNotification%1', _i]) cutFadeOut 0; " \n "     }; " \n "     'arsenalNotification11' cutFadeOut 0;  " \n "     'arsenalNotification11' cutText [""<t color='#ffd700' font='puristaMedium' shadow='2' size='1.4'>Vehicle refueled.</t>"", ""PLAIN DOWN"", -1, true, true]; " \n "     uiSleep 3.5; " \n "     'arsenalNotification11' cutFadeOut 0.35; " \n "    }; " \n "    playSound ['hintExpand', true]; " \n "    playSound ['hintExpand', false]; " \n "   }, nil, 7777, true, true, """", ""(_this != vehicle _this)"", 28] " \n "  ] remoteExec ['addAction', player, _faradayCage]; " \n " }] remoteExec ['spawn', 0, _uniqueJIP]; " \n "}; " \n "comment ""_faradayCage setVariable ['M9SD_hasArsenalActions', false, true];""; " \n "[_faradayCage] call M9SD_fnc_addFaradayArsenalActions; " \n "M9SD_fnc_addFaradayMarkers =  " \n "{ " \n " params [['_faradayCage', objNull]]; " \n " if (isNull _faradayCage) exitWith {}; " \n " if (_faradayCage getVariable ['M9SD_hasMarkers', false]) exitWith {}; " \n " _faradayCage setVariable ['M9SD_hasMarkers', true, true]; " \n " if (isNil 'M9SD_Arsenals') then  " \n " { " \n "  M9SD_Arsenals = []; " \n " }; " \n " M9SD_Arsenals pushBackUnique _faradayCage; " \n " publicVariable 'M9SD_Arsenals';  " \n " [M9SD_Arsenals, " \n " { " \n "  if (!hasInterface) exitWith {}; " \n "  waitUntil { !isNil { player } && { !isNull player } }; " \n "  waitUntil { !isNull (findDisplay 46) }; " \n "  if (isNil 'M9SD_Arsenals') then  " \n "  { " \n "   M9SD_Arsenals = _this; " \n "  }; " \n "  if (not (isNil 'M9SD_EH_drawArsenal3D')) then  " \n "  { " \n "   removeMissionEventHandler ['Draw3D', M9SD_EH_drawArsenal3D]; " \n "  }; " \n "  M9SD_EH_drawArsenal3D = addMissionEventHandler ['Draw3D',  " \n "  { " \n "   if (count M9SD_Arsenals == 0) exitWith {}; " \n "   { " \n "    if (!isNull _x) then  " \n "    { " \n "     if ((_x == cursorObject) or (_x == cursorTarget)) then  " \n "     { " \n "      if ((_x distance (vehicle player)) <= 28) then  " \n "      { " \n "       private _position = getPos _x;       " \n "       private _offsetX = 0; " \n "       private _offsetY = -0.07; " \n "       private _drawSideArrows = false; " \n "       private _texture = '\A3\ui_f\data\logos\arsenal_1024_ca.paa'; " \n "       _position set [2, (_position # 2) + 3.3]; " \n "       private _width = 0.8; " \n "       private _height = 0.8; " \n "       private _angle = 0; " \n "       private _text = ''; " \n "       private _textSize = 0.05; " \n "       private _font = 'PuristaSemiBold'; " \n "       private _textAlign = 'center'; " \n "       private _shadow = 2; " \n "       drawIcon3D  " \n "       [ " \n "        '\a3\3den\data\displays\display3den\entitymenu\arsenal_ca.paa', " \n "        [1,1,1,1], " \n "        _position, " \n "        _width,  " \n "        _height,  " \n "        _angle, " \n "        '', " \n "        _shadow, " \n "        _textSize, " \n "        _font, " \n "        _textAlign, " \n "        _drawSideArrows, " \n "        _offsetX, " \n "        _offsetY " \n "       ]; " \n "       M9SD_arsenalIconText = if (player == vehicle player) then {'Virtual Arsenal'} else {'Service Station'}; " \n "       drawIcon3D  " \n "       [ " \n "        '', " \n "        [1,0.9,0,1], " \n "        _position, " \n "        _width,  " \n "        _height,  " \n "        _angle, " \n "        M9SD_arsenalIconText, " \n "        _shadow, " \n "        _textSize, " \n "        _font, " \n "        _textAlign, " \n "        _drawSideArrows, " \n "        _offsetX, " \n "        _offsetY " \n "       ]; " \n "      }; " \n "     }; " \n "    }; " \n "   } forEach M9SD_Arsenals; " \n "  }]; " \n "  waitUntil {!isNull (findDisplay 12 displayCtrl 51)}; " \n "  if (!isNil ""M9SD_EH_drawArsenal2D"") then  " \n "  { " \n "   (findDisplay 12 displayCtrl 51) ctrlRemoveEventHandler [""Draw"", M9SD_EH_drawArsenal2D]; " \n "  }; " \n "  M9SD_EH_drawArsenal2D = (findDisplay 12 displayCtrl 51) ctrlAddEventHandler [""Draw"",  " \n "  { " \n "   if (count M9SD_Arsenals == 0) exitWith {}; " \n "   { " \n "    if (!isNull _x) then  " \n "    { " \n "     private _iconPath = 'a3\ui_f\data\logos\a_64_ca.paa'; " \n "     M9SD_arsenalIconText = if ((((_this select 0) ctrlMapWorldToScreen (_x modelToWorldVisual [0,0,0])) distance2D getMousePosition) > 0.02) then {""""} else {if (player == vehicle player) then {'Virtual Arsenal'} else {'Service Station'}}; " \n "     private _pos = _x modelToWorldVisual [0,0,0]; " \n "     private _color = [1, 0.9, 0, 1]; " \n "     _this select 0 drawIcon " \n "     [ " \n "      _iconPath, " \n "      _color, " \n "      _pos, " \n "      20, " \n "      20, " \n "      0, " \n "      M9SD_arsenalIconText, " \n "      1, " \n "      0.05, " \n "      ""PuristaBold"", " \n "      ""left"" " \n "     ]; " \n "     _color = [1,1,1,1]; " \n "     _this select 0 drawIcon " \n "     [ " \n "      _iconPath, " \n "      _color, " \n "      _pos, " \n "      20, " \n "      20, " \n "      0, " \n "      '', " \n "      1, " \n "      0.05, " \n "      ""PuristaSemiBold"", " \n "      ""left"" " \n "     ]; " \n "    }; " \n "   } foreach M9SD_Arsenals; " \n "  }]; " \n " }] remoteExec ['spawn', 0, 'M9SD_JIP_AIOArsenalIcons_serviceStation']; " \n " comment "" " \n " M9SD_Arsenals = []; " \n " publicVariable 'M9SD_Arsenals'; " \n " remoteExec ['', 'M9SD_JIP_arsenalIcons_3D']; " \n " ""; " \n "}; " \n "[_faradayCage] call M9SD_fnc_addFaradayMarkers; " \n "['init',_faradayCage,[10,0,0]] call bis_fnc_3DENAttributeDoorStates; " \n "[_faradayCage, 1, 1] call BIS_fnc_door; " \n "[_faradayCage, 2, 1] call BIS_fnc_door; " \n "[_faradayCage, false] remoteExec ['allowDamage']; " \n "{ " \n " [_x, false] remoteExec ['allowDamage']; " \n "} forEach attachedObjects _faradayCage;";
+								name="M9SD_mainCrate_RRR";
+							};
+							id=13111;
+							type="Land_Cargo20_EMP_Training_F";
+							atlOffset=0.21286249;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="DoorStates";
+									expression="['init',_this,_value] call bis_fnc_3DENAttributeDoorStates;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"ARRAY"
+												};
+											};
+											class value
+											{
+												items=3;
+												class Item0
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=10;
+													};
+												};
+												class Item1
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+												class Item2
+												{
+													class data
+													{
+														class type
+														{
+															type[]=
+															{
+																"SCALAR"
+															};
+														};
+														value=0;
+													};
+												};
+											};
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=2;
+							};
+						};
+						class Item28
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={3895.3726,8.6755419,8266.7314};
+								angles[]={0,0.026016712,-0};
+							};
+							side="Empty";
+							class Attributes
+							{
+								init="[this, M9SD_mainCrate_RRR] call BIS_fnc_attachToRelative;" \n "";
+								disableSimulation=1;
+							};
+							id=13112;
+							type="PortableHelipadLight_01_yellow_F";
+							atlOffset=0.92122602;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="allowDamage";
+									expression="_this allowdamage _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"BOOL"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=1;
+							};
+						};
+					};
+					id=13083;
+					atlOffset=1.2556744;
+				};
+			};
+			id=13113;
+			atlOffset=1.2556744;
+		};
+		class Item672
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={15887.685,256.66763,12948.953};
+				angles[]={0,4.6791635,-0};
+			};
+			side="Empty";
+			flags=1;
+			class Attributes
+			{
+			};
+			id=13142;
+			type="WH40K_Imperium_starport_city";
+			atlOffset=55.841461;
+		};
+		class Item673
+		{
+			dataType="Layer";
+			name="destruct_house";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Layer";
+					name="destruct_house";
+					class Entities
+					{
+						items=10;
+						class Item0
+						{
+							dataType="Layer";
+							name="fundation";
+							id=13144;
+							atlOffset=-0.047514439;
+						};
+						class Item1
+						{
+							dataType="Layer";
+							name="structural_walls";
+							class Entities
+							{
+								items=4;
+								class Item0
+								{
+									dataType="Layer";
+									name="walls";
+									id=13155;
+									atlOffset=37.633904;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="concret";
+									id=13156;
+									atlOffset=3.3143635;
+								};
+								class Item2
+								{
+									dataType="Layer";
+									name="windowns";
+									id=13185;
+									atlOffset=37.633904;
+								};
+								class Item3
+								{
+									dataType="Layer";
+									name="doors";
+									id=13186;
+									atlOffset=37.633904;
+								};
+							};
+							id=13154;
+							atlOffset=13.590425;
+						};
+						class Item2
+						{
+							dataType="Layer";
+							name="interior_walls";
+							class Entities
+							{
+								items=3;
+								class Item0
+								{
+									dataType="Layer";
+									name="walls_1";
+									id=13188;
+									atlOffset=37.633904;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="concret_1";
+									id=13189;
+									atlOffset=3.5883832;
+								};
+								class Item2
+								{
+									dataType="Layer";
+									name="doors_1";
+									id=13204;
+									atlOffset=37.633904;
+								};
+							};
+							id=13187;
+							atlOffset=-2.261085;
+						};
+						class Item3
+						{
+							dataType="Layer";
+							name="decal_1";
+							id=13205;
+							atlOffset=3.5008454;
+						};
+						class Item4
+						{
+							dataType="Layer";
+							name="decor";
+							id=13238;
+							atlOffset=6.276279;
+						};
+						class Item5
+						{
+							dataType="Layer";
+							name="floor";
+							id=13301;
+							atlOffset=37.633904;
+						};
+						class Item6
+						{
+							dataType="Layer";
+							name="stair";
+							id=13302;
+							atlOffset=3.8518801;
+						};
+						class Item7
+						{
+							dataType="Layer";
+							name="2nd_floor";
+							class Entities
+							{
+								items=5;
+								class Item0
+								{
+									dataType="Layer";
+									name="fence";
+									id=13305;
+									atlOffset=6.6825409;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="concret_2";
+									class Entities
+									{
+										items=2;
+										class Item0
+										{
+											dataType="Layer";
+											name="002";
+											id=13323;
+											atlOffset=6.2648687;
+										};
+										class Item1
+										{
+											dataType="Layer";
+											name="001";
+											id=13350;
+											atlOffset=5.9453964;
+										};
+									};
+									id=13322;
+									atlOffset=6.1051497;
+								};
+								class Item2
+								{
+									dataType="Layer";
+									name="2nd_building";
+									class Entities
+									{
+										items=1;
+										class Item0
+										{
+											dataType="Layer";
+											name="wall_2";
+											id=13382;
+											atlOffset=37.633904;
+										};
+									};
+									id=13378;
+									atlOffset=-10.876888;
+								};
+								class Item3
+								{
+									dataType="Layer";
+									name="movable_2nd_floor";
+									id=13388;
+									atlOffset=7.4267364;
+								};
+								class Item4
+								{
+									dataType="Layer";
+									name="2nd_floor_windowns";
+									class Entities
+									{
+										items=2;
+										class Item0
+										{
+											dataType="Layer";
+											name="wall_3";
+											id=13418;
+											atlOffset=37.633904;
+										};
+										class Item1
+										{
+											dataType="Layer";
+											name="window_structure";
+											id=13419;
+											atlOffset=37.633904;
+										};
+									};
+									id=13417;
+									atlOffset=37.633904;
+								};
+							};
+							id=13304;
+							atlOffset=-102.74694;
+						};
+						class Item8
+						{
+							dataType="Layer";
+							name="roof";
+							class Entities
+							{
+								items=2;
+								class Item0
+								{
+									dataType="Layer";
+									name="structure";
+									id=13421;
+									atlOffset=37.633904;
+								};
+								class Item1
+								{
+									dataType="Layer";
+									name="sheet";
+									id=13422;
+									atlOffset=37.633904;
+								};
+							};
+							id=13420;
+							atlOffset=37.633904;
+						};
+						class Item9
+						{
+							dataType="Layer";
+							name="pillars";
+							id=13423;
+							atlOffset=4.4984436;
+						};
+					};
+					id=13143;
+					atlOffset=-76.399582;
+				};
+			};
+			id=13436;
+			atlOffset=-76.399582;
+		};
+		class Item674
+		{
+			dataType="Layer";
+			name="Zombie Apocalypse - Medium Survivor Camp";
+			class Entities
+			{
+				items=2;
+				class Item0
+				{
+					dataType="Layer";
+					name="medcamp2_1";
+					id=13554;
+					atlOffset=37.633904;
+				};
+				class Item1
+				{
+					dataType="Layer";
+					name="med camp_1";
+					id=13553;
+					atlOffset=37.633904;
+				};
+			};
+			id=13562;
+			atlOffset=-106.38216;
+		};
+		class Item675
+		{
+			dataType="Layer";
+			name="Small Cave Outpost";
+			id=13651;
+			atlOffset=-0.26059294;
 		};
 	};
 };
