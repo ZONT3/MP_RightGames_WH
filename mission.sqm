@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=2776;
+		nextID=2963;
 	};
 	class Camera
 	{
-		pos[]={2204.8525,44.397991,8368.5273};
-		dir[]={-0.10651038,-0.52629268,-0.84366041};
-		up[]={-0.065924212,0.8502866,-0.5221777};
-		aside[]={-0.99217153,-3.4924597e-008,0.12525795};
+		pos[]={1261.7003,41.40081,459.5238};
+		dir[]={-0.58282679,-0.59335423,-0.55522138};
+		up[]={-0.42963773,0.80491835,-0.40928879};
+		aside[]={-0.68976122,2.5064219e-007,0.72405583};
 	};
 };
 binarizationWanted=0;
@@ -170,14 +170,13 @@ addons[]=
 	"A3_Structures_F_Exp_Industrial_Stockyard_01",
 	"A3_Structures_F_Ind_PowerLines",
 	"A3_Structures_F_Exp_Industrial_Port",
-	"DRCAssets",
-	"UM_40k_Flags"
+	"DRCAssets"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=99;
+		items=98;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -758,12 +757,6 @@ class AddonsMetaData
 			className="DRCAssets";
 			name="DRCAssets";
 		};
-		class Item98
-		{
-			className="UM_40k_Flags";
-			name="UM_40k_Flags";
-			author="Steve";
-		};
 	};
 };
 dlcs[]=
@@ -1243,7 +1236,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=885;
+		items=884;
 		class Item0
 		{
 			dataType="Logic";
@@ -70906,7 +70899,7 @@ class Mission
 										};
 										class value
 										{
-											items=317;
+											items=329;
 											class Item0
 											{
 												class data
@@ -75343,6 +75336,174 @@ class Mission
 														};
 													};
 													value="ACE_adenosine";
+												};
+											};
+											class Item317
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Shotgun_1";
+												};
+											};
+											class Item318
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Shotgun_2";
+												};
+											};
+											class Item319
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Shotgun_4";
+												};
+											};
+											class Item320
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Shotgun_3";
+												};
+											};
+											class Item321
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="STEVE_LascutShield_2";
+												};
+											};
+											class Item322
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="STEVE_PhobosShield_1";
+												};
+											};
+											class Item323
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Sm_Solid";
+												};
+											};
+											class Item324
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Sm_Pellet";
+												};
+											};
+											class Item325
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_30k_lascutter_Mag";
+												};
+											};
+											class Item326
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Phob_BoltgunMag";
+												};
+											};
+											class Item327
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Phob_BoltgunMag_K";
+												};
+											};
+											class Item328
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="Steve_Phob_BoltgunMag_DF";
 												};
 											};
 										};
@@ -81719,7 +81880,7 @@ class Mission
 						};
 					};
 					id=15225;
-					atlOffset=10.337477;
+					atlOffset=10.349543;
 				};
 				class Item6
 				{
@@ -81747,11 +81908,11 @@ class Mission
 					dataType="Layer";
 					name="Construction Yard1_1";
 					id=15683;
-					atlOffset=4.0192766;
+					atlOffset=37.633904;
 				};
 			};
 			id=15830;
-			atlOffset=22.500305;
+			atlOffset=38.31358;
 		};
 		class Item848
 		{
@@ -82261,49 +82422,33 @@ class Mission
 		};
 		class Item879
 		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={2059.8508,3.6025114,8501.1582};
-				angles[]={1.5707968,2.356194,5.2359877};
-			};
-			side="Empty";
-			flags=5;
-			class Attributes
-			{
-				disableSimulation=1;
-			};
-			id=15876;
-			type="UM_Flag_Static";
-			atlOffset=0.16215229;
+			dataType="Layer";
+			name="Anti-Air Radar #B";
+			id=15900;
+			atlOffset=37.633904;
 		};
 		class Item880
 		{
 			dataType="Layer";
-			name="Anti-Air Radar #B";
-			id=15900;
-		};
-		class Item881
-		{
-			dataType="Layer";
 			name="Field Barracks #O1";
 			id=16035;
+			atlOffset=37.633904;
 		};
-		class Item882
+		class Item881
 		{
 			dataType="Layer";
 			name="Hospital #O";
 			id=16062;
 			atlOffset=37.633904;
 		};
-		class Item883
+		class Item882
 		{
 			dataType="Layer";
 			name="Hospital #B";
 			id=16124;
-			atlOffset=0.010014296;
+			atlOffset=37.633904;
 		};
-		class Item884
+		class Item883
 		{
 			dataType="Object";
 			class PositionInfo
