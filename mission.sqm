@@ -177,6 +177,7 @@ addons[]=
 	"tfar_handhelds",
 	"IC_CAD_FACEWEAR",
 	"psian_jackals",
+	"TG_Weapons",
 	"My_grenades",
 	"OPTRE_Weapons_Ammo",
 	"imperial_grenades",
@@ -804,6 +805,12 @@ class AddonsMetaData
 		{
 			className="psian_jackals";
 			name="psian_jackals";
+		};
+		class Item104
+		{
+			className="TG_Weapons";
+			name="TG_Weapons";
+			author="Tiberian Genesis";
 		};
 		class Item105
 		{
@@ -70196,6 +70203,20 @@ class Mission
 													value="OPTRE_ELB47_Strobe";
 												};
 											};
+											class Item152
+											{
+												class data
+												{
+													class type
+													{
+														type[]=
+														{
+															"STRING"
+														};
+													};
+													value="TG_GDI_DiscGrenade";
+												};
+											};
 											class Item153
 											{
 												class data
@@ -79661,6 +79682,12 @@ class Mission
 										name="TIOW_pulse_pistol_mag";
 										count=20;
 										ammoLeft=18;
+									};
+									class Item1
+									{
+										name="TG_GDI_DiscGrenade";
+										count=15;
+										ammoLeft=1;
 									};
 									class Item2
 									{
