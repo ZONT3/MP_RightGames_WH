@@ -1196,14 +1196,14 @@ IMS_HudCoordinate_Y = 0.9;
 IMS_ShowHealthHud = true;
 
 // Improved Melee System (Server Settings)
-force IMS_AddKnifeToUnit = false;
+force IMS_AddKnifeToUnit = true;
 force IMS_BayonetDistance = "6";
 force IMS_BayonetOnAI = true;
 force IMS_BluntWeapon = false;
 force IMS_CustomAIHEALTH = "2";
 force IMS_DamageMultiplierParam = "1";
-force IMS_ExecutionChanceParametr = "60";
-force IMS_isHumansCanHitSM = true;
+force IMS_ExecutionChanceParametr = "40";
+force IMS_isHumansCanHitSM = false;
 force IMS_isImsCanHitAllies = true;
 force IMS_isKickButtInstaKill = false;
 force IMS_isStaticDeaths = false;
