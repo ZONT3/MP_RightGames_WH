@@ -25,10 +25,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={911.92279,73.896729,1254.8248};
-		dir[]={0.76605594,-0.37373745,-0.52312064};
-		up[]={0.30877462,0.92746252,-0.21085587};
-		aside[]={-0.56398863,-4.7229696e-007,-0.82589722};
+		pos[]={1030.1624,73.221542,566.16626};
+		dir[]={0.64091146,-0.52648002,0.55879879};
+		up[]={0.39693967,0.85009181,0.34608278};
+		aside[]={0.65724599,-7.1933027e-007,-0.75382698};
 	};
 };
 binarizationWanted=0;
@@ -157,6 +157,10 @@ addons[]=
 	"WBK_DreadnoughtForm",
 	"Aod_Cont_Weapons",
 	"Project_Primaris_Dos",
+	"Project_Primaris_Dos_Weapons",
+	"UME_Primaris_Pack",
+	"Ultramarine_Equipment_Config",
+	"imperial_grenades",
 	"TIOW_SM_Vehs",
 	"Dos_Veh_Reskins",
 	"TIOW_Razorback",
@@ -169,16 +173,14 @@ addons[]=
 	"IC_CAD_FACEWEAR",
 	"My_grenades",
 	"OPTRE_Weapons_Ammo",
-	"imperial_grenades",
 	"ace_grenades",
-	"Steve_30k_Units",
-	"Project_Primaris_Dos_Weapons"
+	"Steve_30k_Units"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=107;
+		items=109;
 		class Item0
 		{
 			className="A3_Modules_F";
@@ -723,95 +725,106 @@ class AddonsMetaData
 		};
 		class Item91
 		{
+			className="Project_Primaris_Dos_Weapons";
+			name="Project Primaris Weapons";
+			author="People";
+		};
+		class Item92
+		{
+			className="UME_Primaris_Pack";
+			name="UME Primaris Pack";
+			author="Solari";
+		};
+		class Item93
+		{
+			className="Ultramarine_Equipment_Config";
+			name="UM Equipment";
+		};
+		class Item94
+		{
+			className="imperial_grenades";
+			name="imperial_grenades";
+		};
+		class Item95
+		{
 			className="TIOW_SM_Vehs";
 			name="TIOW_SM_Vehs";
 		};
-		class Item92
+		class Item96
 		{
 			className="Dos_Veh_Reskins";
 			name="Dos_Veh_Reskins";
 		};
-		class Item93
+		class Item97
 		{
 			className="TIOW_Razorback";
 			name="Razorbacks";
 			author="There is Only War";
 		};
-		class Item94
+		class Item98
 		{
 			className="TIOW_IQ_40k_weapons";
 			name="40k Inquisition Weapons";
 		};
-		class Item95
+		class Item99
 		{
 			className="TIOW_tau_40k_weapons";
 			name="40k";
 			author="TIOW_Sokolonko";
 		};
-		class Item96
+		class Item100
 		{
 			className="VNG_TIOW_ADDON";
 			name="Vanguard TIOW Addon";
 			author="Onkel Dolf";
 		};
-		class Item97
+		class Item101
 		{
 			className="OPTRE_Weapons_Items";
 			name="OPTRE_Weapons_Items";
 			author="Article 2 Studios";
 		};
-		class Item98
+		class Item102
 		{
 			className="A3_Weapons_F_Enoch";
 			name="Arma 3 Contact Platform - Weapons and Accessories";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item99
+		class Item103
 		{
 			className="tfar_handhelds";
 			name="tfar_handhelds";
 			url="https://github.com/michail-nikolaev/task-force-arma-3-radio";
 		};
-		class Item100
+		class Item104
 		{
 			className="IC_CAD_FACEWEAR";
 			name="IC_CAD_FACEWEAR";
 		};
-		class Item101
+		class Item105
 		{
 			className="My_grenades";
 			name="My_grenades";
 		};
-		class Item102
+		class Item106
 		{
 			className="OPTRE_Weapons_Ammo";
 			name="OPTRE_Weapons_Ammo";
 			author="Article 2 Studios";
 		};
-		class Item103
-		{
-			className="imperial_grenades";
-			name="imperial_grenades";
-		};
-		class Item104
+		class Item107
 		{
 			className="ace_grenades";
 			name="ACE3 - Grenades";
 			author="Команда ACE";
 			url="https://ace3.acemod.org/";
 		};
-		class Item105
+		class Item108
 		{
 			className="Steve_30k_Units";
 			name="me";
 			author="me";
-		};
-		class Item106
-		{
-			className="Project_Primaris_Dos_Weapons";
-			name="Project Primaris Weapons";
-			author="People";
 		};
 	};
 };
@@ -849,7 +862,7 @@ class ScenarioData
 };
 class CustomAttributes
 {
-	class Category0
+	class Category1
 	{
 		name="Multiplayer";
 		class Attribute0
@@ -1113,7 +1126,7 @@ class CustomAttributes
 		};
 		nAttributes=3;
 	};
-	class Category1
+	class Category2
 	{
 		name="Scenario";
 		class Attribute0
@@ -75408,7 +75421,7 @@ class Mission
 			};
 			id=14218;
 			type="land_tiow_astartes_scale_weapons_rack_ultra";
-			atlOffset=0.011461258;
+			atlOffset=0.011463165;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -83327,8 +83340,78 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Брат-примарис";
+						description="Брат-Апотекарий";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="Primaris_Dos_Bolt_Rifle";
+								firemode="Primaris_Dos_Bolt_Rifle:Single";
+								class primaryMuzzleMag
+								{
+									name="Primaris_Dos_Bolt_RifleMag";
+									ammoLeft=20;
+								};
+							};
+							class uniform
+							{
+								typeName="UM_Apo_Armor_Mk7_Kyrent";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="Primaris_Dos_Bolt_RifleMag";
+										count=3;
+										ammoLeft=20;
+									};
+									class Item1
+									{
+										name="TIOW_sm_frag_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="TIOW_sm_krak_grenade_mag";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="TIOW_sm_smoke_grenade_mag";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="Primaris_Vest_UM_Apo_MK10";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="Primaris_UM_Apoth_PP";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							headgear="Primaris_Helm_Apo_MK10";
+						};
 					};
 					id=16151;
 					type="Primaris_SM_UM_1";
@@ -83337,8 +83420,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							property="ENH_unitTraits_camouflage";
+							expression="_this setUnitTrait ['CamouflageCoef', _value]";
 							class Value
 							{
 								class data
@@ -83350,11 +83433,30 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=3;
 								};
 							};
 						};
 						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="_this setUnitTrait ['AudibleCoef', _value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=3;
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="ace_isEngineer";
 							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
@@ -83373,64 +83475,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute2
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male01ENGVR";
-								};
-							};
-						};
 						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute5
 						{
 							property="ace_isEOD";
 							expression="_this setVariable ['ACE_isEOD', _value, true]";
@@ -83449,7 +83494,140 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="_this setUnitTrait ['LoadCoef', _value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=3;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGVR";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ENH_unitTraits_medic";
+							expression="_this setUnitTrait ['Medic', _value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute10
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=10;
+								};
+							};
+						};
+						nAttributes=11;
 					};
 				};
 				class Item4
@@ -83463,8 +83641,79 @@ class Mission
 					flags=1;
 					class Attributes
 					{
-						description="Брат-примарис";
+						description="Техно-викинг";
 						isPlayable=1;
+						class Inventory
+						{
+							class primaryWeapon
+							{
+								name="Primaris_Dos_Bolt_Rifle";
+								firemode="Primaris_Dos_Bolt_Rifle:Single";
+								class primaryMuzzleMag
+								{
+									name="Primaris_Dos_Bolt_RifleMag";
+									ammoLeft=20;
+								};
+							};
+							class uniform
+							{
+								typeName="UM_TM_Armor_Mk6";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=4;
+									class Item0
+									{
+										name="Primaris_Dos_Bolt_RifleMag";
+										count=3;
+										ammoLeft=20;
+									};
+									class Item1
+									{
+										name="TIOW_sm_frag_grenade_mag";
+										count=2;
+										ammoLeft=1;
+									};
+									class Item2
+									{
+										name="TIOW_sm_krak_grenade_mag";
+										count=1;
+										ammoLeft=1;
+									};
+									class Item3
+									{
+										name="TIOW_sm_smoke_grenade_mag";
+										count=1;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=3;
+									};
+								};
+							};
+							class vest
+							{
+								typeName="UM_3d_Tech";
+								isBackpack=0;
+							};
+							class backpack
+							{
+								typeName="Steve_Tek_PP_Mk4";
+								isBackpack=1;
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+							goggles="tilt_tech";
+							headgear="UM_TM_Helmet_Mk7";
+						};
 					};
 					id=16153;
 					type="Primaris_SM_UM_1";
@@ -83473,8 +83722,8 @@ class Mission
 					{
 						class Attribute0
 						{
-							property="ace_isMedic";
-							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							property="ENH_unitTraits_engineer";
+							expression="_this setUnitTrait ['Engineer', _value]";
 							class Value
 							{
 								class data
@@ -83483,7 +83732,7 @@ class Mission
 									{
 										type[]=
 										{
-											"SCALAR"
+											"BOOL"
 										};
 									};
 									value=1;
@@ -83505,14 +83754,14 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=1;
+									value=2;
 								};
 							};
 						};
 						class Attribute2
 						{
-							property="speaker";
-							expression="_this setspeaker _value;";
+							property="ENH_unitTrait_UAVHacker";
+							expression="_this setUnitTrait ['UAVHacker', _value]";
 							class Value
 							{
 								class data
@@ -83521,52 +83770,14 @@ class Mission
 									{
 										type[]=
 										{
-											"STRING"
+											"BOOL"
 										};
 									};
-									value="Male01ENGVR";
+									value=1;
 								};
 							};
 						};
 						class Attribute3
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.99000001;
-								};
-							};
-						};
-						class Attribute4
-						{
-							property="ace_advanced_fatigue_performanceFactor";
-							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=2;
-								};
-							};
-						};
-						class Attribute5
 						{
 							property="ace_isEOD";
 							expression="_this setVariable ['ACE_isEOD', _value, true]";
@@ -83585,7 +83796,121 @@ class Mission
 								};
 							};
 						};
-						nAttributes=6;
+						class Attribute4
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.99000001;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="_this setUnitTrait ['LoadCoef', _value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=3;
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male01ENGVR";
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="ENH_unitTrait_explosiveSpecialist";
+							expression="_this setUnitTrait ['ExplosiveSpecialist', _value]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						nAttributes=10;
 					};
 				};
 			};
