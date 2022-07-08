@@ -11,6 +11,7 @@ private _tempestus  = [["Tempestus"]]  call ZONT_fnc_checkRole;
 private _hirurg     = [["Hirurg"]]     call ZONT_fnc_checkRole;
 private _apot       = [["Apot"]]       call ZONT_fnc_checkRole;
 private _fist       = [["Fist"]]       call ZONT_fnc_checkRole;
+private _sl         = [["SL"]]         call ZONT_fnc_checkrole;
 
 
 player enableFatigue true;
@@ -19,6 +20,9 @@ Player enableStamina true;
 player setUnitTrait ['engineer', _mechanicus];
 player setUnitTrait ['medic', _hirurg or _apot];
 
-if () then {
+if () then { _astartes, _sl
   player setCustomAimCoef 0.01;
+};
+if () then { _astartes, _sl
+  player enableStamina false;
 };
