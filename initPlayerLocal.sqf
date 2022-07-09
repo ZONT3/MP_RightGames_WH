@@ -14,7 +14,7 @@ waitUntil {vehicle player == player};
 
 /*** Custom Scripts ***/
 
-//[] execVM "external\scripts\autoheal_list.sqf"; //Автохил космарей и мехов
+[] execVM "external\scripts\autoheal_list.sqf"; //Автохил космарей и мехов
 [] execVM "external\scripts\introtext.sqf"; //Вступительный текст
 [] execVM "external\scripts\medic.sqf";  //Инит пульсометра
 

@@ -6,7 +6,7 @@ if ((time - last_used < 45) && (used != 0)) then
 }
 else
 {
-	if (used < 3) then
+	if (used < 1) then
 		{
 			player setVariable ["Heal_Used", used + 1, true];
 			player setVariable ["Last_Used", time, true];
