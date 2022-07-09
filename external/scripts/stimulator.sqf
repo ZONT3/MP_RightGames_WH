@@ -2,10 +2,10 @@ used = player getVariable ['Heal_Used', 0];
 last_used = player getVariable ['Last_Used', 0];
 if ((time - last_used < 45) && (used != 0)) then
 	{
-	hint format ["Стимуляторы не еще не готовы"];
+	hint format ["Стимуляторы еще не готовы"];
 }
 else
-{	
+{
 	if (used < 3) then
 		{
 			player setVariable ["Heal_Used", used + 1, true];

@@ -15,9 +15,9 @@ uisleep 10;
  [
   ["Планета Энкелад. Сегментум Ультима. ", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
   ["","<br/>"],
-  ["117-й Кадианский полк", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"],
+  ["Расположение сил Империума", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"],
   ["","<br/>"],
-  ["Военный аэродром Гнева Джанкарло Грамолаццио","align = 'center' shadow = '1' size = '1.0'"]
+  ["Военный аэродром Джанкарло","align = 'center' shadow = '1' size = '1.0'"]
  ]
 ] spawn BIS_fnc_typeText2;
 
