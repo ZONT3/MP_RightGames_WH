@@ -1,7 +1,10 @@
+systemChat "Проверка 0";
 if not (missionNamespace getVariable ["MPC_canSave", false]) exitWith { false };
-
+ systemChat "Проверка 1";
 if not (assert !isNil "ZPR_ID")    exitWith { false };
+ systemChat "Проверка 2";
 if not (assert !isNil "ZPR_roles") exitWith { false };
+ systemChat "Проверка 3";
 
 [[_this, ZPR_ID, ZPR_roles], {
   params ["_player", "_id", "_roles"];
