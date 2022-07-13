@@ -11,10 +11,10 @@ private _hirurg     = [["Hirurg"]]     call ZONT_fnc_checkRole;
 private _apot       = [["Apot"]]       call ZONT_fnc_checkRole;
 private _fist       = [["Fist"]]       call ZONT_fnc_checkRole;
 private _sl         = [["SL"]]         call ZONT_fnc_checkrole;
-private _tech         = [["Tech"]]         call ZONT_fnc_checkrole;
+private _tech       = [["Tech"]]       call ZONT_fnc_checkrole;
 
-player enableFatigue true;
-player enableStamina true;
+/*player enableFatigue true;
+player enableStamina true;*/
   hint format [_astartes,_mechanicus,_apot,_sl,_tech];
 player setUnitTrait ['engineer', _mechanicus or _tech];
 player setUnitTrait ['medic', _hirurg or _apot];
