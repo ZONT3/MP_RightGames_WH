@@ -15,7 +15,7 @@ private _tech         = [["Tech"]]         call ZONT_fnc_checkrole;
 
 player enableFatigue true;
 player enableStamina true;
-
+  hint format [_astartes,_mechanicus,_apot,_sl,_tech];
 player setUnitTrait ['engineer', _mechanicus or _tech];
 player setUnitTrait ['medic', _hirurg or _apot];
 if (_mechanicus or _tech) then {
