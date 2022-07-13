@@ -16,7 +16,7 @@ private _sl         = [["SL"]]         call ZONT_fnc_checkrole;
 player enableFatigue true;
 player enableStamina true;
 
-player setUnitTrait ['engineer', _mechanicus];
+player setUnitTrait ['engineer', _mechanicus or _tech];
 player setUnitTrait ['medic', _hirurg or _apot];
 
 if (_astartes or _sl) then {
