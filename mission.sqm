@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=19881;
+		nextID=19908;
 	};
 	class MarkerIDProvider
 	{
@@ -21,14 +21,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=6646;
+		nextID=6874;
 	};
 	class Camera
 	{
-		pos[]={1218.0863,102.8482,507.30832};
-		dir[]={0.01693419,-0.52789301,-0.84917885};
-		up[]={0.010526589,0.84928596,-0.52782065};
-		aside[]={-0.99982864,6.2251274e-008,-0.019940542};
+		pos[]={664.40155,53.522236,1344.6971};
+		dir[]={0.70802391,-0.637362,0.3045004};
+		up[]={0.58559906,0.77047163,0.25184986};
+		aside[]={0.39512983,-2.089655e-006,-0.91875339};
 	};
 };
 binarizationWanted=0;
@@ -1333,7 +1333,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=923;
+		items=924;
 		class Item0
 		{
 			dataType="Logic";
@@ -26229,34 +26229,34 @@ class Mission
 				class Item0
 				{
 					dataType="Trigger";
-					position[]={685.62659,15.049866,1354.7239};
+					position[]={685.21399,15.049866,1348.4515};
 					angle=0.8141259;
 					class Attributes
 					{
 						onActivation="[] execVM ""external\scripts\t1.sqf"";";
-						sizeA=25;
-						sizeB=25;
+						sizeA=7.6872902;
+						sizeB=18.508022;
 						activationBy="ANYPLAYER";
 					};
 					id=10782;
 					type="EmptyDetectorAreaR50";
-					atlOffset=-0.00046348572;
+					atlOffset=0.0031738281;
 				};
 			};
 			id=10796;
-			atlOffset=-0.00046348572;
+			atlOffset=0.0031738281;
 		};
 		class Item449
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={321.71997,14.603592,1694.4333};
+				position[]={321.72,14.603597,1694.433};
 			};
 			name="mp_zuus";
 			id=10797;
 			type="ModuleCurator_F";
-			atlOffset=27.84499;
+			atlOffset=27.844999;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -26343,11 +26343,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={719.60016,15.64298,1341.72};
+				position[]={719.59998,15.643216,1341.72};
 			};
 			id=10798;
 			type="ModuleRespawnPosition_F";
-			atlOffset=0.30225658;
+			atlOffset=0.3024931;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -26467,8 +26467,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={679.34741,15.039854,1356.499};
-								angles[]={0,3.1106479,0};
+								position[]={680.81775,15.039853,1347.2832};
+								angles[]={0,4.6814446,-0};
 							};
 							side="West";
 							flags=7;
@@ -26506,7 +26506,6 @@ class Mission
 							};
 							id=10898;
 							type="Psyker_Human";
-							atlOffset=9.5367432e-007;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27087,7 +27086,6 @@ class Mission
 					{
 					};
 					id=10897;
-					atlOffset=9.5367432e-007;
 				};
 				class Item1
 				{
@@ -27101,15 +27099,14 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={673.51575,15.329492,1353.8463};
-								angles[]={0,3.0177736,0};
+								position[]={676.68585,15.329853,1352.0253};
+								angles[]={0,4.5885758,-0};
 							};
 							side="West";
 							flags=3;
 							class Attributes
 							{
 								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
 								description="Механикус";
 								isPlayable=1;
 								reportRemoteTargets=1;
@@ -27154,7 +27151,7 @@ class Mission
 							};
 							id=10800;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.28963852;
+							atlOffset=0.28999996;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -27450,8 +27447,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={673.39673,15.336473,1354.7971};
-								angles[]={0,3.0177736,0};
+								position[]={677.6369,15.336473,1352.1445};
+								angles[]={0,4.5885701,-0};
 							};
 							side="West";
 							flags=1;
@@ -27800,7 +27797,7 @@ class Mission
 						init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 10, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
 					};
 					id=10799;
-					atlOffset=0.28963852;
+					atlOffset=0.28999996;
 				};
 				class Item2
 				{
@@ -27814,7 +27811,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={686.073,15.045568,1353.666};
+								position[]={683.50037,15.052121,1354.8433};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -27858,7 +27855,7 @@ class Mission
 							};
 							id=10803;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.0079994202;
+							atlOffset=0.00436306;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28021,7 +28018,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={686.23755,15.045312,1352.2834};
+								position[]={683.66492,15.051865,1353.4607};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -28065,7 +28062,7 @@ class Mission
 							};
 							id=11895;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.0086278915;
+							atlOffset=0.0037345886;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28228,7 +28225,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={686.245,14.825956,1350.973};
+								position[]={683.67236,14.832509,1352.1503};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -28272,7 +28269,7 @@ class Mission
 							};
 							id=11897;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22799969;
+							atlOffset=-0.21563721;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28435,7 +28432,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={686.34583,14.825571,1349.8125};
+								position[]={683.77319,14.832124,1350.9897};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -28479,7 +28476,7 @@ class Mission
 							};
 							id=11899;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22807598;
+							atlOffset=-0.21625042;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28642,7 +28639,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={686.41309,15.050277,1348.3517};
+								position[]={683.84045,15.056829,1349.5289};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -28686,7 +28683,7 @@ class Mission
 							};
 							id=11901;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.00022315979;
+							atlOffset=0.0094804764;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -28849,7 +28846,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={686.59119,15.047429,1346.6791};
+								position[]={684.01855,15.053982,1347.8563};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -28893,7 +28890,7 @@ class Mission
 							};
 							id=11903;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.00030326843;
+							atlOffset=0.010007858;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29056,7 +29053,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={687.60632,15.048117,1353.6917};
+								position[]={685.03369,15.054669,1354.8689};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -29100,7 +29097,7 @@ class Mission
 							};
 							id=11907;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.0060958862;
+							atlOffset=0.0034484863;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29263,7 +29260,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={687.62854,15.04838,1352.3436};
+								position[]={685.05591,15.054933,1353.5209};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -29307,7 +29304,7 @@ class Mission
 							};
 							id=11909;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.0087003708;
+							atlOffset=0.0036621094;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29470,7 +29467,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={687.42316,14.825571,1350.8741};
+								position[]={684.85052,14.832124,1352.0514};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -29514,7 +29511,7 @@ class Mission
 							};
 							id=11911;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.23104572;
+							atlOffset=-0.21868324;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29677,7 +29674,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={687.47156,14.825571,1349.7592};
+								position[]={684.89893,14.832124,1350.9364};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -29721,7 +29718,7 @@ class Mission
 							};
 							id=11913;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.23049831;
+							atlOffset=-0.21879292;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -29884,7 +29881,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={687.50342,15.052625,1348.3484};
+								position[]={684.93079,15.059177,1349.5256};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -29928,7 +29925,7 @@ class Mission
 							};
 							id=11915;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.00032997131;
+							atlOffset=0.0093736649;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30091,7 +30088,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={687.63928,15.049803,1346.7766};
+								position[]={685.06665,15.056355,1347.9539};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -30135,7 +30132,7 @@ class Mission
 							};
 							id=11917;
 							type="IC_CAD_inf_776_B";
-							atlOffset=9.059906e-005;
+							atlOffset=0.0097942352;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30298,7 +30295,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={688.78137,15.052376,1346.8125};
+								position[]={686.20874,15.058928,1347.9897};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -30342,7 +30339,7 @@ class Mission
 							};
 							id=11923;
 							type="IC_CAD_inf_776_B";
-							atlOffset=2.8610229e-006;
+							atlOffset=0.0097074509;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30505,7 +30502,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={688.67657,14.825571,1348.3611};
+								position[]={686.10394,14.832124,1349.5383};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -30549,7 +30546,7 @@ class Mission
 							};
 							id=11925;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.23006153;
+							atlOffset=-0.22035789;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30712,7 +30709,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={688.58295,14.825571,1349.8119};
+								position[]={686.01031,14.832124,1350.9891};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -30756,7 +30753,7 @@ class Mission
 							};
 							id=11927;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.23312759;
+							atlOffset=-0.22130299;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -30919,7 +30916,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={688.49609,14.825571,1351.0066};
+								position[]={685.92346,14.832124,1352.1838};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -30963,7 +30960,7 @@ class Mission
 							};
 							id=11929;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.23346901;
+							atlOffset=-0.22110653;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31126,7 +31123,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={688.63501,15.0504,1352.4854};
+								position[]={686.06238,15.056952,1353.6626};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -31170,7 +31167,7 @@ class Mission
 							};
 							id=11931;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.0065364838;
+							atlOffset=0.003408432;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31333,7 +31330,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={688.55267,14.825571,1353.7114};
+								position[]={685.98004,14.832124,1354.8887};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -31377,7 +31374,7 @@ class Mission
 							};
 							id=11933;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22859669;
+							atlOffset=-0.21938515;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31540,7 +31537,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={689.67554,14.826578,1353.7587};
+								position[]={687.10291,14.833131,1354.9359};
 								angles[]={0,4.6007748,0};
 							};
 							side="West";
@@ -31584,7 +31581,7 @@ class Mission
 							};
 							id=11935;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.2274828;
+							atlOffset=-0.21827126;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31747,7 +31744,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={689.73383,15.052507,1352.5452};
+								position[]={687.16119,15.05906,1353.7224};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -31791,7 +31788,7 @@ class Mission
 							};
 							id=11937;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.0042943954;
+							atlOffset=0.0049171448;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -31954,7 +31951,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={689.58307,14.826367,1351.1553};
+								position[]={687.01044,14.83292,1352.3325};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -31998,7 +31995,7 @@ class Mission
 							};
 							id=11939;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.23357296;
+							atlOffset=-0.22276497;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32161,7 +32158,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={689.65198,14.826525,1349.9177};
+								position[]={687.07935,14.833077,1351.095};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -32205,7 +32202,7 @@ class Mission
 							};
 							id=11941;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.23482704;
+							atlOffset=-0.22276306;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32368,7 +32365,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={689.64911,15.058061,1348.5308};
+								position[]={687.07648,15.064613,1349.708};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -32412,7 +32409,7 @@ class Mission
 							};
 							id=11943;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.00015163422;
+							atlOffset=0.009552002;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32575,7 +32572,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={689.86401,15.055008,1346.7561};
+								position[]={687.29138,15.061561,1347.9333};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -32619,7 +32616,7 @@ class Mission
 							};
 							id=11945;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.00031757355;
+							atlOffset=0.01002121;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -32782,7 +32779,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={692.36249,15.053993,1352.4447};
+								position[]={689.78986,15.060546,1353.6219};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -32826,7 +32823,7 @@ class Mission
 							};
 							id=11965;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.00036716461;
+							atlOffset=0.0061759949;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33027,7 +33024,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={691.08002,14.834519,1348.0594};
+								position[]={688.50739,14.841072,1349.2367};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -33071,7 +33068,7 @@ class Mission
 							};
 							id=11953;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22464085;
+							atlOffset=-0.21615601;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33272,7 +33269,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={691.05798,14.83097,1346.5093};
+								position[]={688.48535,14.837523,1347.6865};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -33316,7 +33313,7 @@ class Mission
 							};
 							id=11955;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22466469;
+							atlOffset=-0.21615505;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33517,7 +33514,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={690.93481,14.835402,1352.3574};
+								position[]={688.36218,14.841954,1353.5347};
 								angles[]={0,4.6007748,0};
 							};
 							side="West";
@@ -33561,7 +33558,7 @@ class Mission
 							};
 							id=11877;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22076797;
+							atlOffset=-0.21261215;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -33762,7 +33759,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={691.09631,14.835766,1350.9304};
+								position[]={688.52368,14.842319,1352.1077};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -33806,7 +33803,7 @@ class Mission
 							};
 							id=11949;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22344398;
+							atlOffset=-0.21547031;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34007,7 +34004,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={691.13849,14.835863,1349.4258};
+								position[]={688.56586,14.842416,1350.603};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -34051,7 +34048,7 @@ class Mission
 							};
 							id=11951;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22528744;
+							atlOffset=-0.21678162;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34252,7 +34249,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={692.547,14.830536,1346.681};
+								position[]={689.97437,14.837089,1347.8583};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -34296,7 +34293,7 @@ class Mission
 							};
 							id=11957;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22716808;
+							atlOffset=-0.22033978;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34497,7 +34494,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={692.42358,14.832606,1348.2052};
+								position[]={689.85095,14.839159,1349.3824};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -34541,7 +34538,7 @@ class Mission
 							};
 							id=11959;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.22709274;
+							atlOffset=-0.22143269;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34742,7 +34739,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={692.37109,14.838648,1349.5509};
+								position[]={689.79846,14.845201,1350.7281};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -34786,7 +34783,7 @@ class Mission
 							};
 							id=11961;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.2211113;
+							atlOffset=-0.21570396;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -34987,7 +34984,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={692.28644,14.838455,1351.0171};
+								position[]={689.71381,14.845008,1352.1943};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -35031,7 +35028,7 @@ class Mission
 							};
 							id=11963;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-0.21921539;
+							atlOffset=-0.21258545;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35232,7 +35229,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={693.7561,15.058802,1346.7747};
+								position[]={691.18347,15.065354,1347.9519};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -35276,7 +35273,7 @@ class Mission
 							};
 							id=12005;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.00060653687;
+							atlOffset=0.0063199997;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35515,7 +35512,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={695.42029,15.056514,1347.3452};
+								position[]={692.84766,15.063066,1348.5225};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -35559,7 +35556,7 @@ class Mission
 							};
 							id=12007;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.00019836426;
+							atlOffset=0.0038461685;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -35798,7 +35795,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={693.58911,15.062034,1348.2893};
+								position[]={691.01648,15.068586,1349.4666};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -35842,7 +35839,7 @@ class Mission
 							};
 							id=12003;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.0036497116;
+							atlOffset=0.0072975159;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36081,7 +36078,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={695.29004,15.056615,1348.5216};
+								position[]={692.71741,15.063168,1349.6989};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -36125,7 +36122,7 @@ class Mission
 							};
 							id=12009;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.00015163422;
+							atlOffset=0.0037994385;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36364,7 +36361,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={693.57739,15.060404,1349.6346};
+								position[]={691.00476,15.066957,1350.8119};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -36408,7 +36405,7 @@ class Mission
 							};
 							id=12001;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.0020074844;
+							atlOffset=0.0073757172;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36647,7 +36644,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={695.18738,15.056906,1349.6698};
+								position[]={692.61475,15.063458,1350.847};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -36691,7 +36688,7 @@ class Mission
 							};
 							id=12011;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.00032711029;
+							atlOffset=0.005774498;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -36930,7 +36927,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={693.59344,15.0568,1351.1462};
+								position[]={691.02081,15.063353,1352.3235};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -36974,7 +36971,7 @@ class Mission
 							};
 							id=11999;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.00089740753;
+							atlOffset=0.0072031021;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37213,7 +37210,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={695.04431,15.054361,1351.0883};
+								position[]={692.47168,15.060914,1352.2655};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -37257,7 +37254,7 @@ class Mission
 							};
 							id=12013;
 							type="IC_CAD_inf_776_B";
-							atlOffset=-3.528595e-005;
+							atlOffset=0.0062713623;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37496,7 +37493,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={693.62543,15.053893,1352.5684};
+								position[]={691.0528,15.060446,1353.7456};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -37540,7 +37537,7 @@ class Mission
 							};
 							id=11990;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.0012369156;
+							atlOffset=0.0075435638;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -37779,7 +37776,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={694.93964,15.052985,1352.4386};
+								position[]={692.367,15.059538,1353.6158};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -37823,7 +37820,7 @@ class Mission
 							};
 							id=12015;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.0015211105;
+							atlOffset=0.0078277588;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38062,7 +38059,7 @@ class Mission
 					{
 					};
 					id=10802;
-					atlOffset=-0.0079994202;
+					atlOffset=0.00436306;
 				};
 				class Item3
 				{
@@ -38076,8 +38073,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={668.6626,15.829934,1353.2483};
-								angles[]={0,3.0647635,0};
+								position[]={680.13977,15.829934,1344.0254};
+								angles[]={0,4.63556,-0};
 							};
 							side="West";
 							flags=3;
@@ -38125,7 +38122,7 @@ class Mission
 							};
 							id=10879;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.78857136;
+							atlOffset=0.79008102;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38326,8 +38323,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={668.453,15.522191,1354.1747};
-								angles[]={0,3.0647635,0};
+								position[]={681.06616,15.522191,1344.235};
+								angles[]={0,4.63556,-0};
 							};
 							side="West";
 							flags=1;
@@ -38375,7 +38372,7 @@ class Mission
 							};
 							id=10880;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.48059082;
+							atlOffset=0.48233795;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38576,8 +38573,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={668.3382,15.514764,1355.1298};
-								angles[]={0,3.0647635,0};
+								position[]={682.02124,15.514764,1344.3499};
+								angles[]={0,4.63556,-0};
 							};
 							side="West";
 							flags=1;
@@ -38625,7 +38622,7 @@ class Mission
 							};
 							id=10881;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.47303391;
+							atlOffset=0.47491074;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -38826,8 +38823,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.54993,15.53328,1353.4697};
-								angles[]={0,3.0647635,0};
+								position[]={680.36157,15.533361,1343.1381};
+								angles[]={0,4.63556,-0};
 							};
 							side="West";
 							flags=1;
@@ -38875,7 +38872,7 @@ class Mission
 							};
 							id=10882;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.49291897;
+							atlOffset=0.49350834;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39076,8 +39073,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.46863,15.526853,1354.3112};
-								angles[]={0,3.0647635,0};
+								position[]={681.20264,15.526853,1343.2194};
+								angles[]={0,4.63556,-0};
 							};
 							side="West";
 							flags=1;
@@ -39125,7 +39122,7 @@ class Mission
 							};
 							id=10883;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.48639965;
+							atlOffset=0.48699951;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39326,8 +39323,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.37396,15.520394,1355.1469};
-								angles[]={0,3.0647635,0};
+								position[]={682.03833,15.520394,1343.3141};
+								angles[]={0,4.63556,-0};
 							};
 							side="West";
 							flags=1;
@@ -39375,7 +39372,7 @@ class Mission
 							};
 							id=10884;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.47983456;
+							atlOffset=0.48054123;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -39576,2030 +39573,9 @@ class Mission
 					{
 					};
 					id=10878;
-					atlOffset=0.78857136;
+					atlOffset=0.79008102;
 				};
 				class Item4
-				{
-					dataType="Group";
-					side="West";
-					class Entities
-					{
-						items=8;
-						class Item0
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={680.47607,15.330854,1346.1};
-								angles[]={0,6.2072864,0};
-							};
-							side="West";
-							flags=3;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=10888;
-							type="IC_CAD_inf_776_B";
-							atlOffset=0.29100132;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item1
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={680.28418,15.039854,1345.0625};
-								angles[]={0,6.2072864,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=11881;
-							type="IC_CAD_inf_776_B";
-							atlOffset=9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item2
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={680.26837,15.039854,1343.9423};
-								angles[]={0,6.2072864,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=11883;
-							type="IC_CAD_inf_776_B";
-							atlOffset=9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item3
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={680.32397,15.039854,1342.7874};
-								angles[]={0,6.2072864,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=11885;
-							type="IC_CAD_inf_776_B";
-							atlOffset=9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item4
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={678.64899,15.039853,1346.046};
-								angles[]={0,6.2072811,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=11887;
-							type="IC_CAD_inf_776_B";
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item5
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={678.66418,15.039854,1344.6195};
-								angles[]={0,6.2072864,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=11889;
-							type="IC_CAD_inf_776_B";
-							atlOffset=9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item6
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={678.64075,15.039854,1343.6329};
-								angles[]={0,6.2072864,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=11891;
-							type="IC_CAD_inf_776_B";
-							atlOffset=9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-						class Item7
-						{
-							dataType="Object";
-							class PositionInfo
-							{
-								position[]={678.56128,15.039854,1342.5647};
-								angles[]={0,6.2072864,0};
-							};
-							side="West";
-							flags=5;
-							class Attributes
-							{
-								skill=1;
-								init="this setVariable [""ace_advanced_fatigue_performanceFactor"", 20, true];    this setVariable [""ace_advanced_fatigue_recoveryFactor"", 15, true];";
-								description="Штурмовик (Касркин)";
-								isPlayable=1;
-								class Inventory
-								{
-									class uniform
-									{
-										typeName="IC_CAD_U_836_B";
-										isBackpack=0;
-										class MagazineCargo
-										{
-											items=1;
-											class Item0
-											{
-												name="IC_CAD_FRAG_mag";
-												count=2;
-												ammoLeft=1;
-											};
-										};
-										class ItemCargo
-										{
-											items=2;
-											class Item0
-											{
-												name="FirstAidKit";
-												count=1;
-											};
-											class Item1
-											{
-												name="ACE_Kestrel4500";
-												count=1;
-											};
-										};
-									};
-									map="ItemMap";
-									compass="ItemCompass";
-									watch="ItemWatch";
-									radio="ItemRadio";
-								};
-							};
-							id=11893;
-							type="IC_CAD_inf_776_B";
-							atlOffset=9.5367432e-007;
-							class CustomAttributes
-							{
-								class Attribute0
-								{
-									property="ENH_unitTraits_camouflage";
-									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute1
-								{
-									property="ENH_unitTraits_audibleCoef";
-									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.80000001;
-										};
-									};
-								};
-								class Attribute2
-								{
-									property="ace_isEngineer";
-									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0;
-										};
-									};
-								};
-								class Attribute3
-								{
-									property="pitch";
-									expression="_this setpitch _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1.04;
-										};
-									};
-								};
-								class Attribute4
-								{
-									property="ENH_unitTraits_loadCoef";
-									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=0.1;
-										};
-									};
-								};
-								class Attribute5
-								{
-									property="speaker";
-									expression="_this setspeaker _value;";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"STRING"
-												};
-											};
-											value="Male02ENGB";
-										};
-									};
-								};
-								class Attribute6
-								{
-									property="ace_isMedic";
-									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute7
-								{
-									property="ace_advanced_fatigue_performanceFactor";
-									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=2;
-										};
-									};
-								};
-								class Attribute8
-								{
-									property="ENH_unitTraits_medic";
-									expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"BOOL"
-												};
-											};
-											value=1;
-										};
-									};
-								};
-								class Attribute9
-								{
-									property="threshold";
-									expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
-									class Value
-									{
-										class data
-										{
-											class type
-											{
-												type[]=
-												{
-													"SCALAR"
-												};
-											};
-											value=6.0082874;
-										};
-									};
-								};
-								nAttributes=10;
-							};
-						};
-					};
-					class Attributes
-					{
-					};
-					id=10887;
-					atlOffset=0.29100132;
-				};
-				class Item5
 				{
 					dataType="Group";
 					side="West";
@@ -41611,7 +39587,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.33099,15.277364,1342.9291};
+								position[]={672.53162,15.040709,1342.6047};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -41656,7 +39632,7 @@ class Mission
 							};
 							id=17096;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.23600006;
+							atlOffset=0.00085639954;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -41838,7 +39814,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.38348,15.041245,1342.2346};
+								position[]={672.58411,14.804591,1341.9103};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -41883,6 +39859,7 @@ class Mission
 							};
 							id=19531;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23526192;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42064,7 +40041,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.41089,15.041183,1341.35};
+								position[]={672.61151,14.804529,1341.0256};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -42109,6 +40086,7 @@ class Mission
 							};
 							id=19533;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23532391;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42290,7 +40268,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.44769,15.040881,1340.4081};
+								position[]={672.64832,14.804227,1340.0837};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -42335,6 +40313,7 @@ class Mission
 							};
 							id=19535;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23562622;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42516,7 +40495,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={669.99536,15.039864,1343.2526};
+								position[]={673.19598,14.803209,1342.9282};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -42561,6 +40540,7 @@ class Mission
 							};
 							id=19537;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23664379;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42742,7 +40722,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={670.16351,15.039853,1342.4971};
+								position[]={673.36414,14.803199,1342.1727};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -42787,6 +40767,7 @@ class Mission
 							};
 							id=19539;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -42968,7 +40949,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={670.21063,15.039853,1341.5226};
+								position[]={673.41125,14.803199,1341.1982};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -43013,6 +40994,7 @@ class Mission
 							};
 							id=19541;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -43194,7 +41176,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={670.24268,15.039853,1340.6305};
+								position[]={673.4433,14.803199,1340.3062};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -43239,6 +41221,7 @@ class Mission
 							};
 							id=19543;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -43420,7 +41403,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={670.67249,15.039853,1343.3774};
+								position[]={673.87311,14.803199,1343.0531};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -43465,6 +41448,7 @@ class Mission
 							};
 							id=19545;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -43646,7 +41630,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={670.92566,15.039853,1342.5242};
+								position[]={674.12628,14.803199,1342.1998};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -43691,6 +41675,7 @@ class Mission
 							};
 							id=19547;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -43872,7 +41857,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={671.01953,15.039853,1341.6967};
+								position[]={674.22015,14.803199,1341.3723};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -43917,6 +41902,7 @@ class Mission
 							};
 							id=19549;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44098,7 +42084,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={671.12994,15.039853,1340.6759};
+								position[]={674.33057,14.803199,1340.3516};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -44143,6 +42129,7 @@ class Mission
 							};
 							id=19551;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44324,7 +42311,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={671.44891,15.039853,1343.5005};
+								position[]={674.64954,14.803199,1343.1761};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -44369,6 +42356,7 @@ class Mission
 							};
 							id=19553;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44550,7 +42538,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={671.57312,15.039853,1342.6035};
+								position[]={674.77374,14.803199,1342.2792};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -44595,6 +42583,7 @@ class Mission
 							};
 							id=19555;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -44776,7 +42765,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={671.78735,15.039853,1341.4795};
+								position[]={674.98798,14.803199,1341.1552};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -44821,6 +42810,7 @@ class Mission
 							};
 							id=19557;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -45002,7 +42992,7 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={671.90985,15.039853,1340.8774};
+								position[]={675.11047,14.803199,1340.5531};
 								angles[]={0,4.6007752,0};
 							};
 							side="West";
@@ -45047,6 +43037,7 @@ class Mission
 							};
 							id=19559;
 							type="IC_CAD_inf_776_B";
+							atlOffset=-0.23665428;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -45228,11 +43219,20 @@ class Mission
 					{
 					};
 					id=17095;
-					atlOffset=0.23600006;
+					atlOffset=0.00085639954;
+				};
+				class Item5
+				{
+					dataType="Group";
+					side="West";
+					class Attributes
+					{
+					};
+					id=19881;
 				};
 			};
 			id=10899;
-			atlOffset=0.29967403;
+			atlOffset=0.0029935837;
 		};
 		class Item452
 		{
@@ -64963,6 +62963,25 @@ class Mission
 						};
 						class Attribute2
 						{
+							property="NameSound";
+							expression="_this setNamesound _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Frost";
+								};
+							};
+						};
+						class Attribute3
+						{
 							property="allowDamage";
 							expression="_this allowdamage _value;";
 							class Value
@@ -64980,7 +62999,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute3
+						class Attribute4
 						{
 							property="ENH_removeFromRemainsCollector";
 							expression="if (!is3DEN && _value) then {removeFromRemainsCollector [this]}";
@@ -64999,7 +63018,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute4
+						class Attribute5
 						{
 							property="unitName";
 							expression="_this setname _value;";
@@ -65018,7 +63037,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute5
+						class Attribute6
 						{
 							property="face";
 							expression="_this setface _value;";
@@ -65037,7 +63056,26 @@ class Mission
 								};
 							};
 						};
-						class Attribute6
+						class Attribute7
+						{
+							property="unitInsignia";
+							expression="[_this,_value] call BIS_fnc_setUnitInsignia;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="OPTRE_Insignia_emblems_cone";
+								};
+							};
+						};
+						class Attribute8
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -65056,7 +63094,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute7
+						class Attribute9
 						{
 							property="ENH_AmbientAnimations";
 							expression="      if !(_value # 0 isEqualTo '') then      {        _value params ['_animSet', '_anims', '_canExit', '_attach'];                _this setVariable ['ENH_ambientAnimations_anims', _anims];        _this disableAI 'ANIM';        if (_attach && !is3DEN) then        {          private _logic = group _this createUnit ['Logic', getPosATL _this, [], 0, 'NONE'];          _this setVariable ['ENH_ambientAnimations_logic', _logic];          [_this, _logic] call BIS_fnc_attachToRelative;        };                ENH_fnc_ambientAnimations_play =        {          params ['_unit'];          private _anim = selectRandom (_unit getVariable ['ENH_ambientAnimations_anims', []]);          [_unit, _anim] remoteExec ['switchMove', 0];        };                ENH_fnc_ambientAnimations_exit =        {          params ['_unit'];          if !(_unit getVariable ['ENH_ambientAnimations_exit', true]) exitWith {false};          _unit setVariable ['ENH_ambientAnimations_exit', true];          detach _unit;          deleteVehicle (_unit getVariable ['ENH_ambientAnimations_logic', objNull]);          [_unit, ''] remoteExec ['switchMove', 0];                    _unit enableAI 'ANIM';                    _unit removeEventHandler ['Killed', _unit getVariable ['ENH_EHKilled',-1]];          _unit removeEventHandler ['Dammaged', _unit getVariable ['ENH_EHDammaged',-1]];          _unit removeEventHandler ['AnimDone', _unit getVariable ['ENH_EHAnimDone',-1]];        };                private _EHAnimDone = _this addEventHandler ['AnimDone',          {            params ['_unit'];            if (alive _unit) then            {              _unit call ENH_fnc_ambientAnimations_play;            }            else            {              _unit call ENH_fnc_ambientAnimations_exit;            };          }        ];        _this setVariable ['ENH_EHAnimDone', _EHAnimDone];                if (_canExit && !is3DEN) then        {          private _EHKilled = _this addEventHandler ['Killed',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHKilled', _EHKilled];          private _EHDammaged = _this addEventHandler ['Dammaged',          {            (_this select 0) call ENH_fnc_ambientAnimations_exit;          }];          _this setVariable ['ENH_EHDammaged', _EHDammaged];          _this spawn          {            scriptName 'ENH_Attribute_AmbientAnimations';            params ['_unit'];            waitUntil            {              sleep 1; (_unit getVariable ['ENH_ambientAnimations_exit', false]) || {behaviour _unit == 'COMBAT'}            };            _unit call ENH_fnc_ambientAnimations_exit;          };        };        _this call ENH_fnc_ambientAnimations_play;      };";
@@ -65193,7 +63231,7 @@ class Mission
 								};
 							};
 						};
-						class Attribute8
+						class Attribute10
 						{
 							property="speaker";
 							expression="_this setspeaker _value;";
@@ -65212,7 +63250,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=9;
+						nAttributes=11;
 					};
 				};
 			};
@@ -67690,7 +65728,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={676.039,15.039853,1345.333};
+						position[]={679.57593,15.039853,1349.0757};
+						angles[]={0,4.712389,-0};
 					};
 					side="West";
 					flags=7;
@@ -82761,7 +80800,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={1250.4949,33.328625,410.45602};
+						position[]={1250.495,33.32877,410.45599};
 						angles[]={0,5.7595868,0};
 					};
 					side="West";
@@ -82814,7 +80853,7 @@ class Mission
 					};
 					id=14221;
 					type="WBK_DT_Cont_2";
-					atlOffset=2.1618004;
+					atlOffset=2.1619453;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -82844,7 +80883,7 @@ class Mission
 			{
 			};
 			id=14220;
-			atlOffset=2.1618004;
+			atlOffset=2.1619453;
 		};
 		class Item813
 		{
@@ -82865,6 +80904,7 @@ class Mission
 					class Attributes
 					{
 						rank="SERGEANT";
+						init="this setVariable [""ZPR_rr"", ""SL""];";
 						description="Брат-сержант";
 						isPlayable=1;
 					};
@@ -82926,7 +80966,7 @@ class Mission
 											"SCALAR"
 										};
 									};
-									value=2;
+									value=1;
 								};
 							};
 						};
@@ -83077,6 +81117,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						init="this setVariable [""ZPR_rr"", ""SL""];";
 						description="Брат-примарис";
 						isPlayable=1;
 					};
@@ -83270,6 +81311,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						init="this setVariable [""ZPR_rr"", ""SL""];";
 						description="Брат-Апотекарий";
 						isPlayable=1;
 						class Inventory
@@ -83571,6 +81613,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						init="this setVariable [""ZPR_rr"", ""Tech""];";
 						description="Техно-викинг";
 						isPlayable=1;
 						class Inventory
@@ -83892,6 +81935,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						init="this setVariable [""ZPR_rr"", ""SL""];";
 						description="Брат-примарис";
 						isPlayable=1;
 					};
@@ -84353,8 +82397,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={676.52704,15.039853,1356.1333};
-						angles[]={0,3.1106479,0};
+						position[]={681.29382,15.039853,1350.4613};
+						angles[]={0,4.6814446,-0};
 					};
 					side="West";
 					flags=7;
@@ -84488,6 +82532,7 @@ class Mission
 					};
 					id=16137;
 					type="Psyker_Human";
+					atlOffset=-0.0029220581;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -85068,6 +83113,7 @@ class Mission
 			{
 			};
 			id=16138;
+			atlOffset=-0.0029220581;
 		};
 		class Item828
 		{
@@ -85560,6 +83606,7 @@ class Mission
 					flags=3;
 					class Attributes
 					{
+						init="this setVariable [""ZPR_rr"", ""SL""];";
 						description="Скаут";
 						isPlayable=1;
 						class Inventory
@@ -85720,6 +83767,7 @@ class Mission
 					flags=1;
 					class Attributes
 					{
+						init="this setVariable [""ZPR_rr"", ""SL""];";
 						description="Скаут";
 						isPlayable=1;
 						class Inventory
@@ -90237,6 +88285,2015 @@ class Mission
 			};
 			id=19878;
 			atlOffset=-0.22931719;
+		};
+		class Item923
+		{
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=8;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={679.48999,15.039853,1352.7206};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19882;
+					type="IC_CAD_inf_776_B";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={679.46277,15.039853,1351.8494};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19895;
+					type="IC_CAD_inf_776_B";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item2
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={679.9989,15.039853,1351.8605};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19897;
+					type="IC_CAD_inf_776_B";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item3
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={679.93591,15.039853,1352.7435};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19899;
+					type="IC_CAD_inf_776_B";
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item4
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={680.5199,15.039853,1351.8397};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19901;
+					type="IC_CAD_inf_776_B";
+					atlOffset=-0.0011739731;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item5
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={680.41455,15.039853,1352.7219};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19903;
+					type="IC_CAD_inf_776_B";
+					atlOffset=-0.00093650818;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item6
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={681.02942,15.039853,1351.8287};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19905;
+					type="IC_CAD_inf_776_B";
+					atlOffset=-0.002325058;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+				class Item7
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={680.89294,15.039853,1352.6824};
+						angles[]={0,4.6364851,-0};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						skill=1;
+						description="Штурмовик (Касркин)";
+						isPlayable=1;
+						class Inventory
+						{
+							class uniform
+							{
+								typeName="IC_CAD_U_836_B";
+								isBackpack=0;
+								class MagazineCargo
+								{
+									items=1;
+									class Item0
+									{
+										name="IC_CAD_FRAG_mag";
+										count=2;
+										ammoLeft=1;
+									};
+								};
+								class ItemCargo
+								{
+									items=2;
+									class Item0
+									{
+										name="FirstAidKit";
+										count=1;
+									};
+									class Item1
+									{
+										name="ACE_Kestrel4500";
+										count=1;
+									};
+								};
+							};
+							map="ItemMap";
+							compass="ItemCompass";
+							watch="ItemWatch";
+							radio="ItemRadio";
+						};
+					};
+					id=19907;
+					type="IC_CAD_inf_776_B";
+					atlOffset=-0.0020160675;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="ENH_unitTraits_camouflage";
+							expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="ENH_unitTraits_audibleCoef";
+							expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.80000001;
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="ace_isEngineer";
+							expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute3
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1.04;
+								};
+							};
+						};
+						class Attribute4
+						{
+							property="ENH_unitTraits_loadCoef";
+							expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.1;
+								};
+							};
+						};
+						class Attribute5
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male02ENGB";
+								};
+							};
+						};
+						class Attribute6
+						{
+							property="ace_isMedic";
+							expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute7
+						{
+							property="ace_advanced_fatigue_performanceFactor";
+							expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=2;
+								};
+							};
+						};
+						class Attribute8
+						{
+							property="ENH_unitTraits_medic";
+							expression="[_this, ['Medic', _value]] remoteExec ['setUnitTrait', _this]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=1;
+								};
+							};
+						};
+						class Attribute9
+						{
+							property="threshold";
+							expression="if (_value >= 0.1) then {_this setVariable [""ace_medical_damageThreshold"", _value, true]}";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=6.0082874;
+								};
+							};
+						};
+						nAttributes=10;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=19893;
 		};
 	};
 };
