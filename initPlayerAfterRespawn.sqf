@@ -18,7 +18,9 @@ player enableStamina true;
 
 player setUnitTrait ['engineer', _mechanicus or _tech];
 player setUnitTrait ['medic', _hirurg or _apot];
-
+if (_mechanicus or _tech) then {
+player setVariable ["ace_advanced_fatigue_performanceFactor", 20, true];
+player setVariable ["ace_advanced_fatigue_recoveryFactor", 15, true];
 };
 if (_astartes or _sl or _mechanicus or _tech or _apot) then {
   player enableStamina false;
