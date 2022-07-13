@@ -542,10 +542,10 @@ force ace_switchunits_switchToIndependent = false;
 force ace_switchunits_switchToWest = false;
 
 // ACE Trenches
-force ace_trenches_bigEnvelopeDigDuration = 25;
-force ace_trenches_bigEnvelopeRemoveDuration = 15;
-force ace_trenches_smallEnvelopeDigDuration = 20;
-force ace_trenches_smallEnvelopeRemoveDuration = 12;
+force ace_trenches_bigEnvelopeDigDuration = 15;
+force ace_trenches_bigEnvelopeRemoveDuration = 10;
+force ace_trenches_smallEnvelopeDigDuration = 15;
+force ace_trenches_smallEnvelopeRemoveDuration = 8;
 
 // ACE Uncategorized
 force ace_fastroping_requireRopeItems = false;

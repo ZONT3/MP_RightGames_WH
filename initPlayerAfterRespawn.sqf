@@ -1,4 +1,3 @@
-
 waituntil { sleep 0.1; !isnull player and {alive player} };
 waituntil { sleep 0.1; !isNil 'ZPR_roles' };
 
@@ -15,14 +14,16 @@ private _sl         = [["SL"]]         call ZONT_fnc_checkrole;
 
 
 player enableFatigue true;
-Player enableStamina true;
+player enableStamina true;
 
 player setUnitTrait ['engineer', _mechanicus];
 player setUnitTrait ['medic', _hirurg or _apot];
 
 if (_astartes or _sl) then {
-  player setCustomAimCoef 0.01;
+  player setCustomAimCoef 0.001;
+
 };
-if (_astartes or _sl) then {
+if (_astartes or _sl or _mechanicus) then {
   player enableStamina false;
+  player enableFatigue false;
 };
