@@ -11,7 +11,7 @@ private _hirurg     = [["Hirurg"]]     call ZONT_fnc_checkRole;
 private _apot       = [["Apot"]]       call ZONT_fnc_checkRole;
 private _fist       = [["Fist"]]       call ZONT_fnc_checkRole;
 private _sl         = [["SL"]]         call ZONT_fnc_checkrole;
-
+private _tech         = [["Tech"]]         call ZONT_fnc_checkrole;
 
 player enableFatigue true;
 player enableStamina true;
@@ -19,11 +19,9 @@ player enableStamina true;
 player setUnitTrait ['engineer', _mechanicus or _tech];
 player setUnitTrait ['medic', _hirurg or _apot];
 
-if (_astartes or _sl) then {
-  player setCustomAimCoef 0.001;
-
 };
-if (_astartes or _sl or _mechanicus) then {
+if (_astartes or _sl or _mechanicus or _tech or _apot) then {
   player enableStamina false;
   player enableFatigue false;
+  player setCustomAimCoef 0.001;
 };
