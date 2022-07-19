@@ -43,3 +43,10 @@
 	"Запросить арсенал Ауксилии ультрамара",
 	[["Здарова", "Hello"], ["Бб", "Бывай"]]
 ] call ZONT_fnc_attachArsenal;
+
+[ _this,
+	ars_hirurg,
+	["Hirurg"],
+	"Запросить арсенал Хирургионов",
+	[["Здарова", "Hello"], ["Бб", "Бывай"]]
+] call ZONT_fnc_attachArsenal;
