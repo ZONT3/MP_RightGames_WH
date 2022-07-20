@@ -97,14 +97,14 @@ force force ace_medical_treatment_woundReopenChance = 0;
 force force ace_medical_treatment_woundStitchTime = 0.1;
 
 // ACE Advanced Fatigue
-force ace_advanced_fatigue_enabled = true;
-force ace_advanced_fatigue_enableStaminaBar = true;
-ace_advanced_fatigue_fadeStaminaBar = true;
-force ace_advanced_fatigue_loadFactor = 0;
-force ace_advanced_fatigue_performanceFactor = 0;
-force ace_advanced_fatigue_recoveryFactor = 0;
-force ace_advanced_fatigue_swayFactor = 0;
-force ace_advanced_fatigue_terrainGradientFactor = 0;
+force ace_advanced_fatigue_enabled = false;
+force ace_advanced_fatigue_enableStaminaBar = false;
+ace_advanced_fatigue_fadeStaminaBar = false;
+force ace_advanced_fatigue_loadFactor = 1;
+force ace_advanced_fatigue_performanceFactor = 1;
+force ace_advanced_fatigue_recoveryFactor = 1;
+force ace_advanced_fatigue_swayFactor = 1;
+force ace_advanced_fatigue_terrainGradientFactor = 1;
 
 // ACE Advanced Throwing
 ace_advanced_throwing_enabled = true;
@@ -1350,7 +1350,7 @@ force dev_cba_friendlySide = true;
 force dev_cba_infection = true;
 dev_cba_infection_prolongTime = 500;
 dev_cba_infection_resurrectAmugusChance = 0;
-dev_cba_infection_resurrectParasiteChance = 0.1;
+dev_cba_infection_resurrectParasiteChance = 0.7;
 dev_cba_infection_resurrectTime = "[25,30,35]";
 force dev_cba_infection_resurrectWebknight = true;
 force dev_cba_infection_resurrectZombie = true;
