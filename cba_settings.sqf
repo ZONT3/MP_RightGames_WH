@@ -1108,7 +1108,7 @@ force CBRN_factionMask_WBK_Warhammer_CH = "";
 // WebKnight's Zombies
 force WBK_ZombiesIsUseParticleDeathControl = true;
 force WBK_ZombiesIsUseStatDeathControl = true;
-force_ZombiesIsUseBitingAnimation = false;
+force ZombiesIsUseBitingAnimation = false;
 
 
 // Community Base Addons
