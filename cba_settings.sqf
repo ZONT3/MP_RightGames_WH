@@ -100,11 +100,11 @@ force force ace_medical_treatment_woundStitchTime = 0.1;
 force ace_advanced_fatigue_enabled = true;
 force ace_advanced_fatigue_enableStaminaBar = true;
 ace_advanced_fatigue_fadeStaminaBar = true;
-force ace_advanced_fatigue_loadFactor = 0.01;
-force ace_advanced_fatigue_performanceFactor = 0.01;
-force ace_advanced_fatigue_recoveryFactor = 0.01;
-force ace_advanced_fatigue_swayFactor = 0.01;
-force ace_advanced_fatigue_terrainGradientFactor = 0.01;
+force ace_advanced_fatigue_loadFactor = 0;
+force ace_advanced_fatigue_performanceFactor = 0;
+force ace_advanced_fatigue_recoveryFactor = 0;
+force ace_advanced_fatigue_swayFactor = 0;
+force ace_advanced_fatigue_terrainGradientFactor = 0;
 
 // ACE Advanced Throwing
 ace_advanced_throwing_enabled = true;

@@ -13,7 +13,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=37727;
+		nextID=37729;
 	};
 	class MarkerIDProvider
 	{
@@ -21,18 +21,18 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=15751;
+		nextID=16102;
 	};
 	class Camera
 	{
-		pos[]={11434.531,73.554016,14033.729};
-		dir[]={-0.42057621,-0.66787136,-0.61425811};
-		up[]={-0.37735409,0.74415177,-0.55112857};
-		aside[]={-0.82521904,-8.5072825e-006,0.56501025};
+		pos[]={12304.239,16.349272,8514.4072};
+		dir[]={-0.049042981,-0.79725504,0.60164976};
+		up[]={-0.06477277,0.60364205,0.79461962};
+		aside[]={0.9966957,5.2386895e-008,0.081244744};
 	};
 };
 binarizationWanted=0;
-sourceName="MP_RightGames_WH";
+sourceName="waha_test";
 addons[]=
 {
 	"CUP_Editor_A1_Roads_Config",
@@ -2318,7 +2318,7 @@ class Mission
 			name="Спавны!";
 			class Entities
 			{
-				items=4;
+				items=5;
 				class Item0
 				{
 					dataType="Group";
@@ -3679,8 +3679,8 @@ class Mission
 							dataType="Object";
 							class PositionInfo
 							{
-								position[]={12302.613,6.4218531,8517.1738};
-								angles[]={0,6.2580748,0};
+								position[]={12302.613,6.4222279,8517.1738};
+								angles[]={0,6.25807,0};
 							};
 							side="West";
 							flags=7;
@@ -3723,7 +3723,7 @@ class Mission
 							};
 							id=10803;
 							type="IC_CAD_inf_776_B";
-							atlOffset=0.17439222;
+							atlOffset=0.17476702;
 							class CustomAttributes
 							{
 								class Attribute0
@@ -3874,7 +3874,7 @@ class Mission
 													"SCALAR"
 												};
 											};
-											value=1.3544898;
+											value=1.2202647;
 										};
 									};
 								};
@@ -13813,7 +13813,7 @@ class Mission
 					{
 					};
 					id=10802;
-					atlOffset=0.17439222;
+					atlOffset=0.17476702;
 				};
 				class Item3
 				{
@@ -17461,9 +17461,230 @@ class Mission
 					id=20021;
 					atlOffset=2.7754257;
 				};
+				class Item4
+				{
+					dataType="Group";
+					side="West";
+					class Entities
+					{
+						items=1;
+						class Item0
+						{
+							dataType="Object";
+							class PositionInfo
+							{
+								position[]={12303.184,6.2073903,8521.2285};
+								angles[]={0,6.25807,0};
+							};
+							side="West";
+							flags=7;
+							class Attributes
+							{
+								skill=0.23988292;
+								description="Имперский гвардеец Test";
+								isPlayable=1;
+								class Inventory
+								{
+									class uniform
+									{
+										typeName="IC_CAD_U_836_B";
+										isBackpack=0;
+										class MagazineCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="IC_CAD_FRAG_mag";
+												count=2;
+												ammoLeft=1;
+											};
+										};
+										class ItemCargo
+										{
+											items=1;
+											class Item0
+											{
+												name="FirstAidKit";
+												count=1;
+											};
+										};
+									};
+									map="ItemMap";
+									compass="ItemCompass";
+									watch="ItemWatch";
+									radio="ItemRadio";
+								};
+							};
+							id=37728;
+							type="IC_CAD_inf_776_B";
+							atlOffset=0.0005068779;
+							class CustomAttributes
+							{
+								class Attribute0
+								{
+									property="ENH_unitTraits_camouflage";
+									expression="[_this, ['CamouflageCoef', _value]] remoteExec ['setUnitTrait', _this]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute1
+								{
+									property="ENH_unitTraits_audibleCoef";
+									expression="[_this, ['AudibleCoef', _value]] remoteExec ['setUnitTrait', _this]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.80000001;
+										};
+									};
+								};
+								class Attribute2
+								{
+									property="ace_isEngineer";
+									expression="if !(_value == ([0, 1] select (_this getUnitTrait 'engineer')) || {_value == -1}) then {_this setVariable ['ace_isEngineer', _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								class Attribute3
+								{
+									property="pitch";
+									expression="_this setpitch _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1.05;
+										};
+									};
+								};
+								class Attribute4
+								{
+									property="ENH_unitTraits_loadCoef";
+									expression="[_this, ['LoadCoef', _value]] remoteExec ['setUnitTrait', _this]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0.1;
+										};
+									};
+								};
+								class Attribute5
+								{
+									property="speaker";
+									expression="_this setspeaker _value;";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"STRING"
+												};
+											};
+											value="Male04ENGB";
+										};
+									};
+								};
+								class Attribute6
+								{
+									property="ace_isMedic";
+									expression="if (_value != -1 && {_value != (parseNumber (_this getUnitTrait 'medic'))}) then {_this setVariable [""ace_medical_medicClass"", _value, true]}";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=1;
+										};
+									};
+								};
+								class Attribute7
+								{
+									property="ace_advanced_fatigue_performanceFactor";
+									expression="_this setVariable [""ace_advanced_fatigue_performanceFactor"", _value, true]";
+									class Value
+									{
+										class data
+										{
+											class type
+											{
+												type[]=
+												{
+													"SCALAR"
+												};
+											};
+											value=0;
+										};
+									};
+								};
+								nAttributes=8;
+							};
+						};
+					};
+					class Attributes
+					{
+					};
+					id=37727;
+					atlOffset=0.0005068779;
+				};
 			};
 			id=10899;
-			atlOffset=2.8554411;
+			atlOffset=0.12142611;
 		};
 		class Item55
 		{
@@ -33984,7 +34205,7 @@ class Mission
 			colorName="ColorRed";
 			a=10267.625;
 			b=46.615295;
-			angle=359.94748;
+			angle=359.94742;
 			id=12022;
 			atlOffset=-87.593895;
 		};
@@ -73093,7 +73314,7 @@ class Mission
 					class PositionInfo
 					{
 						position[]={11390.853,20.319632,13937.086};
-						angles[]={0,1.157537,-0};
+						angles[]={0,1.157537,0};
 					};
 					side="Empty";
 					class Attributes
@@ -73335,7 +73556,7 @@ class Mission
 			};
 			id=37544;
 			type="land_gothic_tall";
-			atlOffset=0.56947064;
+			atlOffset=0.56946969;
 		};
 		class Item707
 		{
@@ -74305,7 +74526,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11390.93,26.826551,13900.894};
-				angles[]={0,2.7374699,-0};
+				angles[]={0,2.7374699,0};
 			};
 			side="Empty";
 			flags=1;
@@ -74332,7 +74553,7 @@ class Mission
 			};
 			id=37635;
 			type="Land_JMS_build_Colony_Windmill";
-			atlOffset=0.4095993;
+			atlOffset=0.4095974;
 		};
 		class Item766
 		{
@@ -74374,7 +74595,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11451.525,13.172194,13849.296};
-				angles[]={0,5.9159851,-0};
+				angles[]={0,5.9159851,0};
 			};
 			side="Empty";
 			flags=5;
@@ -74392,7 +74613,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11465.514,12.294025,13854.677};
-				angles[]={0,5.9159851,-0};
+				angles[]={0,5.9159851,0};
 			};
 			side="Empty";
 			flags=5;
@@ -74540,7 +74761,7 @@ class Mission
 			};
 			id=37670;
 			type="JMS_st_plants_clutter_poppiesGrass_1";
-			atlOffset=0.00014734268;
+			atlOffset=0.00014781952;
 		};
 		class Item778
 		{
@@ -74720,7 +74941,7 @@ class Mission
 			};
 			id=37686;
 			type="JMS_st_crystal_Huge1_white";
-			atlOffset=-4.1120911;
+			atlOffset=-4.1120915;
 		};
 		class Item788
 		{
@@ -74800,7 +75021,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11396.063,28.273678,13900.571};
-				angles[]={0,2.7374701,-0};
+				angles[]={0,2.7374701,0};
 			};
 			side="Empty";
 			flags=1;
@@ -74836,7 +75057,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11390.426,26.311672,13903.072};
-				angles[]={0,3.6651917,-0};
+				angles[]={0,3.6651917,0};
 			};
 			side="Empty";
 			flags=4;
@@ -74853,7 +75074,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11389.096,26.311672,13907.397};
-				angles[]={0,3.6651917,-0};
+				angles[]={0,3.6651917,0};
 			};
 			side="Empty";
 			flags=4;
@@ -74870,7 +75091,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11398.608,26.311676,13903.662};
-				angles[]={0,3.6651917,-0};
+				angles[]={0,3.6651917,0};
 			};
 			side="Empty";
 			flags=4;
@@ -74888,7 +75109,7 @@ class Mission
 			class PositionInfo
 			{
 				position[]={11392.479,26.311672,13902.794};
-				angles[]={0,2.8797934,-0};
+				angles[]={0,2.8797934,0};
 			};
 			side="Empty";
 			flags=4;
