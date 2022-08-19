@@ -13,11 +13,11 @@ titleCut ["","BLACK IN",20];
 uisleep 10;
 [
  [
-  ["Планета Энкелад. Сегментум Ультима. ", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
+  ["Krum XVI, забытый феодальный мир. Сигментум Ультима. ", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
   ["","<br/>"],
   ["Расположение сил Империума", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"],
   ["","<br/>"],
-  ["Военный аэродром Джанкарло","align = 'center' shadow = '1' size = '1.0'"]
+  ["Владения дома Кёне","align = 'center' shadow = '1' size = '1.0'"]
  ]
 ] spawn BIS_fnc_typeText2;
 
