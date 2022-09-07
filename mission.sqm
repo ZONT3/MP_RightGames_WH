@@ -25,9 +25,9 @@ class EditorData
 	class Camera
 	{
 		pos[]={6120.3511,107.17793,11472.852};
-		dir[]={-0.74243647,-0.66271895,0.097937509};
-		up[]={-0.65702707,0.74886817,0.086670838};
-		aside[]={0.1307807,7.4505806e-009,0.99141133};
+		dir[]={-0.74243772,-0.66272014,0.097937673};
+		up[]={-0.65702957,0.7488668,0.086671293};
+		aside[]={0.1307811,-3.533205e-008,0.99141282};
 	};
 };
 binarizationWanted=0;
@@ -43172,6 +43172,37 @@ class Mission
 												nAttributes=1;
 											};
 										};
+										class Item22
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={10470.453,260.21182,6391.8276};
+												angles[]={0,0.89953721,0};
+											};
+											side="Empty";
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=15180;
+											type="Land_MapBoard_01_Wall_F";
+											atlOffset=0.85818481;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ObjectTextureCustom0";
+													expression="_this setObjectTextureGlobal [0,_value]";
+													class Value
+													{
+														class data
+														{
+															singleType="STRING";
+															value="texturen\funkfreq5.jpg";
+														};
+													};
+												};
 												class Attribute1
 												{
 													property="allowDamage";
