@@ -14,9 +14,7 @@ waitUntil {vehicle player == player};
 
 /*** Custom Scripts ***/
 
-[] execVM "external\scripts\autoheal_list.sqf"; //Автохил космарей и мехов
 [] execVM "external\scripts\introtext.sqf"; //Вступительный текст
-[] execVM "external\scripts\medic.sqf";  //Инит пульсометра
 
 
 /******                            Zeus list                             ******/
@@ -60,12 +58,14 @@ if (count _var > 0) then {
 private _fn_moveToCustomSpawn = {
   params ['_player','_fn_moveToSpawn'];
   waituntil { sleep 0.1; !isNil 'ZPR_roles' };
-  if ([["Mechanicus"]] call ZONT_fnc_checkRole)
-  exitWith { [_player, true, 'MP_spawn_mec'] call _fn_moveToSpawn };
-  if ([["Astartes"]] call ZONT_fnc_checkRole)
-  exitWith { [_player, true, 'MP_spawn_sm'] call _fn_moveToSpawn };
-  if ([["Inqusition"]] call ZONT_fnc_checkRole)
-  exitWith { [_player, true, 'MP_spawn_inq'] call _fn_moveToSpawn };
+
+
+    private _east = [["First", "ART", "AIR", "SAP", "MEDIC", "RAZ"]] call ZONT_fnc_checkRole;
+  if _east exitWith { [_player, true, 'MP_spawn_east'] call _fn_moveToSpawn };
+    private _west = [["Second", "SAPNATO", "AIRNATO", "MEDNATO", "ARTNATO"]] call ZONT_fnc_checkRole;
+  if _west exitWith { [_player, true, 'MP_spawn_west'] call _fn_moveToSpawn };
+    private _civ = [["HQ"]] call ZONT_fnc_checkRole;
+  if _civ exitWith { [_player, true, 'MP_spawn_civ'] call _fn_moveToSpawn };
 };
 
 private _fn_moveToSpawn = {

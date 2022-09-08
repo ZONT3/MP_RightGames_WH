@@ -13,24 +13,19 @@ titleCut ["","BLACK IN",20];
 uisleep 10;
 [
  [
-  ["Krum XVI, забытый феодальный мир. Сигментум Ультима. ", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
+  ["2004 год, ноябрь. Южная Европа. Королество Такистан.", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'"],
   ["","<br/>"],
-  ["Расположение сил Империума", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"],
+  ["Окрестности Заргабада.", "align = 'center' shadow = '1' size = '0.7' font='PuristaBold'", "#aaaaaa"],
   ["","<br/>"],
-  ["Владения дома Кёне","align = 'center' shadow = '1' size = '1.0'"]
  ]
 ] spawn BIS_fnc_typeText2;
 
 uisleep 12; //Время до начала титров
 
-_role1 = "Warhammer 40.000";
+_role1 = "Operation New Hope";
 _role1names = ["Right Games"];
-_role2 = "Во мраке далекого будущего";
-_role2names = ["есть только война"];
-_role3 = "Где-то на полях бесконечных сражений";
-_role3names = [""];
-_role4 = "Бог-Император смотрит на тебя";
-_role4names = [profileName];
+_role2 = "Родина надеется на тебя!";
+_role2names = ["Как сказал великий поэт и воин Ice Cube - «Если день прошел и калаш не пригодился — это был пиздатый день!»"];
 {
 sleep 2; // #1f75fe
 _memberFunction = _x select 0;
@@ -52,6 +47,4 @@ sleep (_onScreenTime);
 //В списке ниже должно быть точно такое же количество ролей, как и в списке выше
 [_role1, _role1names],
 [_role2, _role2names],
-[_role3, _role3names],
-[_role4, _role4names]
 ];
