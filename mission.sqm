@@ -12,7 +12,7 @@ class EditorData
 	};
 	class ItemIDProvider
 	{
-		nextID=18311;
+		nextID=18310;
 	};
 	class MarkerIDProvider
 	{
@@ -24,10 +24,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={6120.3511,107.17793,11472.852};
-		dir[]={-0.74243772,-0.66272014,0.097937673};
-		up[]={-0.65702957,0.7488668,0.086671293};
-		aside[]={0.1307811,-3.533205e-008,0.99141282};
+		pos[]={12109.207,533.99011,2635.4351};
+		dir[]={-0.75435352,-0.57403672,-0.31849778};
+		up[]={-0.52883345,0.81882948,-0.2232807};
+		aside[]={-0.38896564,-1.4272518e-007,0.92125559};
 	};
 };
 binarizationWanted=0;
@@ -16470,14 +16470,13 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={6089.5688,82.921356,11474.783};
-						angles[]={0,0.67336547,0};
+						position[]={6089.5688,82.921669,11474.783};
+						angles[]={0,0.67336059,0};
 					};
 					side="East";
 					flags=3;
 					class Attributes
 					{
-						init="this execVM ""init_arsenals_odkb.sqf""";
 						class Inventory
 						{
 							class handgun
@@ -16517,7 +16516,7 @@ class Mission
 					};
 					id=3292;
 					type="cdf90_raf_soldier_mvd_officer";
-					atlOffset=0.50799561;
+					atlOffset=0.50830841;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -16689,7 +16688,7 @@ class Mission
 			{
 			};
 			id=3291;
-			atlOffset=0.50799561;
+			atlOffset=0.50830841;
 		};
 		class Item108
 		{
@@ -18310,7 +18309,6 @@ class Mission
 					};
 					id=3357;
 					type="Land_Bandage_F";
-					atlOffset=0.021903992;
 				};
 				class Item8
 				{
@@ -18329,7 +18327,6 @@ class Mission
 					};
 					id=3358;
 					type="Land_Bandage_F";
-					atlOffset=0.021903992;
 				};
 				class Item9
 				{
@@ -24155,7 +24152,7 @@ class Mission
 			name="Спавн";
 			class Entities
 			{
-				items=3;
+				items=2;
 				class Item0
 				{
 					dataType="Logic";
@@ -24180,21 +24177,9 @@ class Mission
 					id=10980;
 					type="Logic";
 				};
-				class Item2
-				{
-					dataType="Logic";
-					class PositionInfo
-					{
-						position[]={10451.775,257.19122,6391.2271};
-						angles[]={6.2639866,5.6754441,0.033580136};
-					};
-					name="MP_spawn_civ";
-					id=18310;
-					type="Logic";
-				};
 			};
 			id=10979;
-			atlOffset=-55.533096;
+			atlOffset=-149.94968;
 		};
 		class Item205
 		{
@@ -43172,6 +43157,53 @@ class Mission
 												nAttributes=1;
 											};
 										};
+										class Item22
+										{
+											dataType="Object";
+											class PositionInfo
+											{
+												position[]={10470.453,260.21182,6391.8276};
+												angles[]={0,0.89953721,0};
+											};
+											side="Empty";
+											class Attributes
+											{
+												disableSimulation=1;
+											};
+											id=15180;
+											type="Land_MapBoard_01_Wall_F";
+											atlOffset=0.85818481;
+											class CustomAttributes
+											{
+												class Attribute0
+												{
+													property="ObjectTextureCustom0";
+													expression="_this setObjectTextureGlobal [0,_value]";
+													class Value
+													{
+														class data
+														{
+															singleType="STRING";
+															value="texturen\funkfreq5.jpg";
+														};
+													};
+												};
+												class Attribute1
+												{
+													property="allowDamage";
+													expression="_this allowdamage _value;";
+													class Value
+													{
+														class data
+														{
+															singleType="BOOL";
+															value=0;
+														};
+													};
+												};
+												nAttributes=2;
+											};
+										};
 										class Item23
 										{
 											dataType="Object";
@@ -51383,7 +51415,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_mp";
 			};
 			id=16957;
 			type="Box_NATO_Wps_F";
@@ -53634,7 +53665,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_mednato";
 			};
 			id=16961;
 			type="Box_NATO_Wps_F";
@@ -55423,7 +55453,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_airnato";
 			};
 			id=16963;
 			type="Box_NATO_Wps_F";
@@ -56595,7 +56624,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_artnato";
 			};
 			id=16965;
 			type="Box_NATO_Wps_F";
@@ -57695,7 +57723,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_vdv";
 			};
 			id=16967;
 			type="Box_East_Wps_F";
@@ -59375,7 +59402,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_art";
 			};
 			id=16970;
 			type="Box_East_Wps_F";
@@ -63377,7 +63403,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_raz";
 			};
 			id=17020;
 			type="Box_East_Wps_F";
@@ -65121,7 +65146,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_sapnato";
 			};
 			id=17055;
 			type="Box_NATO_Wps_F";
@@ -66981,7 +67005,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_medic";
 			};
 			id=17077;
 			type="Box_East_Wps_F";
@@ -68149,7 +68172,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_air";
 			};
 			id=17080;
 			type="Box_East_Wps_F";
@@ -69062,7 +69084,6 @@ class Mission
 			flags=4;
 			class Attributes
 			{
-				name="ars_sap";
 			};
 			id=17084;
 			type="Box_East_Wps_F";
@@ -75559,14 +75580,13 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={12039.07,369.94504,2638.8706};
-				angles[]={0.030386183,3.4309158,0.036791541};
+				position[]={12039.07,369.94504,2638.8708};
+				angles[]={0.030390549,3.4309158,0.036785569};
 			};
 			side="Empty";
 			flags=4;
 			class Attributes
 			{
-				name="ars_ex";
 			};
 			id=18034;
 			type="Box_NATO_Wps_F";
