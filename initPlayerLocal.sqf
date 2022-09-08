@@ -62,7 +62,7 @@ private _fn_moveToCustomSpawn = {
 
     private _east = [["First", "ART", "AIR", "SAP", "MEDIC", "RAZ"]] call ZONT_fnc_checkRole;
   if _east exitWith { [_player, true, 'MP_spawn_east'] call _fn_moveToSpawn };
-    private _west = [["Second", "SAPNATO", "AIRNATO", "MEDNATO", "ARTNATO"]] call ZONT_fnc_checkRole;
+    private _west = [["Second", "SAPNATO", "AIRNATO", "MEDNATO", "ARTNATO", "EX"]] call ZONT_fnc_checkRole;
   if _west exitWith { [_player, true, 'MP_spawn_west'] call _fn_moveToSpawn };
     private _civ = [["HQ"]] call ZONT_fnc_checkRole;
   if _civ exitWith { [_player, true, 'MP_spawn_civ'] call _fn_moveToSpawn };

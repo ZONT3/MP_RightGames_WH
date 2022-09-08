@@ -8,12 +8,21 @@ VVS_Premade_List = false;
 
 ZONT_fnc_filterVVS = {
   switch(_this) do {
-  	case "Guard": { VVS_West_IG };
-  	case "Mechanicus": { VVS_West_Mech };
-  	case "Astartes": { VVS_West_Astartes };
-  	case "SL": { VVS_West_Salo };
-	case "Navy": { VVS_West_Navy };
-	case "Scion": { VVS_West_Scion };
+	/*Наборы ОДКБ*/
+  	case "All": { VVS_all_vechicle };
+  	case "First_W": { VVS_rolls + VVS_gus };
+  	case "ART": { VVS_rolls + VVS_art };
+  	case "AIR": { VVS_rolls };
+	case "SAP": { VVS_rolls };
+	case "MEDIC": { VVS_rolls };
+	case "RAZ": { VVS_rolls };
+	/*Наборы НАТО*/
+	case "Second": { VVS_land_nato + VVS_hw_nato };
+	case "EX": { VVS_land_nato };
+	case "SAPNATO": { VVS_land_nato };
+	case "AIRNATO": { VVS_land_nato };
+	case "MEDNATO": { VVS_land_nato };
+	case "ARTNATO": { VVS_land_nato + VVS_art_nato };
 
   	default {[]};
   };
@@ -31,48 +40,92 @@ ZONT_fnc_onSpawnVVS = {
   };
 };
 
-
-VVS_West_Mech = [
-"Mars_annihilator",
-"Mars_Conqueror",
-"Mars_Executioneer",
-"Mars_Exterminator",
-"AM_Chimerro",
-"AM_Hellhound",
-"O_ScorpiusDisintegrator",
-"O_ScorpiusDisintegrator13",
-"O_ScorpiusBelleros_base",
-"Dos_Drop_Pod7",
-"O_ScorpiusBelleros13_base"
+/*Ниже техника ОДКБ*/
+VVS_all_vechicle = [
+"rhs_2s3_tv",
+"rhs_D30_vdv",
+"rhs_bmd2",
+"rhs_bmd1p",
+"UK3CB_CW_SOV_O_LATE_UAZ_AGS30",
+"UK3CB_CW_SOV_O_LATE_UAZ_Closed",
+"UK3CB_CW_SOV_O_LATE_UAZ_MG",
+"UK3CB_CW_SOV_O_LATE_UAZ_SPG9",
+"UK3CB_ARD_O_MTLB_PKT",
+"rhs_gaz66_vdv",
+"rhs_gaz66_flat_vdv",
+"rhs_gaz66_r142_vdv",
+"rhs_gaz66_ammo_vdv",
+"rhs_gaz66o_vdv",
+"rhs_gaz66_ap2_vdv",
+"rhs_btr80_vdv",
+"rhsgref_BRDM2_vdv",
+"rhs_bmp2d_vdv",
+"rhs_bmp1p_vdv",
+"RHS_Ural_Fuel_MSV_01"
 ];
 
-VVS_West_IG = [
-"TIOW_CadianChimAuto_776", 
-"TIOW_Centaur_01_Cadian_776_Blu", 
-"TIOW_CadianTrojan_776", 
-"IC_Tauros_GMG_woodland_F", 
-"IC_Tauros_HMG_woodland_F", 
-"IC_Tauros_unarmed_woodland_F", 
-"IC_Tauros_Venator_woodland_F", 
-"OM_Tauros_Unarmed_Medicae_IC", 
-"ML700_Taurox_Stubber", 
-"ML700_Taurox_Unarmed"
+VVS_rolls = [
+"UK3CB_CW_SOV_O_LATE_UAZ_AGS30",
+"UK3CB_CW_SOV_O_LATE_UAZ_Closed",
+"UK3CB_CW_SOV_O_LATE_UAZ_MG",
+"UK3CB_CW_SOV_O_LATE_UAZ_SPG9",
+"rhs_gaz66_vdv",
+"rhs_gaz66_flat_vdv",
+"rhs_gaz66_r142_vdv",
+"rhs_gaz66_ammo_vdv",
+"rhs_gaz66o_vdv",
+"rhs_gaz66_ap2_vdv",
+"RHS_Ural_Fuel_MSV_01"
 ];
 
-VVS_West_Salo = [
-"TIOW_SM_Predator_SL",
-"TIOW_SM_Razorback_AC_SL",
-"TIOW_SM_Razorback_SL",
-"TIOW_SM_Razorback_LC_SL",
-"TIOW_SM_Rhino_SL",
-"TIOW_SM_Vindicator_SL",
-"Steve_SAL_Jetbike_HB",
-"Steve_SAL_Jetbike_MM",
-"Steve_SAL_Jetbike_PC",
-"Steve_SAL_Jetbike_VLK"
+VVS_gus = [
+"rhs_bmd2",
+"rhs_bmd1p",
+"UK3CB_ARD_O_MTLB_PKT",
+"rhs_btr80_vdv",
+"rhsgref_BRDM2_vdv",
+"rhs_bmp2d_vdv",
+"rhs_bmp1p_vdv"
+];
+
+VVS_art = [
+"rhs_2s3_tv",
+"rhs_D30_vdv"
 ];
 
 
+
+/*Ниже техника Нато*/
+VVS_land_nato = [
+"UK3CB_B_MTVR_Repair_USMC_DES",
+"UK3CB_B_MTVR_Open_USMC_DES",
+"UK3CB_B_MTVR_Refuel_USMC_DES",
+"UK3CB_B_MTVR_Closed_USMC_DES",
+"UK3CB_B_MTVR_Reammo_USMC_DES",
+"rhsusf_m1025_d_s_m2",
+"rhsusf_m1025_d_s_Mk19",
+"rhsusf_m1025_d_s",
+"rhsusf_m998_d_s_2dr_halftop",
+"rhsusf_m998_d_s_4dr"
+];
+
+VVS_art_nato = [
+"rhsusf_m109d_usarmy",
+"RHS_M119_D"
+];
+
+VVS_hw_nato = [
+"rhsusf_m109d_usarmy",
+"RHS_M119_D",
+"UK3CB_B_LAV25_HQ_US_DES",
+"UK3CB_B_LAV25_US_DES",
+"UK3CB_B_AAV_US_DES",
+"UK3CB_KRG_B_M2A2"
+];
+
+
+
+/*
 VVS_Car = [];
 VVS_Air = [];
 VVS_Ship = [];
