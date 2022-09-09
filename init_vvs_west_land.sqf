@@ -71,3 +71,15 @@ _this addAction [
   "[['ARTNATO']] call ZONT_fnc_checkRole",
   5
 ];
+
+_this addAction [
+  "Ты админ, у тебя есть всё.",
+  VVS_fnc_openVVS,
+  [VVS_west_land,"AllNATO"],
+  6,
+  true,
+  true,
+  "",
+  "[['AD']] call ZONT_fnc_checkRole",
+  5
+];

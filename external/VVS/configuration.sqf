@@ -23,6 +23,7 @@ ZONT_fnc_filterVVS = {
 	case "AIRNATO": { VVS_land_nato };
 	case "MEDNATO": { VVS_land_nato };
 	case "ARTNATO": { VVS_land_nato + VVS_art_nato };
+	case "AllNATO": { VVS_All };
 
   	default {[]};
   };
@@ -96,6 +97,28 @@ VVS_art = [
 
 
 /*Ниже техника Нато*/
+
+VVS_All = [
+"UK3CB_B_MTVR_Repair_USMC_DES",
+"UK3CB_B_MTVR_Open_USMC_DES",
+"UK3CB_B_MTVR_Refuel_USMC_DES",
+"UK3CB_B_MTVR_Closed_USMC_DES",
+"UK3CB_B_MTVR_Reammo_USMC_DES",
+"rhsusf_m1025_d_s_m2",
+"rhsusf_m1025_d_s_Mk19",
+"rhsusf_m1025_d_s",
+"rhsusf_m998_d_s_2dr_halftop",
+"rhsusf_m998_d_s_4dr",
+"rhsusf_m109d_usarmy",
+"RHS_M119_D",
+"rhsusf_m109d_usarmy",
+"RHS_M119_D",
+"UK3CB_B_LAV25_HQ_US_DES",
+"UK3CB_B_LAV25_US_DES",
+"UK3CB_B_AAV_US_DES",
+"UK3CB_KRG_B_M2A2"
+]
+
 VVS_land_nato = [
 "UK3CB_B_MTVR_Repair_USMC_DES",
 "UK3CB_B_MTVR_Open_USMC_DES",
