@@ -117,7 +117,7 @@ VVS_All = [
 "UK3CB_B_LAV25_US_DES",
 "UK3CB_B_AAV_US_DES",
 "UK3CB_KRG_B_M2A2"
-]
+];
 
 VVS_land_nato = [
 "UK3CB_B_MTVR_Repair_USMC_DES",
