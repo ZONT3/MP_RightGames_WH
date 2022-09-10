@@ -56,7 +56,7 @@ _this addAction [
   true,
   true,
   "",
-  "[['MIDEC']] call ZONT_fnc_checkRole",
+  "[['MEDIC']] call ZONT_fnc_checkRole",
   5
 ];
 
