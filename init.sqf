@@ -21,7 +21,3 @@ enableSentences false;
 enableSaving [false, false];
 //player enableFatigue false;
 //Player enableStamina false;
-
-
-//Скрипт на очищение списка групп. Помощь зевсам.
-[] execVM "external\scripts\clear_group.sqf";
