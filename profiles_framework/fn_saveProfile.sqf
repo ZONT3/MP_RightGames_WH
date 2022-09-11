@@ -1,5 +1,5 @@
-
 if not (missionNamespace getVariable ["MPC_canSave", false]) exitWith { false };
+
 if not (assert !isNil "ZPR_ID")    exitWith { false };
 if not (assert !isNil "ZPR_roles") exitWith { false };
 

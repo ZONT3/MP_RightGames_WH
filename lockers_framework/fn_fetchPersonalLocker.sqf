@@ -14,7 +14,7 @@ if (not isNil '_content') exitWith {
   _content
 };
 
-diag_log ("Creating new ");
+diag_log ("Creating new");
 [MPS_BDL_lockers, "addLocker", [_this]] call ZONT_fnc_bd_customRequest;
 [MPS_BDL_lockers, "updLocker", [_new, _this]] call ZONT_fnc_bd_customRequest;
 _new

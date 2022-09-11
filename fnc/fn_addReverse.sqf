@@ -46,6 +46,6 @@ if (isDedicated) exitWith {};
 player addEventHandler ["GetInMan", {
  params ["_unit", "_role", "_vehicle", "_turret"];
 if (_vehicle isKindOf "helicopter" and driver _vehicle == player) then {
-systemChat "Включи фары, чтобы начать рулежку";
+systemChat "Включи фары, чтобы начать руление";
 };
 }];

@@ -8,147 +8,100 @@ VVS_Premade_List = false;
 
 ZONT_fnc_filterVVS = {
   switch(_this) do {
-	/*Наборы ОДКБ*/
-  	case "All": { VVS_all_vechicle };
-  	case "First_W": { VVS_rolls + VVS_gus };
-  	case "ART": { VVS_rolls + VVS_art };
-  	case "AIR": { VVS_rolls };
-	case "SAP": { VVS_rolls };
-	case "MEDIC": { VVS_rolls };
-	case "RAZ": { VVS_rolls };
-	/*Наборы НАТО*/
-	case "Second": { VVS_land_nato + VVS_hw_nato };
-	case "EX": { VVS_land_nato };
-	case "SAPNATO": { VVS_land_nato };
-	case "AIRNATO": { VVS_land_nato };
-	case "MEDNATO": { VVS_land_nato };
-	case "ARTNATO": { VVS_land_nato + VVS_art_nato };
-	case "AllNATO": { VVS_All };
+  	case "HQ": { VVS_HQ + VVS_Wheeled };
+  	case "BMO": { VVS_BMO };
+  	case "VDV": { VVS_VDV };
+	  case "ART": { VVS_ART };
+	  case "TV": { VVS_TV };
+  	case "Wheeled": { VVS_Wheeled };
+  	case "SWheeled": { VVS_Wheeled_Spec };
 
   	default {[]};
   };
 };
 
 ZONT_fnc_onSpawnVVS = {
-  // params ["_mode", "_vehicle"];
-  switch(_this) do {
-  	case "TV": { {
-      _vehicle setVehicleAmmo 0;
-      _vehicle setFuel 0
-    } };
+  params ["_vehicle", "_class", "_mode"];
 
-  	default {nil};
+
+  private _fnc_class = switch (_class) do {
+    case "OPTRE_M808S": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M808B2": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M808B_UNSC": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M813_TT": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12A1_LRV": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12R_AA": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12G1_LRV": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12_FAV_APC": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12_LRV": {
+      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M412_IFV_UNSC": {
+      [_vehicle, "colortan"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M413_MGS_UNSC": {
+      [_vehicle, "colortan"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M494": {
+      [_vehicle, "colordes"] call BIS_fnc_initVehicle;
+    };
   };
 };
 
-/*Ниже техника ОДКБ*/
-VVS_all_vechicle = [
-"rhs_2s3_tv",
-"rhs_D30_vdv",
-"rhs_bmd2",
-"rhs_bmd1p",
-"UK3CB_CW_SOV_O_LATE_UAZ_AGS30",
-"UK3CB_CW_SOV_O_LATE_UAZ_Closed",
-"UK3CB_CW_SOV_O_LATE_UAZ_MG",
-"UK3CB_CW_SOV_O_LATE_UAZ_SPG9",
-"UK3CB_ARD_O_MTLB_PKT",
-"rhs_gaz66_vdv",
-"rhs_gaz66_flat_vdv",
-"rhs_gaz66_r142_vdv",
-"rhs_gaz66_ammo_vdv",
-"rhs_gaz66o_vdv",
-"rhs_gaz66_ap2_vdv",
-"rhs_btr80_vdv",
-"rhsgref_BRDM2_vdv",
-"rhs_bmp2d_vdv",
-"rhs_bmp1p_vdv",
-"RHS_Ural_Fuel_MSV_01"
+
+VVS_HQ = [
 ];
 
-VVS_rolls = [
-"UK3CB_CW_SOV_O_LATE_UAZ_AGS30",
-"UK3CB_CW_SOV_O_LATE_UAZ_Closed",
-"UK3CB_CW_SOV_O_LATE_UAZ_MG",
-"UK3CB_CW_SOV_O_LATE_UAZ_SPG9",
-"rhs_gaz66_vdv",
-"rhs_gaz66_flat_vdv",
-"rhs_gaz66_r142_vdv",
-"rhs_gaz66_ammo_vdv",
-"rhs_gaz66o_vdv",
-"rhs_gaz66_ap2_vdv",
-"RHS_Ural_Fuel_MSV_01"
+VVS_Wheeled = [
 ];
 
-VVS_gus = [
-"rhs_bmd2",
-"rhs_bmd1p",
-"UK3CB_ARD_O_MTLB_PKT",
-"rhs_btr80_vdv",
-"rhsgref_BRDM2_vdv",
-"rhs_bmp2d_vdv",
-"rhs_bmp1p_vdv"
+VVS_BMO = [
+  "rhs_tigr_vdv",
+  "rhs_tigr_sts_vdv",
+  "rhs_tigr_m_3camo_vdv",
+  "RHS_Ural_Fuel_VDV_01",
+  "RHS_Ural_Repair_VDV_01",
+  "rhs_gaz66_flat_vdv",
+  "RHS_Ural_VDV_01"
 ];
 
-VVS_art = [
-"rhs_2s3_tv",
-"rhs_D30_vdv"
+VVS_TV = [
+  "rhs_t72be_tv",
+  "rhs_t90sab_tv",
+  "rhs_t80um"
+];
+
+VVS_ART = [
+  "rhs_2s1_tv"
+];
+
+VVS_VDV = [
+  "rhs_bmd4ma_vdv",
+  "rhs_bmd4m_vdv",
+  "rhs_btr80a_vdv",
+  "rhs_btr80_vdv"
+];
+
+VVS_Wheeled_Spec = [
 ];
 
 
-
-/*Ниже техника Нато*/
-
-VVS_All = [
-"UK3CB_B_MTVR_Repair_USMC_DES",
-"UK3CB_B_MTVR_Open_USMC_DES",
-"UK3CB_B_MTVR_Refuel_USMC_DES",
-"UK3CB_B_MTVR_Closed_USMC_DES",
-"UK3CB_B_MTVR_Reammo_USMC_DES",
-"rhsusf_m1025_d_s_m2",
-"rhsusf_m1025_d_s_Mk19",
-"rhsusf_m1025_d_s",
-"rhsusf_m998_d_s_2dr_halftop",
-"rhsusf_m998_d_s_4dr",
-"rhsusf_m109d_usarmy",
-"RHS_M119_D",
-"rhsusf_m109d_usarmy",
-"RHS_M119_D",
-"UK3CB_B_LAV25_HQ_US_DES",
-"UK3CB_B_LAV25_US_DES",
-"UK3CB_B_AAV_US_DES",
-"UK3CB_KRG_B_M2A2"
-];
-
-VVS_land_nato = [
-"UK3CB_B_MTVR_Repair_USMC_DES",
-"UK3CB_B_MTVR_Open_USMC_DES",
-"UK3CB_B_MTVR_Refuel_USMC_DES",
-"UK3CB_B_MTVR_Closed_USMC_DES",
-"UK3CB_B_MTVR_Reammo_USMC_DES",
-"rhsusf_m1025_d_s_m2",
-"rhsusf_m1025_d_s_Mk19",
-"rhsusf_m1025_d_s",
-"rhsusf_m998_d_s_2dr_halftop",
-"rhsusf_m998_d_s_4dr"
-];
-
-VVS_art_nato = [
-"rhsusf_m109d_usarmy",
-"RHS_M119_D"
-];
-
-VVS_hw_nato = [
-"rhsusf_m109d_usarmy",
-"RHS_M119_D",
-"UK3CB_B_LAV25_HQ_US_DES",
-"UK3CB_B_LAV25_US_DES",
-"UK3CB_B_AAV_US_DES",
-"UK3CB_KRG_B_M2A2"
-];
-
-
-
-/*
 VVS_Car = [];
 VVS_Air = [];
 VVS_Ship = [];

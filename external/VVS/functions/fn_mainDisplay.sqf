@@ -37,7 +37,6 @@ call {
 	_row = 0;
 	_vehicleList = [_mode] call VVS_fnc_filterType;
 	VVS_spawnMode = _mode;
-	VVS_onSpawn = (_mode call ZONT_fnc_onSpawnVVS);
 
 	if(count _vehicleList == 0) exitWith {hint "ОЙ, что-то пошло не так! Попробуйте позже!"};
 	{

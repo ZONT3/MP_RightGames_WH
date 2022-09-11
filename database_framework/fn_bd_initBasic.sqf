@@ -7,7 +7,7 @@ if (("extDB3" callExtension "9:SYSTEM_TIME") == "") exitWith {
 
 diag_log "ZDB: Initializing";
 "extDB3" callExtension "9:RESET";
-private _res = call compile ("extDB3" callExtension "9:ADD_DATABASE:arma3wh");
+private _res = call compile ("extDB3" callExtension "9:ADD_DATABASE:arma3rg");
 if (_res select 0 != 1) exitWith {
   diag_log format ["Failed! %1", _res select 1];
 };

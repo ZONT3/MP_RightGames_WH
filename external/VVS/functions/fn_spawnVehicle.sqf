@@ -6,6 +6,7 @@
 	Spawns the selected vehicle, if a vehicle is already on the spawn point
 	then it deletes the vehicle from the spawn point.
 */
+
 disableSerialization;
 private["_pos","_direction","_className","_displayName","_spCheck","_cfgInfo"];
 if(lnbCurSelRow 38101 == -1) exitWith {hint "Не выбрана техника для спавна!"};
@@ -30,35 +31,11 @@ _cfgInfo = [_className] call VVS_fnc_cfgInfo;
 _positionSpawn = [_pos select 0, _pos select 1, (_pos select 2) + 10000];
 _position = [_pos select 0, _pos select 1, (_pos select 2) + 0.5];
 
-_vehicle = _className createVehicle _positionSpawn;
-while {isDamageAllowed _vehicle} do {
-    _vehicle allowDamage false;
-};
-_vehicle setPosATL _position; //Make sure it gets set onto the position.
-_vehicle setDir _direction; //Set the vehicles direction the same as the marker.
+[
+	[_positionSpawn, _position, _direction, _cfgInfo, VVS_Checkbox, _displayName],
+	_className,
+	VVS_spawnMode,
+	player
+] remoteExec ["VVS_fnc_spawnVehicleServer", 2];
 
-if((_cfgInfo select 4) == "Autonomous") then
-{
-	createVehicleCrew _vehicle;
-};
-
-if(VVS_Checkbox) then
-{
-	clearWeaponCargoGlobal _vehicle;
-	clearMagazineCargoGlobal _vehicle;
-	clearItemCargoGlobal _vehicle;
-};
-
-if (not isNil 'VVS_onSpawn' and {typeName VVS_onSpawn == typeName {}}) then {
-	[[VVS_onSpawn, VVS_spawnMode, _vehicle], {
-		_thisCode = _this select 0;
-		_mode = _this select 1;
-		_vehicle = _this select 2;
-		call _thisCode;
-	}] remoteExec ["bis_fnc_call", 2];
-};
-
-hint format["Вы заспавнили %1",_displayName];
-sleep 3;
-_vehicle allowDamage true;
 closeDialog 0;

@@ -12,7 +12,6 @@ waitUntil {vehicle player == player};
 
 [] execVM "initPlayerAfterRespawn.sqf";
 
-
 /******                            Zeus list                             ******/
 /* MCH_ZEUS_LIST = [{
   if (isnull (finddisplay 312)) exitWith {};
@@ -33,10 +32,16 @@ waitUntil {vehicle player == player};
   hintSilent parseText _str;
 }, 1] call CBA_fnc_addPerFrameHandler; */
 
+MPC_Whitelist = true; // кикать людей без роли
 
 private _fn_checkSlotPermission = {
   waituntil { sleep 0.1; !isNil 'ZPR_roles' };
-  if not ([[],[],_this] call ZONT_fnc_checkRole) then {
+
+  if (( isNil 'ZPR_roles' ) or { MPC_Whitelist and (count ZPR_roles) == 0 }) exitWith {
+    ["whitelist"] call ZONT_fnc_forceExit;
+  };
+
+  if not ([[],[],_this] call ZONT_fnc_checkRole) exitWith {
     ["absrole"] call ZONT_fnc_forceExit;
   };
 };
@@ -46,22 +51,30 @@ private _varg = group player getVariable ["ZPR_rr", ""];
 private _vars =       player getVariable ["ZPR_rr", ""];
 if (_varg != "") then { _var pushBack _varg };
 if (_vars != "") then { _var pushBack _vars };
-if (count _var > 0) then {
+if (MPC_Whitelist or { count _var > 0 }) then {
   _var spawn _fn_checkSlotPermission;
 };
-
 
 private _fn_moveToCustomSpawn = {
   params ['_player','_fn_moveToSpawn'];
   waituntil { sleep 0.1; !isNil 'ZPR_roles' };
 
-
-    private _east = [["First", "ART", "AIR", "SAP", "MEDIC", "RAZ"]] call ZONT_fnc_checkRole;
-  if _east exitWith { [_player, true, 'MP_spawn_east'] call _fn_moveToSpawn };
-    private _west = [["Second", "SAPNATO", "AIRNATO", "MEDNATO", "ARTNATO", "EX"]] call ZONT_fnc_checkRole;
-  if _west exitWith { [_player, true, 'MP_spawn_west'] call _fn_moveToSpawn };
-    private _civ = [["HQ"]] call ZONT_fnc_checkRole;
-  if _civ exitWith { [_player, true, 'MP_spawn_civ'] call _fn_moveToSpawn };
+    private _sso = [["SSO"]] call ZONT_fnc_checkRole;
+  if _sso exitWith { [_player, true, 'MP_spawn_sso'] call _fn_moveToSpawn };
+    private _vdv = [["VDV"]] call ZONT_fnc_checkRole;
+  if _vdv exitWith { [_player, true, 'MP_spawn_vdv'] call _fn_moveToSpawn };
+    private _svr = [["SVR"]] call ZONT_fnc_checkRole;
+  if _svr exitWith { [_player, true, 'MP_spawn_svr'] call _fn_moveToSpawn };
+    private _train = [["Train"]] call ZONT_fnc_checkRole;
+  if _train exitWith { [_player, true, 'MP_spawn_train'] call _fn_moveToSpawn };
+    private _train = [["Train"]] call ZONT_fnc_checkRole;
+  if _train exitWith { [_player, true, 'MP_spawn_train'] call _fn_moveToSpawn };
+    private _md = [["MD"]] call ZONT_fnc_checkRole;
+  if _md exitWith { [_player, true, 'MP_spawn_md'] call _fn_moveToSpawn };
+    private _vks = [["VKS"]] call ZONT_fnc_checkRole;
+  if _vks exitWith { [_player, true, 'MP_spawn_vks'] call _fn_moveToSpawn };
+    private _india = [["India"]] call ZONT_fnc_checkRole;
+  if _india exitWith { [_player, true, 'MP_spawn_india'] call _fn_moveToSpawn };
 };
 
 private _fn_moveToSpawn = {
@@ -90,11 +103,30 @@ private _fn_moveToSpawn = {
   };
 };
 
-
 [player, false] call _fn_moveToSpawn;
 [player, _fn_moveToSpawn] spawn _fn_moveToCustomSpawn;
 
+MPC_DISPLAY_OPENED = createHashMap;
+MPH_DisplyChecker = [{
+  private _tmp = [];
+  private _report = [];
+  {
+    private _id = str _x;
+    if not (_id in MPC_DISPLAY_OPENED) then {
+      _report pushBack _id;
+    };
+    _tmp pushBack [_id, true];
+  } forEach allDisplays;
+  MPC_DISPLAY_OPENED = createHashMapFromArray _tmp;
+  _report spawn {
+    {
+      [format ["%1 [%2] OPENED %3", name player, getPlayerUID player, _this]] remoteExec ["ZONT_fnc_log", 2];
+    } forEach _this;
+  };
+}, 1] call CBA_fnc_addPerFrameHandler;
 
+/*
+// Delete agents
 [] spawn {
   waitUntil {
   	{
@@ -109,4 +141,6 @@ private _fn_moveToSpawn = {
 
   	sleep 0.01; false;
   };
-};
+};*/
+
+[] spawn ZONT_fnc_ZZL_initPlayer

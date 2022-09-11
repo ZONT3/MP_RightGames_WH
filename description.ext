@@ -4,7 +4,6 @@
 /**********                       RSC includes                       **********/
 #include "external\VVS\menu.ext"
 
-
 /**********                        Properties                        **********/
 respawnOnStart = -1;
 cba_settings_hasSettingsFile = 1;
@@ -25,14 +24,24 @@ class CfgFunctions {
       class getConst { };
       class forceExit { };
       class addReverse { };
-			class initArsenals { };
+      class initArsenals { };
+      class log { };
+      class initHookah { };
+      class hookahEffect { };
+      class setContainerGear { };
+      class getContainerGear { };
+      class ZZL_initServer { };
+      class ZZL_initPlayer { };
+      class PlaneReverse { };
     };
     class Lockers {
-    file = "lockers_framework";
-    class addPersonalLocker { };
-    class fetchPersonalLocker { };
-    class initPersonalLocker { };
-    class updPersonalLocker { };
+      file = "lockers_framework";
+      class addPersonalLocker { };
+      class fetchPersonalLocker { };
+      class initPersonalLocker { };
+      class updPersonalLocker { };
+      class initPresistentCrates { };
+      class addPresistentCrate { };
     };
     class Database {
       file = "database_framework";
@@ -50,12 +59,13 @@ class CfgFunctions {
       class loadDone { };
       class newProfile { };
       class checkRole { };
+	  class restrictAccess { };
       class updProfile { };
 
       class saveProfile { };
       class loadProfile { };
       class autoSaveInit { };
-			class attachArsenal { };
+      class attachArsenal { };
     };
     #include "dev\include.ext"
   };
@@ -66,10 +76,10 @@ class CfgSounds {
   sounds[] = {};
 };
 
-author			  = "Right Games Team";
-onLoadName		= "Operation 'New Hope'";
-onLoadMission	= "Создание и настройка карты —— Буданов <br />Техническая часть —— Басуда <br />Помощь —— Митясев <br />Основатель —— Москва <br />Спасибо вам, что играете с нами : )";
-loadScreen = "pic\loading.paa";
+author			  = "RG Team";
+onLoadName		= "Chechen War | Right Games";
+onLoadMission	= "";
+loadScreen = "";
 class Header {
 	gameType   = RPG;
 	minPlayers =   0;
@@ -80,6 +90,12 @@ class CfgDebriefing {
   class force {
     title = "Выкинут в лобби";
 		description = "Тебя выкинули в лобби скриптом.";
+		pictureBackground = "";
+		picture = "pic\monk.paa";
+  };
+  class whitelist {
+    title = "Не в вайтлисте";
+		description = "У тебя нет ни одной роли на сервере, значит ты не в вайт-листе. Если ты считаешь, что должен быть в вайтлисте, свяжись со своим командиром, либо с администрацией.";
 		pictureBackground = "";
 		picture = "pic\monk.paa";
   };
@@ -126,20 +142,16 @@ class CfgDebriefing {
 };
 
 class CfgConsts {
-  ztt_terminals[] = {
-    "Land_Bunker_F", "Land_InfoStand_V2_F", "ML700_Valkyrie_Transport",
-    "ML700_Taurox_Unarmed", "TIOW_Hangar_01_Door_closed", "Bunker_PMC",
-    "Land_Factory_Tunnel_F", "WH40K_Spacemarine_Barracks"
-  };
+  ztt_terminals[] = {"aaaaaaa"};
 };
 
 //Discord info
 
 class CfgDiscordRichPresence {
 	applicationID="765658821909151805";
-	defaultDetails="RG Operation New Hope";
-	defaultState="rgsv.xyz/wh (Visit on Web)";
-	defaultLargeImageKey="rgwhad";
+	defaultDetails="Project 17";
+	defaultState="rgsv.xyz (Visit on Web)";
+	defaultLargeImageKey="rgad";
 	defaultLargeImageText="Right Games";
 	defaultSmallImageKey="a3";
 	defaultSmallImageText="ArmA 3";
