@@ -1,20 +1,18 @@
 
 class CfgRoles {
   class Zeus         { id=1 ; hide=true; };
-  class First        { id=10; name="119-й Гв. парашютно-десантный полк Александра Невского"; };
-  class Second       { id=11; name="1-я экспедиционная бригада морской пехоты"; };
-  class ART          { id=31; name="83-й самоходно-артиллерийский дивизион"; };
-  class AIR          { id=32; name="535-я отдельная смешанная авиационная эскадрилья"; };
-  class SAP          { id=33; name="143-й гвардейский инженерно-сапёрный батальон"; };
-  class MEDIC        { id=34; name="313-й отдельный медицинский батальон"; };
-  class RAZ          { id=35; name="72-я отдельная разведывательная рота"; };
-  class EX           { id=36; name="Разведка МП США"; };
-  class SAPNATO      { id=37; name="1-й инженерно-сапёрный батальон"; };
-  class AIRNATO      { id=38; name="1-я штабная эскадрилья крыла морской пехоты"; };
-  class MEDNATO      { id=39; name="1-й медицинский батальон"; };
-  class ARTNATO      { id=40; name="11-й артиллерийский полк"; };
 
+  class HQ           { id=10; name="Headquarters"; };
+  class Train        { id=11; name="Conscript Unit"; free=true; };
+  class Marine       { id=12; name="13th Front Marine Corp"; };
+  class Med          { id=13; name="13th Front Marine Corp(Med.squad)"; };
+  class GF           { id=14; name="27th Griffin Wing"; };
+  class AF           { id=15; name="2nd Armored Squad"; };
+  class SWAT         { id=16; name="SPMMP SWAT"; };
+  class CBRN         { id=17; name="CBRN Unit"; };
+  class Supp         { id=18; name="15th Engeneering Support Cavalry"; };
+  class Mar          { id=19; name="1st Maradeur Corp"; };
+  class MDF          { id=20; name="MDF Deimos"; };
+  class IST          { id=21; name="3rd Imperial Schock Troopers"; };
 
-  class HQ           { id=50; name="ООН"; };
-  class AD           { id=100; name="Админ"; };
 };
