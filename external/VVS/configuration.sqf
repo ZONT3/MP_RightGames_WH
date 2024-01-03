@@ -10,11 +10,14 @@ ZONT_fnc_filterVVS = {
   switch(_this) do {
   	case "HQ": { VVS_HQ + VVS_Wheeled };
   	case "BMO": { VVS_BMO };
-  	case "VDV": { VVS_VDV };
-	  case "ART": { VVS_ART };
-	  case "TV": { VVS_TV };
+    case "RMO": { VVS_RMO };
+  	case "A10": { VVS_A10 };
   	case "Wheeled": { VVS_Wheeled };
   	case "SWheeled": { VVS_Wheeled_Spec };
+  	case "CD": { VVS_CD };
+    case "USAF": { VVS_USAF };
+    case "CBRN": { VVS_CBRN };
+    case "BSO": { VVS_BSO };
 
   	default {[]};
   };
@@ -25,41 +28,77 @@ ZONT_fnc_onSpawnVVS = {
 
 
   private _fnc_class = switch (_class) do {
-    case "OPTRE_M808S": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
-    };
-    case "OPTRE_M808B2": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
-    };
-    case "OPTRE_M808B_UNSC": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
-    };
-    case "OPTRE_M813_TT": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
-    };
-    case "OPTRE_M12A1_LRV": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
-    };
-    case "OPTRE_M12R_AA": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
-    };
-    case "OPTRE_M12G1_LRV": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
-    };
     case "OPTRE_M12_FAV_APC": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
     };
     case "OPTRE_M12_LRV": {
-      [_vehicle, "colorsand"] call BIS_fnc_initVehicle;
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
     };
-    case "OPTRE_M412_IFV_UNSC": {
-      [_vehicle, "colortan"] call BIS_fnc_initVehicle;
+    case "OPTRE_M12A1_LRV": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
     };
-    case "OPTRE_M413_MGS_UNSC": {
-      [_vehicle, "colortan"] call BIS_fnc_initVehicle;
+    case "OPTRE_M12G1_LRV": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
     };
-    case "OPTRE_M494": {
-      [_vehicle, "colordes"] call BIS_fnc_initVehicle;
+    case "OPTRE_M12R_AA": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M914_RV": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12_FAV_APC_MED": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12_FAV": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M12_FAV": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
+    };
+    case "OPTRE_M813_TT": {
+      [_vehicle, "colorsnow"] call BIS_fnc_initVehicle;
+    };
+    case "optre_catfish_atgm_f": {
+      [_vehicle, "texWhite"] call BIS_fnc_initVehicle;
+    };
+    case "optre_catfish_gauss_f": {
+      [_vehicle, "texWhite"] call BIS_fnc_initVehicle;
+    };
+    case "optre_catfish_mg_f": {
+      [_vehicle, "texWhite"] call BIS_fnc_initVehicle;
+    };
+    case "optre_catfish_unarmed_f": {
+      [_vehicle, "texWhite"] call BIS_fnc_initVehicle;
+    };
+  	case "212th_B_APC_Wheeled_02_cannon_F": {
+    clearWeaponCargoGlobal _vehicle;
+    clearMagazineCargoGlobal _vehicle;
+    clearItemCargoGlobal _vehicle;
+    clearBackpackCargoGlobal _vehicle;
+    };
+    case "212th_B_APC_Wheeled_fs_cannon_F": {
+    clearWeaponCargoGlobal _vehicle;
+    clearMagazineCargoGlobal _vehicle;
+    clearItemCargoGlobal _vehicle;
+    clearBackpackCargoGlobal _vehicle;
+    };
+    case "212th_B_APC_Wheeled_aa_cannon_F": {
+    clearWeaponCargoGlobal _vehicle;
+    clearMagazineCargoGlobal _vehicle;
+    clearItemCargoGlobal _vehicle;
+    clearBackpackCargoGlobal _vehicle;
+    };
+    case "212th_B_APC_Wheeled_mg_F": {
+    clearWeaponCargoGlobal _vehicle;
+    clearMagazineCargoGlobal _vehicle;
+    clearItemCargoGlobal _vehicle;
+    clearBackpackCargoGlobal _vehicle;
+    };
+    case "212th_B_APC_Wheeled_unarmed_F": {
+    clearWeaponCargoGlobal _vehicle;
+    clearMagazineCargoGlobal _vehicle;
+    clearItemCargoGlobal _vehicle;
+    clearBackpackCargoGlobal _vehicle;
     };
   };
 };
@@ -71,34 +110,43 @@ VVS_HQ = [
 VVS_Wheeled = [
 ];
 
-VVS_BMO = [
-  "rhs_tigr_vdv",
-  "rhs_tigr_sts_vdv",
-  "rhs_tigr_m_3camo_vdv",
-  "RHS_Ural_Fuel_VDV_01",
-  "RHS_Ural_Repair_VDV_01",
-  "rhs_gaz66_flat_vdv",
-  "RHS_Ural_VDV_01"
+VVS_CD = [
+  "TIOW_Krieg_LR_Exterminator_1491st_Blu"
 ];
 
-VVS_TV = [
-  "rhs_t72be_tv",
-  "rhs_t90sab_tv",
-  "rhs_t80um"
-];
-
-VVS_ART = [
-  "rhs_2s1_tv"
-];
-
-VVS_VDV = [
-  "rhs_bmd4ma_vdv",
-  "rhs_bmd4m_vdv",
-  "rhs_btr80a_vdv",
-  "rhs_btr80_vdv"
+VVS_A10 = [
+  "Sentinel_CS_404th",
+  "B_T_Quadbike_01_F",
+  "TIOW_Centaur_01_Krieg_1489_Blu"
 ];
 
 VVS_Wheeled_Spec = [
+];
+
+VVS_BMO = [
+  "TIOW_Centaur_01_Krieg_1489_Blu",
+  "Cargo_6_Transport",
+  "Cargo_6_Transport_closed"
+];
+
+VVS_RMO = [
+  "B_T_Truck_01_flatbed_F",
+  "B_T_Truck_01_cargo_F",
+  "Cargo_6_Transport",
+  "Cargo_6_Transport_closed",
+  "Cargo_6_Supply",
+  "Cargo_6_repair"
+];
+
+VVS_USAF = [
+  "ArvusLighter",
+  "ML700_Valkyrie_Transport"
+];
+
+VVS_CBRN = [
+];
+
+VVS_BSO = [
 ];
 
 

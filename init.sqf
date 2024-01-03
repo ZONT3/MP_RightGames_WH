@@ -1,7 +1,7 @@
 ﻿/*
-this addAction ["Перемещение на базу регулярных сил",{titleCut ["Перемещение...","BLACK IN",3]; player setposatl [getpos regularBase select 0, getpos regularBase select 1, getposatl regularBase select 2]},"",1,false,true,"","_this distance _target < 5"];
+this addAction ["Перемещение на корабль",{titleCut ["Перемещение...","BLACK IN",3]; player setposatl [getpos regularBase select 0, getpos regularBase select 1, getposatl regularBase select 2]},"",1,false,true,"","_this distance _target < 5"];
 
-this addAction ["<t color='#ffffff'>Перемещение базу БСО/ОТО",{titleCut ["Перемещение...","BLACK IN",3]; player setposatl [getpos bso select 0, getpos bso select 1, getposatl bso select 2]},"",1,false,true,"","_this distance _target < 5"];
+this addAction ["<t color='#ffffff'>Перемещение базу",{titleCut ["Перемещение...","BLACK IN",3]; player setposatl [getpos bso select 0, getpos bso select 1, getposatl bso select 2]},"",1,false,true,"","_this distance _target < 5"];
 
 this addAction ["<t color='#ffffff'>Перемещение базу Гвардии",{titleCut ["Перемещение...","BLACK IN",3]; player setposatl [getpos aclamator select 0, getpos aclamator select 1, getposatl aclamator select 2]},"",1,false,true,"","_this distance _target < 5"];
 
@@ -21,8 +21,21 @@ enableSentences false;
 enableSaving [false, false];
 
 west setFriend [east, 0];
-west setFriend [resistance, 1];
+west setFriend [resistance, 0];
 east setFriend [west, 0];
 east setFriend [resistance, 0];
-resistance setFriend [west, 1];
+resistance setFriend [west, 0];
 resistance setFriend [east, 0];
+
+//Cloak
+[player, 120, 60] spawn tts_cloak_fnc_giveCloak;
+
+// set up settings
+tts_cloak_uniforms = ["ARFTrooper_Uniform_city","ARFCMD_Uniform","ARFTrooper_Uniform_snow","ARFTrooper_Uniform"];
+tts_cloak_headgear = ["ARFTrooper_helmet_city","ARFCMD_helmet","ARFTrooper_helmet_snow","ARFTrooper_helmet"];
+tts_cloak_requireHolstered = true;
+tts_cloak_decloakOnFired = true;
+tts_cloak_playSounds = true;
+tts_cloak_playVoice = true;
+tts_cloak_useUI = true;
+tts_cloak_useUIVehicle = true;

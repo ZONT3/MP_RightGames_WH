@@ -32,7 +32,6 @@ class CfgFunctions {
       class getContainerGear { };
       class ZZL_initServer { };
       class ZZL_initPlayer { };
-      class PlaneReverse { };
     };
     class Lockers {
       file = "lockers_framework";
@@ -59,7 +58,7 @@ class CfgFunctions {
       class loadDone { };
       class newProfile { };
       class checkRole { };
-	  class restrictAccess { };
+      class restrictAccess { };
       class updProfile { };
 
       class saveProfile { };
@@ -77,13 +76,13 @@ class CfgSounds {
 };
 
 author			  = "RG Team";
-onLoadName		= "Chechen War | Right Games";
+onLoadName		= "Warhammer | RG";
 onLoadMission	= "";
-loadScreen = "";
+loadScreen = "pic\clones.jpg";
 class Header {
 	gameType   = RPG;
 	minPlayers =   0;
-	maxPlayers = 128;
+	maxPlayers = 90;
 };
 
 class CfgDebriefing {
@@ -148,12 +147,16 @@ class CfgConsts {
 //Discord info
 
 class CfgDiscordRichPresence {
-	applicationID="765658821909151805";
-	defaultDetails="Project 17";
-	defaultState="rgsv.xyz (Visit on Web)";
-	defaultLargeImageKey="rgad";
+	applicationID="1041326066419109899";
+	defaultDetails="Star Wars";
+	defaultState="Rebuplic";
+	defaultLargeImageKey="clone";
 	defaultLargeImageText="Right Games";
 	defaultSmallImageKey="a3";
 	defaultSmallImageText="ArmA 3";
+	defaultButtons[]={"Discord", "https://discord.gg/6QpWF5s4aH", "VK", "https://vk.com/rgssww"};
 	useTimeElapsed=1;
 };
+
+//live map
+zeusCompositionScriptLevel = 2;

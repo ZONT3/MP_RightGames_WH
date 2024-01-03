@@ -1,48 +1,21 @@
+
 [ _this,
-	ars_marine,
-	["Marine" , "Med"],
-	"Запросить арсенал 13th Marine Corp",
+	ars_shturm,
+	["FLEG" , "FLEGE" , "FLEGP"],
+	"Запросить арсенал 501th",
 	[["Здарова", "Hello"], ["Бб", "Бывай"]]
 ] call ZONT_fnc_attachArsenal;
 
 [ _this,
-	ars_train,
-	["Train"],
-	"Запросить арсенал Conscript Unit",
+	ars_shturm2,
+	["TBAT" , "TBATE" , "TBATP"],
+	"Запросить арсенал 212th",
 	[["Здарова", "Hello"], ["Бб", "Бывай"]]
 ] call ZONT_fnc_attachArsenal;
 
 [ _this,
-	ars_gf,
-	["GF" , "Supp"],
-	"Запросить арсенал 27th Griffin Wing",
-	[["Здарова", "Hello"], ["Бб", "Бывай"]]
-] call ZONT_fnc_attachArsenal;
-
-[ _this,
-	ars_af,
-	["AF" , "Supp"],
-	"Запросить арсенал 2nd Armored Squad",
-	[["Здарова", "Hello"], ["Бб", "Бывай"]]
-] call ZONT_fnc_attachArsenal;
-
-[ _this,
-	ars_mp,
-	["SWAT"],
-	"Запросить арсенал SWAT",
-	[["Здарова", "Hello"], ["Бб", "Бывай"]]
-] call ZONT_fnc_attachArsenal;
-
-[ _this,
-	ars_cbrn,
-	["CBRN"],
-	"Запросить арсенал CBRN",
-	[["Здарова", "Hello"], ["Бб", "Бывай"]]
-] call ZONT_fnc_attachArsenal;
-
-[ _this,
-	ars_hq,
-	["HQ"],
-	"Запросить арсенал HQ",
+	ars_green,
+	["Elite" , "EliteE" , "EliteP"],
+	"Запросить арсенал 41th EC",
 	[["Здарова", "Hello"], ["Бб", "Бывай"]]
 ] call ZONT_fnc_attachArsenal;

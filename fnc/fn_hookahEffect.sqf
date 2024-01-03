@@ -23,6 +23,6 @@ for "_i" from 0 to 44 do
 "radialBlur" ppEffectCommit 5;
 uiSleep 5;
 
-"chromAberration" ppEffectEnable false;
-"radialBlur" ppEffectEnable false;
+"chromAberration" ppEffectEnable true;
+"radialBlur" ppEffectEnable true;
 resetCamShake;

@@ -62,7 +62,7 @@ private _title = _display ctrlCreate ["RscStructuredText", -1];
 _title ctrlSetPosition [_startX,_startY,_width,_headerH];
 _title ctrlSetBackgroundColor [0/255,67/255,89/255,1];
 _title ctrlSetStructuredText parseText (
-    "<t align='center'><t shadow='1' size='2.5' color='#d5d5d5'>Right Games</t><br/>" +
+    "<t align='center'><t shadow='1' size='2.5' color='#d5d5d5'>RG</t><br/>" +
     _synopsis +
     "<br/><t size='0.6'>Двойной клик по пункту в списке, что бы выбрать его</t></t>"
 );
